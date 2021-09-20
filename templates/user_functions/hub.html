@@ -1,0 +1,54 @@
+﻿{% load static %}
+
+<style>
+	.AIMS-header {
+		background-color: #00415D;
+		height: 100px;
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	.title {
+		color: #FFFFFF;
+		font: bold 75px arial;
+		margin-left: 10 px;
+		position: absolute;
+		left: 0;
+		padding: 10px;
+	}
+	.Logo{
+		margin-right: 10px;
+		position: absolute;
+		right: 0;
+		height: 75px;
+		width: 177px;
+	}
+	.Filler{
+		margin-top: 25px;
+		margin-bottom: 25px;
+	}
+	footer {
+  		background-color: #00415D;
+		height: 100px;
+	}
+</style>
+
+{% block title_block %}
+Register
+{% endblock %}
+
+{% block body_block %}
+<div class="AIMS-header">
+	<h1 class="title">
+		AIMS
+	</h1>
+	<img class="Logo" src="{% static 'MSCP_logo.png' %}" alt="MSCP Logo" width="1460" height="600">
+</div>
+
+<h3 class="Filler"> Hub links go here </h3>
+
+<footer>
+
+</footer>
+	
+{% endblock %}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>AIMS</title>
+   	<!-- Bootstrap core CSS -->
+    	<link href="{% static 'bootstrap-5.0.2/scss' %}" rel="stylesheet">
+	<style>
+		body {
+			background-color: #F8F8F8;
+
+		}
+		div.AIMS-header {
+			background-color: #00415D;
+			height: 100px;
+			display: flex;
+			align-items: center;
+			position: relative;
+		}
+		.title {
+			color: #FFFFFF;
+			font: bold 75px arial;
+			margin-left: 10 px;
+			position: absolute;
+			left: 0;
+			padding: 10px;
+		}
+		.Logo{
+			margin-right: 10px;
+			position: absolute;
+			right: 0;
+			height: 75px;
+			width: 177px;
+		}
+		div.navbar {
+			height: 35px;
+			align-items: center;
+			display: inline-flex;
+			justify-content: space-evenly;
+		}
+		a.link {
+			background-color: #CD9157;
+			color: #FFFFFF;
+			width: 100px;
+			font: 15px arial;
+			padding: 9px 25px;
+			margin-top: 25px;
+			border: 2px #777777;
+			border-style: hidden solid hidden solid;
+			border-spacing: 0px;
+		}
+		footer {
+  			background-color: #00415D;
+			height: 100px;
+		}
+	</style>
+</head>
+
+<body>
+	<header class="AIMS-header-super" >
+		<div class="AIMS-header">
+			<h1 class="title">
+				AIMS
+			</h1>
+			<img class="Logo" src="MSCP logo.png" alt="MSCP Logo" width="1460" height="600">
+		</div>
+		<div class = "navbar">
+			<nav>
+				<a class="link" href="">Project Hub</a>
+				<a class="link" href="">Scope Hub</a>
+				<a class="link" href="">Settings</a>
+				<!--{% if user.level is "Admin" %}-->
+					<a class="link" href="">Report Hub</a>
+				<!--{% endif %}
+				{% if user.level is "Lead" or "Admin" %}-->
+					<a class="link" href="">User Hub</a>
+					<a class="link" href="">User Invitation</a>
+				<!--{% endif %}
+				{% if user.level is "Admin" %}-->
+					<a class="link" href="">Admin</a>
+				<!--{% endif %}-->
+			</nav>
+		</div>
+		          
+	</header>
+
+	<footer>
+
+	</footer>
+	
+</body>
+
+</html>
