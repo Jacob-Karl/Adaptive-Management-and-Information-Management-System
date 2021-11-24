@@ -61,7 +61,7 @@ Register
 	<img class="Logo" src="{% static 'MSCP_logo.png' %}" alt="MSCP Logo" width="1460" height="600">
 </div>
 
-<div class="Form">
+<div class = "Form">
 	<form id = "registration_form" action = "{% url 'user_functions:register' %}" method = "post">
 		{% csrf_token %}
 		{{ user_form.as_p }}
