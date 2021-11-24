@@ -1,0 +1,77 @@
+﻿{% extends 'universal.html' %}
+{% load static %}
+<!DOCTYPE html>
+
+{% block style_block %}
+	.unlock{
+		background-color: #ffffff;
+		border: none;
+		display: block;
+		margin: auto;
+	}
+	.lock{
+		background-color: #ffffff;
+		border: none;
+		display: none;
+		margin: auto;
+	}
+{% endblock %}
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+{% block body_block %}
+<br>
+<button class = "unlock" id = "unlock" onclick = "unlockIt()">
+	<img src = "{% static 'noun_Lock_99.png' %}" alt="connect" width="50" height="50">
+</button>
+<button class = "lock" id = "lock" onclick = "lockIt()">
+	<img src = "{% static 'noun_Unlock_99.png' %}" alt="connect" width="50" height="50"> 
+</button>
+<div class="Form">
+	<form id = "location_form" action = "{% url 'scopes:location' loc_ID %}" method = "post">
+		{% csrf_token %}
+		{{ location_form.as_p }}
+		<input class = "Button" type = "submit" value = "Submit">
+	</form>
+</div>
+
+<script type="text/javascript">
+
+function lockIt(){
+	const elements = ['LocationCode','LocationName','Description','SpatialLayer','SpatialID']
+	elements.forEach(element => lockItHelper(element));
+
+	var lock_button = document.getElementById("lock");
+	var unlock_button = document.getElementById("unlock");
+
+	lock_button.style.display = "none";
+	unlock_button.style.display = "block";
+}
+
+function lockItHelper(element){
+	var field = document.getElementsByName(element)[0];
+	field.readOnly = true;
+}
+
+
+function unlockIt(){
+	const elements = ['LocationCode','LocationName','Description','SpatialLayer','SpatialID']
+	elements.forEach(element => unlockItHelper(element));
+
+	var lock_button = document.getElementById("lock");
+	var unlock_button = document.getElementById("unlock");
+
+	lock_button.style.display = "block";
+	unlock_button.style.display = "none";
+}
+
+function unlockItHelper(element){
+	var field = document.getElementsByName(element)[0];
+	field.readOnly = false;
+}
+
+</script>
+{% endblock %}
+</html>

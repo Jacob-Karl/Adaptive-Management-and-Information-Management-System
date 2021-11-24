@@ -23,6 +23,18 @@
 		height: 75px;
 		width: 177px;
 	}
+	.Button{
+		margin-top: 25px;
+		margin-bottom: 25px;
+		background-color: #CD9157;
+		border: none;
+		color: white;
+		padding: 10px 180px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font: bold 15px arial;
+	}
 	.Filler{
 		margin-top: 25px;
 		margin-bottom: 25px;
@@ -46,6 +58,11 @@ Register
 </div>
 
 <h3 class="Filler"> Hub links go here </h3>
+<a class="Card" href = "{% url 'scopes:hub' %}"> Scope Hub </a>
+
+<div>
+	<a href= "{% url 'user_functions:logout' %}" class="Button"> Logout </a>
+</div>
 
 <footer>
 

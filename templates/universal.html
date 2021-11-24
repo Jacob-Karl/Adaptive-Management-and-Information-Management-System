@@ -8,7 +8,12 @@
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<title>AIMS</title>
    	<!-- Bootstrap core CSS -->
-    	<link href="{% static 'bootstrap-5.0.2/scss' %}" rel="stylesheet">
+	<Link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
+    <Link href="../static/css/bootsrap.min.css" rel="stylesheet">
+	<!--<Link href="{% static 'css/bootsrap.min.css' %}" rel="stylesheet">-->
+	<Link href="{% static 'css/bootsrap-grid.min.css' %}" rel="stylesheet">
+	<Link href="{% static 'css/bootsrap-reboot.min.css' %}" rel="stylesheet">
+	<Link href="{% static 'css/bootsrap-utilities.min.css' %}" rel="stylesheet">
 	<style>
 		body {
 			background-color: #F8F8F8;
@@ -36,27 +41,49 @@
 			height: 75px;
 			width: 177px;
 		}
-		div.navbar {
+		.navbar {
 			height: 35px;
 			align-items: center;
 			display: inline-flex;
 			justify-content: space-evenly;
 		}
-		a.link {
+		.Link {
 			background-color: #CD9157;
 			color: #FFFFFF;
 			width: 100px;
 			font: 15px arial;
 			padding: 9px 25px;
 			margin-top: 25px;
-			border: 2px #777777;
+			border: 1px #777777;
 			border-style: hidden solid hidden solid;
 			border-spacing: 0px;
+			white-space: nowrap;
+		}
+		.Form{
+			margin: auto;
+			width: 60%;
+			padding: 10px;
+			font: arial;
+		}
+		.Button{
+			margin-top: 25px;
+			margin-bottom: 25px;
+			margin-left: 15%;
+			background-color: #CD9157;
+			border: none;
+			color: white;
+			padding: 10px 180px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font: bold 35px arial;
 		}
 		footer {
   			background-color: #00415D;
 			height: 100px;
 		}
+		{% block style_block %}
+		{% endblock %}
 	</style>
 </head>
 
@@ -66,32 +93,57 @@
 			<h1 class="title">
 				AIMS
 			</h1>
-			<img class="Logo" src="MSCP logo.png" alt="MSCP Logo" width="1460" height="600">
+			<img class="Logo" src="{% static 'MSCP_logo.png' %}" alt="MSCP Logo" width="1460" height="600">
 		</div>
-		<div class = "navbar">
-			<nav>
-				<a class="link" href="">Project Hub</a>
-				<a class="link" href="">Scope Hub</a>
-				<a class="link" href="">Settings</a>
-				<!--{% if user.level is "Admin" %}-->
-					<a class="link" href="">Report Hub</a>
-				<!--{% endif %}
-				{% if user.level is "Lead" or "Admin" %}-->
-					<a class="link" href="">User Hub</a>
-					<a class="link" href="">User Invitation</a>
-				<!--{% endif %}
-				{% if user.level is "Admin" %}-->
-					<a class="link" href="">Admin</a>
-				<!--{% endif %}-->
-			</nav>
+		<div class = "container">
+			<div class = "navbar">
+				<div class = "row g-0">
+					<div class = "col">
+							<a class="Link" href="">Project Hub</a>
+					</div>
+					<div class = "col">
+						<a class="Link" href="">Scope Hub</a>
+					</div>
+					<div class = "col">
+						<a class="Link" href="">Settings</a>
+					</div>
+					<div class = "col">
+						{% if user.level is "Admin" %}
+							<a class="Link" href="">Report Hub</a>
+						{% endif %}
+					</div>
+					<div class = "col">
+						{% if user.level is "Lead" or "Admin" %}
+							<a class="Link" href="">User Hub</a>
+						{% endif %}
+					</div>
+					<div class = "col">
+						{% if user.level is "Lead" or "Admin" %}
+							<a class="Link" href="">User Invitation</a>
+						{% endif %}
+					</div>
+					<div class = "col">
+						{% if user.level is "Admin" %}
+							<a class="Link" href="">Admin</a>
+						{% endif %}
+					</div>
+				</div>
+			</div>
 		</div>
 		          
 	</header>
-
+	{% block body_block %}
+	{% endblock %}
 	<footer>
 
 	</footer>
-	
+	<!-- Bootstrap Scripts -->
+	<!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>-->
+	<script type="text/javascript" src="{% static 'js/bootsrap.bundle.min.js' %}">
+	{% block script_block %}
+	{% endblock %}
+	</script>
+
 </body>
 
 </html>

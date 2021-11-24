@@ -1,0 +1,291 @@
+﻿{% extends 'universal.html' %}
+{% load static %}
+
+{% block style_block %}
+	.page_title{
+		margin-left: 40%;
+	}
+	.Add{
+	}
+	.card{
+		padding-left: 10px;
+	}
+	.Species_Selector{
+		background-color: #CD9157;
+		color: #FFFFFF;
+		text-align: center;
+		padding: 10px 10px;
+		border: 1px #777777;
+		border-style: hidden solid hidden hidden;
+	}
+	.Location_Selector{
+		background-color: #00415D;
+		color: #FFFFFF;
+		text-align: center;
+		padding: 10px 10px;
+		border: 1px #777777;
+		border-style: hidden solid hidden solid;
+	}
+	.ConMea_Selector{
+		background-color: #00415D;
+		color: #FFFFFF;
+		text-align: center;
+		padding: 10px 10px;
+		border: 1px #777777;
+		border-style: hidden solid hidden solid;
+	}
+	.Goal_Selector{
+		background-color: #00415D;
+		color: #FFFFFF;
+		text-align: center;
+		padding: 10px 10px;
+		border: 1px #777777;
+		border-style: hidden hidden hidden solid;
+	}
+{% endblock %}
+
+
+{% block title_block %}
+Scope Hub
+{% endblock %}
+
+{% block body_block %}
+<div>
+<br>
+<h3 class = "page_title">
+Scope Hub
+</h3>
+<br>
+</div>	
+
+<div>
+
+<div class = "container">
+	<div class = "row g-0">
+		<div class="col">
+			<div id = "Species_Selector" class = "Species_Selector" onclick = "speciesCollapse()">
+				Species/Communities
+			</div>
+		</div>
+		<div class="col">
+			<div id = "Location_Selector"  class = "Location_Selector" onclick = "locationCollapse()">
+				Locations
+			</div>
+		</div>
+		<div class="col">
+			<div id = "ConMea_Selector" class = "ConMea_Selector" onclick = "conMeaCollapse()">
+				Conservation Measures
+			</div>
+		</div>
+		<div class="col">
+			<div id = "Goal_Selector" class = "Goal_Selector" onclick = "goalCollapse()">
+				Goals
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id = "Species">
+	<div class="row pt-2">
+		{% for speCom in SpeciesCommunity %}
+			<div class="col-sm-4 col-md-2 col-lg-2">
+				<a href="{% url 'scopes:speCom' speCom.id %}" class = "card" style = "width: 150px; height: 250px; margin: 10px;">
+					<div class = "card-body">
+						<img class = "card-img" src = "{{ speCom.Picture.url }}" alt="connect" width="150" height="115">
+						<h3 class="card-title" style="color: #000000;">{{ speCom.Acronym }}</h3>
+						<h5 class="card-text" style="color: #000000;">{{ speCom.CommonName }}</h5>
+					</div>
+				</a>
+			</div>
+			<br>
+		{% endfor %}
+		<br>
+		<div class = "Add">
+			<a href="{% url 'scopes:speCom' 0 %}" class = "card" style = "width: 150px; background-color: #00415D; margin: 10px;">
+				<div class="card-body" style="margin: 10px;">
+					<img class = "card-img" src="{% static 'noun_Plus_White_2268151.png' %}" width="160" height="115">
+					<h5 class = "card-title" style = "text-decoration: none; color: #FFFFFF; align-items: center;"> Add New Species </h5>
+				</div>
+			</a>
+		</div>
+	</div>
+	<br>
+</div>
+
+<div id = "Locations">
+	<div class="row pt-2">
+		{% for loc in Location %}
+			<div class="col-sm-4 col-md-2">
+				<a href="{% url 'scopes:location' loc.id %}" class = "card" style = "width: 150px; height: 250px; margin: 10px;">
+					<div class = "card-body">
+						<img class = "card-img" src="{% static 'noun_Mountain_70698.png' %}" alt="connect" width="150" height="115">
+						<h3 class="card-title">{{ loc.LocationCode }}</h3>
+						<h5 class="card-text">{{ loc.LocationName }}</h5>
+					</div>
+				</a>
+			</div>
+			<br>
+		{% endfor %}
+		<div class = "Add">
+			<a href="{% url 'scopes:location' 0 %}" class = "card" style = "width: 150px; background-color: #00415D; margin: 10px;" >
+				<div class="card-body">
+					<img class = "card-img" src="{% static 'noun_Plus_White_2268151.png' %}" width="150" height="115">
+					<h5 class = "card-title" style = "text-decoration: none; color: #FFFFFF; align-items: center;"> Add New Location </h5>
+				</div>
+			</a>
+		</div>
+	</div>
+	<br>
+</div>
+
+<div id = "Con_Measure">
+	<div class="row pt-2">
+		{% for conMeas in ConservationMeasure %}
+			<div class="col-sm-4 col-md-2">
+				<a href="{% url 'scopes:conMeasure' conMeas.id %}" class = "card" style = "width: 150px; height: 250px; margin: 10px;">
+					<div class = "card-body">
+						<img class = "card-img" src="{% static 'noun_measure_3170678.png' %}" alt="connect" width="150" height="115">
+						<h3 class="card-title">{{ conMeas.CMCode }}</h3>
+						<h5 class="card-text">{{ speCom.CommonName }}</h5>
+					</div>
+				</a>
+			</div>
+			<br>
+		{% endfor %}
+		<div class = "Add">
+			<a href="{% url 'scopes:conMeasure' 0 %}"class = "card" style = "width: 150px; background-color: #00415D; margin: 10px;">
+				<div class="card-body">
+					<img class = "card-img" src="{% static 'noun_Plus_White_2268151.png' %}" width="150" height="115">
+					<h5 class = "card-title" style = "text-decoration: none; color: #FFFFFF; align-items: center;"> Add New Conservation Measure </h5>
+				</div>
+			</a>
+		</div>
+	</div>
+	<br>
+</div>
+
+<div id = "Goals">
+	<div class="row pt-2">
+		{% for goal in Goal %}
+			<div class="col-sm-4 col-md-2">
+				<a href="{% url 'scopes:goal' goal.id %}" class = "card" style = "width: 150px; height: 250px; margin: 10px;">
+					<div class = "card-body">
+						<img class = "card-img" src="{% static 'noun_Target_3805890.png' %}" alt="connect" width="150" height="115">
+						<h3 class="card-title">{{ goal.GoalName }}</h3>
+						<h5 class="card-text">{{ goal.GoalType }}</h5>
+					</div>
+				</a>
+			</div>
+			<br>
+		{% endfor %}
+		<div class = "Add">
+			<a href="{% url 'scopes:goal' 0 %}"class = "card" style = "width: 150px; background-color: #00415D; margin: 10px;">
+				<div class="card-body">
+					<img class = "card-img" src="{% static 'noun_Plus_White_2268151.png' %}" width="150" height="115">
+					<h5 class = "card-title" style = "text-decoration: none; color: #FFFFFF; align-items: center;"> Add New Goal </h5>
+				</div>
+			</a>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+
+function speciesCollapse() {
+var species = document.getElementById("Species");
+var location = document.getElementById("Locations");
+var conMea = document.getElementById("Con_Measure");
+var goal = document.getElementById("Goals");
+
+var species_selector = document.getElementById("Species_Selector");
+var location_selector = document.getElementById("Location_Selector");
+var conMea_selector = document.getElementById("ConMea_Selector");
+var goal_selector = document.getElementById("Goal_Selector");
+
+
+species.style.display = "block";
+location.style.display = "none";
+conMea.style.display = "none";
+goal.style.display = "none";
+
+species_selector.style.backgroundColor = "#CD9157";
+location_selector.style.backgroundColor = "#00415D";
+conMea_selector.style.backgroundColor = "#00415D";
+goal_selector.style.backgroundColor = "#00415D";
+
+}
+
+function locationCollapse() {
+var species = document.getElementById("Species");
+var location = document.getElementById("Locations");
+var conMea = document.getElementById("Con_Measure");
+var goal = document.getElementById("Goals");
+
+var species_selector = document.getElementById("Species_Selector");
+var location_selector = document.getElementById("Location_Selector");
+var conMea_selector = document.getElementById("ConMea_Selector");
+var goal_selector = document.getElementById("Goal_Selector");
+
+
+species.style.display = "none";
+location.style.display = "block";
+conMea.style.display = "none";
+goal.style.display = "none";
+
+species_selector.style.backgroundColor = "#00415D";
+location_selector.style.backgroundColor = "#CD9157";
+conMea_selector.style.backgroundColor = "#00415D";
+goal_selector.style.backgroundColor = "#00415D";
+
+}
+
+function conMeaCollapse() {
+var species = document.getElementById("Species");
+var location = document.getElementById("Locations");
+var conMea = document.getElementById("Con_Measure");
+var goal = document.getElementById("Goals");
+
+var species_selector = document.getElementById("Species_Selector");
+var location_selector = document.getElementById("Location_Selector");
+var conMea_selector = document.getElementById("ConMea_Selector");
+var goal_selector = document.getElementById("Goal_Selector");
+
+
+species.style.display = "none";
+location.style.display = "none";
+conMea.style.display = "block";
+goal.style.display = "none";
+
+species_selector.style.backgroundColor = "#00415D";
+location_selector.style.backgroundColor = "#00415D";
+conMea_selector.style.backgroundColor = "#CD9157";
+goal_selector.style.backgroundColor = "#00415D";
+
+}
+
+function goalCollapse() {
+var species = document.getElementById("Species");
+var location = document.getElementById("Locations");
+var conMea = document.getElementById("Con_Measure");
+var goal = document.getElementById("Goals");
+
+var species_selector = document.getElementById("Species_Selector");
+var location_selector = document.getElementById("Location_Selector");
+var conMea_selector = document.getElementById("ConMea_Selector");
+var goal_selector = document.getElementById("Goal_Selector");
+
+
+species.style.display = "none";
+location.style.display = "none";
+conMea.style.display = "none";
+goal.style.display = "block";
+
+species_selector.style.backgroundColor = "#00415D";
+location_selector.style.backgroundColor = "#00415D";
+conMea_selector.style.backgroundColor = "#00415D";
+goal_selector.style.backgroundColor = "#CD9157";
+
+}
+
+</script>
+{% endblock %}
