@@ -4,7 +4,7 @@ from django.forms import TextInput
 from django.contrib.auth.models import User
 
 class LoginForm(forms.ModelForm):
-    userName = forms.CharField(required = True, widget=forms.TextInput(attrs={'style': 'width: 100%;', 'class': 'form-control'}))
+    userName = forms.CharField(required = True, widget=forms.TextInput(attrs={'style': 'width: 100%; font: arial;', 'class': 'form-control'}))
     password = forms.CharField(required = True, widget=forms.PasswordInput(attrs={'style': 'width: 100%;', 'class': 'form-control'}))
     
     class Meta: 
@@ -13,7 +13,7 @@ class LoginForm(forms.ModelForm):
 
 
 class CreateUserForm(forms.ModelForm):
-    username = forms.CharField(label='User Name', required = True, widget=forms.TextInput(attrs={'style': 'width: 100%; font-family: Arial;', 'class': 'form-control'}))
+    username = forms.CharField(label='User Name', required = True, widget=forms.TextInput(attrs={'style': 'width: 100%; font: arial;', 'class': 'form-control'}))
     password = forms.CharField(label='Password', required = True, widget=forms.PasswordInput(attrs={'style': 'width: 100%;', 'class': 'form-control'}))
     passwordConfirm = forms.CharField(label='Confirm Password', required = True, widget=forms.PasswordInput(attrs={'style': 'width: 100%;', 'class': 'form-control'}))
     email = forms.CharField(label='Email', required = True, widget=forms.TextInput(attrs={'style': 'width: 100%;', 'class': 'form-control'}))
