@@ -1,0 +1,39 @@
+﻿{% extends 'universal.html' %}
+{% load static %}
+<!DOCTYPE html>
+
+{% block style_block %}
+	.unlock{
+		background-color: #ffffff;
+		border: none;
+		display: block;
+		margin: auto;
+	}
+	.lock{
+		background-color: #ffffff;
+		border: none;
+		display: none;
+		margin: auto;
+	}
+{% endblock %}
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+{% block body_block %}
+<br>
+
+<div class = "Form">
+	<form id = "goal_adder_form" enctype="multipart/form-data" action = "{% url 'projects:goalAdder' project_ID %}" method = "post">
+		{% csrf_token %}
+		{{ goal_adder_form.as_p }}
+		<input class = "Button" type = "submit" value = "Submit">
+	</form>
+</div>
+
+<script type="text/javascript">
+
+</script>
+{% endblock %}
+</html>

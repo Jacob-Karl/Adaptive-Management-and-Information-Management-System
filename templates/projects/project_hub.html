@@ -1,0 +1,62 @@
+﻿{% extends 'universal.html' %}
+{% load static %}
+
+{% block style_block %}
+	.page_title{
+		margin-left: 40%;
+	}
+	.Add{
+	}
+	.card{
+		padding-left: 10px;
+	}
+{% endblock %}
+
+
+{% block title_block %}
+Project Hub
+{% endblock %}
+
+{% block body_block %}
+<div>
+<br>
+<h3 class = "page_title">
+Project Hub
+</h3>
+<br>
+</div>	
+
+<div>
+
+<div id = "Project">
+	<div class="row pt-2">
+		{% for project in All_Projects %}
+			<div class="col-sm-4 col-md-2 col-lg-2">
+				<a href="{% url 'projects:project' project.id %}" class = "card" style = "width: 150px; height: 250px; margin: 10px;">
+					<div class = "card-body">
+						<img class = "card-img" src = "{% static 'noun_Book_2342158.png' %}" alt="connect" width="150" height="115">
+						<h3 class="card-title" style="color: #000000;">{{ project.WorktaskID }}</h3>
+						<h5 class="card-text" style="color: #000000;">{{ project.ProjectName }}</h5>
+					</div>
+				</a>
+			</div>
+			<br>
+		{% endfor %}
+		<br>
+		<div class = "Add">
+			<a href="{% url 'projects:project' 0 %}" class = "card" style = "width: 150px; background-color: #00415D; margin: 10px;">
+				<div class="card-body" style="margin: 10px;">
+					<img class = "card-img" src="{% static 'noun_Plus_White_2268151.png' %}" width="160" height="115">
+					<h5 class = "card-title" style = "text-decoration: none; color: #FFFFFF; align-items: center;"> Add New Project </h5>
+				</div>
+			</a>
+		</div>
+	</div>
+	<br>
+</div>
+
+
+<script type="text/javascript">
+
+</script>
+{% endblock %}
