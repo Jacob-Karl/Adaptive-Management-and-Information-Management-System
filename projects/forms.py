@@ -36,6 +36,34 @@ class TriggerHelperForm(forms.Form):
     class Meta:
         model = Trigger
         fields = ()
+        
+class OutputHelperForm(forms.Form):
+    class Meta:
+        model = Output
+        fields = ()
+        
+class ObjectiveHelperForm(forms.Form):
+    class Meta:
+        model = Objective
+        fields = ()
+
+class SpeComAdderForm(forms.ModelForm):
+    SpeComs = forms.ModelMultipleChoiceField(queryset=SpeciesCommunity.objects.all(), widget=forms.CheckboxSelectMultiple)
+    class Meta:
+        model = Project
+        fields = ('SpeComs',)
+        
+class ConMeasAdderForm(forms.ModelForm):
+    ConMeas = forms.ModelMultipleChoiceField(queryset=ConservationMeasure.objects.all(), widget=forms.CheckboxSelectMultiple)
+    class Meta:
+        model = Project
+        fields = ('ConMeas',)
+        
+class LocationAdderForm(forms.ModelForm):
+    Locations = forms.ModelMultipleChoiceField(queryset=Location.objects.all(), widget=forms.CheckboxSelectMultiple)
+    class Meta:
+        model = Project
+        fields = ('Locations',)
 
 class GoalAdderForm(forms.ModelForm):
     Goals = forms.ModelMultipleChoiceField(queryset=Goal.objects.all(), widget=forms.CheckboxSelectMultiple)
