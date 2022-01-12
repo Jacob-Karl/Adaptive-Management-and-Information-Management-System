@@ -83,6 +83,75 @@
 			</a>
 		</div>
 	</div>
+
+	<div class="row pt-2">
+	{% for speCom in SpeComs %}
+		<div class="col-sm-4 col-md-2 col-lg-3">
+			<a class = "card" style = "width: 150px; height: 250px; margin: 10px;">
+				<div class = "card-body">
+					<img class = "card-img" src = "{% static 'noun_Book_2342158.png' %}" alt="connect" width="150" height="115">
+					<h3 class="card-title" style="color: #000000;">{{ speCom.Acronym }}</h3>
+				</div>
+			</a>
+		</div>
+		<br>
+	{% endfor %}
+	<div class = "SpeComs">
+		<div class = "Title Card">
+			SpeCom
+		</div>
+		<div>
+			<a href="{% url 'projects:speComAdder' project_ID %}" class = "card" style = "width: 150px; background-color: #00415D; margin: 10px;">
+
+			</a>
+		</div>
+	</div>
+
+	<div class="row pt-2">
+	{% for conMeas in ConMeas %}
+		<div class="col-sm-4 col-md-2 col-lg-3">
+			<a class = "card" style = "width: 150px; height: 250px; margin: 10px;">
+				<div class = "card-body">
+					<img class = "card-img" src = "{% static 'noun_Book_2342158.png' %}" alt="connect" width="150" height="115">
+					<h3 class="card-title" style="color: #000000;">{{ conMeas.Acronym }}</h3>
+				</div>
+			</a>
+		</div>
+		<br>
+	{% endfor %}
+	<div class = "ConMeas">
+		<div class = "Title Card">
+			ConMeas
+		</div>
+		<div>
+			<a href="{% url 'projects:conMeasAdder' project_ID %}" class = "card" style = "width: 150px; background-color: #00415D; margin: 10px;">
+
+			</a>
+		</div>
+	</div>
+
+	<div class="row pt-2">
+	{% for location in Locations %}
+		<div class="col-sm-4 col-md-2 col-lg-3">
+			<a class = "card" style = "width: 150px; height: 250px; margin: 10px;">
+				<div class = "card-body">
+					<img class = "card-img" src = "{% static 'noun_Book_2342158.png' %}" alt="connect" width="150" height="115">
+					<h3 class="card-title" style="color: #000000;">{{ location.LocationName }}</h3>
+				</div>
+			</a>
+		</div>
+		<br>
+	{% endfor %}
+	<div class = "Locations">
+		<div class = "Title Card">
+			Locations
+		</div>
+		<div>
+			<a href="{% url 'projects:locationAdder' project_ID %}" class = "card" style = "width: 150px; background-color: #00415D; margin: 10px;">
+
+			</a>
+		</div>
+	</div>
 </div>
 
 
