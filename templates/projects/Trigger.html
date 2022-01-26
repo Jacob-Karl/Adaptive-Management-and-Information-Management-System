@@ -15,6 +15,18 @@
 		display: none;
 		margin: auto;
 	}
+	.Title_Card{
+		margin-top: 25px;
+		margin-bottom: 25px;
+		background-color: #00415D;
+		border: none;
+		color: white;
+		padding: 10px;
+		width: 100%;
+		text-align: center;
+		text-decoration: none;
+		font: bold 25px arial;
+	}
 {% endblock %}
 
 <head>
@@ -33,8 +45,33 @@
 	<form id = "trigger_form" enctype="multipart/form-data" action = "{% url 'projects:trigger' trigger_ID %}" method = "post">
 		{% csrf_token %}
 		{{ trigger_form.as_p }}
-		<input class = "Button" type = "submit" value = "Submit">
+		<input class = "Button" type = "submit" name = "Submit" value = "Submit">
 	</form>
+
+	<div class = "Title_Card">
+		Trigger Status
+	</div>
+	<div class="row pt-2">
+	{% for triggerStatus in TriggerStatus %}
+		<div class="col-sm-4 col-md-2 col-lg-3">
+			<a href="{% url 'projects:triggerStatus' triggerStatus.id %}" class = "card" style = "width: 150px; height: 250px; margin: 10px;">
+				<div class = "card-body">
+					<img class = "card-img" src = "{% static 'noun_Book_2342158.png' %}" alt="connect" width="150" height="115">
+					<h3 class="card-title" style="color: #000000;">{{ triggerStatus.TriggerName }}</h3>
+				</div>
+			</a>
+		</div>
+		<br>
+	{% endfor %}
+	<div class = "TriggerStatus">
+		<div>
+			<form id = "trigger_status_helper_form" enctype="multipart/form-data" action = "{% url 'projects:trigger' trigger_ID %}" method = "post">
+				{% csrf_token %}
+				{{ trigger_status_helper_form }}
+				<input class = "Card" type = "submit" name = "add_Trigger_Status" value = "Add Trigger Status">
+			</form>
+		</div>
+	</div>
 </div>
 
 <script type="text/javascript">
