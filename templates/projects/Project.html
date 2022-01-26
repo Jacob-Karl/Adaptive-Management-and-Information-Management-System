@@ -15,6 +15,21 @@
 		display: none;
 		margin: auto;
 	}
+	.Title_Card{
+		margin-top: 25px;
+		margin-bottom: 25px;
+		background-color: #00415D;
+		border: none;
+		color: white;
+		padding: 10px;
+		width: 100%;
+		text-align: center;
+		text-decoration: none;
+		font: bold 25px arial;
+	}
+	.Card{
+	
+	}
 {% endblock %}
 
 <head>
@@ -36,6 +51,9 @@
 		<input class = "Button" type = "submit" name = "project_Submit" value = "Submit">
 	</form>
 
+	<div class = "Title_Card">
+		Trigger
+	</div>
 	<div class="row pt-2">
 	{% for trigger in Triggers %}
 		<div class="col-sm-4 col-md-2 col-lg-3">
@@ -49,9 +67,7 @@
 		<br>
 	{% endfor %}
 	<div class = "Trigger">
-		<div class = "Title Card">
-			Trigger
-		</div>
+
 		<div>
 			<form id = "trigger_helper_form" enctype="multipart/form-data" action = "{% url 'projects:project' project_ID %}" method = "post">
 				{% csrf_token %}
@@ -61,9 +77,62 @@
 		</div>
 	</div>
 
+	<div class = "Title_Card">
+		Outputs
+	</div>
+	<div class="row pt-2">
+	{% for output in Outputs %}
+		<div class="col-sm-4 col-md-2 col-lg-3">
+			<a href="{% url 'projects:output' output.id %}" class = "card" style = "width: 150px; height: 250px; margin: 10px;">
+				<div class = "card-body">
+					<img class = "card-img" src = "{% static 'noun_Book_2342158.png' %}" alt="connect" width="150" height="115">
+					<h3 class="card-title" style="color: #000000;">{{ output.OutputTitle }}</h3>
+				</div>
+			</a>
+		</div>
+		<br>
+	{% endfor %}
+	<div class = "Output">
+		<div>
+			<form id = "output_helper_form" enctype="multipart/form-data" action = "{% url 'projects:project' project_ID %}" method = "post">
+				{% csrf_token %}
+				{{ output_helper_form }}
+				<input class = "Card" type = "submit" name = "add_Output" value = "Add Output">
+			</form>
+		</div>
+	</div>
+
+	<div class = "Title_Card">
+		Objectives
+	</div>
+	<div class="row pt-2">
+	{% for objective in Objectives %}
+		<div class="col-sm-4 col-md-2 col-lg-3">
+			<a href="{% url 'projects:objective' objective.id %}" class = "card" style = "width: 150px; height: 250px; margin: 10px;">
+				<div class = "card-body">
+					<img class = "card-img" src = "{% static 'noun_Book_2342158.png' %}" alt="connect" width="150" height="115">
+					<h3 class="card-title" style="color: #000000;">{{ objective.ObjName }}</h3>
+				</div>
+			</a>
+		</div>
+		<br>
+	{% endfor %}
+	<div class = "Objective">
+		<div>
+			<form id = "objective_helper_form" enctype="multipart/form-data" action = "{% url 'projects:project' project_ID %}" method = "post">
+				{% csrf_token %}
+				{{ objective_helper_form }}
+				<input class = "Card" type = "submit" name = "add_Objective" value = "Add Objective">
+			</form>
+		</div>
+	</div>
+
+	<div class = "Title_Card">
+		Goals
+	</div>
 	<div class="row pt-2">
 	{% for goal in Goals %}
-		<div class="col-sm-4 col-md-2 col-lg-3">
+		<div class="col-sm-10 col-md-10 col-lg-3">
 			<a class = "card" style = "width: 150px; height: 250px; margin: 10px;">
 				<div class = "card-body">
 					<img class = "card-img" src = "{% static 'noun_Book_2342158.png' %}" alt="connect" width="150" height="115">
@@ -74,9 +143,6 @@
 		<br>
 	{% endfor %}
 	<div class = "Goals">
-		<div class = "Title Card">
-			Goal
-		</div>
 		<div>
 			<a href="{% url 'projects:goalAdder' project_ID %}" class = "card" style = "width: 150px; background-color: #00415D; margin: 10px;">
 
@@ -84,6 +150,9 @@
 		</div>
 	</div>
 
+	<div class = "Title_Card">
+		Species Communities
+	</div>
 	<div class="row pt-2">
 	{% for speCom in SpeComs %}
 		<div class="col-sm-4 col-md-2 col-lg-3">
@@ -97,9 +166,6 @@
 		<br>
 	{% endfor %}
 	<div class = "SpeComs">
-		<div class = "Title Card">
-			SpeCom
-		</div>
 		<div>
 			<a href="{% url 'projects:speComAdder' project_ID %}" class = "card" style = "width: 150px; background-color: #00415D; margin: 10px;">
 
@@ -107,22 +173,22 @@
 		</div>
 	</div>
 
+	<div class = "Title_Card">
+		Conservation Measures
+	</div>
 	<div class="row pt-2">
 	{% for conMeas in ConMeas %}
 		<div class="col-sm-4 col-md-2 col-lg-3">
 			<a class = "card" style = "width: 150px; height: 250px; margin: 10px;">
 				<div class = "card-body">
 					<img class = "card-img" src = "{% static 'noun_Book_2342158.png' %}" alt="connect" width="150" height="115">
-					<h3 class="card-title" style="color: #000000;">{{ conMeas.Acronym }}</h3>
+					<h3 class="card-title" style="color: #000000;">{{ conMeas.CMCode }}</h3>
 				</div>
 			</a>
 		</div>
 		<br>
 	{% endfor %}
 	<div class = "ConMeas">
-		<div class = "Title Card">
-			ConMeas
-		</div>
 		<div>
 			<a href="{% url 'projects:conMeasAdder' project_ID %}" class = "card" style = "width: 150px; background-color: #00415D; margin: 10px;">
 
@@ -130,6 +196,9 @@
 		</div>
 	</div>
 
+	<div class = "Title_Card">
+		Locations
+	</div>
 	<div class="row pt-2">
 	{% for location in Locations %}
 		<div class="col-sm-4 col-md-2 col-lg-3">
@@ -143,9 +212,6 @@
 		<br>
 	{% endfor %}
 	<div class = "Locations">
-		<div class = "Title Card">
-			Locations
-		</div>
 		<div>
 			<a href="{% url 'projects:locationAdder' project_ID %}" class = "card" style = "width: 150px; background-color: #00415D; margin: 10px;">
 

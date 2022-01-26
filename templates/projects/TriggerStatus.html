@@ -15,6 +15,7 @@
 		display: none;
 		margin: auto;
 	}
+
 {% endblock %}
 
 <head>
@@ -30,9 +31,9 @@
 	<img src = "{% static 'noun_Unlock_99.png' %}" alt="connect" width="50" height="50"> 
 </button>
 <div class = "Form">
-	<form id = "species_community_form" enctype="multipart/form-data" action = "{% url 'scopes:speCom' speCom_ID %}" method = "post">
+	<form id = "trigger_status_form" enctype="multipart/form-data" action = "{% url 'projects:triggerStatus' trigger_status_ID %}" method = "post">
 		{% csrf_token %}
-		{{ spe_com_form.as_p }}
+		{{ trigger_status_form.as_p }}
 		<input class = "Button" type = "submit" value = "Submit">
 	</form>
 </div>
@@ -40,7 +41,7 @@
 <script type="text/javascript">
 
 function lockIt(){
-	const elements = ['TargetType','Acronym','CommonName','ScientificName','ITISTSN','CommunityName','Synonyms','Comments']
+	const elements = ['ReportingDate','StatusTrend','MgmtInterp','MgmtResponse']
 	elements.forEach(element => lockItHelper(element));
 
 	var lock_button = document.getElementById("lock");
@@ -57,7 +58,7 @@ function lockItHelper(element){
 
 
 function unlockIt(){
-	const elements = ['TargetType','Acronym','CommonName','ScientificName','ITISTSN','CommunityName','Synonyms','Comments']
+	const elements = ['ReportingDate','StatusTrend','MgmtInterp','MgmtResponse']
 	elements.forEach(element => unlockItHelper(element));
 
 	var lock_button = document.getElementById("lock");

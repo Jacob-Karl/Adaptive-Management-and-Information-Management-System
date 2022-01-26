@@ -40,7 +40,7 @@
 <script type="text/javascript">
 
 function lockIt(){
-	const elements = ['OutputType','OutputAuthors','OutputDate','OutputTitle','OutputVersion','OutputDescription','OutputDOI','OutputCitation','OutputURI','OutputConstraints',]
+	const elements = ['OutputType','OutputAuthors','OutputDate','OutputTitle','OutputVersion','OutputDescription','OutputDOI','OutputCitation','OutputURI','OutputConstraints']
 	elements.forEach(element => lockItHelper(element));
 
 	var lock_button = document.getElementById("lock");
@@ -57,7 +57,7 @@ function lockItHelper(element){
 
 
 function unlockIt(){
-	const elements = ['TargetType','Acronym','CommonName','ScientificName','ITISTSN','CommunityName','Synonyms','Comments']
+	const elements = ['OutputType','OutputAuthors','OutputDate','OutputTitle','OutputVersion','OutputDescription','OutputDOI','OutputCitation','OutputURI','OutputConstraints']
 	elements.forEach(element => unlockItHelper(element));
 
 	var lock_button = document.getElementById("lock");
