@@ -37,7 +37,7 @@ class Organization(models.Model):
     Phone = models.CharField(max_length=20)
     
 class Contributor(models.Model):
-    ProjectID = models.OneToOneField('projects.Project', on_delete=models.CASCADE)
+    #ProjectID = models.OneToOneField('projects.Project', on_delete=models.CASCADE)
     PeopleID = models.ManyToManyField(Person)
     OrganizationID = models.ManyToManyField(Organization)
     
