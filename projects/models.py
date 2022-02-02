@@ -1,7 +1,7 @@
 from django.db import models
 from django import forms
-from user_functions.models import *
-from scopes.models import *
+#from user_functions.models import *
+#from scopes.models import *
 
 
 # Create your models here.
