@@ -1,8 +1,8 @@
 from django.db import models
 from django import forms
 from django.contrib.auth.models import User
-from scopes.models import *
-from projects.models import *
+#from scopes.models import *
+#from projects.models import *
 
 # Create your models here.
 class Person(models.Model):
