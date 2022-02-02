@@ -1,6 +1,8 @@
 from django.db import models
 from django import forms
 from django.contrib.auth.models import User
+from scopes.models import *
+from projects.models import *
 
 # Create your models here.
 class Person(models.Model):
@@ -33,3 +35,9 @@ class Organization(models.Model):
     Address = models.CharField(max_length=255)
     Email = models.CharField(max_length=100)
     Phone = models.CharField(max_length=20)
+    
+class Contributor(models.Model):
+    ProjectID = models.OneToOneField('projects.Project', on_delete=models.CASCADE)
+    PeopleID = models.ManyToManyField(Person)
+    OrganizationID = models.ManyToManyField(Organization)
+    
