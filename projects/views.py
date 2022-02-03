@@ -212,7 +212,8 @@ def relatedProject(request, related_project_ID):
         project = related_project_Obj.Project.id
         return redirect('/projects/Project/'+str(project)+'/')
     else:
-        return render(request, 'projects/RelatedProject.html', {'related_project_form':related_project_form, 'related_project_ID':related_project_ID})
+        context_dict.update(initial_dict)
+        return render(request, 'projects/RelatedProject.html', context_dict)
 
 @login_required
 def trigger(request, trigger_ID):
@@ -232,9 +233,6 @@ def trigger(request, trigger_ID):
         }
         
         trigger_form = TriggerForm(request.POST or None, initial=initial_dict, instance=trigger_Obj,)
-        
-    print(trigger_Obj.TriggerName)
-    print(trigger_Obj.TriggerStatus.all())
         
     trigger_status_helper_form = TriggerStatusHelperForm()
     context_dict = {
@@ -279,6 +277,11 @@ def triggerStatus(request, trigger_status_ID):
         
         trigger_status_form = TriggerStatusForm(request.POST or None, request.FILES or None, initial=initial_dict, instance=trigger_status_Obj,)
     
+    context_dict = {
+        'trigger_status_form':trigger_status_form,
+        'trigger_status_ID':trigger_status_ID
+    }
+    
     if trigger_status_form.is_valid(): 
         trigger_status = trigger_status_form.save(commit=False)
         trigger_status.save()
@@ -286,7 +289,8 @@ def triggerStatus(request, trigger_status_ID):
         return redirect('/projects/Trigger/'+str(trigger)+'/')
     
     else:
-        return render(request, 'projects/TriggerStatus.html', {'trigger_status_form':trigger_status_form, 'trigger_status_ID':trigger_status_ID})
+        context_dict.update(initial_dict)
+        return render(request, 'projects/TriggerStatus.html', context_dict)
 
 @login_required
 def output(request, output_ID):
@@ -318,7 +322,8 @@ def output(request, output_ID):
         return redirect('/projects/Project/'+str(project)+'/')
     
     else:
-        return render(request, 'projects/Output.html', {'output_form':output_form, 'output_ID':output_ID})
+        context_dict.update(initial_dict)
+        return render(request, 'projects/Output.html', context_dict)
 
 @login_required
 def objective(request, objective_ID):
@@ -441,7 +446,8 @@ def milestoneProgress(request, milestone_progress_ID):
         milestone = milestone_progress_Obj.MilestoneID.id
         return redirect('/projects/Milestone/'+str(milestone)+'/')
     else:
-        return render(request, 'projects/MilestoneProgress.html', {'milestone_progress_form':milestone_progress_form, 'milestone_progress_ID':milestone_progress_ID})
+        context_dict.update(initial_dict)
+        return render(request, 'projects/MilestoneProgress.html', context_dict)
 
 @login_required
 def step(request, step_ID):
@@ -565,4 +571,5 @@ def protocol(request, protocol_ID):
         method = protocol_Obj.MethodID.id
         return redirect('/projects/Milestone/'+str(method)+'/')
     else:
-        return render(request, 'projects/Protocol.html', {'protocol_form':protocol_form, 'protocol_ID':protocol_ID})
+        context_dict.update(initial_dict)
+        return render(request, 'projects/Protocol.html', context_dict)
