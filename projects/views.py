@@ -17,7 +17,10 @@ def hub(request):
 
 @login_required
 def project(request, project_ID):
-            
+    
+    initial_dict = {
+    }
+    
     if project_ID == "0":
         project_form = ProjectForm(request.POST or None)
     
