@@ -19,7 +19,7 @@ def hub(request):
 def project(request, project_ID):
     
     initial_dict = {
-    }
+        }
     
     if project_ID == "0":
         project_form = ProjectForm(request.POST or None)
@@ -50,6 +50,8 @@ def project(request, project_ID):
         }
         
         project_form = ProjectForm(request.POST or None, initial=initial_dict, instance=project_Obj,)
+        print(str(project_form.is_bound) + '1')
+        print('----------------------------------------------')
         
     trigger_helper_form = TriggerHelperForm()
     output_helper_form = OutputHelperForm()
@@ -60,15 +62,22 @@ def project(request, project_ID):
         'project_ID':project_ID
     }    
     
-    if 'add_Trigger' in request.POST:
+    print(str(project_form.is_bound) + '2')
+    print('----------------------------------------------')
+    print(request.POST)
+    print('----------------------------------------------')
+    print(request.GET)
+    
+    if 'add_Trigger' in request.GET:
         new_trigger = Trigger(ProjectID = project_Obj)
         new_trigger.save()
         project_Obj.save()
         project_Obj.Triggers.add(new_trigger)
         context_dict.update(initial_dict)
+        print(str(project_form.is_bound) + '3')
         return render(request, 'projects/Project.html', context_dict)
     
-    elif 'add_Output' in request.POST:
+    elif 'add_Output' in request.GET:
         new_output = Output(ProjectID = project_Obj)
         new_output.save()
         project_Obj.save()
@@ -76,7 +85,7 @@ def project(request, project_ID):
         context_dict.update(initial_dict)
         return render(request, 'projects/Project.html', context_dict)
     
-    elif 'add_Objective' in request.POST:
+    elif 'add_Objective' in request.GET:
         new_objective = Objective(ProjectID = project_Obj)
         new_objective.save()
         project_Obj.save()
@@ -84,7 +93,7 @@ def project(request, project_ID):
         context_dict.update(initial_dict)
         return render(request, 'projects/Project.html', context_dict)    
     
-    elif 'add_Related_Projects' in request.POST:
+    elif 'add_Related_Projects' in request.GET:
         new_related_project = RelatedProject(Project = project_Obj)
         new_related_project.save()
         project_Obj.save()
@@ -241,7 +250,7 @@ def trigger(request, trigger_ID):
         'project_ID':trigger_Obj.ProjectID.id,
     }     
     
-    if 'add_Trigger_Status' in request.POST:
+    if 'add_Trigger_Status' in request.GET:
         new_trigger_status = TriggerStatus(TriggerID = trigger_Obj)
         new_trigger_status.save()
         trigger_Obj.save()
@@ -315,6 +324,12 @@ def output(request, output_ID):
         
         output_form = OutputForm(request.POST or None, request.FILES or None, initial=initial_dict, instance=output_Obj,)
     
+    context_dict = {
+        'output_form':output_form,
+        'output_ID':output_ID,
+        'project_ID':output_Obj.ProjectID.id,
+    }   
+    
     if output_form.is_valid(): 
         output = output_form.save(commit=False)
         output.save()
@@ -354,14 +369,14 @@ def objective(request, objective_ID):
         'project_ID':objective_Obj.ProjectID.id,
     }     
     
-    if 'add_Milestone' in request.POST:
+    if 'add_Milestone' in request.GET:
         new_milestone = Milestone(ObjectiveID = objective_Obj)
         new_milestone.save()
         objective_Obj.save()
         objective_Obj.Milestones.add(new_milestone)
         context_dict.update(initial_dict)
         return render(request, 'projects/Objective.html', context_dict)
-    elif 'add_Step' in request.POST:
+    elif 'add_Step' in request.GET:
         new_step = Step(ObjectiveID = objective_Obj)
         new_step.save()
         objective_Obj.save()
@@ -401,7 +416,7 @@ def milestone(request, milestone_ID):
         'milestone_ID':milestone_ID,
     }     
     
-    if 'add_Milestone_Progress' in request.POST:
+    if 'add_Milestone_Progress' in request.GET:
         new_milestone_progress = MilestoneProgress(MilestoneID = milestone_Obj)
         new_milestone_progress.save()
         milestone_Obj.save()
@@ -477,7 +492,7 @@ def step(request, step_ID):
         'step_ID':step_ID,
     }     
     
-    if 'add_Method' in request.POST:
+    if 'add_Method' in request.GET:
         new_method = Method(StepID = step_Obj)
         new_method.save()
         step_Obj.save()
@@ -523,7 +538,7 @@ def method(request, method_ID):
         'method_ID':method_ID,
     }     
     
-    if 'add_Protocol' in request.POST:
+    if 'add_Protocol' in request.GET:
         new_protocol = Protocol(MethodID = method_Obj)
         new_protocol.save()
         method_Obj.save()
