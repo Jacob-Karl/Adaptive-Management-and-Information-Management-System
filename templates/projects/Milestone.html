@@ -65,7 +65,7 @@
 	{% endfor %}
 	<div class = "Milestone Progress">
 		<div>
-			<form id = "milestone_progress_helper_form" enctype="multipart/form-data" action = "{% url 'projects:milestone' milestone_ID %}" method = "post">
+			<form id = "milestone_progress_helper_form" enctype="multipart/form-data" action = "{% url 'projects:milestone' milestone_ID %}" method = "get">
 				{% csrf_token %}
 				{{ milestone_progress_helper_form }}
 				<input class = "Card" type = "submit" name = "add_Milestone_Progress" value = "Add Milestone Progress">

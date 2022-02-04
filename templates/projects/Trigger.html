@@ -52,12 +52,12 @@
 		Trigger Status
 	</div>
 	<div class="row pt-2">
-	{% for triggerStatus in TriggerStatus %}
+	{% for trigger_status in TriggerStatuses %}
 		<div class="col-sm-4 col-md-2 col-lg-3">
-			<a href="{% url 'projects:triggerStatus' triggerStatus.id %}" class = "card" style = "width: 150px; height: 250px; margin: 10px;">
+			<a href="{% url 'projects:triggerStatus' trigger_status.id %}" class = "card" style = "width: 150px; height: 250px; margin: 10px;">
 				<div class = "card-body">
 					<img class = "card-img" src = "{% static 'noun_Book_2342158.png' %}" alt="connect" width="150" height="115">
-					<h3 class="card-title" style="color: #000000;">{{ triggerStatus.TriggerName }}</h3>
+					<h3 class="card-title" style="color: #000000;">{{ trigger_status.ReportingDate }}</h3>
 				</div>
 			</a>
 		</div>
@@ -65,7 +65,7 @@
 	{% endfor %}
 	<div class = "TriggerStatus">
 		<div>
-			<form id = "trigger_status_helper_form" enctype="multipart/form-data" action = "{% url 'projects:trigger' trigger_ID %}" method = "post">
+			<form id = "trigger_status_helper_form" enctype="multipart/form-data" action = "{% url 'projects:trigger' trigger_ID %}" method = "get">
 				{% csrf_token %}
 				{{ trigger_status_helper_form }}
 				<input class = "Card" type = "submit" name = "add_Trigger_Status" value = "Add Trigger Status">
