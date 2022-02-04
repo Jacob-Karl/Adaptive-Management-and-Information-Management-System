@@ -65,7 +65,7 @@
 	{% endfor %}
 	<div class = "Steps">
 		<div>
-			<form id = "step_helper_form" enctype="multipart/form-data" action = "{% url 'projects:objective' objective_ID %}" method = "post">
+			<form id = "step_helper_form" enctype="multipart/form-data" action = "{% url 'projects:objective' objective_ID %}" method = "get">
 				{% csrf_token %}
 				{{ step_helper_form }}
 				<input class = "Card" type = "submit" name = "add_Step" value = "Add Step">
