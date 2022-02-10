@@ -207,7 +207,7 @@ def relatedProject(request, related_project_ID):
         
         related_project_form = RelatedProjectForm(request.POST or None, request.FILES or None, initial=initial_dict, instance=related_project_Obj,)
     
-    related_project_helper_form = RelatedProjectHelperForm()
+    #related_project_helper_form = RelatedProjectHelperForm()
     
     context_dict = {
         'related_project_form':related_project_form,
