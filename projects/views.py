@@ -50,8 +50,6 @@ def project(request, project_ID):
         }
         
         project_form = ProjectForm(request.POST or None, initial=initial_dict, instance=project_Obj,)
-        print(str(project_form.is_bound) + '1')
-        print('----------------------------------------------')
         
     trigger_helper_form = TriggerHelperForm()
     output_helper_form = OutputHelperForm()
@@ -62,19 +60,16 @@ def project(request, project_ID):
         'project_ID':project_ID
     }    
     
-    print(str(project_form.is_bound) + '2')
-    print('----------------------------------------------')
-    print(request.POST)
-    print('----------------------------------------------')
-    print(request.GET)
-    
     if 'add_Trigger' in request.GET:
         new_trigger = Trigger(ProjectID = project_Obj)
         new_trigger.save()
         project_Obj.save()
         project_Obj.Triggers.add(new_trigger)
         context_dict.update(initial_dict)
-        print(str(project_form.is_bound) + '3')
+        #print(project_form.is_valid())
+        #if project_form.is_valid():
+        project = project_form.save(commit=False)
+        project.save()        
         return render(request, 'projects/Project.html', context_dict)
     
     elif 'add_Output' in request.GET:
@@ -106,6 +101,9 @@ def project(request, project_ID):
             project = project_form.save(commit=False)
             project.save()
             return redirect('/projects/')
+        else:
+            print("Form invalid")
+            return render(request, 'projects/Project.html', context_dict)
     
     else:
         context_dict.update(initial_dict)        
