@@ -1,0 +1,36 @@
+LCR MSCP Adaptive Management Project Plan for C10, Razorback Sucker Rearing Studies
+Template Version 2021-08-13
+PROJECT OVERVIEW TEMPLATE
+Project (Work Task) ID
+C10
+Project (Work Task) Name
+Razorback Sucker Rearing Studies
+Project Lead
+Finnegan, Andrea
+Project Status
+Closed
+Project Start Date
+2006
+Project End Date
+2014
+Project Summary
+The long-term goal of the project is to provide information from research to inform managers of ways to improve the efficiency and effectiveness of the LCR MSCP Fish Augmentation Program. Specifically, the project seeks to evaluate factors affecting rearing of subadult razorback sucker to maximize quantity and quality of razorback sucker produced for the LCR MSCP. The work task is a companion study to Project C11 and may share some of the same locations, source data, and testing staff during implementation. Also, investigations carried out may be conducted at hatcheries identified in Fish Augmentation (Section B).
+Because of similarities in goals and scope with Work Task C61, this Project will be merged with Project C61 in FY15. The proposed activities and corresponding budget estimates for FY15 will likewise be captured under Project C61. This is a logical merger of these work tasks, as information from this type of research will allow the development and testing of conditioned fish as experimental stocking treatments. These treatments will then be used to test whether different types of conditioning will translate to improved survival of stocked fish. Additionally, the sharing of overlapping resources is expected to increase efficiency in implementation and reporting, and it may also reduce overall expenditures.
+Funding provided for this work task is to be used for investigating the rearing and culture practices of razorback sucker. The goal is to investigate ways to accelerate growth and improve post-stocking survival of razorback sucker through manipulation of physical, chemical, and biological attributes of the rearing environment. Project objectives are to: (1) Evaluate factors affecting growth in aquaculture; (2) Evaluate polyculture techniques to maximize rearing capabilities; (3) Identify requirements to rear razorback sucker to 500 mm using existing facilities at the Willow Beach NFH; and (4) Evaluate predator recognition and avoidance training.
+
+Location: Various locations, including hatcheries, rearing ponds, universities, and private research facilities
+Associated Species and Cover Type Targets
+RASU
+Associated Conservation Measures
+RASU3; RASU4; RASU6
+Associated Locations
+Bubbling Ponds National Fish Hatchery; Willow Beach National Fish Hatchery; 
+Project Outputs
+Output Title	Output URL
+Growth of Razorback Sucker at Bubbling Ponds Fish Hatchery, 2009 Annual Report	https://lcrsp.bor.doi.net/reports/final_reports/c10_annrep_2009.pdf
+Growth of Razorback Sucker at Bubbling Ponds Fish Hatchery, 2010 Annual Report	https://lcrsp.bor.doi.net/reports/final_reports/c10_annrep_2010.pdf
+Factors Affecting Growth of Razorback Sucker (Xyrauchen texanus) in Captivity:  Literature Review and Knowledge Assessment  	https://lcrsp.bor.doi.net/reports/final_reports/c10_rasu_growth_2007.pdf
+Effects of Disease Treatments on Growth of Razorback Sucker	https://lcrsp.bor.doi.net/reports/final_reports/c10_dis_tx_rasu_2009.pdf
+The Effects of Capture by Trammel Nets  on Native Arizona Fishes	https://lcrsp.bor.doi.net/reports/final_reports/c10_tram_cap_effects_2008.pdf
+Growth of Razorback Sucker (Xyrauchen texanus) at Bubbling Ponds Fish Hatchery	https://lcrsp.bor.doi.net/reports/final_reports/c10_growth_rasu_2011.pdf
+Razorback Sucker and Bonytail Chub Predator Recognition	https://lcrsp.bor.doi.net/reports/final_reports/c10_pred_rec_2014.pdf

@@ -1,0 +1,32 @@
+LCR MSCP Adaptive Management Project Plan for C05, Effects of Abiotic Factors on Insect Populations in Riparian Restoration Sites
+Template Version 2021-08-10
+PROJECT OVERVIEW TEMPLATE
+Project (Work Task) ID
+C05
+Project (Work Task) Name
+Effects of Abiotic Factors on Insect Populations in Riparian Restoration Sites
+Project Lead
+Ronning, Carrie
+Project Status
+Closed
+Project Start Date
+2006
+Project End Date
+2013
+Project Summary
+The long-term goal of the project is to carry out species research. The specific purpose of the work is to determine the effect of two abiotic factors, water and nutrient contents, on abundances of insects and insectivorous birds and bats covered by the LCR MSCP. Establishing vegetation at restoration sites will not by itself provide habitat for birds and other wildlife. Proper amounts of plant water and other nutrients in plants and insects are needed to support wildlife. Project C05 developed from the Southwestern Willow Flycatcher Prey Base Study (Project C20). Information obtained in these studies will be used in the design and implementation of future habitat creation projects detailed in Section E.
+Eight species of birds and four species of bats included in the LCR MSCP eat insects. Creating and maintaining habitat for these species requires providing an adequate supply of insects for food. This is especially difficult at the LCR MSCP habitat creation sites being developed because riparian vegetation is being planted in non-riparian farmland. Plant-feeding insects respond to water and nutrient concentrations of their plant hosts. Plants with higher water concentrations produce more insects. This increase in phytophagous insects also increases densities of predaceous insects and spiders. Plant nitrogen concentrations similarly affect insect populations. Nutrient concentrations in spiders and insects also may affect foraging by insectivorous birds. Nutrients that vary among spiders and insects include nitrogen, sulfur, and phosphorous. This project will examine the following at LCR MSCP restoration sites: (1) the influence of increased plant-nitrogen content on spider and insect densities, (2) variation in nitrogen, sulfur, and phosphorus among spiders and insects, and (3) the influence of plant water-content on spider and insect densities.
+Associated Species and Cover Type Targets
+WIFL; YBCU; GIFL; GIWO; VEFL; BEVI; YWAR; SUTA; WRBA; WYBA; CLNB; PTBB
+Associated Conservation Measures
+WIFL1; WIFL2; YBCU1; YBCU2; GIFL1; GIWO1; VEFL1; BEVI1; YWAR1; SUTA1; WRBA2; WYBA3; CLNB2; PTBB2
+Associated Locations
+Beal Lake Conservation Area, Havasu NWR; Palo Verde Ecological Reserve; Cibola Valley Conservation Area.
+Project Outputs
+Output Title	
+Effects of Abiotic Factors on Insect Populations in Riparian Restoration Sites, 2007 Annual Report	https://lcrsp.bor.doi.net/reports/final_reports/c05_annrep_2007.pdf
+Effects of Abiotic Factors on Insect Populations in Riparian Restoration Sites, 2008 Annual Report	https://lcrsp.bor.doi.net/reports/final_reports/c05_annrep_2008.pdf
+Effects of Abiotic Factors on Insect Populations in Riparian Restoration Sites, 2009 Annual Report	https://lcrsp.bor.doi.net/reports/final_reports/c05_annrep_2009.pdf
+Effects of Abiotic Factors on Insect Populations in Riparian Restoration Sites, 2010 Annual Report	https://lcrsp.bor.doi.net/reports/final_reports/c05_annrep_2010.pdf
+Effects of Abiotic Factors on Insect Populations in Riparian Restoration Sites, 2011 Annual Report	https://lcrsp.bor.doi.net/reports/final_reports/c05_annrep_2011.pdf
+Effects of Abiotic Factors on Insect Populations in Riparian Restoration Sites, 2012 Annual Report	https://lcrsp.bor.doi.net/reports/final_reports/c05_annrep_2012.pdf

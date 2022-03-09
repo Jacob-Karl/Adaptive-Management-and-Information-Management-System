@@ -1,0 +1,32 @@
+LCR MSCP Adaptive Management Project Plan for C03, Lower Colorado River Multi-Species Conservation Program Covered Species Profile Development
+Template Version 2021-08-13
+PROJECT OVERVIEW TEMPLATE
+Project (Work Task) ID
+C03
+Project (Work Task) Name
+Lower Colorado River Multi-Species Conservation Program Covered Species Profile Development
+Project Lead
+Kokos, Sonja
+Project Status
+Closed
+Project Start Date
+2005
+Project End Date
+2015
+Project Summary
+The long-term goal of the project is to support species research. Specifically, it seeks to assess existing knowledge on each LCR MSCP covered species to determine research needs and habitat requirements for current and future habitat creation projects. Information collected during the literature reviews produced by this project is currently being used to develop future projects, design monitoring programs, design habitat creation projects, and implement the adaptive management process. Information from this work task will be utilized under Project E16.
+To successfully create habitat for LCR MSCP covered species, species accounts have been developed based on extensive literature searches, and they include the most recent scientific information. These accounts include current information about each species’ legal status, life history, distribution, habitat requirements, behavior, and LCR MSCP conservation measures as they relate to the creation and management of the species’ habitats, enabling the successful completion of conservation measures. Species accounts were written for both covered and evaluation species, including known habitat requirements and management concerns. Data gaps were identified to set covered species research priorities. LCR MSCP research and monitoring data needs have been identified for each covered and evaluation species where appropriate. These needs have been prioritized in a 5-year plan and will be completed according to importance, urgency, and cost. Other potential research and monitoring opportunities, either identified through this process or by other scientists or conservation programs, which are outside of the scope and purpose of the LCR MSCP have also been listed in the plan.
+Associated Species and Cover Type Targets
+BEVI; BLRA; BONY; CLNB; CLRA; CRCR; CRTO; DETO; DPMO; ELOW; FLSU; FTHL; GIFL; GIWO; HUCH; LEBI; LLFR; MNSW; NMGS; PTBB; RASU; RLFR; STBU; SUTA; THMI; VEFL; WIFL; WRBA; WYBA; YBCU; YHCR; YWAR
+Associated Conservation Measures
+BEVI1; BLRA1; BLRA2; BONY2; CLNB1; CLNB2; CLRA1; CLRA2; CRCR1; CRCR2; CRTO1; CRTO2; CRTO3; DETO1; DETO2; DPMO1; ELOW1; FLSU1; FTHL1; FTHL2; GIFL1; GIWO1; LEBI1; LLFR1; LLFR2; LLFR3; MNSW1; MNSW2; MRM1; MRM2; MRM3; PTBB1; PTBB2; RASU2; SUTA1; VEFL1; WIFL1; WIFL2; WRBA1; WRBA2; WYBA1; WYBA3; YBCU1; YBCU2; YHCR1; YHCR2; YWAR1
+Associated Locations
+Reach 1; Reach 2; Reach 3; Reach 4; Reach 5; Reach 6; Reach 7
+[Using MSCP standardized location names (refer to separate list of these standardized names), provide a semicolon-separated list of the monitoring and conservation sites (locations) primarily associated with, affected by, or investigated by the Project. (Secondary priorities are addressed later). Do not use hyphenation to indicate lists of locations: list each location separately.]
+Project Outputs
+[Use the table below to identify all LCR MSCP and Cooperator technical reports and other publications that the LCR MSCP website identifies as official Project outputs. This list should be cumulative, spanning the history of the Project, with the oldest report at the top. Add or delete rows at the bottom as needed. The Output Title is the official document title and the Output URL is the hyperlink for the work in the LCR MSCP SharePoint folder containing their technical reports.]
+Output Title	Output URL
+Colorado River Backwaters Enhancement Species Profiles Report	https://lcrsp.bor.doi.net/reports/final_reports/c03_species_profiles_2005.pdf
+Species Accounts for the Lower Colorado River Multi-Species Conservation Program	c03_species_accounts_2008.pdf
+Species Accounts for the Lower Colorado River Multi-Species Conservation Program	https://lcrsp.bor.doi.net/reports/final_reports/c03_species_accounts_2013.pdf
+Northern Mexican Gartersnake (Thamnophis eques megalops) Species Profile	https://lcrsp.bor.doi.net/reports/final_reports/c03_f08_sp_acct_nmgs_2015.pdf

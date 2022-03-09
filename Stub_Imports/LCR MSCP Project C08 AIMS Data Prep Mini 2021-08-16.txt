@@ -1,0 +1,35 @@
+LCR MSCP Adaptive Management Project Plan for C08, Razorback Sucker Survival Studies
+Template Version 2021-08-10
+PROJECT OVERVIEW TEMPLATE
+Project (Work Task) ID
+C08
+Project (Work Task) Name
+Razorback Sucker Survival Studies
+Project Lead
+Burke, Tom
+Project Status
+Closed
+Project Start Date
+2005
+Project End Date
+2009
+Project Summary
+The long-term goal of the project is to assess the overall effectiveness of the RASU stocking program and acquire data on the survival and distribution of RASU released into the LCR to support an adaptive management program. The work is connected to Project B5, as fish being studied are reared at Bubbling Ponds SFH. Data collected during B5 are utilized in D8. Reclamation has stocked more than 100,000 RASU into the Colorado River below Parker Dam since 1997. This project is an assessment of survival, growth, and distribution of these fish. The work is being performed by ASU in cooperation with Reclamation and AGFD. The work consists mainly of netting, electro- shocking, and radio/sonic tagging and tracking of stocked fish to determine survival and distribution. Field sampling is conducted monthly from September to May (nine trips). No sampling occurs during June, July, or August, because high water temperatures exceed safe handling protocols for these fishes. Trip reports are provided to Reclamation following each of the nine sampling trips, and these are summarized into an annual report covering the calendar year (January through December).
+Lower Colorado River fish monitoring efforts during 2005, 2006, and 2007 typically resulted in the capture of tens of thousands of fish each year, of which hundreds were recently stocked RASU (roughly 12,000 RASU stocked each year). However, less than 10 of the RASU captured have been in the river longer than 3 months. The only indication of survival past this first 3 months has occurred in backwater A-10, which is isolated by culverts. RASU larvae were captured in several backwaters, but there was no evidence of recruitment to the juvenile stage. Among 847 different RASU handled, 500 contained PIT tags. Growth of marked fish was rapid, and similar to that recorded for RASU of similar size at other locations including Lake Mohave. Data for backwater A-10 indicate a population decline between spring and autumn, suggesting over-summer mortality. Actions were taken to assess three possible sources for these losses: water quality, bird predation, and fish predation. Because backwaters may have low oxygen levels, reduced dissolved oxygen may be a factor in mortality. Bi- weekly measurements were taken at established stations during the summer. In general, the backwater always had ample areas of adequate dissolved oxygen, suggesting this factor alone is not the likely cause of summer mortality. Summer water temperature was greater than 25°C in all locations and depths, and effects may be compounded with parasitism or disease to stress fish, but again, water temperatures alone were not sufficiently high enough to have been the primary cause for over-summer mortality.
+The database for fish recaptured showed that greater than 21% of fish handled had wounds, suggesting attacks by birds. An investigation on surface imprinting due to surface feeding in the hatchery was initiated. Final results and recommendations are summarized in the FY08 report.
+To assess the role of fish predators, a mark-recapture survey for largemouth bass was performed in A-10. The population estimate was 459, and few fish were greater than 40 cm long. While exceptionally large largemouth bass specimens may impact smaller RASU, this seems unlikely in the A-10 backwater. Attempts were also made to assess flathead catfish numbers in these areas, but insufficient numbers of flathead catfish were captured to support population estimation. This result is consistent with regular monitoring efforts, which suggest few flathead catfish occupy the A-10 backwater.
+Dispersal of fish from A-10 via the downstream culvert pipe was continuously monitored with a remote PIT antenna and scanner. Few fish were recorded exiting the backwater despite much nearby spawning activity.
+A project report was completed and reviewed. The report concluded that overall, survival of RASU in the mainstem Lower Colorado River downstream of Parker Dam is extremely poor to non-existent, and recommends that stocking be limited to flood-plain ponds.
+The project was completed in FY08. Site visits were made with the contractor and the final project report was accepted. A formal oral presentation was made by the contractor to the LCR MSCP Steering Committee in early FY09.
+Associated Species and Cover Type Targets
+RASU
+Associated Conservation Measures
+RASU6
+Associated Locations
+Reach 4; Reach 5
+Project Outputs
+Output Title	Output URL
+Dispersal of Radio-Tagged Razorback Suckers Released into the Lower Colorado River	https://lcrsp.bor.doi.net/reports/final_reports/c08_disp_tag_rasu_2005.pdf
+Survival of Razorback Sucker Stocked into the Lower Colorado River, Final Project Report, October 2004 - December 2005	https://lcrsp.bor.doi.net/reports/final_reports/c08_annrep_2004-2005.pdf
+Survival of Razorback Sucker Stocked into the Lower Colorado River, Final 2006 Annual Report	https://lcrsp.bor.doi.net/reports/final_reports/c08_annrep_2006.pdf
+Survival of Razorback Sucker in the Lower Colorado River, Final Project Report, January 2006 - April 2008	https://lcrsp.bor.doi.net/reports/final_reports/c08_finrep_2006-2008.pdf
