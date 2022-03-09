@@ -1,0 +1,35 @@
+LCR MSCP Adaptive Management Project Plan for C04, Relict Leopard Frog
+Template Version 2021-08-13
+PROJECT OVERVIEW TEMPLATE
+Project (Work Task) ID
+C04
+Project (Work Task) Name
+Relict Leopard Frog
+Project Lead
+Calvert, Allen
+Project Status
+Closed
+Project Start Date
+2006
+Project End Date
+2015
+Project Summary
+The long-term goal of the project is to support existing relict leopard frog conservation programs by providing funding. This is a stand-alone conservation measure as described in the LCR MSCP HCP.  Assistance with and contributions toward existing relict leopard frog research and conservation efforts initiated by the Relict Leopard Frog Conservation Team will be provided under the LCR MSCP. A total of $10,000 per year, for a period of 10 years, will be contributed to the team in order to implement planned, but unfunded, conservation measures.
+Associated Species and Cover Type Targets
+RLFR
+Associated Conservation Measures
+RLFR1
+Associated Locations
+Reach 1
+Project Outputs
+Output Title	Output URL
+Relict Leopard Frog Monitoring, Management, and Research, 2006 Activity Report	https://lcrsp.bor.doi.net/reports/final_reports/c04_annrep_2006.pdf
+Annual 2007 Report on Relict Leopard Frog Monitoring and Management	https://lcrsp.bor.doi.net/reports/final_reports/c04_annrep_2007.pdf
+Relict Leopard Frog Monitoring and Management, 2008 Annual Report	https://lcrsp.bor.doi.net/reports/final_reports/c04_annrep_2008.pdf
+Relict Leopard Frog Monitoring and Management, 2009 Annual Report	https://lcrsp.bor.doi.net/reports/final_reports/c04_annrep_2009-1.pdf
+Relict Leopard Frog Monitoring and Management (Rana onca), 2010 Annual Report	https://lcrsp.bor.doi.net/reports/final_reports/c04_annrep_2010.pdf
+Relict Leopard Frog Monitoring and Management, 2011 Activity Report	https://lcrsp.bor.doi.net/reports/final_reports/c04_annrep_2011.pdf
+Relict Leopard Frog Monitoring and Management, 2012 Annual Report	https://lcrsp.bor.doi.net/reports/final_reports/c04_annrep_2012.pdf
+Relict Leopard Frog Monitoring and Management, 2013 Annual Report	https://lcrsp.bor.doi.net/reports/final_reports/c04_annrep_2013.pdf
+Relict Leopard Frog Monitoring and Management, 2014 Annual Report	https://lcrsp.bor.doi.net/reports/final_reports/c04_annrep_2014.pdf
+Relict Leopard Frog Monitoring and Management, 2015 Annual Report	https://lcrsp.bor.doi.net/reports/final_reports/c04_annrep_2015.pdf

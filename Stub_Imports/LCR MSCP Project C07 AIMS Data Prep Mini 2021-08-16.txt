@@ -1,0 +1,41 @@
+LCR MSCP Adaptive Management Project Plan for C07, Survey and Habitat Characterization for MacNeill's Sootywing
+Template Version 2021-08-10
+PROJECT OVERVIEW TEMPLATE
+Project (Work Task) ID
+C07
+Project (Work Task) Name
+Survey and Habitat Characterization for MacNeill's Sootywing
+Project Lead
+Wiesenborn, Bill
+Project Status
+Closed
+Project Start Date
+2006
+Project End Date
+2010
+Project Summary
+The long-term goal of the project is to carry out species research. Specifically, the purpose of this work task is to survey MacNeill's sootywing distribution along the lower Colorado River and determine habitat requirements for the species. Results of this study will be used in future work tasks to create habitat for MacNeill’s sootywing. This work task will be phased out and replaced by Project F06 during FY09-10. Project F06 monitors sootywing populations in restoration sites. The butterfly and its host plant, quail brush (Atriplex lentiformis), will be surveyed within the LCR MSCP boundaries. Annual surveys will cover one third of the flood plain. Surveys will record GPS coordinates of stands of quail brush. Species will be detected as eggs, larvae, pupae, or adults on host plants and as adults on nearby nectar sources. Surveys will be conducted during April to October when adults are intermittently present (2-3 generations occur per season).
+The species habitat requirements will be determined concurrent with surveys by measuring site factors affecting sootywing presence or absence and density. Possible site factors are: 1. plant water and nitrogen content 2. plant species used as nectar sources 3. availability of nearby nectar sources (distances, amounts) 4. area of A. lentiformis stands 5. elevation and latitude.
+
+Sites were surveyed between Parker Dam and Imperial Dam during 2006 and between Imperial Dam and the Southerly International Boundary with Mexico during 2007. The number of adults and their behaviors (nectaring, oviposition, etc.) were counted on eight dates monthly from April to October at Cibola NWR during 2007. One flight of adults was observed, peaking at the end of June. The most common behavior observed was flying within quail brush plants. Adults were found feeding at flowers of six plant species: heliotrope, sea purslane, tamarisk, honey mesquite, alkali-mallow, and arrowweed. Heliotrope was the most frequent nectar source during spring, and tamarisk was the most frequent nectar source during summer. A seventh plant species used for nectar was identified south of Yuma — the weedy succulent Portulaca oleracea.
+A study was completed of host-plant selection by ovipositing sootywings that began in 2006 at Cibola NWR. The effects of plant size (canopy radius), plant water content, and leaf water content on host acceptance were tested. Percentages of plant water and leaf nitrogen were positively correlated. Acceptance of plants was influenced most by plant size and leaf nitrogen content acting simultaneously. All plants that exceeded 1.6 m in canopy radius, 64% in water content, and 3.2% in leaf nitrogen received eggs. Preliminary recommendations for restoring sootywing habitat based on our survey and study results were presented in the FY07 Annual Report.
+Surveys were completed for sootywings and their host plants by surveying between the Muddy River inflow into Lake Mead and Parker Dam during 2008. In total, 102 localities were identified as supporting stands of host plants. GPS coordinates for these sites were entered into the Geographic Information System. Sootywings were found at 54 of the host plant localities.
+A comparison of nectaring frequencies was also completed for potted Heliotropium curassavicum (heliotrope) and Sesuvium verrucosum (sea purslane) plants. Nectarings per plant did not differ between plant species, but flowers were more often visited in sunlight. Nectarings per flower were greater on S. verrucosum, the species with fewer flowers per plant. Amounts of nectar remaining in heliotrope flowers after landings by adults were also measured. Compared with males, female sootywings landed on plants supporting inflorescences with more nectar. Amounts of nectar in flowers decreased after landings by females but not after landings by males.
+Two studies were performed in FY09 examining the habitat requirements for MacNeill’s sootywing. In the first study in FY09, oviposition and larval survival were compared on Atriplex lentiformis, the sootywing’s known host plant, and Atriplex canescens, a related species also found along the lower Colorado River. The numbers of ovipositions on six potted plants of each species were compared at Cibola NWR. Sootywings only oviposited on A. lentiformis. Larval survival was compared on the two plant species by transferring 15 first-instar larvae to three potted plants of each species. Larvae only survived on A. lentiformis. Oviposition and survival only on A. lentiformis confirms the species as the sootywing’s primary host plant.
+In the second study in FY09, the visual and olfactory attraction of sootywing adults to flowers was examined by comparing responses to flower models. Sootywings were most attracted to models presenting blue and yellow together, followed by blue models and yellow models. Sootywings were not attracted to floral scent. Adult sootywings appear to locate flowers primarily by color. Attraction to these two colors agrees with our observations of the plant species producing flowers visited by sootywings.
+Most work in FY10 consisted of analyzing data collected during summer 2009 and writing reports. An additional project during 2010 will be to examine sootywing movement or dispersal. Designing habitat would be aided by knowing how far sootywings move around within host plant patches, and by determining patch size needed to retain sootywing populations.
+Location: Floodplain of entire lower Colorado River, dependent on permission by landowners.
+
+Associated Species and Cover Type Targets
+MNSW
+Associated Conservation Measures
+MNSW1; MNSW2
+Associated Locations
+Reach 1; Reach 2; Reach 3; Reach 4; Reach 5; Reach 6; Reach 7
+Project Outputs
+Output Title	Output URL
+Selection of Atriplex lentiformis Host Plants by Hesperopsis gracielae (Lepidoptera: Hesperiidae)	http://www.fcla.edu/FlaEnt/fe91p192.pdf
+Survey and Habitat Characterization for MacNeill’s Sootywing, 2007 Annual Report	https://lcrsp.bor.doi.net/reports/final_reports/c07_annrep_2007.pdf
+Survey and Habitat Characterization for MacNeill’s Sootywing, 2008 Annual Report	https://lcrsp.bor.doi.net/reports/final_reports/c07_annrep_2008.pdf
+Survey and Habitat Characterization for MacNeill’s Sootywing, 2009 Annual Report	https://lcrsp.bor.doi.net/reports/final_reports/c07_annrep_2009.pdf
+Survey and Habitat Characterization for MacNeill’s Sootywing, 2010 Annual Report	https://lcrsp.bor.doi.net/reports/final_reports/c07_annrep_2010.pdf

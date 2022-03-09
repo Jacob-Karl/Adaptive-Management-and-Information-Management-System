@@ -1,0 +1,32 @@
+LCR MSCP Adaptive Management Project Plan for C06, Insectivore Prey Base Abundance and Diversity in Conservation Areas
+Template Version 2021-08-13
+PROJECT OVERVIEW TEMPLATE
+Project (Work Task) ID
+C06
+Project (Work Task) Name
+Insectivore Prey Base Abundance and Diversity in Conservation Areas
+Project Lead
+Raulston, Barbara
+Project Status
+Closed
+Project Start Date
+2006
+Project End Date
+2014
+Project Summary
+The long-term goal of the project is species research. Specifically, the purpose of this study is to determine the presence of insect and arachnid species at LCR MSCP conservation areas and the Bill Williams River NWR and to estimate abundances by species. Few restoration programs address arthropods as part of habitat development and restoration projects. Wildlife species key in on riparian habitat because of microclimate conditions, canopy cover, and the prey abundance provided. Additionally, healthy riparian habitats are linked to the vital roles arthropods play as pollinators, decomposers, herbivores, seed dispersers, and food sources.
+Several LCR MSCP covered species are insectivores and may be selecting breeding habitat based on prey availability. According to the LCR MSCP HCP, created habitat will be specifically managed to ensure production of the LCR MSCP covered species insect prey base.
+Several habitat creation sites that are of the correct structure for several covered species are now available as a result of LCR MSCP implementation. Most of these habitat creation sites used mass planting techniques to establish target tree densities similar to known densities of covered species habitat. This technique has been effective and successful for the development of habitat for the LCR MSCP, but it circumvents the typical and gradual stages of plant succession (i.e., changes in species composition over time) that take place as habitats develop slowly over time.
+These gradual processes allow for a simultaneous succession of arthropod species. Data are needed to show which arthropod species are currently present or absent at LCR MSCP sites.
+LCR MSCP habitat creation sites, in time, are expected to support an abundance and diversity of insects associated with more natural habitats, thus contributing to the availability of prey for LCR MSCP covered insectivorous species (LCR MSCP HCP).
+The presence/absence and abundance of arthropods at LCR MSCP sites will be further studied in order to fill in gaps in the knowledge of arthropod species, thereby contributing to the routine evaluation of habitat health and habitat use by LCR MSCP covered species. Surveys will be conducted at existing vegetation monitoring plot locations. Insect species richness and estimates of abundance will be determined at LCR MSCP vegetation monitoring plots. In order to develop a more complete picture of the diversity of insects and arachnids that are using LCR MSCP habitat plus a natural area in the same region, all crawling, leaf-dwelling, and flying insects and arachnids found during the surveys will be identified to species or logged with a unique identifier if identification is not possible.
+We identified insects collected from salt cedar (Tamarix ramosissima) flowers during FY06 at Topock Marsh, Arizona, where earlier work identified insects eaten by southwestern willow flycatcher. We also estimated specificities of insects to tamarisk flowers by determining proportions of pollen carried comprised of tamarisk pollen. All insects collected were specific to tamarisk flowers, with pollen loads comprising greater than 86% tamarisk pollen on leaf-cutting bees and the native bee Melissodes tepida and greater than 95% on other insects. In FY13, the project was delayed to evaluate the purpose of the study. The study of insectivore prey base and abundance was then closed in FY14 following a review of the purpose of the study. Monitoring of insectivore prey may be conducted in the future in Post-Development Monitoring.
+Associated Species and Cover Type Targets
+WIFL; YBCU; GIFL; GIWO; VEFL; BEVI; YWAR; SUTA; WRBA; WYBA; CLNB; PTBB
+Associated Conservation Measures
+WIFL1; WIFL2; YBCU1; YBCU2; GIFL1; GIWO1; VEFL1; BEVI1; YWAR1; SUTA1; WRBA2; WYBA3; CLNB2; PTBB2
+Associated Locations
+Topock Marsh; Beal Lake Conservation Area; Cibola Valley Conservation Area; Palo Verde Ecological Reserve; Bill Williams River National Wildlife Refuge; Laguna Division Conservation Area
+Project Outputs
+Output Title	Output URL
+Pollen Loads on Adult Insects from Tamarisk Flowers and Inferences about Larval Habitats   at Topock Marsh, Arizona	https://lcrsp.bor.doi.net/reports/final_reports/c06_pollen_tam_topock_2008.pdf

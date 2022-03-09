@@ -1,0 +1,26 @@
+LCR MSCP Adaptive Management Project Plan for C09, Razorback Sucker and Bonytail Pen Rearing Tests
+Template Version 2021-08-10
+PROJECT OVERVIEW TEMPLATE
+Project (Work Task) ID
+C09
+Project (Work Task) Name
+Razorback Sucker and Bonytail Pen Rearing Tests
+Project Lead
+Burke, Tom
+Project Status
+Closed
+Project Start Date
+2005
+Project End Date
+2007
+Project Summary
+The long-term goal of the project is to continuously seek measures to improve the quantity and quality of fish reared and released under the Fish Augmentation Program. Specifically, the project assesses the utility of pen-rearing of RASU and BONY in the LCR at Willow Beach NFH to increase rearing capability at the hatchery and as a means of conditioning fish to the river environment prior to release. The work is connected to Project B2, as C09 is being accomplished at Willow Beach NFH using fish reared at that facility. Project C09 project had two main objectives: 1) to determine whether juvenile and sub-adult RASU and BONY will continue to grow if placed into net pens in the Colorado River adjacent to Willow Beach NFH, and 2) to assess use of net pens to acclimate fish to ambient river conditions (temperature and flow) prior to release into Lake Mohave. This program constructed rearing pens in the river at Willow Beach NFH for the purpose of evaluating both of these objectives.
+Associated Species and Cover Type Targets
+BONY; RASU
+Associated Conservation Measures
+RASU3; RASU4; BONY3; BONY4
+Associated Locations
+Reach 2, Willow Beach National Fish Hatchery
+Project Outputs
+Output Title	Output URL
+	
