@@ -3,8 +3,8 @@
 from datetime import datetime
 import os
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "AIMS.settings")
-#import django
-#django.setup()
+import django
+django.setup()
 from projects.models import *
 from scopes.models import *
 
