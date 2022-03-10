@@ -15,7 +15,7 @@ for filename in os.listdir(directory):
     if os.path.isfile(file_dir):
         print(file_dir)
         
-        f = open(file_dir,"r")
+        f = open(file_dir,"rb")
         f_text = str(f.readlines())
 
         WorktaskIDstart = f_text.find("Project (Work Task) ID")
