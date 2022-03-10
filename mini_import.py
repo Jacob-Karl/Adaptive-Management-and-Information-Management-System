@@ -31,17 +31,17 @@ for filename in os.listdir(directory):
         ProductStart = f_text.find("Project Outputs")
         OutputStart = f_text.find("'Output Title")
         
-        WorktaskID_text = f_text[WorktaskIDstart+28:NameStart-6]
-        Name_text = f_text[NameStart+30:LeadStart-6]
-        Lead_text = f_text[LeadStart+18:StatusStart-6]
-        Status_text = f_text[StatusStart+18:StatusStart-6]
-        StartDate_text = f_text[StartDateStart+24:EndDateStart-6]
-        EndDate_text = f_text[EndDateStart+22:SummaryStart-6]
-        Summary_text = f_text[SummaryStart+21:SpeComStart-6]
-        SpeCom_text = f_text[SpeComStart+47:ConMeasStart-6]
-        ConMeas_text = f_text[ConMeasStart+38:LocationStart-6]
-        Location_text = f_text[LocationStart+26:ProductStart-396]
-        Output_text = f_text[OutputStart+31:-2]
+        WorktaskID_text = f_text[WorktaskIDstart+31:NameStart-9]
+        Name_text = f_text[NameStart+33:LeadStart-9]
+        Lead_text = f_text[LeadStart+21:StatusStart-9]
+        Status_text = f_text[StatusStart+21:StatusStart-9]
+        StartDate_text = f_text[StartDateStart+27:EndDateStart-9]
+        EndDate_text = f_text[EndDateStart+25:SummaryStart-9]
+        Summary_text = f_text[SummaryStart+24:SpeComStart-9]
+        SpeCom_text = f_text[SpeComStart+50:ConMeasStart-9]
+        ConMeas_text = f_text[ConMeasStart+41:LocationStart-9]
+        Location_text = f_text[LocationStart+29:ProductStart-399]
+        Output_text = f_text[OutputStart+34:-5]
         
         
         StartDate_date = datetime.strptime("01/01/"+StartDate_text, '%M/%d/%Y')
