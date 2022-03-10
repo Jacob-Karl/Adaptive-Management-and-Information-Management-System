@@ -87,7 +87,8 @@ for filename in os.listdir(directory):
                                         
         for output in Output_list:
             product_list = output.split("\\t")
-            new_output = Output.objects.create(ProjectID = project, OutputTitle = product_list[0], OutputURI = product_list[1])
+            product_URI = product_list[1].split("\\r\\n")
+            new_output = Output.objects.create(ProjectID = project, OutputTitle = product_list[0], OutputURI = product_URI[0])
             new_output.save()   
             project.Outputs.add(new_output)
     '''for product in product_list:
