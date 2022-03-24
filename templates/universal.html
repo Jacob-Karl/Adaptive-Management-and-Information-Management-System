@@ -107,14 +107,14 @@
 			</h1>
 			<img class="Logo" src="{% static 'MSCP_logo.png' %}" alt="MSCP Logo" width="1460" height="600">
 		</div>
-		<div class = "container">
+		<div class = "container-fluid">
 			<div class = "navbar">
 				<div class = "row g-0">
 					<div class = "col">
-							<a class="Link" href="">Project Hub</a>
+						<a class="Link" href="{% url 'projects:hub' %}">Project Hub</a>
 					</div>
 					<div class = "col">
-						<a class="Link" href="">Scope Hub</a>
+						<a class="Link" href="{% url 'scopes:hub' %}">Scope Hub</a>
 					</div>
 					<div class = "col">
 						<a class="Link" href="">Settings</a>
@@ -135,8 +135,9 @@
 						{% endif %}
 					</div>
 					<div class = "col">
+					<a class="Link" href="{% url 'admin:index' %}">Admin</a>
 						{% if user.level is "Admin" %}
-							<a class="Link" href="">Admin</a>
+							<a class="Link" href="{% url 'admin:index' %}">Admin</a>
 						{% endif %}
 					</div>
 				</div>
