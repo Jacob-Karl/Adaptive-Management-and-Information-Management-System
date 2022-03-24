@@ -15,6 +15,10 @@
 		display: none;
 		margin: auto;
 	}
+	.container{
+		margin: auto;
+		width: 80%;
+	}
 	.Title_Card{
 		margin-top: 25px;
 		margin-bottom: 25px;
@@ -44,13 +48,16 @@
 <button class = "lock" id = "lock" onclick = "lockIt()">
 	<img src = "{% static 'noun_Unlock_99.png' %}" alt="connect" width="50" height="50"> 
 </button>
+
 <div class = "Form">
 	<form id = "project_form" enctype="multipart/form-data" action = "{% url 'projects:project' project_ID %}" method = "post">
 		{% csrf_token %}
 		{{ project_form.as_p }}
 		<input class = "Button" type = "submit" name = "project_Submit" value = "Submit">
 	</form>
+</div>
 
+<div class = "container">
 	<div class = "Title_Card">
 		Trigger
 	</div>
@@ -76,7 +83,10 @@
 			</form>
 		</div>
 	</div>
+	</div><!--This div closer is nessecary for some reason-->
+</div>
 
+<div class = "container">
 	<div class = "Title_Card">
 		Outputs
 	</div>
@@ -101,7 +111,10 @@
 			</form>
 		</div>
 	</div>
+	</div><!--This div closer is nessecary for some reason-->
+</div>
 
+<div class = "container">
 	<div class = "Title_Card">
 		Objectives
 	</div>
@@ -126,7 +139,10 @@
 			</form>
 		</div>
 	</div>
+	</div><!--This div closer is nessecary for some reason-->
+</div>
 
+<div class = "container">
 	<div class = "Title_Card">
 		Goals
 	</div>
@@ -149,7 +165,10 @@
 			</a>
 		</div>
 	</div>
+	</div><!--This div closer is nessecary for some reason-->
+</div>
 
+<div class = "container">
 	<div class = "Title_Card">
 		Species Communities
 	</div>
@@ -172,7 +191,10 @@
 			</a>
 		</div>
 	</div>
+	</div><!--This div closer is nessecary for some reason-->
+</div>
 
+<div class = "container">
 	<div class = "Title_Card">
 		Conservation Measures
 	</div>
@@ -195,7 +217,10 @@
 			</a>
 		</div>
 	</div>
+	</div><!--This div closer is nessecary for some reason-->
+</div>
 
+<div class = "container">
 	<div class = "Title_Card">
 		Locations
 	</div>
@@ -205,7 +230,7 @@
 			<a class = "card" style = "width: 150px; height: 250px; margin: 10px;">
 				<div class = "card-body">
 					<img class = "card-img" src = "{% static 'noun_Mountain_70698.png' %}" alt="connect" width="150" height="115">
-					<h3 class="card-title" style="color: #000000;">{{ location.LocationName }}</h3>
+					<h3 class="card-title" style="color: #000000;">{{ location.LocationCode }}</h3>
 				</div>
 			</a>
 		</div>
@@ -218,7 +243,10 @@
 			</a>
 		</div>
 	</div>
+	</div><!--This div closer is nessecary for some reason-->
+</div>
 
+<div class = "container">
 	<div class = "Title_Card">
 		Related Projects
 	</div>
@@ -243,7 +271,9 @@
 			</form>
 		</div>
 	</div>
+	</div><!--This div closer is nessecary for some reason-->
 </div>
+
 
 
 <script type="text/javascript">
