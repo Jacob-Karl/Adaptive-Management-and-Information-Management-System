@@ -19,7 +19,7 @@ class SpeciesCommunity(models.Model):
     CommunityName = models.CharField(max_length=255)
     Synonyms = models.TextField()
     Comments = models.TextField()
-    Picture = models.ImageField(upload_to='SpeCom', null=False, blank=False)
+    Picture = models.ImageField(upload_to='SpeCom', default = '../media/default.png', null=False, blank=False)
 
 class Location(models.Model):
     LocationCode = models.CharField(max_length=10)
