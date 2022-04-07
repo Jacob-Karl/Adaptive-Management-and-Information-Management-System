@@ -123,7 +123,7 @@
 		<ul>
 			<li><a href="{% url 'projects:hub' %}">Project Hub</a></li>
 			<li><a href="{% url 'scopes:hub' %}">Scope Hub</a></li>
-			<li><a href="">Settings</a></li>
+			<li><a href="{% url 'user_functions:settings' user.id %}">Settings</a></li>
 			{% if user.level is "Lead" or "Admin" %}
 			<li><a href="">Report Hub</a></li>
 			{% endif %}
