@@ -83,4 +83,54 @@ def register(request):
         else:
             return HttpResponse("Login after registration failed.")
     else:
-        return render(request, 'user_functions/register.html', {'user_form':user_form, 'people_form':people_form})    
+        return render(request, 'user_functions/register.html', {'user_form':user_form, 'people_form':people_form})  
+    
+@login_required
+def settings(request, user_id):
+    
+    user = User.objects.get(pk = user_id)
+    user_profile = UserProfile.objects.get(User = user.id)
+    person = user_profile.Person
+    
+    initial_dict = {
+        'LastName':person.LastName,
+        'FirstName':person.FirstName,
+        'Affiliation':person.Affiliation,
+        'Address':person.Address,
+        'Email':person.Email,
+        'Phone':person.Phone,
+    }
+    
+    password_form = PasswordForm(request.POST or None)
+    person_settings_form = PersonSettingsForm(request.POST or None, initial=initial_dict, instance=person,)    
+    
+    context_dict = {
+        'user':user,
+        'user_profile':user_profile,
+        'person':person,
+        'password_form':password_form,
+        'person_settings_form':person_settings_form,
+    }  
+    
+    if password_form.is_valid():
+        password = password_form.save(commit=False)
+        auth = authenticate(username=user.username, password=password_form.cleaned_data['Password'])
+        if auth:
+            if password_form.cleaned_data['NewPassword'] == password_form.cleaned_data['NewPasswordConfirm']:
+                user.set_password(password_form.cleaned_data['NewPassword'])
+                user.save()
+                logout(request)
+                return render(request, 'user_functions/landing.html', {})
+            else:
+                return HttpResponse("Passwords do not match.")
+        else:
+            return HttpResponse("Wrong password.")
+        return render(request, 'user_functions/settings.html', context_dict)
+    
+    elif person_settings_form.is_valid():
+        settings = person_settings_form.save(commit=False)
+        settings.save()
+        return render(request, 'user_functions/settings.html', context_dict)
+    
+    else:
+        return render(request, 'user_functions/settings.html', context_dict)

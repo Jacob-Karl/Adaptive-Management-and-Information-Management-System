@@ -37,4 +37,22 @@ class CreatePersonForm(forms.ModelForm):
     class Meta:
         model = Person
         fields = ('FirstName', 'LastName', 'Phone', 'Affiliation', 'Address')
+        
+class PasswordForm(forms.ModelForm):
+    Password = forms.CharField(label='Password', widget=forms.PasswordInput(attrs={'style': 'width: 100%; font: arial;', 'class': 'form-control'}))
+    NewPassword = forms.CharField(label='New Password', widget=forms.PasswordInput(attrs={'style': 'width: 100%; font: arial;', 'class': 'form-control'}))
+    NewPasswordConfirm = forms.CharField(label='Confirm New Password', widget=forms.PasswordInput(attrs={'style': 'width: 100%; font: arial;', 'class': 'form-control'}))
+    class Meta: 
+        model = User
+        fields = ('Password', 'NewPassword', 'NewPasswordConfirm')    
     
+class PersonSettingsForm(forms.ModelForm):
+    FirstName = forms.CharField(label='First Name', required = True, widget=forms.TextInput(attrs={'style': 'width: 100%;', 'class': 'form-control'}))
+    LastName = forms.CharField(label='Last Name', required = True, widget=forms.TextInput(attrs={'style': 'width: 100%;', 'class': 'form-control'}))
+    Phone = forms.CharField(label='Phone Number', required = True, widget=forms.TextInput(attrs={'style': 'width: 100%;', 'class': 'form-control'}))
+    Affiliation = forms.CharField(label='Organization', required = True, widget=forms.TextInput(attrs={'style': 'width: 100%;', 'class': 'form-control'}))
+    Address = forms.CharField(label='Address', required = True, widget=forms.TextInput(attrs={'style': 'width: 100%;', 'class': 'form-control'}))
+     
+    class Meta:
+        model = Person
+        fields = ('FirstName', 'LastName', 'Phone', 'Affiliation', 'Address')    

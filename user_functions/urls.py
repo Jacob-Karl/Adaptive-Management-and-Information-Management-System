@@ -9,4 +9,5 @@ urlpatterns = [
     url(r'^logout/$', views.logout_view, name='logout'),
     url(r'^register/$', views.register, name='register'),
     url(r'^hub/$', views.hub, name='hub'),
+    url(r'^settings/(?P<user_id>\d+)/$', views.settings, name='settings'),
     ]
