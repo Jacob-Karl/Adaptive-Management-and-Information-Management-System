@@ -1,0 +1,74 @@
+﻿{% extends 'universal.html' %}
+{% load static %}
+
+{% block style_block %}
+	.AIMS-header {
+		background-color: #00415D;
+		height: 100px;
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	.title {
+		color: #FFFFFF;
+		font: bold 75px arial;
+		margin-left: 10 px;
+		position: absolute;
+		left: 0;
+		padding: 10px;
+	}
+	.Logo{
+		margin-right: 10px;
+		position: absolute;
+		right: 0;
+		height: 75px;
+		width: 177px;
+	}
+	.Button{
+		margin-top: 25px;
+		margin-bottom: 25px;
+		background-color: #CD9157;
+		border: none;
+		color: white;
+		padding: 10px 180px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font: bold 15px arial;
+	}
+	.Filler{
+		margin-top: 25px;
+		margin-bottom: 25px;
+	}
+	footer {
+  		background-color: #00415D;
+		height: 100px;
+	}
+{% endblock %}
+
+{% block title_block %}
+Register
+{% endblock %}
+
+{% block body_block %}
+<div class = "Form">
+	Resetting your password will log you out.
+	<form id = "password_form" action = "{% url 'user_functions:settings' user.id %}" method = "post">
+		{% csrf_token %}
+		{{ password_form.as_p }}
+		<input class = "Button" type = "submit" value = "Submit">
+	</form>
+</div>
+<div class = "Form">
+	<form id = "person_settings_form" action = "{% url 'user_functions:settings' user.id %}" method = "post">
+		{% csrf_token %}
+		{{ person_settings_form.as_p }}
+		<input class = "Button" type = "submit" value = "Submit">
+	</form>
+</div>
+
+<footer>
+
+</footer>
+	
+{% endblock %}

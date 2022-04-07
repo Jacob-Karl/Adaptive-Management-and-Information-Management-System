@@ -1,0 +1,77 @@
+{% load static %}
+
+<style>
+	.AIMS-header {
+		background-color: #00415D;
+		height: 100px;
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	.title {
+		color: #FFFFFF;
+		font: bold 75px arial;
+		margin-left: 10 px;
+		position: absolute;
+		left: 0;
+		padding: 10px;
+	}
+	.Logo{
+		margin-right: 10px;
+		position: absolute;
+		right: 0;
+		height: 75px;
+		width: 177px;
+	}
+	.Button{
+		margin-top: 25px;
+		margin-bottom: 25px;
+		margin-left: 15%;
+
+		background-color: #CD9157;
+		border: none;
+		color: white;
+		padding: 10px 180px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font: bold 35px arial;
+	}
+	.Form{
+		margin: auto;
+		width: 60%;
+		padding: 10px;
+		font: arial;
+	}
+	footer {
+  		background-color: #00415D;
+		height: 100px;
+	}
+</style>
+
+{% block title_block %}
+Register
+{% endblock %}
+
+{% block body_block %}
+<div class="AIMS-header">
+	<h1 class="title">
+		AIMS
+	</h1>
+	<img class="Logo" src="{% static 'MSCP_logo.png' %}" alt="MSCP Logo" width="1460" height="600">
+</div>
+
+<div class = "Form">
+	<form id = "registration_form" action = "{% url 'user_functions:register' %}" method = "post">
+		{% csrf_token %}
+		{{ user_form.as_p }}
+		{{ people_form.as_p }}
+		<input class = "Button" type = "submit" value = "Submit">
+	</form>
+</div>
+
+<footer>
+
+</footer>
+	
+{% endblock %}
