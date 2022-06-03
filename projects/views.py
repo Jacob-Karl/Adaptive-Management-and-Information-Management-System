@@ -2,8 +2,10 @@ from django.shortcuts import render
 from django.shortcuts import redirect
 from django.contrib.auth.decorators import login_required
 from scopes.models import *
+from user_functions.models import *
 from .forms import *
 from .models import *
+import reversion
 
 # Create your views here.
 @login_required
@@ -66,7 +68,7 @@ def project(request, project_ID):
         project_Obj.save()
         project_Obj.Triggers.add(new_trigger)
         context_dict.update(initial_dict)
-        #print(project_form.is_valid())
+        print(project_form.is_valid())
         #if project_form.is_valid():
         project = project_form.save(commit=False)
         project.save()        
@@ -98,9 +100,23 @@ def project(request, project_ID):
     
     elif 'project_Submit' in request.POST:
         if project_form.is_valid():
-            project = project_form.save(commit=False)
-            project.save()
-            return redirect('/projects/')
+            with reversion.create_revision():
+                project = project_form.save(commit=False)
+                try:
+                    logged_in_profile = UserProfile.objects.get(User = request.user.id)
+                    logged_in_person = logged_in_profile.Person
+                    #try:
+                    project_contributor = Contributor(PeopleID = logged_in_person)
+                    project_contributor.save()
+                    #except:
+                    #    project_contributor = Contributor.objects.get(PeopleID = logged_in_person.id)
+                    project.ProjectContributors.add(project_contributor)  
+                except:
+                    pass
+                project.save()
+                reversion.set_user(request.user)
+                reversion.set_comment("revision test")                
+                return redirect('/projects/')
         else:
             print("Form invalid")
             return render(request, 'projects/Project.html', context_dict)
@@ -213,11 +229,13 @@ def relatedProject(request, related_project_ID):
         'related_project_ID':related_project_ID,
     }     
       
-    if related_project_form.is_valid(): 
-        related_project = related_project_form.save(commit=False)
-        related_project.save()
-        project = related_project_Obj.Project.id
-        return redirect('/projects/Project/'+str(project)+'/')
+    if related_project_form.is_valid():
+        with reversion.create_revision():
+            related_project = related_project_form.save(commit=False)
+            related_project.save()
+            reversion.set_user(request.user)
+            project = related_project_Obj.Project.id
+            return redirect('/projects/Project/'+str(project)+'/')
     else:
         context_dict.update(initial_dict)
         return render(request, 'projects/RelatedProject.html', context_dict)
@@ -256,11 +274,13 @@ def trigger(request, trigger_ID):
         context_dict.update(initial_dict)
         return render(request, 'projects/Trigger.html', context_dict)        
     else:    
-        if trigger_form.is_valid(): 
-            trigger = trigger_form.save(commit=False)
-            trigger.save()
-            project = trigger_Obj.ProjectID.id
-            return redirect('/projects/Project/'+str(project)+'/')
+        if trigger_form.is_valid():
+            with reversion.create_revision():
+                trigger = trigger_form.save(commit=False)
+                trigger.save()
+                reversion.set_user(request.user)
+                project = trigger_Obj.ProjectID.id
+                return redirect('/projects/Project/'+str(project)+'/')
     
         else:
             context_dict.update(initial_dict)  
@@ -290,10 +310,12 @@ def triggerStatus(request, trigger_status_ID):
     }
     
     if trigger_status_form.is_valid(): 
-        trigger_status = trigger_status_form.save(commit=False)
-        trigger_status.save()
-        trigger = trigger_status_Obj.TriggerID.id
-        return redirect('/projects/Trigger/'+str(trigger)+'/')
+        with reversion.create_revision():
+            trigger_status = trigger_status_form.save(commit=False)
+            trigger_status.save()
+            reversion.set_user(request.user)
+            trigger = trigger_status_Obj.TriggerID.id
+            return redirect('/projects/Trigger/'+str(trigger)+'/')
     
     else:
         context_dict.update(initial_dict)
@@ -328,11 +350,13 @@ def output(request, output_ID):
         'project_ID':output_Obj.ProjectID.id,
     }   
     
-    if output_form.is_valid(): 
-        output = output_form.save(commit=False)
-        output.save()
-        project = output_Obj.ProjectID.id
-        return redirect('/projects/Project/'+str(project)+'/')
+    if output_form.is_valid():
+        with reversion.create_revision():
+            output = output_form.save(commit=False)
+            output.save()
+            reversion.set_user(request.user)
+            project = output_Obj.ProjectID.id
+            return redirect('/projects/Project/'+str(project)+'/')
     
     else:
         context_dict.update(initial_dict)
@@ -382,11 +406,13 @@ def objective(request, objective_ID):
         context_dict.update(initial_dict)
         return render(request, 'projects/Objective.html', context_dict)     
     else:    
-        if objective_form.is_valid(): 
-            objective = objective_form.save(commit=False)
-            objective.save()
-            project = objective_Obj.ProjectID.id
-            return redirect('/projects/Project/'+str(project)+'/')
+        if objective_form.is_valid():
+            with reversion.create_revision():
+                objective = objective_form.save(commit=False)
+                objective.save()
+                reversion.set_user(request.user)
+                project = objective_Obj.ProjectID.id
+                return redirect('/projects/Project/'+str(project)+'/')
         else:
             context_dict.update(initial_dict)  
             return render(request, 'projects/Objective.html', context_dict)
@@ -422,11 +448,13 @@ def milestone(request, milestone_ID):
         context_dict.update(initial_dict)
         return render(request, 'projects/Milestone.html', context_dict)        
     else:    
-        if milestone_form.is_valid(): 
-            milestone = milestone_form.save(commit=False)
-            milestone.save()
-            objective = milestone_Obj.ObjectiveID.id
-            return redirect('/projects/Objective/'+str(objective)+'/')
+        if milestone_form.is_valid():
+            with reversion.create_revision():
+                milestone = milestone_form.save(commit=False)
+                milestone.save()
+                reversion.set_user(request.user)
+                objective = milestone_Obj.ObjectiveID.id
+                return redirect('/projects/Objective/'+str(objective)+'/')
         else:
             context_dict.update(initial_dict)
             return render(request, 'projects/Milestone.html', context_dict)
@@ -453,11 +481,13 @@ def milestoneProgress(request, milestone_progress_ID):
         'milestone_progress_ID':milestone_progress_ID,
     }     
       
-    if milestone_progress_form.is_valid(): 
-        milestone_progress = milestone_progress_form.save(commit=False)
-        milestone_progress.save()
-        milestone = milestone_progress_Obj.MilestoneID.id
-        return redirect('/projects/Milestone/'+str(milestone)+'/')
+    if milestone_progress_form.is_valid():
+        with reversion.create_revision():
+            milestone_progress = milestone_progress_form.save(commit=False)
+            milestone_progress.save()
+            reversion.set_user(request.user)
+            milestone = milestone_progress_Obj.MilestoneID.id
+            return redirect('/projects/Milestone/'+str(milestone)+'/')
     else:
         context_dict.update(initial_dict)
         return render(request, 'projects/MilestoneProgress.html', context_dict)
@@ -498,11 +528,13 @@ def step(request, step_ID):
         context_dict.update(initial_dict)
         return render(request, 'projects/Step.html', context_dict)        
     else:    
-        if step_form.is_valid(): 
-            step = step_form.save(commit=False)
-            step.save()
-            objective = step_Obj.ObjectiveID.id
-            return redirect('/projects/Objective/'+str(objective)+'/')
+        if step_form.is_valid():
+            with reversion.create_revision():
+                step = step_form.save(commit=False)
+                step.save()
+                reversion.set_user(request.user)
+                objective = step_Obj.ObjectiveID.id
+                return redirect('/projects/Objective/'+str(objective)+'/')
         else:
             context_dict.update(initial_dict)
             return render(request, 'projects/Step.html', context_dict)
@@ -544,11 +576,13 @@ def method(request, method_ID):
         context_dict.update(initial_dict)
         return render(request, 'projects/Method.html', context_dict)        
     else:    
-        if method_form.is_valid(): 
-            method = method_form.save(commit=False)
-            method.save()
-            step = method_Obj.StepID.id
-            return redirect('/projects/Step/'+str(step)+'/')
+        if method_form.is_valid():
+            with reversion.create_revision():
+                method = method_form.save(commit=False)
+                method.save()
+                reversion.set_user(request.user)
+                step = method_Obj.StepID.id
+                return redirect('/projects/Step/'+str(step)+'/')
         else:
             context_dict.update(initial_dict)
             return render(request, 'projects/Method.html', context_dict)
@@ -578,11 +612,13 @@ def protocol(request, protocol_ID):
         'protocol_ID':protocol_ID,
     }     
       
-    if protocol_form.is_valid(): 
-        protocol = protocol_form.save(commit=False)
-        protocol.save()
-        method = protocol_Obj.MethodID.id
-        return redirect('/projects/Milestone/'+str(method)+'/')
+    if protocol_form.is_valid():
+        with reversion.create_revision():
+            protocol = protocol_form.save(commit=False)
+            protocol.save()
+            reversion.set_user(request.user)
+            method = protocol_Obj.MethodID.id
+            return redirect('/projects/Milestone/'+str(method)+'/')
     else:
         context_dict.update(initial_dict)
         return render(request, 'projects/Protocol.html', context_dict)

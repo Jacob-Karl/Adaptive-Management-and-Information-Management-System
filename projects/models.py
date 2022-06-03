@@ -1,5 +1,6 @@
 from django.db import models
 from django import forms
+from django.contrib.auth.models import User
 #from user_functions.models import *
 #from scopes.models import *
 
@@ -31,6 +32,7 @@ class Project(models.Model):
     ProjectBackground = models.TextField(null = True)
     OtherConsMeas = models.CharField(max_length=255, null = True)
     OtherSpecies = models.CharField(max_length=255, null = True)
+    Reference = models.TextField(null=True)
     ProjectContributors = models.ManyToManyField('user_functions.Contributor')
     People = models.ManyToManyField('user_functions.Person')
     Goals = models.ManyToManyField('scopes.Goal', through='Goal2Project')
@@ -54,6 +56,7 @@ class Trigger(models.Model):
     TriggerDescription = models.TextField(null = True)
     TriggerIndicators = models.TextField(null = True)
     ProposedResponse = models.TextField(null = True)
+    Reference = models.TextField(null=True)
     TriggerStatus = models.ManyToManyField('TriggerStatus')
 
 class TriggerStatus(models.Model):
@@ -62,6 +65,7 @@ class TriggerStatus(models.Model):
     StatusTrend = models.TextField(null = True)
     MgmtInterp = models.TextField(null = True)
     MgmtResponse = models.TextField(null = True)
+    Reference = models.TextField(null=True)
 
 class Output(models.Model):
     ProjectID = models.ForeignKey(Project, unique = False, on_delete=models.CASCADE)
@@ -75,6 +79,7 @@ class Output(models.Model):
     OutputCitation = models.TextField(null = True)
     OutputURI = models.CharField(max_length=255, null = True)
     OutputConstraints = models.TextField(null = True)
+    Reference = models.TextField(null=True)
 
 class Objective(models.Model):
     ProjectID = models.ForeignKey(Project, unique = False, on_delete=models.CASCADE)
@@ -84,12 +89,14 @@ class Objective(models.Model):
     ObjStartDate = models.DateField(null = True)
     ObjEndDate = models.DateField(null = True)
     ObjFlowDiagram = models.CharField(max_length=255, null = True)
+    Reference = models.TextField(null=True)
     Milestones = models.ManyToManyField('Milestone')
     Steps = models.ManyToManyField('Step', through='Objective2Step')
 
 class Milestone(models.Model):
     ObjectiveID = models.ForeignKey(Objective, on_delete=models.CASCADE)
     Description = models.TextField(null = True)
+    Reference = models.TextField(null=True)
     MilestoneProgress = models.ManyToManyField('MilestoneProgress')
 
 class MilestoneProgress(models.Model):
@@ -97,6 +104,7 @@ class MilestoneProgress(models.Model):
     ReportingDate = models.DateField(null = True)
     Status = models.CharField(max_length=25, null = True)
     Description = models.TextField(null = True)
+    Reference = models.TextField(null=True)
 
 class Step(models.Model):
     ObjectiveID = models.ForeignKey(Objective, on_delete=models.CASCADE)
@@ -107,6 +115,7 @@ class Step(models.Model):
     StepStartDate = models.DateField(null = True)
     StepEndDate = models.DateField(null = True)
     StepDependencies = models.TextField(null = True)
+    Reference = models.TextField(null=True)
     Methods = models.ManyToManyField('Method', through='Step2Method')
 
 class Method(models.Model):
@@ -118,6 +127,7 @@ class Method(models.Model):
     MethodVersion = models.CharField(max_length=10, null = True)
     MethodDescription = models.TextField(null = True)
     MethodContact = models.CharField(max_length=38, null = True)
+    Reference = models.TextField(null=True)
     Protocols = models.ManyToManyField('Protocol', through='Method2Protocol')
 
 class Protocol(models.Model):
@@ -128,7 +138,7 @@ class Protocol(models.Model):
     ProtocolAuthor = models.CharField(max_length=255, null = True)
     ProtocolDescription = models.TextField(null = True)
     ProtocolLink = models.CharField(max_length=255, null = True)
-
+    Reference = models.TextField(null=True)
 
 #Linking Models
 
