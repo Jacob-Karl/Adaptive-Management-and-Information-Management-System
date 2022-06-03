@@ -3,6 +3,17 @@ from .models import *
 from django.db import models
 from scopes.models import *
 from django.forms import TextInput, DateInput, Select
+from django.core.exceptions import ValidationError
+import datetime
+
+def validate_date(value):
+    print("validated")
+    if isinstance(value, datetime.date):
+        print("not a date")
+        raise ValidationError(
+            ('%(value)s is not a valid date'),
+            params={'value': value},
+        )        
 
 class ProjectForm(forms.ModelForm):
     STATUS_CHOICES = (
@@ -22,12 +33,13 @@ class ProjectForm(forms.ModelForm):
     ProjectLead = forms.CharField(label='Project Lead', required = False, widget=forms.TextInput(attrs={'style': 'width: 100%;', 'class': 'form-control', 'readonly': 'readonly'}))
     ProjectStatus = forms.ChoiceField(label='Project Status', choices = STATUS_CHOICES, required = False, widget=forms.Select(attrs={'style': 'width: 100%;', 'class': 'form-control', 'readonly': 'readonly'}))
     ProjectType = forms.ChoiceField(label='Project Type', choices = TYPE_CHOICES, required = False, widget=forms.Select(attrs={'style': 'width: 100%;', 'class': 'form-control', 'readonly': 'readonly'}))
-    ProjectStart = forms.DateField(label='Project Start', required = False, widget=forms.DateInput(attrs={'style': 'width: 100%;', 'class': 'form-control', 'readonly': 'readonly'}))
-    ProjectEnd = forms.DateField(label='Project End', required = False, widget=forms.DateInput(attrs={'style': 'width: 100%;', 'class': 'form-control', 'readonly': 'readonly'}))
+    ProjectStart = forms.DateField(label='Project Start', required = False, widget=forms.DateInput(attrs={'style': 'width: 100%;', 'class': 'form-control', 'readonly': 'readonly'}))#, validators=[validate_date])
+    ProjectEnd = forms.DateField(label='Project End', required = False, widget=forms.DateInput(attrs={'style': 'width: 100%;', 'class': 'form-control', 'readonly': 'readonly'}))#, validators=[validate_date])
     ProjectSummary = forms.CharField(label='Project Summary', required = False, widget=forms.Textarea(attrs={'style': 'width: 100%;', 'class': 'form-control', 'readonly': 'readonly'}))
     ProjectBackground = forms.CharField(label='Project Background', required = False, widget=forms.Textarea(attrs={'style': 'width: 100%;', 'class': 'form-control', 'readonly': 'readonly'}))
     OtherConsMeas = forms.CharField(label='Other Conservation Measure', required = False, widget=forms.TextInput(attrs={'style': 'width: 100%;', 'class': 'form-control', 'readonly': 'readonly'}))
     OtherSpecies = forms.CharField(label='Other Species', required = False, widget=forms.TextInput(attrs={'style': 'width: 100%;', 'class': 'form-control', 'readonly': 'readonly'}))
+    Reference = forms.CharField(label='Reference', required = False, widget=forms.Textarea(attrs={'style': 'width: 100%;', 'class': 'form-control', 'readonly': 'readonly'}))
     class Meta:
         model = Project
         exclude = ('ProjectContributors','People','Goals','SpeComs','ConMeas','Locations','Triggers','Outputs','Objectives','RelatedProjects',)
@@ -70,19 +82,25 @@ class GoalAdderForm(forms.ModelForm):
     class Meta:
         model = Project
         fields = ('Goals',)
+        
+class RelatedProjectHelperForm(forms.Form):
+    class Meta:
+        model = RelatedProject
+        fields = ()
 
 class RelatedProjectForm(forms.ModelForm):
     WorktaskID = forms.CharField(label='Worktask ID', required = False, widget=forms.TextInput(attrs={'style': 'width: 100%;', 'class': 'form-control', 'readonly': 'readonly'}))
     RelationshipType = forms.CharField(label='Relationship Type', required = False, widget=forms.TextInput(attrs={'style': 'width: 100%;', 'class': 'form-control', 'readonly': 'readonly'}))    
     class Meta:
         model = RelatedProject
-        fields = '__all__'
+        exclude = ('Project',)
         
 class TriggerForm(forms.ModelForm):
     TriggerName = forms.CharField(label='Trigger Name', required = False, widget=forms.TextInput(attrs={'style': 'width: 100%;', 'class': 'form-control', 'readonly': 'readonly'}))
     TriggerDescription = forms.CharField(label='Trigger Description', required = False, widget=forms.Textarea(attrs={'style': 'width: 100%;', 'class': 'form-control', 'readonly': 'readonly'}))
     TriggerIndicators = forms.CharField(label='Trigger Indicators', required = False, widget=forms.Textarea(attrs={'style': 'width: 100%;', 'class': 'form-control', 'readonly': 'readonly'}))
     ProposedResponse = forms.CharField(label='Proposed Response', required = False, widget=forms.Textarea(attrs={'style': 'width: 100%;', 'class': 'form-control', 'readonly': 'readonly'}))    
+    Reference = forms.CharField(label='Reference', required = False, widget=forms.Textarea(attrs={'style': 'width: 100%;', 'class': 'form-control', 'readonly': 'readonly'}))
     class Meta:
         model = Trigger
         exclude = ('ProjectID','TriggerStatus',)
@@ -92,6 +110,7 @@ class TriggerStatusForm(forms.ModelForm):
     StatusTrend = forms.CharField(label='Status Trend', required = False, widget=forms.Textarea(attrs={'style': 'width: 100%;', 'class': 'form-control', 'readonly': 'readonly'}))
     MgmtInterp = forms.CharField(label='Management Interpretation', required = False, widget=forms.Textarea(attrs={'style': 'width: 100%;', 'class': 'form-control', 'readonly': 'readonly'}))
     MgmtResponse = forms.CharField(label='Management Response', required = False, widget=forms.Textarea(attrs={'style': 'width: 100%;', 'class': 'form-control', 'readonly': 'readonly'}))   
+    Reference = forms.CharField(label='Reference', required = False, widget=forms.Textarea(attrs={'style': 'width: 100%;', 'class': 'form-control', 'readonly': 'readonly'}))
     class Meta:
         model = TriggerStatus
         exclude = ('TriggerID',)
@@ -112,6 +131,7 @@ class OutputForm(forms.ModelForm):
     OutputCitation = forms.CharField(label='Output Citation', required = False, widget=forms.Textarea(attrs={'style': 'width: 100%;', 'class': 'form-control', 'readonly': 'readonly'}))
     OutputURI = forms.CharField(label='Output URI', required = False, widget=forms.TextInput(attrs={'style': 'width: 100%;', 'class': 'form-control', 'readonly': 'readonly'}))
     OutputConstraints = forms.CharField(label='Output Constraints', required = False, widget=forms.Textarea(attrs={'style': 'width: 100%;', 'class': 'form-control', 'readonly': 'readonly'}))    
+    Reference = forms.CharField(label='Reference', required = False, widget=forms.Textarea(attrs={'style': 'width: 100%;', 'class': 'form-control', 'readonly': 'readonly'}))
     class Meta:
         model = Output
         exclude = ('ProjectID',)
@@ -123,6 +143,7 @@ class ObjectiveForm(forms.ModelForm):
     ObjStartDate = forms.DateField(label='Objective Start Date', required = False, widget=forms.DateInput(attrs={'style': 'width: 100%;', 'class': 'form-control', 'readonly': 'readonly'}))
     ObjEndDate = forms.DateField(label='Objective End Date', required = False, widget=forms.DateInput(attrs={'style': 'width: 100%;', 'class': 'form-control', 'readonly': 'readonly'}))
     ObjFlowDiagram = forms.CharField(label='Objective Flow Diagram', required = False, widget=forms.TextInput(attrs={'style': 'width: 100%;', 'class': 'form-control', 'readonly': 'readonly'}))
+    Reference = forms.CharField(label='Reference', required = False, widget=forms.Textarea(attrs={'style': 'width: 100%;', 'class': 'form-control', 'readonly': 'readonly'}))
     class Meta:
         model = Objective
         exclude = ('ProjectID','Milestones','Steps',)
@@ -134,6 +155,7 @@ class MilestoneHelperForm(forms.Form):
         
 class MilestoneForm(forms.ModelForm):
     Description = forms.CharField(label='Description', required = False, widget=forms.Textarea(attrs={'style': 'width: 100%;', 'class': 'form-control', 'readonly': 'readonly'}))
+    Reference = forms.CharField(label='Reference', required = False, widget=forms.Textarea(attrs={'style': 'width: 100%;', 'class': 'form-control', 'readonly': 'readonly'}))
     class Meta:
         model = Milestone
         exclude = ('ObjectiveID','MilestoneProgress',)
@@ -147,6 +169,7 @@ class MilestoneProgressForm(forms.ModelForm):
     ReportingDate = forms.DateField(label='Reporting Date', required = False, widget=forms.DateInput(attrs={'style': 'width: 100%;', 'class': 'form-control', 'readonly': 'readonly'}))
     Status = forms.CharField(label='Status', required = False, widget=forms.TextInput(attrs={'style': 'width: 100%;', 'class': 'form-control', 'readonly': 'readonly'}))
     Description =forms.CharField(label='Description', required = False, widget=forms.Textarea(attrs={'style': 'width: 100%;', 'class': 'form-control', 'readonly': 'readonly'}))    
+    Reference = forms.CharField(label='Reference', required = False, widget=forms.Textarea(attrs={'style': 'width: 100%;', 'class': 'form-control', 'readonly': 'readonly'}))
     class Meta:
         model = MilestoneProgress
         exclude = ('MilestoneID',)
@@ -164,6 +187,7 @@ class StepForm(forms.ModelForm):
     StepStartDate = forms.DateField(label='Step Start Date', required = False, widget=forms.DateInput(attrs={'style': 'width: 100%;', 'class': 'form-control', 'readonly': 'readonly'}))
     StepEndDate = forms.DateField(label='Step End Date', required = False, widget=forms.DateInput(attrs={'style': 'width: 100%;', 'class': 'form-control', 'readonly': 'readonly'}))
     StepDependencies = forms.CharField(label='Step Dependencies', required = False, widget=forms.Textarea(attrs={'style': 'width: 100%;', 'class': 'form-control', 'readonly': 'readonly'}))    
+    Reference = forms.CharField(label='Reference', required = False, widget=forms.Textarea(attrs={'style': 'width: 100%;', 'class': 'form-control', 'readonly': 'readonly'}))
     class Meta:
         model = Step
         exclude = ('Methods','ObjectiveID',)
@@ -181,6 +205,7 @@ class MethodForm(forms.ModelForm):
     MethodVersion = forms.CharField(label='Method Version', required = False, widget=forms.TextInput(attrs={'style': 'width: 100%;', 'class': 'form-control', 'readonly': 'readonly'}))
     MethodDescription = forms.CharField(label='Method Description', required = False, widget=forms.Textarea(attrs={'style': 'width: 100%;', 'class': 'form-control', 'readonly': 'readonly'}))
     MethodContact = forms.CharField(label='Method Contact', required = False, widget=forms.TextInput(attrs={'style': 'width: 100%;', 'class': 'form-control', 'readonly': 'readonly'}))    
+    Reference = forms.CharField(label='Reference', required = False, widget=forms.Textarea(attrs={'style': 'width: 100%;', 'class': 'form-control', 'readonly': 'readonly'}))
     class Meta:
         model = Method
         exclude = ('Protocols', 'StepID',)
@@ -197,6 +222,7 @@ class ProtocolForm(forms.ModelForm):
     ProtocolAuthor = forms.CharField(label='Protocol Author', required = False, widget=forms.TextInput(attrs={'style': 'width: 100%;', 'class': 'form-control', 'readonly': 'readonly'}))
     ProtocolDescription = forms.CharField(label='Protocol Description', required = False, widget=forms.Textarea(attrs={'style': 'width: 100%;', 'class': 'form-control', 'readonly': 'readonly'}))
     ProtocolLink = forms.CharField(label='Protocol Link', required = False, widget=forms.TextInput(attrs={'style': 'width: 100%;', 'class': 'form-control', 'readonly': 'readonly'}))    
+    Reference = forms.CharField(label='Reference', required = False, widget=forms.Textarea(attrs={'style': 'width: 100%;', 'class': 'form-control', 'readonly': 'readonly'}))
     class Meta:
         model = Protocol
         exclude = ('MethodID',)
