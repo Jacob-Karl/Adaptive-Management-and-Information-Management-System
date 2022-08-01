@@ -1,0 +1,76 @@
+//chunk//
+<body_pt1/>
+Work Task ID
+{project_ID}
+
+Work Task Title
+{project_name}
+
+Contact
+{contact_name}
+{contact_phone}
+{contact_email}
+
+Start Date
+{project_start}
+
+Expected Duration
+{project_end}
+
+Long-Term Goal
+{objective_name}
+
+Conservation Measures
+{conMeas_name}
+
+Location
+{location_code}
+
+Purpose
+{obj_description}
+
+Connections with Other Work Tasks (Past and Future)
+//chunk//
+<related_projects/>
+{related_project_ID}, {related_project_type}
+
+//chunk//
+<body_pt2/>
+Project Description
+{project_summary}
+
+Previous Activities
+{project_background}
+
+{year_previous} Accomplishments
+{milestones}
+
+{year_current} Activities
+{current_steps}
+
+Proposed {year_future} Activities
+{future_steps}
+
+Pertinent Reports
+{reports}
+
+//chunk//
+<milestones/>
+{milestone_description}: {milestone_progress_description}
+
+//chunk//
+<current_steps/>
+{step_code}
+{step_name}
+{step_summary}
+
+//chunk//
+<future_steps/>
+{step_code}
+{step_name}
+{step_summary}
+
+//chunk//
+<reports/>
+{output_date}
+{output_title}
