@@ -39,6 +39,7 @@ class ProjectForm(forms.ModelForm):
     ProjectBackground = forms.CharField(label='Project Background', required = False, widget=forms.Textarea(attrs={'style': 'width: 100%;', 'class': 'form-control', 'readonly': 'readonly'}))
     OtherConsMeas = forms.CharField(label='Other Conservation Measure', required = False, widget=forms.TextInput(attrs={'style': 'width: 100%;', 'class': 'form-control', 'readonly': 'readonly'}))
     OtherSpecies = forms.CharField(label='Other Species', required = False, widget=forms.TextInput(attrs={'style': 'width: 100%;', 'class': 'form-control', 'readonly': 'readonly'}))
+    Contributor = forms.CharField(label='Contributors', required = False, widget=forms.Textarea(attrs={'style': 'width: 100%;', 'class': 'form-control', 'readonly': 'readonly'}))
     Reference = forms.CharField(label='Reference', required = False, widget=forms.Textarea(attrs={'style': 'width: 100%;', 'class': 'form-control', 'readonly': 'readonly'}))
     class Meta:
         model = Project
@@ -59,26 +60,42 @@ class ObjectiveHelperForm(forms.Form):
         model = Objective
         fields = ()
 
+class SpeComMultipleChoiceField(forms.ModelMultipleChoiceField):
+    def label_from_instance(self, obj):
+        return obj.Acronym
+
+class ConMeasMultipleChoiceField(forms.ModelMultipleChoiceField):
+    def label_from_instance(self, obj):
+        return obj.CMCode
+
+class LocationMultipleChoiceField(forms.ModelMultipleChoiceField):
+    def label_from_instance(self, obj):
+        return obj.LocationCode
+    
+class GoalMultipleChoiceField(forms.ModelMultipleChoiceField):
+    def label_from_instance(self, obj):
+        return obj.GoalName    
+
 class SpeComAdderForm(forms.ModelForm):
-    SpeComs = forms.ModelMultipleChoiceField(queryset=SpeciesCommunity.objects.all(), widget=forms.CheckboxSelectMultiple)
+    SpeComs = SpeComMultipleChoiceField(queryset=SpeciesCommunity.objects.all(), widget=forms.CheckboxSelectMultiple)
     class Meta:
         model = Project
         fields = ('SpeComs',)
-        
+    
 class ConMeasAdderForm(forms.ModelForm):
-    ConMeas = forms.ModelMultipleChoiceField(queryset=ConservationMeasure.objects.all(), widget=forms.CheckboxSelectMultiple)
+    ConMeas = ConMeasMultipleChoiceField(queryset=ConservationMeasure.objects.all(), widget=forms.CheckboxSelectMultiple)
     class Meta:
         model = Project
         fields = ('ConMeas',)
-        
+    
 class LocationAdderForm(forms.ModelForm):
-    Locations = forms.ModelMultipleChoiceField(queryset=Location.objects.all(), widget=forms.CheckboxSelectMultiple)
+    Locations = LocationMultipleChoiceField(queryset=Location.objects.all(), widget=forms.CheckboxSelectMultiple)
     class Meta:
         model = Project
         fields = ('Locations',)
-
+    
 class GoalAdderForm(forms.ModelForm):
-    Goals = forms.ModelMultipleChoiceField(queryset=Goal.objects.all(), widget=forms.CheckboxSelectMultiple)
+    Goals = GoalMultipleChoiceField(queryset=Goal.objects.all(), widget=forms.CheckboxSelectMultiple)
     class Meta:
         model = Project
         fields = ('Goals',)
@@ -154,6 +171,8 @@ class MilestoneHelperForm(forms.Form):
         fields = ()
         
 class MilestoneForm(forms.ModelForm):
+    MilestoneID = forms.CharField(label='ID', required = False, widget=forms.TextInput(attrs={'style': 'width: 100%;', 'class': 'form-control', 'readonly': 'readonly'}))
+    MilestoneName = forms.CharField(label='Name', required = False, widget=forms.TextInput(attrs={'style': 'width: 100%;', 'class': 'form-control', 'readonly': 'readonly'}))    
     Description = forms.CharField(label='Description', required = False, widget=forms.Textarea(attrs={'style': 'width: 100%;', 'class': 'form-control', 'readonly': 'readonly'}))
     Reference = forms.CharField(label='Reference', required = False, widget=forms.Textarea(attrs={'style': 'width: 100%;', 'class': 'form-control', 'readonly': 'readonly'}))
     class Meta:
@@ -216,6 +235,7 @@ class ProtocolHelperForm(forms.Form):
         fields = ()
                 
 class ProtocolForm(forms.ModelForm):
+    ProtocolCode = forms.CharField(label='Protocol Code', required = False, widget=forms.TextInput(attrs={'style': 'width: 100%;', 'class': 'form-control', 'readonly': 'readonly'}))
     ProtocolTitle = forms.CharField(label='Protocol Title', required = False, widget=forms.TextInput(attrs={'style': 'width: 100%;', 'class': 'form-control', 'readonly': 'readonly'}))
     ProtocolVerision = forms.CharField(label='Protocol Verision', required = False, widget=forms.TextInput(attrs={'style': 'width: 100%;', 'class': 'form-control', 'readonly': 'readonly'}))
     ProtocolDate = forms.DateField(label='Protocol Date', required = False, widget=forms.DateInput(attrs={'style': 'width: 100%;', 'class': 'form-control', 'readonly': 'readonly'}))
