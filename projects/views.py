@@ -196,14 +196,13 @@ def goalAdder(request, project_ID):
     
 
     if goal_adder_form.is_valid():
-     
         for item in request.POST.getlist('Goals'):
             goal_Obj = Goal.objects.get(pk = item)
             project_Obj.Goals.add(goal_Obj)
                                 
             return redirect('/projects/Project/'+project_ID+'/')
-        else:
-            return render(request, 'projects/Goal Adder.html', context_dict)
+    else:
+        return render(request, 'projects/Goal Adder.html', context_dict)
         
 
 @login_required
