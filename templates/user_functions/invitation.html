@@ -1,0 +1,78 @@
+﻿{% extends 'universal.html' %}
+{% load static %}
+
+{% block style_block %}
+	.AIMS-header {
+		background-color: #00415D;
+		height: 100px;
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	.title {
+		color: #FFFFFF;
+		font: bold 75px arial;
+		margin-left: 10 px;
+		position: absolute;
+		left: 0;
+		padding: 10px;
+	}
+	.Logo{
+		margin-right: 10px;
+		position: absolute;
+		right: 0;
+		height: 75px;
+		width: 177px;
+	}
+	.Button{
+		margin-top: 25px;
+		margin-bottom: 25px;
+		background-color: #CD9157;
+		border: none;
+		color: white;
+		padding: 10px 180px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font: bold 15px arial;
+	}
+	.Filler{
+		margin-top: 25px;
+		margin-bottom: 25px;
+	}
+	footer {
+  		background-color: #00415D;
+		height: 100px;
+	}
+{% endblock %}
+
+{% block title_block %}
+Register
+{% endblock %}
+
+{% block body_block %}
+
+<div class = "Form">
+	<form id = "invitation_form" action = "{% url 'user_functions:invitation' password %}" method = "post">
+		{% csrf_token %}
+		{{ invitation_form.as_p }}
+		<input class = "Button" type = "submit" value = "Submit">
+	</form>
+</div>
+
+<div class = "Paragraph">
+{% if password != "nopassword" %}
+<p>Here's a template email to send to the invited user. Even if you don't end up using it, remember that it contains their temporary password.</p>
+
+<p>-USER-,</p>
+<p>-INVITEE- has invited you to the Lower Colorado River Multi-Species Conservation Program Adaptive Management Information Management System. When you login for the first time, use the email address that you received this email from and the temporary password included at the bottom to create your account.</p>
+<p></p>
+<p>Temporary Password: {{ password }}</p>
+{% endif %}
+</div>
+
+<footer>
+
+</footer>
+	
+{% endblock %}
