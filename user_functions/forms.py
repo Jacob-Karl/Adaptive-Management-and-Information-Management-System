@@ -55,4 +55,20 @@ class PersonSettingsForm(forms.ModelForm):
      
     class Meta:
         model = Person
-        fields = ('FirstName', 'LastName', 'Phone', 'Affiliation', 'Address')    
+        fields = ('FirstName', 'LastName', 'Phone', 'Affiliation', 'Address')  
+        
+class InvitationForm(forms.ModelForm):
+    email = forms.CharField(label='Email', required = True, widget=forms.TextInput(attrs={'style': 'width: 100%;', 'class': 'form-control'}))
+    class Meta:
+        model = User
+        fields = ('email',)
+        
+class DeactivateForm(forms.ModelForm):
+    class Meta:
+        model = UserProfile
+        fields = ()
+        
+class ActivateForm(forms.ModelForm):
+    class Meta:
+        model = UserProfile
+        fields = ()

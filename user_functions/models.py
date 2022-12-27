@@ -10,8 +10,14 @@ class Person(models.Model):
     FirstName = models.CharField(max_length=100)
     Affiliation = models.CharField(max_length=100)
     Address = models.CharField(max_length=100)
-    Email = models.CharField(max_length=100, unique=True)
+    Email = models.CharField(max_length=100, unique=False)
     Phone = models.CharField(max_length=100)
+    
+    def __str__(self):
+        return self.FirstName + " " + self.LastName
+    
+    class Meta:
+        verbose_name_plural = "People"    
     
 class UserProfile(models.Model):
     LEVELS = (
@@ -28,6 +34,12 @@ class UserProfile(models.Model):
     Status = models.CharField(max_length=10, choices=STATUS, default='Unlocked')
     Person = models.OneToOneField(Person, on_delete=models.CASCADE)
     
+    '''def __str__(self):
+        return self.User'''
+    
+    class Meta:
+        verbose_name_plural = "User Profiles" 
+    
 class Organization(models.Model):
     Name = models.CharField(max_length=50)
     ContactID = models.OneToOneField(Person, on_delete=models.CASCADE)
@@ -36,8 +48,22 @@ class Organization(models.Model):
     Email = models.CharField(max_length=100)
     Phone = models.CharField(max_length=20)
     
+    def __str__(self):
+        return self.Name
+    
+    class Meta:
+        verbose_name_plural = "Organizations" 
+        
 class Contributor(models.Model):
     #ProjectID = models.OneToOneField('projects.Project', on_delete=models.CASCADE)
-    PeopleID = models.ManyToManyField(Person)
-    OrganizationID = models.ManyToManyField(Organization)
+    PeopleID = models.ForeignKey(Person, null = True, on_delete=models.CASCADE)
+    OrganizationID = models.ForeignKey(Organization, null = True, on_delete=models.CASCADE)
+    
+'''
+class ChangeLog(models.Model):
+    User = models.OneToOneField(User, on_delete=models.CASCADE)
+    Date = models.DateField()
+    Content = models.TextField()
+    Location = models.TextField()
+''' 
     
