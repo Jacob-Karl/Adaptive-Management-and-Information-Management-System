@@ -8,6 +8,8 @@ from django.contrib.auth import authenticate, login, logout
 from django.http import HttpResponseRedirect, HttpResponse
 from django.urls import reverse
 from django.contrib.auth.decorators import login_required
+import random
+import string
 
 
 # Create your views here.
@@ -47,12 +49,10 @@ def register(request):
     
     if user_form.is_valid() and people_form.is_valid():
         
-        print(user_form.cleaned_data)
-        
         try:
             user = User.objects.get(username = request.POST.get('email'))
         except:
-            return HttpResponse("A User with that email already exists")
+            return HttpResponse("Please use the email you recieved your invitation from. If this is the case, A User with that email already exists")
         user_content = user_form.save(commit=False)
         user.username = user_content.username
         
@@ -134,3 +134,61 @@ def settings(request, user_id):
     
     else:
         return render(request, 'user_functions/settings.html', context_dict)
+ 
+@login_required   
+def invite(request, password):
+    invitation_form = InvitationForm(request.POST or None)
+    
+    context_dict = {
+        'invitation_form':invitation_form,
+    }
+    
+    if invitation_form.is_valid():
+        if password == 'nopassword':
+            tmp_password = ''.join(random.SystemRandom().choice(string.ascii_uppercase + string.digits) for _ in range(15))
+            context_dict['password'] = tmp_password
+            email = invitation_form.cleaned_data['email']
+            user = User.objects.create_user(email, email)
+            user.set_password(tmp_password)
+            user.save()            
+        else:
+            context_dict['password'] = 'nopassword'
+
+        return render(request, 'user_functions/invitation.html', context_dict)
+    else:
+        context_dict['password'] = 'nopassword'
+        return render(request, 'user_functions/invitation.html', context_dict)
+
+@login_required    
+def user_hub(request):
+    # check if user profile is locked or unlocked to determine the specific function that
+    # needs to be activated.
+    # when the activate/deactivate button is pressed POST the change and reload the page
+    
+    users = UserProfile.objects.all()
+    
+    context_dict = {
+        'users':users,
+    }
+    
+    user_id = request.POST.get("submit")
+    
+    print(user_id)
+    
+
+    
+    try:
+        user = User.objects.get(username = user_id)
+        if user.is_active == True:
+            user.is_active = False
+            user.save()
+            print("User Deactivated")
+        else:
+            user.is_active = True
+            user.save()
+            print("User Activated")
+            
+    except:
+        pass
+    
+    return render(request, 'user_functions/user_hub.html', context_dict)
