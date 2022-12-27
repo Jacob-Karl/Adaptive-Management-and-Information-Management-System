@@ -1,4 +1,20 @@
-﻿{% load static %}
+﻿<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>AIMS</title>
+   	<!-- Bootstrap core CSS -->
+	<Link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
+    <Link href="../static/css/bootsrap.min.css" rel="stylesheet">
+	<!--<Link href="{% static 'css/bootsrap.min.css' %}" rel="stylesheet">-->
+	<Link href="{% static 'css/bootsrap-grid.min.css' %}" rel="stylesheet">
+	<Link href="{% static 'css/bootsrap-reboot.min.css' %}" rel="stylesheet">
+	<Link href="{% static 'css/bootsrap-utilities.min.css' %}" rel="stylesheet">
+</head>
 
 <style>
 	.AIMS-header {
@@ -45,10 +61,6 @@
 	}
 </style>
 
-{% block title_block %}
-Register
-{% endblock %}
-
 {% block body_block %}
 <div class="AIMS-header">
 	<h1 class="title">
@@ -57,12 +69,140 @@ Register
 	<img class="Logo" src="{% static 'MSCP_logo.png' %}" alt="MSCP Logo" width="1460" height="600">
 </div>
 
-<h3 class="Filler"> Hub links go here </h3>
-<a class="Card" href = "{% url 'scopes:hub' %}"> Scope Hub </a>
-<br>
-<a class="Card" href = "{% url 'projects:hub' %}"> Project Hub </a>
+<div class="row d-flex justify-content-center" style="grid-column-gap: 10px; grid-row-gap: 10px;">
 
-<div>
+<div class="card mb-3" style="max-width: 540px;">
+	<a  href = "{% url 'scopes:hub' %}">
+		<div class="row">
+			<div class="col-md-4">
+				<img src="{% static 'noun_Fish_2156218.png' %}" class="card-img" alt="connect"  href = "{% url 'scopes:hub' %}">
+			</div>
+			<div class="col-md-8">
+				<div class="card-body">
+					<h5 class="card-title" style="color: #000000;">Scope Hub</h5>
+					<p class="card-text" style="color: #000000;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id elit nec nibh fringilla gravida.</p>
+				</div>
+			</div>
+		</div>
+	</a>
+</div>
+
+
+<br>
+
+<div class="card mb-3" style="max-width: 540px;">
+	<a  href = "{% url 'projects:hub' %}">
+		<div class="row no-gutters">
+			<div class="col-md-4">
+				<img src="{% static 'noun_Book_2342158.png' %}" class="card-img" alt="connect"  href = "{% url 'scopes:hub' %}">
+			</div>
+			<div class="col-md-8">
+				<div class="card-body">
+					<h5 class="card-title" style="color: #000000;">Project Hub</h5>
+					<p class="card-text" style="color: #000000;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id elit nec nibh fringilla gravida.</p>
+				</div>
+			</div>
+		</div>
+	</a>
+</div>
+
+
+<br>
+
+<div class="card mb-3" style="max-width: 540px;">
+	<a  href = "{% url 'user_functions:settings' user.id %}">
+		<div class="row no-gutters">
+			<div class="col-md-4">
+				<img src="{% static 'noun_Gear_3042492.png' %}" class="card-img" alt="connect"  href = "{% url 'scopes:hub' %}">
+			</div>
+			<div class="col-md-8">
+				<div class="card-body">
+					<h5 class="card-title" style="color: #000000;">Settings</h5>
+					<p class="card-text" style="color: #000000;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id elit nec nibh fringilla gravida.</p>
+				</div>
+			</div>
+		</div>
+	</a>
+</div>
+
+<br>
+{% if user.groups.all.0.name == 'Admin' or  user.groups.all.0.name == 'Lead' %}
+	<div class="card mb-3" style="max-width: 540px;">
+		<a  href = "{% url 'reports:hub' %}">
+			<div class="row no-gutters">
+				<div class="col-md-4">
+					<img src="{% static 'noun_measure_3170678.png' %}" class="card-img" alt="connect"  href = "{% url 'scopes:hub' %}">
+				</div>
+				<div class="col-md-8">
+					<div class="card-body">
+						<h5 class="card-title" style="color: #000000;">Report Hub</h5>
+						<p class="card-text" style="color: #000000;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id elit nec nibh fringilla gravida.</p>
+					</div>
+				</div>
+			</div>
+		</a>
+	</div>
+	
+	<br>
+{% endif %}
+{% if user.groups.all.0.name == 'Admin' or  user.groups.all.0.name == 'Lead' %}
+	<div class="card mb-3" style="max-width: 540px;">
+		<a  href = "{% url 'user_functions:user_hub' %}">
+			<div class="row no-gutters">
+				<div class="col-md-4">
+					<img src="{% static 'noun_users_847321.png' %}" class="card-img" alt="connect"  href = "{% url 'scopes:hub' %}">
+				</div>
+				<div class="col-md-8">
+					<div class="card-body">
+						<h5 class="card-title" style="color: #000000;">User Hub</h5>
+						<p class="card-text" style="color: #000000;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id elit nec nibh fringilla gravida.</p>
+					</div>
+				</div>
+			</div>
+		</a>
+	</div>
+	
+	<br>
+{% endif %}
+{% if user.groups.all.0.name == 'Admin' %}
+	<div class="card mb-3" style="max-width: 540px;">
+		<a  href = "{% url 'user_functions:invitation' "nopassword" %}">
+			<div class="row no-gutters">
+				<div class="col-md-4">
+					<img src="{% static 'noun_User_847313.png' %}" class="card-img" alt="connect"  href = "{% url 'scopes:hub' %}">
+				</div>
+				<div class="col-md-8">
+					<div class="card-body">
+						<h5 class="card-title" style="color: #000000;">User Invitation</h5>
+						<p class="card-text" style="color: #000000;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id elit nec nibh fringilla gravida.</p>
+					</div>
+				</div>
+			</div>
+		</a>
+	</div>
+	
+	<br>
+{% endif %}
+{% if user.groups.all.0.name == 'Admin' %}
+	<div class="card mb-3" style="max-width: 540px;">
+		<a  href = "{% url 'admin:index' %}">
+			<div class="row no-gutters">
+				<div class="col-md-4">
+					<img src="{% static 'noun_Shield_941924.png' %}" class="card-img" alt="connect"  href = "{% url 'scopes:hub' %}">
+				</div>
+				<div class="col-md-8">
+					<div class="card-body">
+						<h5 class="card-title" style="color: #000000;">Admin</h5>
+						<p class="card-text" style="color: #000000;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id elit nec nibh fringilla gravida.</p>
+					</div>
+				</div>
+			</div>
+		</a>
+	</div>
+	
+{% endif %}
+</div>
+<div class="d-flex justify-content-center">
 	<a href= "{% url 'user_functions:logout' %}" class="Button"> Logout </a>
 </div>
 

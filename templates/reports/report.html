@@ -1,0 +1,58 @@
+﻿{% extends 'universal.html' %}
+{% load static %}
+<!DOCTYPE html>
+
+{% block style_block %}
+	.page_title{
+		margin-left: 20%;
+	}
+	.Button{
+		margin-top: 25px;
+		margin-bottom: 25px;
+		background-color: #CD9157;
+		border: none;
+		color: white;
+		padding: 10px 180px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font: bold 15px arial;
+	}
+{% endblock %}
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+{% block body_block %}
+<div>
+<br>
+<h3 class = "page_title">
+{{ project.WorktaskID }}: {{ project.ProjectName }} Report
+</h3>
+<br>
+</div>	
+
+<div class="Form">
+	<form  id = "report_form" action = "{% url 'reports:generate_project_report' project_ID %}" method = "post">
+		{% csrf_token %}
+		<div class="d-flex justify-content-center">
+			<input class = "Button" type = "submit" name = "generate_annual" value = "Generate Annual Report">
+		</div>
+	</form>
+</div>
+<div class="Form">
+	<form id = "report_form" action = "{% url 'reports:generate_report' project_ID %}" method = "post">
+		{% csrf_token %}
+		{{report_selector_form.as_p}}
+		<div class="d-flex justify-content-center">
+			<input class = "Button" type = "submit" name = "generate_report" value = "Generate Project Report">
+		</div>
+	</form>
+</div>
+
+<script type="text/javascript">
+
+</script>
+{% endblock %}
+</html>

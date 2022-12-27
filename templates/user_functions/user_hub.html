@@ -1,0 +1,93 @@
+﻿{% extends 'universal.html' %}
+{% load static %}
+
+{% block style_block %}
+	.AIMS-header {
+		background-color: #00415D;
+		height: 100px;
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	.title {
+		color: #FFFFFF;
+		font: bold 75px arial;
+		margin-left: 10 px;
+		position: absolute;
+		left: 0;
+		padding: 10px;
+	}
+	.Logo{
+		margin-right: 10px;
+		position: absolute;
+		right: 0;
+		height: 75px;
+		width: 177px;
+	}
+	.Button{
+		margin-top: 25px;
+		margin-bottom: 25px;
+		background-color: #CD9157;
+		border: none;
+		color: white;
+		padding: 10px 180px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font: bold 15px arial;
+	}
+	.Filler{
+		margin-top: 25px;
+		margin-bottom: 25px;
+	}
+	table{
+		width: 100%;
+	}
+	footer {
+  		background-color: #00415D;
+		height: 100px;
+	}
+	tr:nth-child(even) {background-color: #f0f0f0;}
+{% endblock %}
+
+{% block title_block %}
+Register
+{% endblock %}
+
+{% block body_block %}
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+		<th>Account Status</th>
+		<th>Change Status</th>
+    </tr>
+    {% for item in users %}
+    <tr> 
+        <td>{{ item.Person.FirstName }} {{ item.Person.LastName }}</td>
+        <td>{{ item.User.email }}</td>
+		<td>{{ item.User.is_active}}</td>
+		<td>
+			<form action = "{% url 'user_functions:user_hub'%}" method = "post">
+				{% csrf_token %}
+				<button class = "deactivate" id = {{ item.User }} type = "submit" name = "submit" value = {{ item.User }}>
+					Change Account Status
+				</button>
+			</form>
+		</td>
+    </tr>
+    {% endfor %}
+</table>
+
+<footer>
+</footer>
+<script type="text/javascript">
+
+function deactivateIt(){
+}
+
+function activateIt(){
+}
+	
+{% endblock %}

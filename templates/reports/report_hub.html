@@ -1,0 +1,59 @@
+﻿{% extends 'universal.html' %}
+{% load static %}
+
+{% block style_block %}
+	.page_title{
+		margin-left: 40%;
+	}
+	.Add{
+	}
+	.card{
+		padding-left: 10px;
+	}
+{% endblock %}
+
+
+{% block title_block %}
+Project Hub
+{% endblock %}
+
+{% block body_block %}
+<div>
+<br>
+<h3 class = "page_title">
+Report Hub
+</h3>
+<br>
+</div>	
+
+<div>
+
+<div id = "Project">
+	<div class="row pt-2">
+		{% for project in All_Projects %}
+		<div class="card mb-3" style="max-width: 340px; margin: 10px;">
+			<a  href = "{% url 'reports:report' project.id %}">
+				<div class="row">
+					<div class="col-md-4">
+						<img src="{% static 'noun_measure_3170678.png' %}" class="card-img" alt="connect"  href = "{% url 'reports:report' project.id %}">
+					</div>
+					<div class="col-md-8">
+						<div class="card-body">
+							<h3 class="card-title" style="color: #000000;">{{ project.WorktaskID }}</h3>
+							<h5 class="card-sub-title" style="color: #000000;">{{ project.ProjectName }}</h5>
+						</div>
+					</div>
+				</div>
+			</a>
+		</div>
+		<br>
+		{% endfor %}
+	</div>
+	<br>
+</div>
+
+
+<script type="text/javascript">
+
+</script>
+{% endblock %}
