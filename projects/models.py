@@ -44,11 +44,23 @@ class Project(models.Model):
     Objectives = models.ManyToManyField('Objective')
     RelatedProjects = models.ManyToManyField('RelatedProject')
     
+    def __str__(self):
+        return self.WorktaskID
+    
+    class Meta:
+        verbose_name_plural = "Projects"     
+    
     
 class RelatedProject(models.Model):
     Project = models.ForeignKey(Project, on_delete=models.CASCADE)
     WorktaskID = models.CharField(default = "", max_length=10)
     RelationshipType = models.CharField(default = "", max_length=100)
+    
+    def __str__(self):
+        return self.WorktaskID
+    
+    class Meta:
+        verbose_name_plural = "Related Projects"    
     
 class Trigger(models.Model):
     ProjectID = models.ForeignKey(Project, unique = False, on_delete=models.CASCADE)
@@ -58,6 +70,12 @@ class Trigger(models.Model):
     ProposedResponse = models.TextField(default = "", null = True)
     Reference = models.TextField(default = "", null=True)
     TriggerStatus = models.ManyToManyField('TriggerStatus')
+    
+    def __str__(self):
+        return self.TriggerName
+    
+    class Meta:
+        verbose_name_plural = "Triggers"    
 
 class TriggerStatus(models.Model):
     TriggerID = models.ForeignKey(Trigger, on_delete=models.CASCADE)
@@ -66,6 +84,12 @@ class TriggerStatus(models.Model):
     MgmtInterp = models.TextField(default = "", null = True)
     MgmtResponse = models.TextField(default = "", null = True)
     Reference = models.TextField(default = "", null=True)
+    
+    def __str__(self):
+        return self.TriggerID
+    
+    class Meta:
+        verbose_name_plural = "Trigger Statuses"    
 
 class Output(models.Model):
     ProjectID = models.ForeignKey(Project, unique = False, on_delete=models.CASCADE)
@@ -80,6 +104,12 @@ class Output(models.Model):
     OutputURI = models.CharField(max_length=255, default = "", null = True)
     OutputConstraints = models.TextField(default = "", null = True)
     Reference = models.TextField(default = "", null=True)
+    
+    def __str__(self):
+        return self.OutputTitle
+    
+    class Meta:
+        verbose_name_plural = "Outputs"    
 
 class Objective(models.Model):
     ProjectID = models.ForeignKey(Project, unique = False, on_delete=models.CASCADE)
@@ -92,6 +122,12 @@ class Objective(models.Model):
     Reference = models.TextField(default = "", null=True)
     Milestones = models.ManyToManyField('Milestone')
     Steps = models.ManyToManyField('Step', through='Objective2Step')
+    
+    def __str__(self):
+        return self.ObjCode
+    
+    class Meta:
+        verbose_name_plural = "Objectives"    
 
 class Milestone(models.Model):
     ObjectiveID = models.ForeignKey(Objective, on_delete=models.CASCADE)
@@ -100,6 +136,12 @@ class Milestone(models.Model):
     Description = models.TextField(default = "", null = True)
     Reference = models.TextField(default = "", null=True)
     MilestoneProgress = models.ManyToManyField('MilestoneProgress')
+    
+    def __str__(self):
+        return self.MilestoneID
+    
+    class Meta:
+        verbose_name_plural = "Milestones"    
 
 class MilestoneProgress(models.Model):
     MilestoneID = models.ForeignKey(Milestone, on_delete=models.CASCADE)
@@ -107,6 +149,12 @@ class MilestoneProgress(models.Model):
     Status = models.CharField(max_length=25, default = "", null = True)
     Description = models.TextField(default = "", null = True)
     Reference = models.TextField(default = "", null=True)
+    
+    def __str__(self):
+        return self.MilestoneID
+    
+    class Meta:
+        verbose_name_plural = "Milestone Progresses"    
 
 class Step(models.Model):
     ObjectiveID = models.ForeignKey(Objective, on_delete=models.CASCADE)
@@ -119,6 +167,12 @@ class Step(models.Model):
     StepDependencies = models.TextField(default = "", null = True)
     Reference = models.TextField(default = "", null=True)
     Methods = models.ManyToManyField('Method', through='Step2Method')
+    
+    def __str__(self):
+        return self.StepCode
+    
+    class Meta:
+        verbose_name_plural = "Steps"    
 
 class Method(models.Model):
     StepID = models.ForeignKey(Step, on_delete=models.CASCADE)
@@ -131,6 +185,12 @@ class Method(models.Model):
     MethodContact = models.CharField(max_length=38, default = "", null = True)
     Reference = models.TextField(default = "", null=True)
     Protocols = models.ManyToManyField('Protocol', through='Method2Protocol')
+    
+    def __str__(self):
+        return self.MethodCode
+    
+    class Meta:
+        verbose_name_plural = "Methods"    
 
 class Protocol(models.Model):
     MethodID = models.ForeignKey(Method, on_delete=models.CASCADE)
@@ -142,6 +202,12 @@ class Protocol(models.Model):
     ProtocolDescription = models.TextField(default = "", null = True)
     ProtocolLink = models.CharField(max_length=255, default = "", null = True)
     Reference = models.TextField(default = "", null=True)
+    
+    def __str__(self):
+        return self.ProtocolCode
+    
+    class Meta:
+        verbose_name_plural = "Protocols"    
 
 #Linking Models
 

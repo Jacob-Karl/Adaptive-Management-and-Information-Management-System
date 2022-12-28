@@ -42,6 +42,10 @@ class MilestoneProgressAdmin(VersionAdmin):
 class StepAdmin(VersionAdmin):
     pass
 
+@admin.register(Method)
+class StepAdmin(VersionAdmin):
+    pass
+
 @admin.register(Protocol)
 class ProtocolAdmin(VersionAdmin):
     pass
