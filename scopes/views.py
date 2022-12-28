@@ -132,16 +132,10 @@ def goal(request, goal_ID):
         
         goal_form = GoalForm(request.POST or None, request.FILES or None, initial=initial_dict, instance=goal_Obj,)
     
-    print(goal_form.errors.values())
-    print(goal_form.data) 
-    print(request.POST)
-    
     if goal_form.is_valid(): 
-        print("Valid!!!") 
         goal = goal_form.save(commit=False)
         goal.save()
         return redirect('/scopes/')
     
     else:
-        print("Invalid")
         return render(request, 'scopes/Goal.html', {'goal_form':goal_form, 'goal_ID':goal_ID})
