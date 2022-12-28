@@ -24,14 +24,16 @@ def hub(request):
 
 @login_required
 def prepare_report(request, project_ID):
-    print(django.get_version())
     report_selector_form = reportSelectorForm(request.POST)
+    project = Project.objects.get(pk = project_ID)
     
     context_dict = {
+        'project':project,
         'project_ID':project_ID,
         'report_selector_form':report_selector_form,
     }
     
+    print(render(request, 'reports/report_hub.html', context_dict))
     if report_selector_form.is_valid():
         return render(request, 'reports/report_hub.html', context_dict)    
     return render(request, 'reports/report.html', context_dict)
@@ -45,7 +47,11 @@ def generate_project_report(request, project_ID):
     template = template_file.read()
     template_file.close()
     
-    report_selector_form = reportSelectorForm(request.POST)
+    test_dict = {
+        'projectToggle':True,
+    }
+    
+    report_selector_form = reportSelectorForm(request.POST or None, initial=test_dict)
     context_dict = {'report_selector_form':report_selector_form,}  
     
     all_projects = Project.objects.all()
@@ -89,7 +95,7 @@ def generate_project_report(request, project_ID):
 
     for con in projectObj.ConMeas.all():
         try:
-            all_conMeas_codes = all_conMeas_codes + con.CMCode
+            all_conMeas_codes = all_conMeas_codes + con.CMCode + ' '
         except:
             all_conMeas_codes = all_conMeas_codes + " --Empty Conservation Measure-- "
                 
@@ -181,6 +187,7 @@ def generate_report(request, project_ID):
     objectiveStepTemplate = "N/A"
     stepMethodTemplate = "N/A"
     methodProtocolTemplate = "N/A"
+    outputTemplate = "N/A"
     
     for item in chunks:
         name = item[2:item.find("/>")]
@@ -202,32 +209,40 @@ def generate_report(request, project_ID):
             stepMethodTemplate = item[item.find("/>")+2:]
         elif name == "method_protocol":
             methodProtocolTemplate = item[item.find("/>")+2:]
+        elif name == "outputs":
+            outputTemplate = item[item.find("/>")+2:]            
     
     all_obj_acryonyms = ""
     all_conMeas_codes = ""
     all_loc_codes = ""
     all_goal_names = ""
+    all_related_projects = ""
     
     for obj in projectObj.SpeComs.all():
-        all_obj_acryonyms = all_obj_acryonyms + obj.Acronym
+        all_obj_acryonyms = all_obj_acryonyms + obj.Acronym + ' '
     
     for con in projectObj.ConMeas.all():
-        all_conMeas_codes = all_conMeas_codes + con.CMCode
+        all_conMeas_codes = all_conMeas_codes + con.CMCode + ' '
         
     for loc in projectObj.Locations.all():
-        all_loc_codes = all_loc_codes + loc.LocationCode
+        all_loc_codes = all_loc_codes + loc.LocationCode + ' '
         
     for goal in projectObj.Goals.all():
-        all_goal_names = all_goal_names + goal.GoalName
+        all_goal_names = all_goal_names + goal.GoalName + ' '
+        
+    for related in projectObj.RelatedProjects.all():
+        all_related_projects = all_related_projects + related.WorktaskID + '\t' + related.RelationshipType + '\n'
     
-    report = projectTemplate.format(project_id = projectObj.WorktaskID, project_name = projectObj.ProjectName, time_now = time.asctime( time.localtime(time.time()) ), project_lead = projectObj.ProjectLead, project_status = projectObj.ProjectStatus, project_type = projectObj.ProjectType, project_startDate = projectObj.ProjectStart, project_endDate = projectObj.ProjectEnd, project_summary = projectObj.ProjectSummary, project_background = projectObj.ProjectBackground, project_speComs = all_obj_acryonyms, project_conMeas = all_conMeas_codes, project_locations = all_loc_codes, project_goals = all_goal_names)                                    
+    report = projectTemplate.format(project_id = projectObj.WorktaskID, project_name = projectObj.ProjectName, time_now = time.asctime( time.localtime(time.time()) ), project_lead = projectObj.ProjectLead, project_contributors = projectObj.ProjectContributors, project_status = projectObj.ProjectStatus, project_type = projectObj.ProjectType, project_startDate = projectObj.ProjectStart, project_endDate = projectObj.ProjectEnd, project_summary = projectObj.ProjectSummary, project_background = projectObj.ProjectBackground, project_speComs = all_obj_acryonyms, project_conMeas = all_conMeas_codes, project_locations = all_loc_codes, project_goals = all_goal_names, project_otherConMeas = projectObj.OtherConsMeas, project_otherSpeComs = projectObj.OtherSpecies, project_relatedProject = all_related_projects)                                    
                
     projectTriggers = Trigger.objects.filter(ProjectID = project_ID)
+    triggerNumber = 1
                
     for trigger in projectTriggers:
         if request.POST.get('triggerToggle','') != 'on':
             break
-        report = report + projectTriggerTemplate.format(trigger_name = trigger.TriggerName, trigger_description = trigger.TriggerDescription, trigger_indicators = trigger.TriggerIndicators, trigger_response = trigger.ProposedResponse)
+        report = report + projectTriggerTemplate.format(number = triggerNumber, trigger_name = trigger.TriggerName, trigger_description = trigger.TriggerDescription, trigger_indicators = trigger.TriggerIndicators, trigger_response = trigger.ProposedResponse)
+        triggerNumber = triggerNumber + 1
         
         triggerStatuses = TriggerStatus.objects.filter(TriggerID = trigger.id)
         
@@ -268,11 +283,19 @@ def generate_report(request, project_ID):
                 methodProtocols = Protocol.objects.filter(MethodID = method.id)
                 
                 for protocol in methodProtocols:
-                    if request.POST.get('outputToggle','') != 'on':
+                    if request.POST.get('protocolToggle','') != 'on':
                         break                    
                     report = report + methodProtocolTemplate.format(protocol_tile = protocol.ProtocolTitle, protocol_version = protocol.ProtocolVerision, protocol_date = protocol.ProtocolDate, protocol_author = protocol.ProtocolAuthor, protocol_description = protocol.ProtocolDescription, protocol_link = protocol.ProtocolLink)
-
-    report_file = open(os.path.expanduser('~') + '\\Downloads\\' + projectObj.WorktaskID + "_report" + str(datetime.datetime.now().strftime("%Y_%m_%d_%H_%M_%S")) + ".txt", "w")
+                    
+    projectOutputs = Output.objects.filter(ProjectID = project_ID)
+    print(request.POST.get('outputToggle',''))
+    for output in projectOutputs:
+        if request.POST.get('outputToggle','') != 'on':
+            break
+        print('here')
+        report = report + outputTemplate.format(output_type = output.OutputType, output_authors = output.OutputAuthors, output_date = output.OutputDate, output_title = output.OutputTitle, output_version = output.OutputVersion, output_description = output.OutputDescription, output_DOI = output.OutputDOI, output_citation = output.OutputCitation, output_URI = output.OutputURI, output_constraints = output.OutputConstraints)
+        
+    report_file = open(os.path.expanduser('~') + '\\Downloads\\' + projectObj.WorktaskID + "_report_" + str(datetime.datetime.now().strftime("%Y_%m_%d_%H_%M_%S")) + ".txt", "w")
     report_file.write(report)
     report_file.close()
     
