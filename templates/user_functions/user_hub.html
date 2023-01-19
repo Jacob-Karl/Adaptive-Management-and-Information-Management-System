@@ -67,7 +67,7 @@ Register
     <tr> 
         <td>{{ item.Person.FirstName }} {{ item.Person.LastName }}</td>
         <td>{{ item.User.email }}</td>
-		<td>{{ item.User.is_active}}</td>
+		<td id = "status" onload = "setStatus()">{{ item.User.is_active}}</td>
 		<td>
 			<form action = "{% url 'user_functions:user_hub'%}" method = "post">
 				{% csrf_token %}
@@ -82,12 +82,28 @@ Register
 
 <footer>
 </footer>
-<script type="text/javascript">
+<script type="text/javascript" defer>
 
-function deactivateIt(){
+function setStatus(){
+
+	var table = document.getElementsByTagName('table')[0];
+	var rows = table.rows;
+	for (var i = 1; i < rows.length; i++) {
+		var rowText = rows[i].childNodes[5].innerText;
+
+		if(rowText.includes('True')) {
+			rows[i].childNodes[5].textContent = "Active";
+		} else {
+			rows[i].childNodes[5].textContent = "Deactive";
+		}
+	}
 }
 
-function activateIt(){
+window.onload = setStatus();
+
+function setDeactive(){
 }
+
+</script>
 	
 {% endblock %}
