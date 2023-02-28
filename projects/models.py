@@ -1,3 +1,4 @@
+import auto_prefetch
 from django.db import models
 from django import forms
 from django.contrib.auth.models import User
@@ -7,7 +8,7 @@ from django.contrib.auth.models import User
 
 # Create your models here.
 
-class Project(models.Model):
+class Project(auto_prefetch.Model):
     STATUS_CHOICES = (
         ('Open','Open'),
         ('Closed','Closed'),
@@ -21,19 +22,19 @@ class Project(models.Model):
         ('Adaptive Management Program','Adaptive Management Program'),
     )
     
-    WorktaskID = models.CharField(max_length=10, default = "", null = True)
-    ProjectName = models.CharField(max_length=255, default = "", null = True)
-    ProjectLead = models.CharField(max_length=38, default = "", null = True)
-    ProjectStatus = models.CharField(max_length=10, choices = STATUS_CHOICES, null = True)
-    ProjectType = models.CharField(max_length=50, choices = TYPE_CHOICES, null = True)
-    ProjectStart = models.DateField(null = True)
-    ProjectEnd = models.DateField(null = True)
-    ProjectSummary = models.TextField(default = "",null = True)
-    ProjectBackground = models.TextField(default = "",null = True)
-    OtherConsMeas = models.CharField(max_length=255, default = "",null = True)
-    OtherSpecies = models.CharField(max_length=255, default = "",null = True)
-    Reference = models.TextField(default = "", null=True)
-    ProjectContributors = models.TextField(default = "", null = True)
+    WorktaskID = models.CharField(max_length=10, default = "", null = True, db_index = True)
+    ProjectName = models.CharField(max_length=255, default = "", null = True, db_index = True)
+    ProjectLead = models.CharField(max_length=38, default = "", null = True, db_index = True)
+    ProjectStatus = models.CharField(max_length=10, choices = STATUS_CHOICES, null = True, db_index = True)
+    ProjectType = models.CharField(max_length=50, choices = TYPE_CHOICES, null = True, db_index = True)
+    ProjectStart = models.DateField(null = True, db_index = True)
+    ProjectEnd = models.DateField(null = True, db_index = True)
+    ProjectSummary = models.TextField(default = "",null = True, db_index = True)
+    ProjectBackground = models.TextField(default = "",null = True, db_index = True)
+    OtherConsMeas = models.CharField(max_length=255, default = "",null = True, db_index = True)
+    OtherSpecies = models.CharField(max_length=255, default = "",null = True, db_index = True)
+    Reference = models.TextField(default = "", null=True, db_index = True)
+    ProjectContributors = models.TextField(default = "", null = True, db_index = True)
     People = models.ManyToManyField('user_functions.Person')
     Goals = models.ManyToManyField('scopes.Goal', through='Goal2Project')
     SpeComs = models.ManyToManyField('scopes.SpeciesCommunity', through='SpeCom2Project')
@@ -45,25 +46,32 @@ class Project(models.Model):
     RelatedProjects = models.ManyToManyField('RelatedProject')
     
     def __str__(self):
-        return self.WorktaskID
+        if self.WorktaskID is not None or self.WorktaskID is not '':
+            return str(self.WorktaskID)
+        else:
+            return 'None'
     
-    class Meta:
-        verbose_name_plural = "Projects"     
+    class Meta(auto_prefetch.Model.Meta):
+        verbose_name_plural = "Projects"
+        
     
     
-class RelatedProject(models.Model):
-    Project = models.ForeignKey(Project, on_delete=models.CASCADE)
+class RelatedProject(auto_prefetch.Model):
+    Project = auto_prefetch.ForeignKey(Project, on_delete=models.CASCADE)
     WorktaskID = models.CharField(default = "", max_length=10)
     RelationshipType = models.CharField(default = "", max_length=100)
     
     def __str__(self):
-        return self.WorktaskID
+        if self.WorktaskID is not None:
+            return str(self.WorktaskID)
+        else:
+            return 'None'
     
-    class Meta:
+    class Meta(auto_prefetch.Model.Meta):
         verbose_name_plural = "Related Projects"    
     
-class Trigger(models.Model):
-    ProjectID = models.ForeignKey(Project, unique = False, on_delete=models.CASCADE)
+class Trigger(auto_prefetch.Model):
+    ProjectID = auto_prefetch.ForeignKey(Project, unique = False, on_delete=models.CASCADE)
     TriggerName = models.CharField(max_length=38, default = "", null = True)
     TriggerDescription = models.TextField(default = "", null = True)
     TriggerIndicators = models.TextField(default = "", null = True)
@@ -72,13 +80,16 @@ class Trigger(models.Model):
     TriggerStatus = models.ManyToManyField('TriggerStatus')
     
     def __str__(self):
-        return self.TriggerName
+        if self.TriggerName is not None:
+            return str(self.TriggerName)
+        else:
+            return 'None'
     
-    class Meta:
+    class Meta(auto_prefetch.Model.Meta):
         verbose_name_plural = "Triggers"    
 
-class TriggerStatus(models.Model):
-    TriggerID = models.ForeignKey(Trigger, on_delete=models.CASCADE)
+class TriggerStatus(auto_prefetch.Model):
+    TriggerID = auto_prefetch.ForeignKey(Trigger, on_delete=models.CASCADE)
     ReportingDate = models.DateField(null = True)
     StatusTrend = models.TextField(default = "", null = True)
     MgmtInterp = models.TextField(default = "", null = True)
@@ -86,13 +97,16 @@ class TriggerStatus(models.Model):
     Reference = models.TextField(default = "", null=True)
     
     def __str__(self):
-        return self.TriggerID
+        if self.TriggerID.TriggerName != '' or self.TriggerID.TriggerName is not None:
+            return str(self.TriggerID.TriggerName)
+        else:
+            return 'None'
     
-    class Meta:
+    class Meta(auto_prefetch.Model.Meta):
         verbose_name_plural = "Trigger Statuses"    
 
-class Output(models.Model):
-    ProjectID = models.ForeignKey(Project, unique = False, on_delete=models.CASCADE)
+class Output(auto_prefetch.Model):
+    ProjectID = auto_prefetch.ForeignKey(Project, unique = False, on_delete=models.CASCADE)
     OutputType = models.CharField(max_length=100, default = "", null = True)
     OutputAuthors = models.CharField(max_length=255, default = "", null = True)
     OutputDate = models.DateField(null = True)
@@ -106,13 +120,16 @@ class Output(models.Model):
     Reference = models.TextField(default = "", null=True)
     
     def __str__(self):
-        return self.OutputTitle
+        if self.OutputTitle != '' or self.OutputTitle is not None:
+            return str(self.OutputTitle)
+        else:
+            return 'None'
     
-    class Meta:
+    class Meta(auto_prefetch.Model.Meta):
         verbose_name_plural = "Outputs"    
 
-class Objective(models.Model):
-    ProjectID = models.ForeignKey(Project, unique = False, on_delete=models.CASCADE)
+class Objective(auto_prefetch.Model):
+    ProjectID = auto_prefetch.ForeignKey(Project, unique = False, on_delete=models.CASCADE)
     ObjCode = models.CharField(max_length=25, default = "", null = True)
     ObjName = models.CharField(max_length=100, default = "", null = True)
     ObjDescription = models.TextField(default = "", null = True)
@@ -124,13 +141,16 @@ class Objective(models.Model):
     Steps = models.ManyToManyField('Step', through='Objective2Step')
     
     def __str__(self):
-        return self.ObjCode
+        if self.ObjCode != '' or self.ObjCode is not None:
+            return str(self.ObjCode)
+        else:
+            return 'None'
     
-    class Meta:
+    class Meta(auto_prefetch.Model.Meta):
         verbose_name_plural = "Objectives"    
 
-class Milestone(models.Model):
-    ObjectiveID = models.ForeignKey(Objective, on_delete=models.CASCADE)
+class Milestone(auto_prefetch.Model):
+    ObjectiveID = auto_prefetch.ForeignKey(Objective, on_delete=models.CASCADE)
     MilestoneID = models.CharField(max_length=25, default = "", null = True)
     MilestoneName = models.CharField(max_length=100, default = "", null = True)
     Description = models.TextField(default = "", null = True)
@@ -138,26 +158,32 @@ class Milestone(models.Model):
     MilestoneProgress = models.ManyToManyField('MilestoneProgress')
     
     def __str__(self):
-        return self.MilestoneID
+        if self.MilestoneID != '' or self.MilestoneID is not None:
+            return str(self.MilestoneID)
+        else:
+            return 'None'
     
-    class Meta:
+    class Meta(auto_prefetch.Model.Meta):
         verbose_name_plural = "Milestones"    
 
-class MilestoneProgress(models.Model):
-    MilestoneID = models.ForeignKey(Milestone, on_delete=models.CASCADE)
+class MilestoneProgress(auto_prefetch.Model):
+    MilestoneID = auto_prefetch.ForeignKey(Milestone, on_delete=models.CASCADE)
     ReportingDate = models.DateField(null = True)
     Status = models.CharField(max_length=25, default = "", null = True)
     Description = models.TextField(default = "", null = True)
     Reference = models.TextField(default = "", null=True)
     
     def __str__(self):
-        return self.MilestoneID
+        if self.MilestoneID.MilestoneID != '' or self.MilestoneID.MilestoneID is not None:
+            return str(self.MilestoneID.MilestoneID)
+        else:
+            return 'None'
     
-    class Meta:
+    class Meta(auto_prefetch.Model.Meta):
         verbose_name_plural = "Milestone Progresses"    
 
-class Step(models.Model):
-    ObjectiveID = models.ForeignKey(Objective, on_delete=models.CASCADE)
+class Step(auto_prefetch.Model):
+    ObjectiveID = auto_prefetch.ForeignKey(Objective, on_delete=models.CASCADE)
     StepName = models.CharField(max_length=100, default = "", null = True)
     StepCode = models.CharField(max_length=10, default = "", null = True)
     StepType = models.CharField(max_length=100, default = "", null = True)
@@ -169,13 +195,16 @@ class Step(models.Model):
     Methods = models.ManyToManyField('Method', through='Step2Method')
     
     def __str__(self):
-        return self.StepCode
+        if self.StepCode != '' or self.StepCode is not None:
+            return str(self.StepCode)
+        else:
+            return 'None'
     
-    class Meta:
+    class Meta(auto_prefetch.Model.Meta):
         verbose_name_plural = "Steps"    
 
-class Method(models.Model):
-    StepID = models.ForeignKey(Step, on_delete=models.CASCADE)
+class Method(auto_prefetch.Model):
+    StepID = auto_prefetch.ForeignKey(Step, on_delete=models.CASCADE)
     MethodTitle = models.CharField(max_length=255, default = "", null = True)
     MethodCode = models.CharField(max_length=10, default = "", null = True)
     MethodType = models.CharField(max_length=50, default = "", null = True)
@@ -187,13 +216,16 @@ class Method(models.Model):
     Protocols = models.ManyToManyField('Protocol', through='Method2Protocol')
     
     def __str__(self):
-        return self.MethodCode
+        if self.MethodCode != '' or self.MethodCode is not None:
+            return str(self.MethodCode)
+        else:
+            return 'None'
     
-    class Meta:
+    class Meta(auto_prefetch.Model.Meta):
         verbose_name_plural = "Methods"    
 
-class Protocol(models.Model):
-    MethodID = models.ForeignKey(Method, on_delete=models.CASCADE)
+class Protocol(auto_prefetch.Model):
+    MethodID = auto_prefetch.ForeignKey(Method, on_delete=models.CASCADE)
     ProtocolCode = models.CharField(max_length=10, default = "", null = True)
     ProtocolTitle = models.CharField(max_length=255, default = "", null = True)
     ProtocolVerision = models.CharField(max_length=10, default = "", null = True)
@@ -204,9 +236,12 @@ class Protocol(models.Model):
     Reference = models.TextField(default = "", null=True)
     
     def __str__(self):
-        return self.ProtocolCode
+        if self.ProtocolCode != '' or self.ProtocolCode is not None:
+            return str(self.ProtocolCode)
+        else:
+            return 'None'
     
-    class Meta:
+    class Meta(auto_prefetch.Model.Meta):
         verbose_name_plural = "Protocols"    
 
 #Linking Models
