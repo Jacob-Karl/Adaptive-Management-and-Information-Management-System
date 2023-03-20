@@ -1,3 +1,4 @@
+import auto_prefetch
 from django.db import models
 from django import forms
 #from projects.models import *
@@ -5,7 +6,7 @@ from django import forms
 
 # Create your models here.
 
-class SpeciesCommunity(models.Model):
+class SpeciesCommunity(auto_prefetch.Model):
     TYPES = (
         ('Species', 'Species'),
         ('Ecological Comunity', 'Ecological Comunity'),
@@ -24,10 +25,10 @@ class SpeciesCommunity(models.Model):
     def __str__(self):
         return self.CommonName
     
-    class Meta:
+    class Meta(auto_prefetch.Model.Meta):
         verbose_name_plural = "Species/Communities"     
 
-class Location(models.Model):
+class Location(auto_prefetch.Model):
     LocationCode = models.CharField(max_length=10, default = "", null = True)
     LocationName = models.CharField(max_length=255, default = "", null = True)
     Description = models.TextField(default = "", null = True)
@@ -37,10 +38,10 @@ class Location(models.Model):
     def __str__(self):
         return self.LocationCode
     
-    class Meta:
+    class Meta(auto_prefetch.Model.Meta):
         verbose_name_plural = "Locations"     
     
-class ConservationMeasure(models.Model):
+class ConservationMeasure(auto_prefetch.Model):
     CMCode = models.CharField(max_length=10, default = "", null = True)
     CMDescription = models.CharField(max_length=100, default = "", null = True)
     SppHab = models.CharField(max_length=100, default = "", null = True)
@@ -51,10 +52,10 @@ class ConservationMeasure(models.Model):
     def __str__(self):
         return self.CMCode
     
-    class Meta:
+    class Meta(auto_prefetch.Model.Meta):
         verbose_name_plural = "Conservation Measures"     
 
-class Goal(models.Model):
+class Goal(auto_prefetch.Model):
     GoalName = models.CharField(max_length=255, default = "", null = True)
     GoalType = models.CharField(max_length=50, default = "", null = True)
     GoalDescription = models.TextField(default = "", null = True)
@@ -62,6 +63,6 @@ class Goal(models.Model):
     def __str__(self):
         return self.GoalName
     
-    class Meta:
+    class Meta(auto_prefetch.Model.Meta):
         verbose_name_plural = "Goals"     
     
