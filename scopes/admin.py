@@ -21,14 +21,14 @@ class SpeciesCommunityAdmin(AdminAdvancedFiltersMixin, VersionAdmin):
     ]
     
     advanced_filter_fields = (
-        'TargetType',
-        'Acronym',
-        'CommonName',
-        'ScientificName',
-        'ITISTSN',
-        'CommunityName',
-        'Synonyms',
-        'Comments',
+        ('TargetType', 'Target Type'),
+        ('Acronym', 'Acronym'),
+        ('CommonName', 'Common Name'),
+        ('ScientificName', 'Scientific Name'),
+        ('ITISTSN',),
+        ('CommunityName', 'CommunityName'),
+        ('Synonyms', 'Synonyms'),
+        ('Comments', 'Comments'),
         
     )
 
@@ -43,11 +43,11 @@ class LocationAdmin(AdminAdvancedFiltersMixin, VersionAdmin):
     ]
     
     advanced_filter_fields = (
-        'LocationCode',
-        'LocationName',
-        'Description',
-        'SpatialLayer',
-        'SpatialID',        
+        ('LocationCode', 'Location Code'),
+        ('LocationName', 'Location Name'),
+        ('Description', 'Description'),
+        ('SpatialLayer', 'Spatial Layer'),
+        ('SpatialID', 'Spatial ID'),    
     )    
 
 @admin.register(ConservationMeasure)
@@ -62,12 +62,12 @@ class ConservationMeasureAdmin(AdminAdvancedFiltersMixin, VersionAdmin):
     ]
     
     advanced_filter_fields = (
-        'CMCode',
-        'CMDescription',
-        'SppHab',
-        'CMType',
-        'CMSummary',
-        'Status',        
+        ('CMCode', 'Conservation Measure Code'),
+        ('CMDescription', 'Conservation Measure Description'),
+        ('SppHab', 'Spatial Habitat'),
+        ('CMType', 'Conservation Measure Type'),
+        ('CMSummary', 'Conservation Measure Summary'),
+        ('Status', 'Status'),    
     )    
 
 @admin.register(Goal)
@@ -79,7 +79,7 @@ class GoalAdmin(AdminAdvancedFiltersMixin, VersionAdmin):
     ]
     
     advanced_filter_fields = (
-        'GoalName',
-        'GoalType',
-        'GoalDescription',        
+        ('GoalName', 'Goal Name'),
+        ('GoalType', 'Goal Type'),
+        ('GoalDescription', 'Goal Description'),        
     )    
