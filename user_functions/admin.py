@@ -19,12 +19,12 @@ class PersonAdmin(AdminAdvancedFiltersMixin, VersionAdmin):
     ]
     
     advanced_filter_fields = (
-        'LastName',
-        'FirstName',
-        'Affiliation',
-        'Address',
-        'Email',
-        'Phone',        
+        ('LastName', 'Last Name'),
+        ('FirstName', 'First Name'),
+        ('Affiliation', 'Affiliation'),
+        ('Address', 'Address'),
+        ('Email', 'Email'),
+        ('Phone', 'Phone'),
     )    
 
 @admin.register(UserProfile)
@@ -37,10 +37,10 @@ class UserProfileAdmin(AdminAdvancedFiltersMixin, VersionAdmin):
     ]
     
     advanced_filter_fields = (
-        'Level',
-        'Status',
-        'Person__LastName',
-        'Person__FirstName',         
+        ('Level', 'Level'),
+        ('Status', 'Status'),
+        ('Person__LastName', 'Last Name'),
+        ('Person__FirstName', 'First Name'),       
     )    
 
 @admin.register(Organization)
@@ -56,11 +56,11 @@ class OrganizationAdmin(AdminAdvancedFiltersMixin, VersionAdmin):
     ]
     
     advanced_filter_fields = (
-        'Name',
-        'ContactID__LastName',
-        'ContactID__FirstName',
-        'URL',
-        'Address',
-        'Email',
-        'Phone',          
+        ('Name', 'Name'),
+        ('ContactID__LastName', 'Last Name'),
+        ('ContactID__FirstName', 'First Name'),
+        ('URL', 'URL'),
+        ('Address', 'Address'),
+        ('Email', 'Email'),
+        ('Phone', 'Phone Number'),        
     )    
