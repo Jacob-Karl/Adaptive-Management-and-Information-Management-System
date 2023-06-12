@@ -18,6 +18,23 @@ def hub(request):
     return render(request, 'projects/project_hub.html', context_dict)
 
 @login_required
+def directory(request):
+    context_dict = {}
+    
+    all_projects = Project.objects.all()
+    prefetch_related_objects(all_projects)
+    all_triggers = Trigger.objects.all()
+    prefetch_related_objects(all_triggers)
+    all_statuses = TriggerStatus.objects.all()
+    prefetch_related_objects(all_statuses)
+    context_dict['All_Projects'] = all_projects
+    context_dict['All_Triggers'] = all_triggers
+    context_dict['All_Statuses'] = all_statuses
+    
+    return render(request, 'projects/directory.html', context_dict)
+
+
+@login_required
 def project(request, project_ID):
     
     initial_dict = {
@@ -56,10 +73,13 @@ def project(request, project_ID):
     trigger_helper_form = TriggerHelperForm()
     output_helper_form = OutputHelperForm()
     objective_helper_form = ObjectiveHelperForm()
+
+    all_projects = Project.objects.all()
     
     context_dict = {
         'project_form':project_form,
-        'project_ID':project_ID
+        'project_ID':project_ID,
+        'All_Projects':all_projects,
     }    
     
     if 'add_Trigger' in request.GET:
@@ -128,11 +148,18 @@ def project(request, project_ID):
 @login_required
 def speComAdder(request, project_ID):
     
+    all_projects = Project.objects.all()
+    all_triggers = Trigger.objects.all()
+    all_statuses = TriggerStatus.objects.all()      
+    
     speCom_adder_form = SpeComAdderForm(request.POST)
     project_Obj = Project.objects.get(pk=project_ID)
     context_dict = {
         'speCom_adder_form':speCom_adder_form,
         'project_ID':project_ID,
+        'All_Projects':all_projects,
+        'All_Triggers':all_triggers,
+        'All_Statuses':all_statuses,
     }
     
     if speCom_adder_form.is_valid():
@@ -147,12 +174,19 @@ def speComAdder(request, project_ID):
     
 @login_required
 def conMeasAdder(request, project_ID):
+
+    all_projects = Project.objects.all()
+    all_triggers = Trigger.objects.all()
+    all_statuses = TriggerStatus.objects.all() 
     
     conMeas_adder_form = ConMeasAdderForm(request.POST)
     project_Obj = Project.objects.get(pk=project_ID)
     context_dict = {
         'conMeas_adder_form':conMeas_adder_form,
         'project_ID':project_ID,
+        'All_Projects':all_projects,
+        'All_Triggers':all_triggers,
+        'All_Statuses':all_statuses,
     }
     
     if conMeas_adder_form.is_valid():
@@ -167,12 +201,19 @@ def conMeasAdder(request, project_ID):
     
 @login_required
 def locationAdder(request, project_ID):
+
+    all_projects = Project.objects.all()
+    all_triggers = Trigger.objects.all()
+    all_statuses = TriggerStatus.objects.all() 
     
     location_adder_form = LocationAdderForm(request.POST)
     project_Obj = Project.objects.get(pk=project_ID)
     context_dict = {
         'location_adder_form':location_adder_form,
         'project_ID':project_ID,
+        'All_Projects':all_projects,
+        'All_Triggers':all_triggers,
+        'All_Statuses':all_statuses,
     }
     
     if location_adder_form.is_valid():
@@ -186,12 +227,19 @@ def locationAdder(request, project_ID):
    
 @login_required
 def goalAdder(request, project_ID):
+
+    all_projects = Project.objects.all()
+    all_triggers = Trigger.objects.all()
+    all_statuses = TriggerStatus.objects.all() 
     
     goal_adder_form = GoalAdderForm(request.POST)
     project_Obj = Project.objects.get(pk=project_ID)
     context_dict = {
         'goal_adder_form':goal_adder_form,
         'project_ID':project_ID,
+        'All_Projects':all_projects,
+        'All_Triggers':all_triggers,
+        'All_Statuses':all_statuses,
     }
     
 
@@ -207,6 +255,11 @@ def goalAdder(request, project_ID):
 
 @login_required
 def relatedProject(request, related_project_ID):
+    
+    all_projects = Project.objects.all()
+    all_triggers = Trigger.objects.all()
+    all_statuses = TriggerStatus.objects.all() 
+    
     if related_project_ID == "0":
         related_project_form = RelatedProject(request.POST or None)
     
@@ -226,6 +279,9 @@ def relatedProject(request, related_project_ID):
         'related_project_form':related_project_form,
         'project_ID':related_project_Obj.Project.id,
         'related_project_ID':related_project_ID,
+        'All_Projects':all_projects,
+        'All_Triggers':all_triggers,
+        'All_Statuses':all_statuses,
     }     
       
     if related_project_form.is_valid():
@@ -241,7 +297,11 @@ def relatedProject(request, related_project_ID):
 
 @login_required
 def trigger(request, trigger_ID):
-            
+
+    all_projects = Project.objects.all()
+    all_triggers = Trigger.objects.all()
+    all_statuses = TriggerStatus.objects.all() 
+    
     if trigger_ID == "0":
         trigger_form = TriggerForm(request.POST or None)
     
@@ -263,6 +323,9 @@ def trigger(request, trigger_ID):
         'trigger_form':trigger_form,
         'trigger_ID':trigger_ID,
         'project_ID':trigger_Obj.ProjectID.id,
+        'All_Projects':all_projects,
+        'All_Triggers':all_triggers,
+        'All_Statuses':all_statuses,
     }     
     
     if 'add_Trigger_Status' in request.GET:
@@ -287,7 +350,11 @@ def trigger(request, trigger_ID):
 
 @login_required
 def triggerStatus(request, trigger_status_ID):
-            
+
+    all_projects = Project.objects.all()
+    all_triggers = Trigger.objects.all()
+    all_statuses = TriggerStatus.objects.all() 
+    
     if trigger_status_ID == "0":
         trigger_status_form = TriggerStatusForm(request.POST or None)
     
@@ -305,7 +372,10 @@ def triggerStatus(request, trigger_status_ID):
     
     context_dict = {
         'trigger_status_form':trigger_status_form,
-        'trigger_status_ID':trigger_status_ID
+        'trigger_status_ID':trigger_status_ID,
+        'All_Projects':all_projects,
+        'All_Triggers':all_triggers,
+        'All_Statuses':all_statuses,
     }
     
     if trigger_status_form.is_valid(): 
@@ -322,6 +392,11 @@ def triggerStatus(request, trigger_status_ID):
 
 @login_required
 def output(request, output_ID):
+    
+    all_projects = Project.objects.all()
+    all_triggers = Trigger.objects.all()
+    all_statuses = TriggerStatus.objects.all() 
+    
     if output_ID == "0":
         output_form = OutputForm(request.POST or None)
     
@@ -347,6 +422,9 @@ def output(request, output_ID):
         'output_form':output_form,
         'output_ID':output_ID,
         'project_ID':output_Obj.ProjectID.id,
+        'All_Projects':all_projects,
+        'All_Triggers':all_triggers,
+        'All_Statuses':all_statuses,
     }   
     
     if output_form.is_valid():
@@ -363,6 +441,11 @@ def output(request, output_ID):
 
 @login_required
 def objective(request, objective_ID):
+
+    all_projects = Project.objects.all()
+    all_triggers = Trigger.objects.all()
+    all_statuses = TriggerStatus.objects.all() 
+    
     if objective_ID == "0":
         objective_form = ObjectiveForm(request.POST or None)
     
@@ -388,6 +471,9 @@ def objective(request, objective_ID):
         'objective_form':objective_form,
         'objective_ID':objective_ID,
         'project_ID':objective_Obj.ProjectID.id,
+        'All_Projects':all_projects,
+        'All_Triggers':all_triggers,
+        'All_Statuses':all_statuses,
     }     
     
     if 'add_Milestone' in request.GET:
@@ -419,6 +505,11 @@ def objective(request, objective_ID):
 
 @login_required
 def milestone(request, milestone_ID):
+
+    all_projects = Project.objects.all()
+    all_triggers = Trigger.objects.all()
+    all_statuses = TriggerStatus.objects.all() 
+    
     if milestone_ID == "0":
         milestone_form = MilestoneForm(request.POST or None)
     
@@ -437,6 +528,9 @@ def milestone(request, milestone_ID):
         'milestone_form':milestone_form,
         'objective_ID':milestone_Obj.ObjectiveID.id,
         'milestone_ID':milestone_ID,
+        'All_Projects':all_projects,
+        'All_Triggers':all_triggers,
+        'All_Statuses':all_statuses,
     }     
     
     if 'add_Milestone_Progress' in request.GET:
@@ -460,6 +554,11 @@ def milestone(request, milestone_ID):
 
 @login_required
 def milestoneProgress(request, milestone_progress_ID):
+
+    all_projects = Project.objects.all()
+    all_triggers = Trigger.objects.all()
+    all_statuses = TriggerStatus.objects.all() 
+    
     if milestone_progress_ID == "0":
         milestone_progress_form = MilestoneProgressForm(request.POST or None)
     
@@ -478,6 +577,9 @@ def milestoneProgress(request, milestone_progress_ID):
         'milestone_progress_form':milestone_progress_form,
         'milestone_ID':milestone_progress_Obj.MilestoneID.id,
         'milestone_progress_ID':milestone_progress_ID,
+        'All_Projects':all_projects,
+        'All_Triggers':all_triggers,
+        'All_Statuses':all_statuses,
     }     
       
     if milestone_progress_form.is_valid():
@@ -493,6 +595,11 @@ def milestoneProgress(request, milestone_progress_ID):
 
 @login_required
 def step(request, step_ID):
+
+    all_projects = Project.objects.all()
+    all_triggers = Trigger.objects.all()
+    all_statuses = TriggerStatus.objects.all() 
+    
     if step_ID == "0":
         step_form = StepForm(request.POST or None)
     
@@ -517,6 +624,9 @@ def step(request, step_ID):
         'step_form':step_form,
         'objective_ID':step_Obj.ObjectiveID.id,
         'step_ID':step_ID,
+        'All_Projects':all_projects,
+        'All_Triggers':all_triggers,
+        'All_Statuses':all_statuses,
     }     
     
     if 'add_Method' in request.GET:
@@ -541,6 +651,11 @@ def step(request, step_ID):
 
 @login_required
 def method(request, method_ID):
+
+    all_projects = Project.objects.all()
+    all_triggers = Trigger.objects.all()
+    all_statuses = TriggerStatus.objects.all() 
+    
     if method_ID == "0":
         method_form = MethodForm(request.POST or None)
     
@@ -565,6 +680,9 @@ def method(request, method_ID):
         'method_form':method_form,
         'step_ID':method_Obj.StepID.id,
         'method_ID':method_ID,
+        'All_Projects':all_projects,
+        'All_Triggers':all_triggers,
+        'All_Statuses':all_statuses,
     }     
     
     if 'add_Protocol' in request.GET:
@@ -588,6 +706,11 @@ def method(request, method_ID):
 
 @login_required
 def protocol(request, protocol_ID):
+
+    all_projects = Project.objects.all()
+    all_triggers = Trigger.objects.all()
+    all_statuses = TriggerStatus.objects.all() 
+    
     if protocol_ID == "0":
         protocol_form = Protocol(request.POST or None)
     
@@ -609,6 +732,9 @@ def protocol(request, protocol_ID):
         'protocol_form':protocol_form,
         'method_ID':protocol_Obj.MethodID.id,
         'protocol_ID':protocol_ID,
+        'All_Projects':all_projects,
+        'All_Triggers':all_triggers,
+        'All_Statuses':all_statuses,
     }     
       
     if protocol_form.is_valid():
