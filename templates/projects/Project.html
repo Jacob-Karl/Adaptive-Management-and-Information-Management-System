@@ -34,14 +34,174 @@
 	.Card{
 	
 	}
+	.Input{
+		background-color: #00415D;
+		color: white;
+
+	}
 {% endblock %}
 
+
+{% block body_block %}
 <head>
     <meta charset="utf-8"/>
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
-{% block body_block %}
-<br>
+
+<div class="container">
+<div class="row pt-2 d-flex justify-content-between">
+<div class="col-2">
+		{% for project in All_Projects %}
+			<div class = "row">
+				<div class = "col" style="margin-left:-75%">
+					<button type="button" src="{% static 'noun_Book_2342158.png' %}" class="btn" data-toggle="collapse" 
+						data-target=".multi-collapse{{ project.id }}" aria-expanded="false" 
+						aria-controls="{{ project.id }}trigger {{ project.id }}output {{ project.id }}objective " style="width:50%">
+							<img src="{% static 'noun_Plus_2268151.png' %}" style="width:100%">
+					</button>
+				</div>
+				<div class = "col"  style="margin-left:-50%">
+					<a  href = "{% url 'projects:project' project.id %}">
+					{{ project.WorktaskID }}: {{ project.ProjectName }}
+					</a>
+				</div>
+			</div>
+			{% for trigger in project.Triggers.all %}
+				<div class = "row">
+					<div class = "col" style="margin-left:-75%">
+						<button type="button" class="btn collapse multi-collapse{{ project.id }}" data-toggle="collapse" 
+							data-target=".multi-collapse{{ trigger.id }}" aria-expanded="false" 
+							aria-controls="{{ project.id }}trigger {{ project.id }}output {{ project.id }}objective " style="width:50%">
+								<img src="{% static 'noun_Plus_2268151.png' %}" style="width:100%">
+						</button>
+					</div>
+					<div class = "col"  style="margin-left:-50%">
+					<div id="{{ trigger.id }}trigger" class=" collapse multi-collapse{{ project.id }} col">
+						<a  href = "{% url 'projects:trigger' trigger.id %}">
+						trigger:{{ trigger.TriggerName }}
+						</a>
+					</div>
+					</div>
+				</div>
+				{% for status in trigger.TriggerStatus.all %}
+				
+				<div class = "row">
+					<div class = "col" style="margin-left:-50%">
+					</div>
+					<div id="{{ trigger.id }}status" class="collapse multi-collapse{{ trigger.id }} col" style="margin-left:-75%">
+						<a  href = "{% url 'projects:triggerStatus' status.id %}">
+							status:{{ status.StatusTrend }}
+						</a>
+					</div>
+				</div>
+				{% endfor %}
+			{% endfor %}
+			{% for output in project.Outputs.all %}
+			<div class = "row">
+				<div class = "col" style="margin-left:-50%">
+				</div>
+				<div id="{{ project.id }}output" class="collapse multi-collapse{{ project.id }} col" style="margin-left:-75%">
+					<a  href = "{% url 'projects:output' output.id %}">
+						output:{{ output.OutputTitle }}
+					</a>
+				</div>
+			</div>
+			{% endfor %}
+			{% for objective in project.Objectives.all %}
+				<div class = "row">
+					<div class = "col" style="margin-left:-75%">
+						<button type="button" class="btn collapse multi-collapse{{ project.id }}" data-toggle="collapse"
+							data-target=".multi-collapse{{ objective.id }}" aria-expanded="false" 
+							aria-controls="{{ project.id }}trigger {{ project.id }}output {{ project.id }}objective " style="width:50%">
+								<img src="{% static 'noun_Plus_2268151.png' %}" style="width:100%">
+						</button>
+					</div>
+					<div id="{{ objective.id }}objective" class="collapse multi-collapse{{ project.id }} col" style="margin-left:-50%">
+						<a  href = "{% url 'projects:objective' objective.id %}">
+							objective:{{ objective.ObjName }}
+						</a>
+					</div>
+				</div>
+				{% for milestone in objective.Milestones.all %}
+					<div class = "row">
+						<div class = "col" style="margin-left:-75%">
+							<button type="button" class="btn collapse multi-collapse{{ objective.id }}" data-toggle="collapse" 
+								data-target=".multi-collapse{{ milestone.id }}" aria-expanded="false" 
+								aria-controls="{{ project.id }}trigger {{ project.id }}output {{ project.id }}objective " style="width:50%">
+									<img src="{% static 'noun_Plus_2268151.png' %}" style="width:100%">
+							</button>
+						</div>
+						<div id="{{ milestone.id }}trigger" class="collapse multi-collapse{{ objective.id }} col" style="margin-left:-50%">
+							<a  href = "{% url 'projects:milestone' milestone.id %}">
+								milestone:{{ milestone.MilestoneName }}
+							</a>
+						</div>
+					</div>
+					{% for progress in milestone.MilestoneProgress.all %}
+					<div class = "row">
+						<div class = "col" style="margin-left:-75%">
+						</div>
+						<div id="{{ milestone.id }}trigger" class="collapse multi-collapse{{ milestone.id }} col" style="margin-left:-50%">
+							<a  href = "{% url 'projects:milestoneProgress' progress.id %}">
+								progress:{{ progress.Status }}
+							</a>
+						</div>
+					</div>
+					{% endfor %}
+				{% endfor %}
+				{% for step in objective.Steps.all %}
+					<div class = "row">
+						<div class = "col" style="margin-left:-75%">
+							<button type="button" class="btn collapse multi-collapse{{ objective.id }}" data-toggle="collapse" 
+								data-target=".multi-collapse{{ step.id }}" aria-expanded="false" 
+								aria-controls="{{ project.id }}trigger {{ project.id }}output {{ project.id }}objective " style="width:50%">
+									<img src="{% static 'noun_Plus_2268151.png' %}" style="width:100%">
+							</button>
+						</div>
+						<div id="{{ step.id }}trigger" class="collapse multi-collapse{{ objective.id }} col" style="margin-left:-50%">
+							<a  href = "{% url 'projects:step' step.id %}">
+								step:{{ step.StepName }}
+							</a>
+						</div>
+					</div>
+					{% for method in step.Methods.all %}
+						<div class = "row">
+							<div class = "col" style="margin-left:-75%">
+							</div>
+							<div id="{{ method.id }}trigger" class="collapse multi-collapse{{ step.id }} col" style="margin-left:-50%">
+								<a  href = "{% url 'projects:method' method.id %}">
+									method:{{ method.MethodTitle.all }}
+								</a>
+							</div>
+						</div>
+						{% for protocol in method.Protocols.all %}
+						<div class = "row">
+							<div class = "col" style="margin-left:-75%">
+							</div>
+							<div id="{{ method.id }}trigger" class="collapse multi-collapse{{ step.id }} col" style="margin-left:-50%">
+								<a  href = "{% url 'projects:protocol' protocol.id %}">
+									protocol:{{ protocol.ProtocolTitle.all }}
+								</a>
+							</div>
+						</div>
+						{% endfor %}
+					{% endfor %}
+				{% endfor %}
+				{% endfor %}
+				
+			<hr style="margin-left:-100%; margin-right:25%">
+			{% endfor %}
+</div>
+<div class = "col-8">
+<div class = "row" style="margin-left:-15%">
+
+
+
+
+
 <button class = "unlock" id = "unlock" onclick = "unlockIt()">
 	<img src = "{% static 'noun_Lock_99.png' %}" alt="connect" width="50" height="50">
 </button>
@@ -53,7 +213,9 @@
 	<form id = "project_form" enctype="multipart/form-data" action = "{% url 'projects:project' project_ID %}" method = "post">
 		{% csrf_token %}
 		{{ project_form.as_p }}
-		<input class = "Button" type = "submit" name = "project_Submit" value = "Submit">
+		<div class="d-flex justify-content-center">
+			<input class = "Button" type = "submit" name = "project_Submit" value = "Submit">
+		</div>
 	</form>
 </div>
 
@@ -61,25 +223,35 @@
 	<div class = "Title_Card">
 		Trigger
 	</div>
-	<div class="row pt-2">
+	<div>
+	<div class="row pt-2 d-flex justify-content-between">
 	{% for trigger in Triggers %}
-		<div class="col-sm-4 col-md-2 col-lg-3">
-			<a href="{% url 'projects:trigger' trigger.id %}" class = "card" style = "width: 150px; height: 250px; margin: 10px;">
-				<div class = "card-body">
-					<img class = "card-img" src = "{% static 'noun_measure_3170678.png' %}" alt="connect" width="150" height="115">
-					<h3 class="card-title" style="color: #000000;">{{ trigger.TriggerName }}</h3>
+		<div class="card mb-3" style="max-width: 340px; margin: 10px;">
+			<a  href = "{% url 'projects:trigger' trigger.id %}">
+				<div class="row">
+					<div class="col-md-4">
+						<img src="{% static 'noun_measure_3170678.png' %}" class="card-img" alt="connect"  href = "{% url 'projects:trigger' trigger.id %}">
+					</div>
+					<div class="col-md-8">
+						<div class="card-body">
+							<p class="card-text" style="color: #000000;">{{ trigger.TriggerName }}</p>
+						</div>
+					</div>
 				</div>
 			</a>
 		</div>
 		<br>
 	{% endfor %}
+	</div>
 	<div class = "Trigger">
 
 		<div>
 			<form id = "trigger_helper_form" enctype="multipart/form-data" action = "{% url 'projects:project' project_ID %}" method = "get">
 				{% csrf_token %}
 				<!--{{ trigger_helper_form }}-->
-				<input class = "Card" type = "submit" name = "add_Trigger" value = "Add Trigger">
+				<div class="d-flex justify-content-center">
+					<input class = "Button" type = "submit" name = "add_Trigger" value = "Add Trigger" >
+				</div>
 			</form>
 		</div>
 	</div>
@@ -90,13 +262,19 @@
 	<div class = "Title_Card">
 		Outputs
 	</div>
-	<div class="row pt-2">
+	<div class="row pt-2 d-flex justify-content-between">
 	{% for output in Outputs %}
-		<div class="col-sm-4 col-md-2 col-lg-3">
-			<a href="{% url 'projects:output' output.id %}" class = "card" style = "width: 150px; height: 250px; margin: 10px;">
-				<div class = "card-body">
-					<img class = "card-img" src = "{% static 'noun_Book_2342158.png' %}" alt="connect" width="150" height="115">
-					<h3 class="card-title" style="color: #000000;">{{ output.OutputTitle }}</h3>
+		<div class="card mb-3" style="max-width: 340px; margin: 10px;">
+			<a  href = "{% url 'projects:output' output.id %}">
+				<div class="row">
+					<div class="col-md-4">
+						<img src="{% static 'noun_Book_2342158.png' %}" class="card-img" alt="connect"  href = "{% url 'projects:output' output.id %}">
+					</div>
+					<div class="col-md-8 p-0">
+						<div class="card-body">
+							<p class="card-text" style="color: #000000;">{{ output.OutputTitle }}</p>
+						</div>
+					</div>
 				</div>
 			</a>
 		</div>
@@ -107,7 +285,9 @@
 			<form id = "output_helper_form" enctype="multipart/form-data" action = "{% url 'projects:project' project_ID %}" method = "get">
 				{% csrf_token %}
 				{{ output_helper_form }}
-				<input class = "Card" type = "submit" name = "add_Output" value = "Add Output">
+				<div class="d-flex justify-content-center">
+					<input class = "Button d-flex justify-content" type = "submit" name = "add_Output" value = "Add Output">
+				</div>
 			</form>
 		</div>
 	</div>
@@ -118,13 +298,19 @@
 	<div class = "Title_Card">
 		Objectives
 	</div>
-	<div class="row pt-2">
+	<div class="row pt-2 d-flex justify-content-between">
 	{% for objective in Objectives %}
-		<div class="col-sm-4 col-md-2 col-lg-3">
-			<a href="{% url 'projects:objective' objective.id %}" class = "card" style = "width: 150px; height: 250px; margin: 10px;">
-				<div class = "card-body">
-					<img class = "card-img" src = "{% static 'noun_measure_3170678.png' %}" alt="connect" width="150" height="115">
-					<h3 class="card-title" style="color: #000000;">{{ objective.ObjName }}</h3>
+		<div class="card mb-3" style="max-width: 340px; margin: 10px;">
+			<a  href = "{% url 'projects:objective' objective.id %}">
+				<div class="row">
+					<div class="col-md-4">
+						<img src="{% static 'noun_measure_3170678.png' %}" class="card-img" alt="connect"  href = "{% url 'projects:objective' objective.id %}">
+					</div>
+					<div class="col-md-8">
+						<div class="card-body">
+							<p class="card-text" style="color: #000000;">{{ objective.ObjName }}</p>
+						</div>
+					</div>
 				</div>
 			</a>
 		</div>
@@ -135,7 +321,9 @@
 			<form id = "objective_helper_form" enctype="multipart/form-data" action = "{% url 'projects:project' project_ID %}" method = "get">
 				{% csrf_token %}
 				{{ objective_helper_form }}
-				<input class = "Card" type = "submit" name = "add_Objective" value = "Add Objective">
+				<div class="d-flex justify-content-center">
+					<input class = "Button d-flex justify-content-center" type = "submit" name = "add_Objective" value = "Add Objective">
+				</div>
 			</form>
 		</div>
 	</div>
@@ -146,22 +334,26 @@
 	<div class = "Title_Card">
 		Goals
 	</div>
-	<div class="row pt-2">
+	<div class="row pt-2 d-flex justify-content-between">
 	{% for goal in Goals %}
-		<div class="col-sm-10 col-md-10 col-lg-3">
-			<a class = "card" style = "width: 150px; height: 250px; margin: 10px;">
-				<div class = "card-body">
-					<img class = "card-img" src = "{% static 'noun_Flag_559779.png' %}" alt="connect" width="150" height="115">
-					<h3 class="card-title" style="color: #000000;">{{ goal.GoalName }}</h3>
+		<div class="card mb-3" style="max-width: 340px; margin: 10px;">
+			<div class="row">
+				<div class="col-md-4">
+					<img src="{% static 'noun_Flag_559779.png' %}" class="card-img" alt="connect">
 				</div>
-			</a>
+				<div class="col-md-8">
+					<div class="card-body">
+						<p class="card-title" style="color: #000000;">{{ goal.GoalName }}</p>
+					</div>
+				</div>
+			</div>
 		</div>
 		<br>
 	{% endfor %}
 	<div class = "Goals">
-		<div>
-			<a href="{% url 'projects:goalAdder' project_ID %}" class = "card" style = "width: 150px; background-color: #00415D; margin: 10px;">
-
+		<div class="d-flex justify-content-center">
+			<a href="{% url 'projects:goalAdder' project_ID %}" class = "Button" style = "">
+			Add Goal
 			</a>
 		</div>
 	</div>
@@ -170,24 +362,28 @@
 
 <div class = "container">
 	<div class = "Title_Card">
-		Species Communities
+		Species/Communities
 	</div>
-	<div class="row pt-2">
+	<div class="row pt-2 d-flex justify-content-between">
 	{% for speCom in SpeComs %}
-		<div class="col-sm-4 col-md-2 col-lg-3">
-			<a class = "card" style = "width: 150px; height: 250px; margin: 10px;">
-				<div class = "card-body">
-					<img class = "card-img" src = "{{ speCom.Picture.url }}" alt="connect" width="150" height="115">
-					<h3 class="card-title" style="color: #000000;">{{ speCom.Acronym }}</h3>
+		<div class="card mb-3" style="max-width: 340px; margin: 10px;">
+			<div class="row">
+				<div class="col-md-4">
+					<img src="{{ speCom.Picture.url }}" class="card-img" alt="connect">
 				</div>
-			</a>
+				<div class="col-md-8">
+					<div class="card-body">
+						<p class="card-title" style="color: #000000;">{{ speCom.Acronym }}</p>
+					</div>
+				</div>
+			</div>
 		</div>
 		<br>
 	{% endfor %}
 	<div class = "SpeComs">
-		<div>
-			<a href="{% url 'projects:speComAdder' project_ID %}" class = "card" style = "width: 150px; background-color: #00415D; margin: 10px;">
-
+		<div class="d-flex justify-content-center">
+			<a href="{% url 'projects:speComAdder' project_ID %}" class = "Button" style = "">
+			Add Species/Community
 			</a>
 		</div>
 	</div>
@@ -198,22 +394,26 @@
 	<div class = "Title_Card">
 		Conservation Measures
 	</div>
-	<div class="row pt-2">
+	<div class="row pt-2 d-flex justify-content-between">
 	{% for conMeas in ConMeas %}
-		<div class="col-sm-4 col-md-2 col-lg-3">
-			<a class = "card" style = "width: 150px; height: 250px; margin: 10px;">
-				<div class = "card-body">
-					<img class = "card-img" src = "{% static 'noun_measure_3170678.png' %}" alt="connect" width="150" height="115">
-					<h3 class="card-title" style="color: #000000;">{{ conMeas.CMCode }}</h3>
+		<div class="card mb-3" style="max-width: 340px; margin: 10px;">
+			<div class="row">
+				<div class="col-md-4">
+					<img src="{% static 'noun_measure_3170678.png' %}" class="card-img" alt="connect">
 				</div>
-			</a>
+				<div class="col-md-8">
+					<div class="card-body">
+						<p class="card-title" style="color: #000000;">{{ conMeas.CMCode }}</p>
+					</div>
+				</div>
+			</div>
 		</div>
 		<br>
 	{% endfor %}
 	<div class = "ConMeas">
-		<div>
-			<a href="{% url 'projects:conMeasAdder' project_ID %}" class = "card" style = "width: 150px; background-color: #00415D; margin: 10px;">
-
+		<div class="d-flex justify-content-center">
+			<a href="{% url 'projects:conMeasAdder' project_ID %}" class = "Button" style = "">
+			Add Conservation Measures
 			</a>
 		</div>
 	</div>
@@ -224,22 +424,26 @@
 	<div class = "Title_Card">
 		Locations
 	</div>
-	<div class="row pt-2">
+	<div class="row pt-2 d-flex justify-content-between">
 	{% for location in Locations %}
-		<div class="col-sm-4 col-md-2 col-lg-3">
-			<a class = "card" style = "width: 150px; height: 250px; margin: 10px;">
-				<div class = "card-body">
-					<img class = "card-img" src = "{% static 'noun_Mountain_70698.png' %}" alt="connect" width="150" height="115">
-					<h3 class="card-title" style="color: #000000;">{{ location.LocationCode }}</h3>
+		<div class="card mb-3" style="max-width: 340px; margin: 10px;">
+			<div class="row">
+				<div class="col-md-4">
+					<img src="{% static 'noun_Mountain_70698.png' %}" class="card-img" alt="connect">
 				</div>
-			</a>
+				<div class="col-md-8">
+					<div class="card-body">
+						<p class="card-title" style="color: #000000;">{{ location.LocationCode }}</p>
+					</div>
+				</div>
+			</div>
 		</div>
 		<br>
 	{% endfor %}
 	<div class = "Locations">
-		<div>
-			<a href="{% url 'projects:locationAdder' project_ID %}" class = "card" style = "width: 150px; background-color: #00415D; margin: 10px;">
-
+		<div class="d-flex justify-content-center">
+			<a href="{% url 'projects:locationAdder' project_ID %}" class = "Button" style = "">
+			Add Locations
 			</a>
 		</div>
 	</div>
@@ -250,13 +454,19 @@
 	<div class = "Title_Card">
 		Related Projects
 	</div>
-	<div class="row pt-2">
+	<div class="row pt-2 d-flex justify-content-between">
 	{% for relatedProject in RelatedProjects %}
-		<div class="col-sm-4 col-md-2 col-lg-3">
-			<a href="{% url 'projects:relatedProject' relatedProject.id %}" class = "card" style = "width: 150px; height: 250px; margin: 10px;">
-				<div class = "card-body">
-					<img class = "card-img" src = "{% static 'noun_Mountain_70698.png' %}" alt="connect" width="150" height="115">
-					<h3 class="card-title" style="color: #000000;">{{ relatedProject.WorktaskID }}</h3>
+		<div class="card mb-3" style="max-width: 340px; margin: 10px;">
+			<a href="{% url 'projects:relatedProject' relatedProject.id %}">
+				<div class="row">
+					<div class="col-md-4">
+						<img src="{% static 'noun_Mountain_70698.png' %}" class="card-img" alt="connect">
+					</div>
+					<div class="col-md-8">
+						<div class="card-body">
+							<p class="card-title" style="color: #000000;">{{ relatedProject.WorktaskID }}</p>
+						</div>
+					</div>
 				</div>
 			</a>
 		</div>
@@ -267,11 +477,21 @@
 			<form id = "related_project_helper_form" enctype="multipart/form-data" action = "{% url 'projects:project' project_ID %}" method = "get">
 				{% csrf_token %}
 				{{ related_project_helper_form }}
-				<input class = "Card" type = "submit" name = "add_Related_Projects" value = "Add Related Project">
+				<div class="d-flex justify-content-center">
+					<input class = "Button" type = "submit" name = "add_Related_Projects" value = "Add Related Project">
+				</div>
 			</form>
 		</div>
 	</div>
 	</div><!--This div closer is nessecary for some reason-->
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 
 
@@ -279,7 +499,7 @@
 <script type="text/javascript">
 
 function lockIt(){
-	const elements = ['WorktaskID','ProjectName','ProjectLead','ProjectStatus','ProjectType','ProjectStart','ProjectEnd','ProjectSummary','ProjectBackground','OtherConsMeas','OtherSpecies',]
+	const elements = ['WorktaskID','ProjectName','ProjectLead','ProjectStatus','ProjectType','ProjectStart','ProjectEnd','ProjectSummary','ProjectBackground','OtherConsMeas','OtherSpecies','Reference']
 	elements.forEach(element => lockItHelper(element));
 
 	var lock_button = document.getElementById("lock");
@@ -296,7 +516,7 @@ function lockItHelper(element){
 
 
 function unlockIt(){
-	const elements = ['WorktaskID','ProjectName','ProjectLead','ProjectStatus','ProjectType','ProjectStart','ProjectEnd','ProjectSummary','ProjectBackground','OtherConsMeas','OtherSpecies',]
+	const elements = ['WorktaskID','ProjectName','ProjectLead','ProjectStatus','ProjectType','ProjectStart','ProjectEnd','ProjectSummary','ProjectBackground','OtherConsMeas','OtherSpecies','Reference']
 	elements.forEach(element => unlockItHelper(element));
 
 	var lock_button = document.getElementById("lock");
@@ -309,6 +529,19 @@ function unlockIt(){
 function unlockItHelper(element){
 	var field = document.getElementsByName(element)[0];
 	field.readOnly = false;
+}
+
+$(document).ready(function() {
+  resize_to_fit();
+});
+
+function resize_to_fit() {
+  var fontsize = $('div#card-text div').css('font-size');
+  $('div#card-text div').css('fontSize', parseFloat(fontsize) - 1);
+
+  if ($('div#card-text div').height() >= $('div#card-text').height()) {
+    resize_to_fit();
+  }
 }
 
 </script>
