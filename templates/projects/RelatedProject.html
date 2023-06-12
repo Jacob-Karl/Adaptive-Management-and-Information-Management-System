@@ -16,12 +16,163 @@
 		margin: auto;
 	}
 {% endblock %}
+{% block body_block %}
 
 <head>
-    <meta charset="utf-8" />
-    <title></title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
-{% block body_block %}
+
+<div class="container">
+<div class="row pt-2 d-flex justify-content-between">
+<div class="col-2">
+		{% for project in All_Projects %}
+			<div class = "row">
+				<div class = "col" style="margin-left:-75%">
+					<button type="button" src="{% static 'noun_Book_2342158.png' %}" class="btn" data-toggle="collapse" 
+						data-target=".multi-collapse{{ project.id }}" aria-expanded="false" 
+						aria-controls="{{ project.id }}trigger {{ project.id }}output {{ project.id }}objective " style="width:50%">
+							<img src="{% static 'noun_Plus_2268151.png' %}" style="width:100%">
+					</button>
+				</div>
+				<div class = "col"  style="margin-left:-50%">
+					<a  href = "{% url 'projects:project' project.id %}">
+					{{ project.WorktaskID }}: {{ project.ProjectName }}
+					</a>
+				</div>
+			</div>
+			{% for trigger in project.Triggers.all %}
+				<div class = "row">
+					<div class = "col" style="margin-left:-75%">
+						<button type="button" class="btn collapse multi-collapse{{ project.id }}" data-toggle="collapse" 
+							data-target=".multi-collapse{{ trigger.id }}" aria-expanded="false" 
+							aria-controls="{{ project.id }}trigger {{ project.id }}output {{ project.id }}objective " style="width:50%">
+								<img src="{% static 'noun_Plus_2268151.png' %}" style="width:100%">
+						</button>
+					</div>
+					<div class = "col"  style="margin-left:-50%">
+					<div id="{{ trigger.id }}trigger" class=" collapse multi-collapse{{ project.id }} col">
+						<a  href = "{% url 'projects:trigger' trigger.id %}">
+						trigger:{{ trigger.TriggerName }}
+						</a>
+					</div>
+					</div>
+				</div>
+				{% for status in trigger.TriggerStatus.all %}
+				
+				<div class = "row">
+					<div class = "col" style="margin-left:-50%">
+					</div>
+					<div id="{{ trigger.id }}status" class="collapse multi-collapse{{ trigger.id }} col" style="margin-left:-75%">
+						<a  href = "{% url 'projects:triggerStatus' status.id %}">
+							status:{{ status.StatusTrend }}
+						</a>
+					</div>
+				</div>
+				{% endfor %}
+			{% endfor %}
+			{% for output in project.Outputs.all %}
+			<div class = "row">
+				<div class = "col" style="margin-left:-50%">
+				</div>
+				<div id="{{ project.id }}output" class="collapse multi-collapse{{ project.id }} col" style="margin-left:-75%">
+					<a  href = "{% url 'projects:output' output.id %}">
+						output:{{ output.OutputTitle }}
+					</a>
+				</div>
+			</div>
+			{% endfor %}
+			{% for objective in project.Objectives.all %}
+				<div class = "row">
+					<div class = "col" style="margin-left:-75%">
+						<button type="button" class="btn collapse multi-collapse{{ project.id }}" data-toggle="collapse"
+							data-target=".multi-collapse{{ objective.id }}" aria-expanded="false" 
+							aria-controls="{{ project.id }}trigger {{ project.id }}output {{ project.id }}objective " style="width:50%">
+								<img src="{% static 'noun_Plus_2268151.png' %}" style="width:100%">
+						</button>
+					</div>
+					<div id="{{ objective.id }}objective" class="collapse multi-collapse{{ project.id }} col" style="margin-left:-50%">
+						<a  href = "{% url 'projects:objective' objective.id %}">
+							objective:{{ objective.ObjName }}
+						</a>
+					</div>
+				</div>
+				{% for milestone in objective.Milestones.all %}
+					<div class = "row">
+						<div class = "col" style="margin-left:-75%">
+							<button type="button" class="btn collapse multi-collapse{{ objective.id }}" data-toggle="collapse" 
+								data-target=".multi-collapse{{ milestone.id }}" aria-expanded="false" 
+								aria-controls="{{ project.id }}trigger {{ project.id }}output {{ project.id }}objective " style="width:50%">
+									<img src="{% static 'noun_Plus_2268151.png' %}" style="width:100%">
+							</button>
+						</div>
+						<div id="{{ milestone.id }}trigger" class="collapse multi-collapse{{ objective.id }} col" style="margin-left:-50%">
+							<a  href = "{% url 'projects:milestone' milestone.id %}">
+								milestone:{{ milestone.MilestoneName }}
+							</a>
+						</div>
+					</div>
+					{% for progress in milestone.MilestoneProgress.all %}
+					<div class = "row">
+						<div class = "col" style="margin-left:-75%">
+						</div>
+						<div id="{{ milestone.id }}trigger" class="collapse multi-collapse{{ milestone.id }} col" style="margin-left:-50%">
+							<a  href = "{% url 'projects:milestoneProgress' progress.id %}">
+								progress:{{ progress.Status }}
+							</a>
+						</div>
+					</div>
+					{% endfor %}
+				{% endfor %}
+				{% for step in objective.Steps.all %}
+					<div class = "row">
+						<div class = "col" style="margin-left:-75%">
+							<button type="button" class="btn collapse multi-collapse{{ objective.id }}" data-toggle="collapse" 
+								data-target=".multi-collapse{{ step.id }}" aria-expanded="false" 
+								aria-controls="{{ project.id }}trigger {{ project.id }}output {{ project.id }}objective " style="width:50%">
+									<img src="{% static 'noun_Plus_2268151.png' %}" style="width:100%">
+							</button>
+						</div>
+						<div id="{{ step.id }}trigger" class="collapse multi-collapse{{ objective.id }} col" style="margin-left:-50%">
+							<a  href = "{% url 'projects:step' step.id %}">
+								step:{{ step.StepName }}
+							</a>
+						</div>
+					</div>
+					{% for method in step.Methods.all %}
+						<div class = "row">
+							<div class = "col" style="margin-left:-75%">
+							</div>
+							<div id="{{ method.id }}trigger" class="collapse multi-collapse{{ step.id }} col" style="margin-left:-50%">
+								<a  href = "{% url 'projects:method' method.id %}">
+									method:{{ method.MethodTitle.all }}
+								</a>
+							</div>
+						</div>
+						{% for protocol in method.Protocols.all %}
+						<div class = "row">
+							<div class = "col" style="margin-left:-75%">
+							</div>
+							<div id="{{ method.id }}trigger" class="collapse multi-collapse{{ step.id }} col" style="margin-left:-50%">
+								<a  href = "{% url 'projects:protocol' protocol.id %}">
+									protocol:{{ protocol.ProtocolTitle.all }}
+								</a>
+							</div>
+						</div>
+						{% endfor %}
+					{% endfor %}
+				{% endfor %}
+				{% endfor %}
+				
+			<hr style="margin-left:-100%; margin-right:25%">
+			{% endfor %}
+</div>
+<div class = "col-8">
+<div class = "row" style="margin-left:-15%">
+
 <br>
 <button class = "unlock" id = "unlock" onclick = "unlockIt()">
 	<img src = "{% static 'noun_Lock_99.png' %}" alt="connect" width="50" height="50">
@@ -33,8 +184,11 @@
 	<form id = "species_community_form" enctype="multipart/form-data" action = "{% url 'projects:relatedProject' related_project_ID %}" method = "post">
 		{% csrf_token %}
 		{{ related_project_form.as_p }}
-		<input class = "Button" type = "submit" value = "Submit">
+		<div class="d-flex justify-content-center">
+			<input class = "Button" type = "submit" value = "Submit">
+		</div>
 	</form>
+</div>
 </div>
 
 <script type="text/javascript">
