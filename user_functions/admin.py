@@ -64,3 +64,20 @@ class OrganizationAdmin(AdminAdvancedFiltersMixin, VersionAdmin):
         ('Email', 'Email'),
         ('Phone', 'Phone Number'),        
     )    
+    
+@admin.register(ChangeLog)
+class ChangeLogAdmin(AdminAdvancedFiltersMixin, VersionAdmin):
+    search_fields = [
+        'User',
+        'Date',
+        'Content',
+        'Location',
+    ]
+    
+    advanced_filter_fields = [
+        ('User', 'User'),
+        ('Date', 'Date'),
+        ('Content', 'Content'),
+        ('Location', 'Location'),
+    ]    
+    
