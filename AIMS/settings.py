@@ -49,6 +49,10 @@ INSTALLED_APPS = [
     'user_functions.apps.UserFunctionsConfig',
     'scopes.apps.ScopesConfig',
     'projects.apps.ProjectsConfig',
+    'reversion',
+    'reversion_compare',
+    'debug_toolbar',
+    'advanced_filters',
 ]
 
 MIDDLEWARE = [
@@ -59,6 +63,11 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
+]
+
+INTERNAL_IPS = [
+    "127.0.0.1",
 ]
 
 ROOT_URLCONF = 'AIMS.urls'
@@ -86,26 +95,26 @@ DEVELOPMENT_MODE = os.getenv("DEVELOPMENT_MODE", "False") == "True"
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-#DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.sqlite3',
-#        'NAME': BASE_DIR / 'db.sqlite3',
-#    }
-#}
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
 
-if DEVELOPMENT_MODE is True:
-    DATABASES = {
-        "default": {
-            "ENGINE": "django.db.backends.sqlite3",
-            "NAME": os.path.join(BASE_DIR, "db.sqlite3"),
-        }
-    }
-elif len(sys.argv) > 0 and sys.argv[1] != 'collectstatic':
-    if os.getenv("DATABASE_URL", None) is None:
-        raise Exception("DATABASE_URL environment variable not defined")
-    DATABASES = {
-        "default": dj_database_url.parse(os.environ.get("DATABASE_URL")),
-    }
+#if DEVELOPMENT_MODE is True:
+#    DATABASES = {
+#        "default": {
+#            "ENGINE": "django.db.backends.sqlite3",
+#            "NAME": os.path.join(BASE_DIR, "db.sqlite3"),
+#        }
+#    }
+#elif len(sys.argv) > 0 and sys.argv[1] != 'collectstatic':
+#    if os.getenv("DATABASE_URL", None) is None:
+#        raise Exception("DATABASE_URL environment variable not defined")
+#    DATABASES = {
+#        "default": dj_database_url.parse(os.environ.get("DATABASE_URL")),
+#    }
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
@@ -161,3 +170,8 @@ STATICFILES_DIRS = [ os.path.join(BASE_DIR, "static/"), ]
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 MEDIA_URL = "/media/"
 
+# Add reversion models to admin interface:
+ADD_REVERSION_ADMIN=True
+# optional settings:
+REVERSION_COMPARE_FOREIGN_OBJECTS_AS_ID=False
+REVERSION_COMPARE_IGNORE_NOT_REGISTERED=False
