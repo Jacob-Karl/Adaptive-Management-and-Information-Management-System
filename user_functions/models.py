@@ -59,11 +59,15 @@ class Contributor(models.Model):
     PeopleID = models.ForeignKey(Person, null = True, on_delete=models.CASCADE)
     OrganizationID = models.ForeignKey(Organization, null = True, on_delete=models.CASCADE)
     
-'''
 class ChangeLog(models.Model):
-    User = models.OneToOneField(User, on_delete=models.CASCADE)
-    Date = models.DateField()
-    Content = models.TextField()
-    Location = models.TextField()
-''' 
+    User = models.ForeignKey(User, on_delete=models.CASCADE, unique=False)
+    Date = models.DateField(unique=False)
+    Content = models.TextField(unique=False)
+    Location = models.TextField(unique=False)
+
+    def __str__(self):
+        return self.User.username + ": " + self.Date.strftime("%B %d, %Y")
+    
+    class Meta:
+        verbose_name_plural = "Change Logs" 
     

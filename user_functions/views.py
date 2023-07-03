@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from .forms import *
 from .models import *
+from reversion.models import *
 from django.contrib import *
 from datetime import datetime
 from django.contrib.auth.models import User
@@ -166,6 +167,7 @@ def user_hub(request):
     # when the activate/deactivate button is pressed POST the change and reload the page
     
     users = UserProfile.objects.all()
+    revisions = Revision.objects.all()
     
     context_dict = {
         'users':users,
@@ -192,3 +194,56 @@ def user_hub(request):
         pass
     
     return render(request, 'user_functions/user_hub.html', context_dict)
+
+@login_required
+def user_changelog(request, user_id):
+    
+    user_changes = []
+    
+    change_user = User.objects.get(pk = user_id)
+    user_revisions = Revision.objects.all().filter(user = change_user)
+    for version in user_revisions:
+        user_change = Version.objects.all().filter(revision = version.id)
+        change = [] 
+        change_data = user_change[0].serialized_data 
+        change_elements = change_data.split("','")
+        change_contents = change_elements[0].split('", "')
+        
+        change_location = change_contents[-1][12:-4]
+        change_location = change_location.split(' - ')
+        change_location = change_location[0]
+        
+        change_model = change_contents[0].split("','")
+        change_id = change_contents[1].split("','")
+        change_id = change_id[0].split(',')[0][5:]
+        change_fields = change_contents[2].split("','")
+        
+        change_date = change_elements[0].split('"Date": "')
+        change_date = change_date[1][:23]
+        
+        change_field_contents = change_fields[0].split("\', \' ")
+        print("_____________")
+        print(change_location)        
+        for element in change_field_contents:
+            element = element.lstrip()
+            #print(element)
+            if element[:2] == '**':
+                element = element[2:]
+                change.append(change_location)
+                change.append(element)
+                change.append(change_date)
+        
+        
+        if change != []:
+            user_changes.append(change)
+        
+    #print(user_changes)
+    #Get relavent data out of the JSON field and the date field, combine 
+    #into a nested list, and pass the super list to the changelog page
+    
+    context_dict = {
+        'user_id':change_user,
+        'user_changes':user_changes,
+    }
+        
+    return render(request, 'user_functions/user_changelog.html', context_dict)
