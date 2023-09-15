@@ -1,0 +1,403 @@
+LCR MSCP Adaptive Management Project Plan:
+F03, Rodent Monitoring at Conservation Areas
+PROJECT: F03
+Work Task ID
+F03
+Project (Work Task) Name
+Rodent Monitoring at Conservation Areas
+Project Plan Version Date
+2022-09-27
+Project Lead
+Hill, Jeff
+Project Status
+Open
+Project Type
+Conservation Area Development and Management
+Project Start Date
+2005
+Project End Date
+2055
+Project Summary
+Project F03 monitors the pre- and post-development presence of two covered rodent species, the Colorado River cotton rat (Sigmodon arizonae plenus, CRCR) and Yuma hispid cotton rat (Sigmodon hispidus eremicus, YHCR), and one evaluation rodent species, the sobrinus subspecies of the desert pocket mouse (Chaetodipus penicillatus sobrinus, DPMO) in LCR MSCP conservation areas with suitable habitat in Reaches 3-7. The conservation areas monitored to date include the Big Bend Conservation area (BBCA), Beal Lake Conservation Area (BLCA), Cibola National Wildlife Refuge Unit #1 Conservation Area (Cibola NWR Unit #1), Cibola Valley Conservation Area (CVCA), Hart Mine Marsh (HMM), Palo Verde Ecological Reserve (PVER), Hunter’s Hole, Laguna Division Conservation Area (LDCA), and Yuma East Wetland (YEW). The project began in FY2005 and will continue to FY2055. The ultimate goals for the two covered rodent species are to create and maintain 125 acres of habitat for CRCR and 76 acres of habitat for YHCR. The project supports adaptive management of habitat at the monitored conservation areas under Conservation Measures CRCR1 (status/habitat surveys – define habitat first 5 years), DPMO1 (locate occupied habitat and restore disturbed habitat), MRM1 (define habitat characteristics: DPMO), MRM2 (monitor and adaptively manage created habitat: CRCR, DPMO, and YHCR), and YHCR1 (status/habitat surveys – define habitat first 5 years). The ranges of the two covered species within the LCR MSCP planning area do not overlap; consequently, the LCR MSCP goals for these two require monitoring and habitat management at non-overlapping sets of conservation areas. Conservation areas targeted for habitat management for CRCR consist of: E01, BLCA; E04, PVER; E05, CVCA; E09, HMM; E21, Planet Ranch; E24, Cibola NWR Unit #1; E36, Parker Dam Camp; and E38, Three Fingers Lake. Those targeted for habitat management for YHCR consist of: E27, LDCA; E28, YEW; and E31, Hunters Hole. Monitoring and habitat management for DPMO take place incidentally to monitoring and habitat management for the two covered rodent species. The adaptive management cycle for Project F03 consists of reviewing results and methods from the previous year, reviewing the results of related monitoring and conservation efforts by other institutions, planning for the current year including monitoring design (where and when), data collection and quality assurance, statistical analysis, and reporting of results.
+Project Background
+The LCR MSCP Habitat Conservation Plan (HCP) (LCR MSCP 2004a) initially identified three rodents as covered species for the program: the Colorado River cotton rat (Sigmodon arizonae plenus, CRCR), Yuma hispid cotton rat (Sigmodon hispidus eremicus, YHCR), and the sobrinus subspecies of the desert pocket mouse (Chaetodipus penicillatus sobrinus, DPMO). Subsequently, the program reclassified DPMO as an evaluation species (LCR MSCP 2007a). The three species have largely non-overlapping distributions. The two rat species occupy similar habitats of riparian vegetation with a “… dense understory of grasses and/or shrubs alongside or beneath an overhead cover of forbs and low-growing woody species” (Hill and Smith 2021); CRCR prefers such habitat around marshes, while YHCR prefers such habitat under a cottonwood-willow overstory. Historically these types of habitat in the LCR valley occurred naturally around the edges of wetlands and open water (Ohmart et al. 1988, LCR MSCP 2004b, 2016) but today also can occur in areas of created, irrigated riparian vegetation, along the edges of irrigated agricultural fields, and alongside water conveyances (Johnson and Unnasch 2015a, 2015b). The two species also have different geographic ranges, with CRCR limited to Reaches 3-4 and YHCR limited to Reaches 6-7 (e.g., Hill and Smith 2021). The pocket mouse subspecies, in turn, is thought to occur only in Reaches 1-2, where it occupies dry sandy washes with scattered large shrubs or trees, particularly creosote bush and/or mesquite; feeds on seeds from the shrubs and surrounding grasses and forbs; and relies on the shrubs for cover (LCR MSCP 2016, Johnson and Unnasch 2021). Other subspecies of desert pocket mouse, sometimes only distinguishable through genetic testing, occur elsewhere along the LCR valley (e.g., Hill and Smith 2021).
+The LCR MSCP initiated Project F03 (originally titled “Small Mammal Colonization of Restoration Sites”) in FY2005 to begin filling in key gaps in knowledge of the distributions of the three species in the LCR valley (LCR MSCP 2005). The LCR MSCP then identified several scientific questions it needed to address to help it manage the three species and their habitat (LCR MSCP 2007a), initiated system-wide monitoring for the three species under Project D10 in FY2006 (LCR MSCP 2006), and began a three-year research study of the habitat requirements for the three species under Project C27 in FY2007 (LCR MSCP 2007b). The program revised its list of scientific questions concerning the three species in two subsequent strategic plans (LCR MSCP 2012, 2018), and closed Project D10 in FY2020 (LCR MSCP 2020). The LCR MSCP closely coordinated the three projects focused on the three rodent species—Projects C27, D10, and F03—and their collective experiences and findings comprise the base of knowledge for the continuing efforts of Project F03, including knowledge of best monitoring practices and intervening factors that may affect monitoring results. Project C27 produced three stand-alone technical reports (Neiswenter 2010a, 2011a, 2016). Until it closed Project D10, in turn, the LCR MSCP typically produced its technical reports and gave its presentations on Project D10 jointly with Project F03 (Dodge 2006, Calvert 2007, 2009, 2010, Kahl 2009, Neiswenter et al. 2009, 2010, Neiswenter 2010b, 2011b, 2013, 2014, Hill 2011, 2013, 2015, 2016, 2017, 2018a, 2018b, Hill and Calvert 2016, Smith 2017, Hill and Lyon 2019, 2021, Lyon 2020, Hill and Smith 2021).
+Through its efforts under Projects C27, D10, and F03, the LCR MSCP has arrived at a stable set of field procedures based on live trapping. The survey team deploy a standard type of trap non-randomly in a surveyed conservation area in a grid in an area of vegetation with the highest likelihood of containing the cotton rat species based on species habitat preferences. This pattern of deployment results in trapping mostly in areas with appropriately dense ground vegetation of the types preferred by the two cotton rat species (LCR MSCP 2016, Johnson and Unnasch 2021). When the survey team encounters distinctly denser vegetation within an otherwise more open area, it places the trapping grid in the denser habitat patch. Trapping is carried out at each conservation areas for a single night in the spring (e.g., early March), late fall (e.g., early November–early December), or both. As summarized most recently by Hill and Smith (2021 pp. 2–3),
+“Sherman® live traps are triggered by an animal stepping on a pressure plate that then closes a trap door behind it. Traps were baited with a mixture of oats, peanut butter, and vanilla. A small handful of cotton was also added to each trap to provide insulating cover for any animal trapped overnight. The traps were set 1 to 2 hours before sunset and pulled within 1 to 2 hours of sunrise during the warmer months to minimize heating of the traps during the trapping period. When the habitat patch allowed, traps were set out in a grid of at least three transects approximately 50 feet (15 meters) apart. Each transect consisted of at least five trap stations spaced approximately 33 feet (10 meters) apart. Trap spacing is estimated with pacing and is not measured exactly; it may vary if the more densely vegetated areas are dispersed across the trapping area.
+When the habitat patch with the highest density vegetation was more linear, transects were not set in a grid system. If only a single linear stretch of habitat was trapped, a single transect was set along the edge of the habitat patch. This usually meant that the transect was much longer than in the typical grid system (15 or more trap stations).”
+Field surveys of small mammals face many challenges, some of which affect their ability to produce accurate, precise estimates of abundance, survival and dispersal rates, and other demographic parameters. However, while these parameters were important to Project C27, they are less important to Project F03. As noted in several annual accomplishment reports (e.g., Hill and Smith 2021 p. 2), Project F03 
+“… focuse[s] on determining the presence of the cotton rat species … and the methods [a]re not designed to estimate abundance; therefore, the numbers of individuals of each species (including Colorado River cotton rats and Yuma hispid cotton rats) reported here are rough indices that do not provide reliable means of analyzing population trends.”
+Nevertheless, current field procedures in Project F03 do include steps to reduce potential biases in estimates of cotton rat presence due to cotton rat behaviors that may cause them to avoid the traps, as described for example by Brouard et al. (2015) and Romairone et al. (2018). Specifically, as noted by Brouard et al. (2015 p. 2),
+“… some [small rodent] species are neophobic and thus exhibit an aversion to new objects within their range, the temporal length of which can vary among species … [and] … olfactory cues in and around a trap can also greatly influence trap entry.”
+Olfactory cues specifically affect the likelihood that a small rodent will enter a trap depending on whether the trap bears the scent of a previous occupant that is of the same or a different species. The rodents avoid entering traps with scents of previous occupants of the same species.
+Sigmodon hispidus in fact is known to exhibit neophobia and this behavior is affected by social rank: dominant individuals are less neophobic than subordinates (Summerlin and Wolfe 1973). Brouard et al. (2015) note that the effects of neophobia in surveys for small rodents can be reduced by trap “prebaiting,” a procedure in which traps are baited, locked open, and placed at a survey site for a period of days before actual trapping. These steps allow the resident rodents to become familiar with the presence of the equipment. The LCR MSCP has recently incorporated prebaiting into its field procedures for Project F03 and will describe this addition to its methods in a forthcoming technical report for the project.
+The effects of previous-occupant scent cues, in turn, can be reduced by washing traps thoroughly between deployments. Project F03 handles this by requiring that every trap be washed in a bleach water solution after it has captured an animal, followed by rinsing in plain water and air drying before redeployment in the next round of field surveillance (e.g., Hill and Smith 2021).
+Both prebaiting and post-deployment cleaning of traps add to the effort cost of monitoring for Project F03. Some researchers have reported reduced costs associated with the use of nocturnal camera traps (Garden et al. 2007, De Bondi et al. 2010, Littlewood et al. 2021). However, no information is available to assess whether such alternatives would entail usefully lower costs for Project F03 or produce data that can be compared statistically with live-trapping data. Similarly, monitoring of species presence/absence through environmental DNA (eDNA) (Bohmann et al. 2014) also potentially might reduce the costs of Project F03, but no information is available to assess the possibility.
+Cotton rat and pocket mouse activity in the LCR valley likely varies with several environmental factors that affect the likelihood of their encountering a trap during a survey window, as would be the case for any small, nocturnal ground-dwelling mammals. Specifically, excessively cold or hot air temperatures, precipitation, or strong moonlight commonly cause small, nocturnal ground-dwelling mammals to limit their foraging activities (Wolfe and Summerlin 1989, Province of British Columbia 1998, Owen et al. 2021). Weather station data for the LCR valley could be used to evaluate whether any such effects are evident in the monitoring data for Project F03 and from Projects C27 and D10, and the degree to which they may reduce detection rates.
+Finally, as noted above, the most definitive way to identify a desert pocket mouse (Chaetodipus penicillatus) as a member of the sobrinus subspecies is through genetic testing. In the absence of such testing, the LCR MSCP presently identifies captured individuals by species but not subspecies (e.g., Hill and Smith 2021). Alternatives would include collecting genetic samples (e.g., blood, hair, feces) from captured individuals or sampling habitat for eDNA. As noted above, the LCR MSCP has not explored the possibility of using eDNA for monitoring in Project F03.
+Project Plan Contributors
+
+Associated Species/Communities
+CRCR; YHCR; DPMO
+Associated Conservation Measures
+CRCR1; DPMO1; MRM1; MRM2; YHCR1
+Associated Locations
+BBCA; BLCA; Cibola NWR Unit #1; CVCA; HMM; Hunters Hole; LDCA; Parker Dam Camp; Planet Ranch; PVER; Three Fingers Lake; YEW
+Associated Ecological Goals
+n/a
+Other Affected Conservation Measures
+
+Other Affected Covered and Evaluation Species
+
+Related Projects
+Related Work Task ID	Relationship Type
+C27	Antecedent
+C60	Informs Habitat or Site Development or Management
+D10	Antecedent
+E01	Informs Habitat or Site Development or Management
+E04	Informs Habitat or Site Development or Management
+E05	Informs Habitat or Site Development or Management
+E09	Informs Habitat or Site Development or Management
+E16	Informs Monitoring Design
+E21	Informs Habitat or Site Development or Management
+E24	Informs Habitat or Site Development or Management
+E27	Informs Habitat or Site Development or Management
+E28	Informs Habitat or Site Development or Management
+E31	Informs Habitat or Site Development or Management
+E36	Informs Habitat or Site Development or Management
+E38	Informs Habitat or Site Development or Management
+F01	Informs Habitat or Site Development or Management
+Decision Triggers
+Trigger Code	Trigger Name
+n/a	n/a
+Objectives
+Objective Code	Objective Name
+F03.01	Assess Pre- and Post-Development Presence of CRCR, YHCR, and DPMO at LCR MSCP Conservation Areas
+Outputs
+Output Code	Output Title	Output URL
+01	Summary of Preliminary Mammal Trapping Efforts at Cibola National Wildlife Refuge and at the Pratt Agricultural Restoration Site 2004-05	d10_f03_trap_cnwr_pratt_2004-2005.pdf
+02	Small Mammal Colonization at Habitat Creation Sites along the Lower Colorado River: 2006	d10_f03_annrep_2006.pdf
+03	Small Mammal Colonization at Habitat Creation Sites along the Lower Colorado River 2007	d10_f03_annrep_2007.pdf
+04	Small Mammal Colonization at Habitat Creation Sites Along the Lower Colorado River 2008	f03_annrep_2008.pdf
+05	Small Mammal Colonization at Habitat Creation Areas Along the Lower Colorado River 2009	f03_annrep_2009.pdf
+06	Small Mammal Colonization at Habitat Creation Areas along the Lower Colorado River: 2010	f03_annrep_2010.pdf
+07	Small Mammal Colonization at Habitat Creation Areas along the Lower Colorado River: Fiscal Year 2011	f03_annrep_2011.pdf
+08	Post-Development and System Monitoring of Rodent Populations: 2012–2014	d10_f03_sumrep_2012-2014.pdf
+09	Post-Development and System Monitoring of Rodent Populations, 2015 Annual Report	d10_f03_annrep_2015.pdf
+10	Post-Development and System-Wide Monitoring of Rodent Populations – Spring 2016	d10_f03_annrep_2016.pdf
+11	Post-Development and System-Wide Monitoring of Rodent Populations, Fiscal Year 2017	d10_f03_annrep_2017.pdf
+12	Post-Development and System-Wide Monitoring of Rodent Populations, 2018 Annual Report	d10_f03_annrep_2018.pdf
+13	Post-Development and System-Wide Monitoring of Rodent Populations, 2019 Annual Report	d10_f03_annrep_2019.pdf
+14	Post-Development Monitoring of Rodent Populations, 2020 Annual Report	f03_annrep_2020.pdf
+
+DECISION TRIGGER:n/a
+
+OBJECTIVE: F03.01
+Objective Code
+F03.01
+Objective Name
+Assess Pre- and Post-Development Presence of CRCR, YHCR, and DPMO at LCR MSCP Conservation Areas
+Objective Description
+Objective F03.01 calls for the LCR MSCP to maintain up-to-date procedures for and conduct field surveys and data analyses focused on CRCR, YHCR, and DPMO at conservation areas with created habitat for CRCR and YHCR, both pre- and post-development, to: (1) annually assess the presence/absence and relative frequency of live captures of the species of interest within and among conservation areas with habitat conditions expected to be suitable for the two cotton rat species; (2) annually assess statistically the effects of variation over time in habitat conditions within and among conservation areas on species presence/absence and capture frequencies; (3) periodically assess whether desert pocket mice captured under Project F03 are members of the sobrinus subspecies; (4) periodically assess statistically the effects of meteorological conditions and lunar phase on variation in species presence/absence and capture frequency within and among conservation areas; and (5) identify and conduct trials of alternative field methods with the potential to reduce monitoring costs while maintaining or improving detection probabilities for the three targeted species.
+Objective Start Date
+2023
+Objective End Date
+2055
+Objective Work-Flow Diagram
+
+Milestones
+Milestone ID	Milestone Name
+F03.01.01	Assemble and analyze cumulative record of meteorological conditions and lunar phase for all monitoring under Projects C27, D10, and F03
+F03.01.02	Assemble and analyze cumulative data on the subspecies identities of the desert pocket mice present in LCR MSCP conservation areas
+Implementation Steps
+Step Code	Step Name
+F03.01.01	Review methods and results from previous year and antecedent projects, conservation area plans and priorities, and possible improvements to monitoring procedures
+F03.01.02	Develop annual work plan, including allocation of LCR MSCP resources
+F03.01.03	Conduct annual cycle of field monitoring
+F03.01.04	Compile raw field monitoring data and document metadata
+F03.01.05	Inspect, assure quality of, and add final field monitoring data to cumulative record
+F03.01.06	Tabulate and interpret cumulative record of the subspecies identities of the desert pocket mice encountered in LCR MSCP conservation areas
+F03.01.07	Tabulate and interpret annual and cumulative descriptive statistics on CRCR, YHCR, and DPMO presence and capture frequency within and among conservation areas
+F03.01.08	Compile or update cumulative record of meteorological conditions and lunar phase for all monitoring nights under Projects C27, D10, and F03
+F03.01.09	Analyze cumulative record from Step F03.01.08 for potential statistical effects of meteorological conditions and lunar phase on variation in species presence/absence and capture frequency within and among conservation areas
+F03.01.10	Compare any trialed alternative monitoring methods (if any) to standard monitoring methods for the project based on encounter frequencies, logistical difficulty, and costs
+F03.01.11	Reporting
+
+MILESTONE: F03.01.01
+Milestone ID
+F03.01.01
+Milestone Name
+Assemble and analyze cumulative record of meteorological conditions and lunar phase for all monitoring under Projects C27, D10, and F03
+Milestone Description
+Cotton rat and pocket mouse activity in the LCR valley likely varies with several environmental factors that affect the likelihood of their encountering a trap during a survey window, as is the case for many small, nocturnal ground-dwelling mammals. Specifically, as noted in the Project Background statement, excessively cold or hot air temperatures, precipitation, or strong moonlight commonly cause small, nocturnal ground-dwelling mammals to limit their foraging. The LCR MSCP can assemble meteorological and lunar phase data for the dates/nights of survey activity under Projects C27, D10, and F03 from weather monitoring stations close to the surveyed locations. Using this dataset, the LCR MSCP can evaluate statistically whether any such effects are evident in the monitoring data for these Projects and estimate the degree to which they may affect detection rates. This information will assist the LCR MSCP in interpreting the survey results. Since the LCR MSCP has not previously carried out such a compilation and analysis, the initial compilation and analysis will mark a milestone for Project F03.
+Milestone Progress Reporting Date
+
+Milestone Progress Status
+Not-started
+Milestone Progress Description
+
+
+MILESTONE: F03.01.02
+Milestone ID
+F03.01.02
+Milestone Name
+Assemble and analyze cumulative data on the subspecies identities of the desert pocket mice present in LCR MSCP conservation areas
+Milestone Description
+One of the three species addressed by Project F03 is the and the sobrinus subspecies of the desert pocket mouse (Chaetodipus penicillatus sobrinus), an LCR MSCP evaluation species. The distribution of this subspecies is thought to be limited to Reaches 1 and 2, while other subspecies occur further south along the LCR valley. Unfortunately, as noted in the Project Background statement, the most definitive way to identify a desert pocket mouse (Chaetodipus penicillatus) as a member of the sobrinus subspecies is through genetic testing. Such testing entails logistical and financial costs, and the LCR MSCP does not routinely include it in its work under Project F03. Consequently, in the absence of such testing, the LCR MSCP presently identifies captured individuals by species but not subspecies. Alternatives would include collecting genetic samples (e.g., blood, hair, feces) from captured individuals or sampling habitat for eDNA; if appropriate, samples could be collected and properly stored for later analysis. At some point, the LCR MSCP will need to plan and conduct such a testing program to guide decisions on the conservation of the subspecies.
+Milestone Progress Reporting Date
+
+Milestone Progress Status
+Not-started
+Milestone Progress Description
+
+
+IMPLEMENTATION STEP: F03.01.01
+Step Code
+F03.01.01
+Step Name
+Review methods and results from previous year and antecedent projects, conservation area plans and priorities, and possible improvements to monitoring procedures
+Step Summary
+Implementation Step F0.01.01 reviews the methods and results from previous year and from antecedent Projects C27 and D10, opportunities for testing improvements to monitoring procedures to reduce costs while sustaining or improving accuracy, and management and monitoring priorities for conservation areas with suitable habitat for CRCR and YHCR. The review looks at (1) the effectiveness of current and potential updated field survey methods including their cost-effectiveness and the likely backward compatibility of potential new methods with past survey methods; (2) the selection of conservation areas to target for monitoring for CRCR, YHCR, and DPMO; (3) plans for upcoming management actions and expectations for changes in habitat conditions at the targeted conservation areas that might affect CRCR, YHCR, or DPMO; (4) the possible effects of habitat conditions and management actions during previous monitoring cycles on CRCR, YHCR, or DPMO contact frequencies and distributions; (5) the possible effects of intervening environmental factors during previous monitoring cycles on CRCR, YHCR, or DPMO contact frequencies and distributions; and (6) possible needs to clarify the subspecies identity of pocket mice captured incidental to the field surveys for CRCR and YHCR.
+Step Type
+Review of methods and results
+Step Start Date
+2023
+Step End Date
+2055
+Step Dependencies
+F03.01.10; C27.00.00; D10.00.00; E01.00.00; E04.00.00; E05.00.00; E09.00.00; E21.00.00; E24.00.00; E27.00.00; E28.00.00; E31.00.00; E36.00.00; E38.00.00
+Step Methods
+Method Code	Method Title
+n/a
+IMPLEMENTATION STEP: F03.01.02
+Step Code
+F03.01.02
+Step Name
+Develop annual work plan, including allocation of LCR MSCP resources
+Step Summary
+Implementation Step F03.01.02 uses the results of Step F03.01.01 to establish the annual work plan for Objective F03.01. The step minimally involves the following five activities as needed: (1) Update the selection of conservation areas to target for monitoring for CRCR, YHCR, and DPMO; (2) update field survey methods and sampling designs, including plans for testing alternative survey methods; (3) update plans for compiling descriptive statistics on annual and cumulative monitoring results for the project; (4) update plans for assessing statistically the possible effects of meteorological conditions and lunar phase on live-trapping captures across the cumulative records of Projects C27, D10, and F03; and (5) update plans for clarifying the subspecies identity of pocket mice captured incidental to the field surveys for CRCR and YHCR.
+Step Type
+Planning, including allocation of LCR MSCP resources (personnel, equipment, etc.)
+Step Start Date
+2023
+Step End Date
+2055
+Step Dependencies
+F03.01.01
+Step Methods
+Method Code	Method Title
+n/a
+IMPLEMENTATION STEP: F03.01.03
+Step Code
+F03.01.03
+Step Name
+Conduct annual cycle of field surveys
+Step Summary
+Implementation Step F03.01.03 implements the annual plan for field operations to survey CRCR, YHCR, and DPMO and associated habitat conditions at selected conservation areas for Objective F03.01. The step minimally involves the following six activities: (1) Check monitoring equipment and monitoring and data recording procedures as needed; (2) confirm planned timing of all monitoring events; (3) conduct planned field monitoring including prebaiting when needed; (4) preserve any samples collected for DPMO genetic analysis and periodically send to laboratory for analysis; and (5) wash and dry all traps following use.
+Step Type
+Field data collection
+Step Start Date
+2023
+Step End Date
+2055
+Step Dependencies
+F03.01.02
+Step Methods
+Method Code	Method Title
+n/a
+IMPLEMENTATION STEP: F03.01.04
+Step Code
+F03.01.04
+Step Name
+Compile raw field monitoring data and document metadata
+Step Summary
+Implementation Step F03.01.04 compiles the raw field data from Step F03.01.03 into the necessary data file structure and prepares a metadata file for each resulting raw field data file. The step minimally involves the following three activities: (1) Compile the raw record of CRCR, YHCR, and DPMO contacts by monitoring event and method; (2) compile the raw record of habitat conditions for all monitoring events; and (3) compile the raw record of environmental conditions for all monitoring events.
+Step Type
+Data compilation and documentation of metadata
+Step Start Date
+2023
+Step End Date
+2055
+Step Dependencies
+F03.01.03
+Step Methods
+Method Code	Method Title
+n/a
+IMPLEMENTATION STEP: F03.01.05
+Step Code
+F03.01.05
+Step Name
+Inspect, assure quality of, and add final field monitoring data to cumulative record
+Step Summary
+Implementation Step F03.01.05 implements data review and quality assurance procedures for the data compiled in Step F03.01.04, assesses possible needs for improving data review and quality assurance procedures in the next cycle of Steps F03.01.03, F03.01.04, and F03.01.05 and adds the final data to cumulative project archives. These archives include the data accumulated during the two antecedent projects, C27 and D10. The step minimally involves the following three activities: (1) Apply data quality assurance procedures; (2) assess needs and opportunities for improving data quality; and (3) transfer final data to the cumulative project records of survey data and associated habitat and environmental conditions by conservation area.
+Step Type
+Data inspection and quality assurance
+Step Start Date
+2023
+Step End Date
+2055
+Step Dependencies
+F03.01.04; C27.00.00; D10.00.00
+Step Methods
+Method Code	Method Title
+n/a
+IMPLEMENTATION STEP: F03.01.06
+Step Code
+F03.01.06
+Step Name
+Tabulate and interpret cumulative record of the subspecies identities of the desert pocket mice encountered in LCR MSCP conservation areas
+Step Summary
+Implementation Step F03.01.06 implements the procedures developed by the LCR MSCP to achieve Milestone F03.01.02. The step minimally involves the following four activities: (1) Tabulate the field evidence, if any, collected in Step F03.01.02 and processed in Steps F03.01.03 and Steps F03.01.04 on the subspecies of desert pocket mice (Chaetodipus penicillatus) captured during surveys for CRCR and YHCR; (2) tabulate the results of laboratory genetic analyses of field samples collected and sent to a laboratory in Steps F03.01.03 and F03.01.04, if any, for genetic analysis; (3) combine the results of field and laboratory evaluations into an integrated tabulation; and (4) prepare the metadata file for the tabulations.
+Step Type
+Statistical analysis and associated output quality assurance
+Step Start Date
+2023
+Step End Date
+2055
+Step Dependencies
+F03.01.03; F03.01.04
+Step Methods
+Method Code	Method Title
+n/a
+IMPLEMENTATION STEP: F03.01.07
+Step Code
+F03.01.07
+Step Name
+Tabulate and interpret annual and cumulative descriptive statistics on CRCR, YHCR, and DPMO presence and capture frequency within and among conservation areas
+Step Summary
+Implementation Step F03.01.07 tabulates and assesses the current-year and cumulative records of CRCR, YHCR, and DPMO captures within and among conservation areas in terms of species presence/absence and presence capture frequencies, distinguishing the sobrinus subspecies of the desert pocket mouse whenever the data permit. The step minimally involves the following five activities: (1) Tabulate the current-year data on species presence/absence and presence capture frequencies, by conservation area and overall; (2) tabulate the cumulative data on species presence/absence and presence capture frequencies, by conservation area and overall, across all years of monitoring under Project F03 and its antecedents; (3) assess the ranges of variation, long-term averages, and any trends in presence/absence, capture frequencies, or spatial distributions by species; (4) identify possible changes in habitat conditions that may account for patterns of change in , including changes due to management activities and due to unplanned disturbances species presence/absence, capture frequencies, or spatial distributions; and (5) prepare the metadata file for the tabulations and assessment for each species.
+Step Type
+Statistical analysis and associated output quality assurance
+Step Start Date
+2023
+Step End Date
+2055
+Step Dependencies
+F03.01.05; F03.01.06
+Step Methods
+Method Code	Method Title
+n/a
+IMPLEMENTATION STEP: F03.01.08
+Step Code
+F03.01.08
+Step Name
+Compile or update cumulative record of meteorological conditions and lunar phase for all monitoring nights under Projects C27, D10, and F03
+Step Summary
+Implementation Step F03.01.08, together with Step F03.01.09, allows the LCR MSCP to achieve Milestone F03.01.01. Specifically, Implementation Step F03.01.08 calls for the LCR MSCP to acquire data on the meteorological conditions experienced by the fauna at each monitoring location on each monitoring night and the associated phase of the lunar cycle. Once the LCR MSCP has compiled this information for past years of monitoring under Projects C27, D10, and F03, the investigative team will only need to update the dataset for the current year. Meteorological data will be obtained from the nearest weather recording station(s), and may include air temperature (min, max, mean), humidity or wet bulb temperature (min, max, mean), wind speed (min, max, mean), precipitation (total), and cloud cover (min, max, mean). Lunar phase may be expressed simply as phase (percent full), percent of maximum illumination, or other measure of the brightness of the moonlight—one set of data for the entire valley for each monitoring night. The step minimally involves the following five activities: (1) Identify the weather recording stations nearest to the monitoring conservation areas; (2) identify the meteorological data to acquire; (3) acquire the meteorological data for all rodent monitoring dates for all past years of monitoring under Projects C27, D10, and F03 and/or for the current monitoring year; (4) acquire the associated lunar data; (5) organize the data so that it is possible to compare rodent capture presence/absence and frequencies to meteorological conditions and lunar phase; and (5) prepare the metadata file for the cumulative dataset.
+Step Type
+Data compilation and documentation of metadata
+Step Start Date
+2023
+Step End Date
+2055
+Step Dependencies
+F03.01.03
+Step Methods
+Method Code	Method Title
+n/a
+IMPLEMENTATION STEP: F03.01.09
+Step Code
+F03.01.09
+Step Name
+Analyze cumulative record from Step F03.01.08 for potential statistical effects of meteorological conditions and lunar phase on variation in species presence/absence and capture frequency within and among conservation areas
+Step Summary
+Implementation Step F03.01.09, together with Step F03.01.08, allows the LCR MSCP to achieve Milestone F03.01.01. Specifically, Implementation Step F03.01.09 calls for the LCR MSCP to carry out a statistical analysis of the data assembled in Step F03.01.08 to test the null hypothesis that meteorological conditions and lunar phase have no effect on variation in species presence/absence and capture frequencies within and among conservation areas. If initial results indicate that the null hypothesis may be rejected, the analysis will estimate the directions(s) and magnitude(s) of effect(s). The purpose of this second step is to identify monitoring dates when these effects may have significantly distorted monitoring findings—i.e., resulted in higher or lower capture frequencies than would be expected to have occurred in the absence of the effects. The LCR MSCP can then determine if its understanding of variation in CRCR, YHCR, and DPMO captures at conservation sites has been biased by effects of meteorological conditions and lunar phase. The step minimally involves the following five activities: (1) Test for statistical relationships between meteorological variables and capture frequencies for each of the three species; (2) test for statistical relationships between lunar illumination and capture frequencies for each of the three species; (3) for potentially statistically significant relationships (either positive or negative), identify monitoring locations and dates when each such relationship may have resulted in a particularly high or low capture frequency; (4) assess whether LCR MSCP understanding of the presence, frequencies, and spatial distributions of CRCR, YHCR, and DPMO captures would be different if dates were excluded from analysis when meteorological and/or lunar conditions suppressed rodent activity; and (5) prepare metadata files for the resulting analyses.
+Step Type
+Modeling and associated output quality assurance (for example, occupancy modeling, demographic modeling, predictive modeling)
+Step Start Date
+2023
+Step End Date
+2055
+Step Dependencies
+F03.01.05; F03.01.08
+Step Methods
+Method Code	Method Title
+n/a
+IMPLEMENTATION STEP: F03.01.10
+Step Code
+F03.01.10
+Step Name
+Compare any trialed alternative monitoring methods (if any) to standard monitoring methods for the project based on encounter frequencies, logistical difficulty, and costs
+Step Summary
+Implementation Step F03.01.10 calls for the LCR MSCP to develop and implement procedures for assessing any alternative monitoring methods the program may test in the field under Project F03. The LCR MSCP will make such assessments through side-by-side comparisons of the encounter frequencies, logistical difficulty, and costs for each trialed method with those documented for the standard monitoring methods for the same monitoring locations and dates. The LCR MSCP does not currently plan to test any alternative methods. Consequently, it is not possible currently to identify the details of Step F03.01.10. However, in general, this step minimally will involve the following four activities: (1) Tabulate the encounter frequencies recorded using each alternative method alongside the frequencies recorded using the standard method for all sites and dates when the two methods were both deployed; (2) using either qualitative or quantitative procedures to compare the logistical difficulty and fiscal costs of the alternative method with those of the standard method for all sites and dates when the two methods were both deployed; (3) summarize the findings in terms of the effectiveness and costs of the alternative method relative to those of the standard method; and (4) prepare a metadata file for the results.
+Step Type
+Statistical analysis and associated output quality assurance
+Step Start Date
+2023
+Step End Date
+2055
+Step Dependencies
+F03.01.03
+Step Methods
+Method Code	Method Title
+n/a
+IMPLEMENTATION STEP: F03.01.11
+Step Code
+F03.01.11
+Step Name
+Reporting
+Step Summary
+Implementation Step F03.01.11 summarizes and documents the results of Steps F03.01.03–F03.01.10, including implications for the next cycle of Objective F03.01. The step minimally involves the following seven activities: (1) Prepare annual report section on field operations and laboratory analyses (if any); (2) prepare annual report section on field data quality assurance; (3) prepare annual report section on subspecies identities of the desert pocket mice encountered during monitoring; (4) prepare annual report section on annual and cumulative descriptive statistics on CRCR, YHCR, and DPMO presence and capture frequency within and among conservation areas; (5) prepare annual report section on possible statistical effects of meteorological conditions and lunar phase on variation in species presence/absence and capture frequency within and among conservation areas; (6) prepare annual report section on comparative effectiveness, difficulty, and costs of trialed alternative monitoring methods (if any); and (7) prepare annual report section on recommendations for next annual cycle of project.
+Step Type
+Reporting
+Step Start Date
+2023
+Step End Date
+2055
+Step Dependencies
+F03.01.03; F03.01.04; F03.01.05; F03.01.06; F03.01.07; F03.01.08; F03.01.09; F03.01.10
+Step Methods
+Method Code	Method Title
+n/a
+LITERATURE CITED
+Bohmann, K., A. Evans, M.T.P. Gilbert, G.R. Carvalho, S. Creer, M. Knapp, D.W. Yu, and M. de Bruyn. 2014. Environmental DNA for wildlife biology and biodiversity monitoring. Trends in Ecology & Evolution 29:358–367.
+Brouard, M.J., T. Coulson, C. Newman, D.W. Macdonald, and C.D. Buesching. 2015. Analysis on population level reveals trappability of wild rodents is determined by previous trap occupant. PLOS ONE 10:e0145006.
+Calvert, A. 2007. Small Mammal Colonization at Habitat Creation Sites along the Lower Colorado River: 2006. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Calvert, A. 2009. Small Mammal Colonization at Habitat Creation Sites along the Lower Colorado River: 2007. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Calvert, A. 2010. Small Mammal Colonization at Habitat Creation Areas Along the Lower Colorado River: 2008. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Program, Boulder City, Nevada.
+De Bondi, N., J.G. White, M. Stevens, and R. Cooke. 2010. A comparison of the effectiveness of camera trapping and live trapping for sampling terrestrial small-mammal communities. Wildlife Research 37:456.
+Dodge, C. 2006. Summary of Preliminary Mammal Trapping Efforts at Cibola National Wildlife Refuge and at the Pratt Agricultural Restoration Site 2004-05. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Garden, J.G., C.A. McAlpine, D.N. Jones, and H.P. Possingham. 2007. Using multiple survey methods to detect terrestrial reptiles and mammals: what are the most successful and cost-efficient combinations? Wildlife Research 34:218–227.
+Hill, J. 2011. Small Mammal Colonization at Habitat Creation Areas along the Lower Colorado River:  Fiscal Year 2011. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Hill, J. 2013. System-wide monitoring of MSCP rodent populations 2012. Colorado River Terrestrial and Riparian (CRTR) Meeting Presentation, January, 2012, Laughlin, Nevada.
+Hill, J. 2015. Small Mammal Captures on the LCR. Colorado River Terrestrial and Riparian (CRTR) Meeting Presentation, January, 2015, Laughlin, Nevada.
+Hill, J. 2016. System Monitoring of Rodent Populations, 2011 Annual Report. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Hill, J. 2017. Post-Development and System Monitoring of Rodent Populations, 2015 Annual Report. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Hill, J. 2018a. Post-Development and System-Wide Monitoring of Rodent Populations – Spring 2016. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Hill, J. 2018b. Post-Development and System-Wide Monitoring of Rodent Populations, Fiscal Year 2017. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Hill, J., and A. Calvert. 2016. Post-Development and System Monitoring of Rodent Populations: 2012–2014. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Hill, J., and J. Lyon. 2019. Post-Development and System-Wide Monitoring of Rodent Populations, 2018 Annual Report. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Hill, J., and J. Lyon. 2021. Post-Development and System-Wide Monitoring of Rodent Populations, 2019 Annual Report. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Hill, J., and J. Smith. 2021. Post-Development Monitoring of Rodent Populations, 2020 Annual Report. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Johnson, E.A., and R.S. Unnasch. 2015a. Yuma Hispid Cotton Rat (Sigmodon hispidus eremicus) (YHCR) Basic Conceptual Ecological Model for the Lower Colorado River. Submitted to the Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Program by Sound Science, LLC, Boise, Idaho, Boulder City, Nevada.
+Johnson, E.A., and R.S. Unnasch. 2015b. Colorado River Cotton Rat (Sigmodon arizonae plenus) (CRCR) Basic Conceptual Ecological Model for the Lower Colorado River. Submitted to the Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Program by Sound Science, LLC, Boise, Idaho, Boulder City, Nevada.
+Johnson, E.A., and R. Unnasch. 2021. Desert Pocket Mouse (Chaetodipus penicillatus sobrinus) (DPMO) Basic Conceptual Ecological Model for the Lower Colorado River. Submitted to the Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Program by Sound Science, LLC, Boise, Idaho, Boulder City, Nevada.
+Kahl, J. 2009. Rats! Colorado River Terrestrial and Riparian (CRTR) Meeting Presentation, January, 2009, Laughlin, Nevada.
+Littlewood, N.A., M.H. Hancock, S. Newey, G. Shackelford, and R. Toney. 2021. Use of a novel camera trapping approach to measure small mammal responses to peatland restoration. European Journal of Wildlife Research 67:Article 12.
+Lower Colorado River Multi-Species Conservation Program (LCR MSCP). 2004a. Final Lower Colorado River Multi-Species Conservation Program Volume II: Habitat Conservation Plan. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Lower Colorado River Multi-Species Conservation Program (LCR MSCP). 2004b. Final Programmatic Environmental Impact Statement/Environmental Impact Report Volume I. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Lower Colorado River Multi-Species Conservation Program (LCR MSCP). 2005. Final Implementation Report, Fiscal Year 2006 Work Plan and Budget. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Lower Colorado River Multi-Species Conservation Program (LCR MSCP). 2006. Final Implementation Report, Fiscal Year 2007 Work Plan and Budget, Fiscal Year 2005 Accomplishment Report. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River, Multi-Species Conservation Program, Boulder City, Nevada.
+Lower Colorado River Multi-Species Conservation Program (LCR MSCP). 2007a. Final Science Strategy. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Lower Colorado River Multi-Species Conservation Program (LCR MSCP). 2007b. Final Implementation Report, Fiscal Year 2008 Work Plan and Budget, Fiscal Year 2006 Accomplishment Report. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River, Multi-Species Conservation Program, Boulder City, Nevada.
+Lower Colorado River Multi-Species Conservation Program (LCR MSCP). 2012. Five-Year Monitoring and Research Priorities for the Lower Colorado River Multi-Species Conservation Program (2013–2017). Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Lower Colorado River Multi-Species Conservation Program (LCR MSCP). 2016. Species Accounts for the Lower Colorado River Multi-Species Conservation Program. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Lower Colorado River Multi-Species Conservation Program (LCR MSCP). 2018. Five-year Monitoring and Research Priorities for the Lower Colorado River Multi-Species Conservation Program (2018–2022).
+Lower Colorado River Multi-Species Conservation Program (LCR MSCP). 2020. Final Implementation Report, Fiscal Year 2021 Work Plan and Budget, Fiscal Year 2019 Accomplishment Report. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Lyon, J. 2020. Small Mammal Update. Colorado River Terrestrial and Riparian (CRTR) Meeting Presentation, January, 2020, Laughlin, Nevada.
+Neiswenter, S. 2010a. Diagnosis, Distribution, and Habitat Attributes of Two LCR MSCP Covered Species: The Colorado River Cotton Rat (Sigmodon arizonae plenus) and the Yuma Hispid Cotton Rat (Sigmodon hispidus eremicus). Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Program, Boulder City, Nevada.
+Neiswenter, S. 2010b. Small Mammal Colonization at Habitat Creation Areas along the Lower Colorado River: 2010. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Program, Boulder City, Nevada.
+Neiswenter, S. 2011a. Modeling Microhabitat and Survival Estimates of Sigmodon arizonae plenus along the Lower Colorado River 2010 Report. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Program, Boulder City, Nevada.
+Neiswenter, S. 2016. Habitat and Population Demographics of the Colorado River Cotton Rat (Sigmodon arizonae plenus) Along the Lower Colorado River, 2009–2013 Final Report. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Program, Boulder City, Nevada.
+Neiswenter, S. A. 2011b. Designing Habitat for Sigmodon arizonae: A Management Strategy? Colorado River Terrestrial and Riparian (CRTR) Meeting Presentation, January, 2011, Laughlin, Nevada.
+Neiswenter, S. A. 2013. Designing habitat for Sigmodon  arizonae: A management strategy. Colorado River Terrestrial and Riparian (CRTR) Meeting Presentation, January, 2013. Laughlin, Nevada.
+Neiswenter, S. A. 2014. Implications of Population Demographics on the Management of Sigmodon arizonae plenus Habitat. Colorado River Terrestrial and Riparian (CRTR) Meeting Presentation, January, 2014, Laughlin, Nevada.
+Neiswenter, S., C. Dodge, A. Calvert, and B. R. Riddle. 2009. Conservation Genetics of Disjunct Populations of Cotton Rats (Sigmodon) along the Lower Colorado River. Colorado River Terrestrial and Riparian (CRTR) Meeting Presentation, January, 2009, Laughlin, Nevada.
+Neiswenter, S., C. Dodge, A. Calvert, and B. R. Riddle. 2010. Insight on the Biogeography of the Lower Colorado River from the Population Genetics of Sigmodon. Colorado River Terrestrial and Riparian (CRTR) Meeting Presentation, January, 2010, Laughlin, Nevada.
+Ohmart, R. D., B. W. Anderson, and W. C. Hunter. 1988. The Ecology of the Lower Colorado River from Davis Dam to the Mexico-United States International Boundary: A Community Profile. U.S. Department of the Interior, Fish and Wildlife Service, Research and Development, Biological Report 85(7.19), Washington, D.C.
+Owen, L., E. Smith, and C. Soulsbury. 2021. Lunar illumination shapes small mammal activity in lowland agricultural landscapes. European Journal of Ecology 7:118–125.
+Province of British Columbia. 1998. Inventory Methods for Small Mammals: Shrews, Voles, Mice & Rats. Version 2.0. Province of British Columbia, Ministry of Environment, Lands, and Parks, Resources Inventory Branch for the Terrestrial Ecosystems Task Force, Resources Inventory Committee, Victoria, B.C.
+Romairone, J., J. Jiménez, J. J. Luque-Larena, and F. Mougeot. 2018. Spatial capture-recapture design and modelling for the study of small mammals. PLOS ONE 13:e0198766.
+Smith, J. 2017. Small Mammal Captures on the LCR. Colorado River Terrestrial and Riparian (CRTR) Meeting Presentation, January, 2017, Laughlin, Nevada.
+Summerlin, C. T., and J. L. Wolfe. 1973. Social influences on trap response of the cotton rat, Sigmodon hispidus. Ecology 54:1156–1159.
+Wolfe, J. L., and C. T. Summerlin. 1989. The influence of lunar light on nocturnal activity of the old-field mouse. Animal Behaviour 37:410–414.
