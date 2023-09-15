@@ -1,0 +1,322 @@
+LCR MSCP Adaptive Management Project Plan:
+F10, Yellow-billed Cuckoo Monitoring at Conservation Areas
+PROJECT: F10
+Work Task ID
+F10
+Project (Work Task) Name
+Yellow-billed Cuckoo Monitoring at Conservation Areas
+Project Plan Version Date
+2022-07-28
+Project Lead
+Raulston, Barbara
+Project Status
+Open
+Project Type
+Post-Development Monitoring
+Project Start Date
+2018
+Project End Date
+2055
+Project Summary
+Project F10 conducts presence-absence surveys for Western Yellow-billed Cuckoo (Coccyzus americanus occidentalis; YBCU) in LCR MSCP conservation areas within the LCR MSCP planning area. The LCR MSCP began surveys for YBCU in conservation areas began in FY2006 under Project D07, Yellow-billed Cuckoo System-Wide Monitoring, but placed the investigations in conservation areas into the newly designated, separate Project F10 in FY2018. The LCR MSCP then closed Project D07 in FY2021, after determining that YBCU along the LCR valley occur predominantly in LCR MSCP conservation areas and do so in sufficient numbers to provide the monitoring data needed. Project F10 will continue until FY2055. The surveys under Project F10 consist of call-playback surveys between 15 June and 15 August within cottonwood-willow (specifically Fremont cottonwood-Goodding’s willow, Populus fremontii-Salix gooddingii) vegetation of structural types I–III (and sometimes also type IV) following two years after planting. Analysis of the resulting data provides an annual estimate of YBCU detection probabilities, habitat use, colonization, and extinction probabilities within and among conservation areas. Prior to the close of Project D07, the LCR MSCP also compared its findings from conservation areas to its findings from system-wide monitoring. Project F10 formally addresses conservation measures MRM1 (define habitat characteristics) and MRM2 (monitor and adaptively manage created habitat) for YBCU. Project results within individual conservation areas also help the LCR MSCP assess progress toward conservation measure YBCU1 (create 4,050 acres of YBCU habitat) and determine funding priorities under conservation measure YBCU2 (maintain existing habitat).
+Project Background
+Historical accounts indicate that the YBCU was once common along the LCR, but little population information was available until Rosenberg et al. (1991) began surveys in 1975. These surveys revealed 242 individuals along the LCR and 208 along the Bill Williams River in 1976 (Rosenberg et al. 1991). Results in 1986 revealed drastic population declines (93%) along the LCR and the Bill Williams River (~75%; Rosenberg et al. 1991). The LCR MSCP Habitat Conservation Plan (Reclamation 2004) directed the LCR MSCP to protect, maintain, and create breeding habitat for riparian species, including YBCU, within the historical flood plain of the LCR. The LCR MSCP initiated Project D07 in 2006 to conduct system-wide surveys using a standardized protocol (Johnson et al. 2006). These surveys indicated population increases within LCR MSCP conservation areas from 2008-2012 as cottonwood-willow cover became available through LCR MSCP management efforts (McNeil et al. 2013). By FY2016, YBCU regularly colonized and reproduced in LCR MSCP conservation areas with cottonwood-willow land cover, and those breeding populations made up the majority of YBCU detected within the LCR MSCP planning area. Project D07 continued to include both system-wide monitoring and monitoring within actively managed conservation areas until FY2018, at which time the LCR MSCP assigned responsibility for post-development monitoring in these conservation areas to a new project, designated Project F10 (see below). The LCR MSCP then closed Project D07 in FY2021, after determining that YBCU along the LCR valley occur predominantly in LCR MSCP conservation areas and do so in sufficient numbers to provide the monitoring data needed to address conservation measures MRM1 (define habitat characteristics) and MRM2 (monitor and adaptively manage created habitat) for YBCU.
+The U.S. Fish and Wildlife Service listed the western distinct population segment of the YBCU as endangered in 2014 (USFWS 2014). The listing attributed the decline of the segment largely to the loss of riparian vegetation. The LCR valley is important breeding and migration stopover habitat for the YBCU (LCR MSCP 2018), even though the species spends only roughly a quarter of the year within the valley (Rosenberg et al. 1991). Breeding habitat characteristics—particularly characteristics of cottonwood-willow cover—are especially important for the life-cycle and population persistence of the YBCU (McClure et al. 2015a). However, critical uncertainties remain regarding how habitat quality affects suitability for YBCU breeding, including forest stand age and size (McClure et al. 2015a; Parametrix, Inc., and Southern Sierra Research Station 2019). Rosenberg et al. (1991) proposed that YBCU prefer mature cottonwood-willow forests. However, survey results from the LCR valley in 2014-2018 indicate that detections of YBCU within LCR MSCP conservation areas and system-wide monitoring sites were greater among the two-year-old stands than among older stands, greater among larger monitoring sites (80 versus 50 or 20 hectare sites) and consistently declined with stand age up to twelve years old (the oldest surveyed) (Parametrix, Inc., and Southern Sierra Research Station 2019). Indeed, one of the post-development monitoring priorities for this subspecies is to track this colonization curve at conservation areas to determine whether YBCU are attracted to younger vegetation (LCR MSCP 2018).
+Surveys for YBCU along the LCR valley prior to FY2016 under Project D07 collected data to detection probabilities, habitat use, colonization, and extinction probabilities within and among survey locations. The sites surveyed prior to FY2016 under Project D07 included conservation areas where the LCR MSCP began planting cottonwood-willow vegetation as well as sites outside these conservation areas along LCR Reaches 1-6 with existing cottonwood-willow cover. The investigations attempted to detect YBCU through call-broadcast surveys. It is not possible under current methods to determine whether a YBCU detected during a call-playback survey is an actual occupant of the location where it is detected, or only a temporary visitor (e.g., during foraging). Consequently, the LCR MSCP regards detections as indicators of site use rather than occupancy (Parametrix, Inc., and Southern Sierra Research Station 2019). Separate investigations deployed intensive nest surveys and mist-net capture and banding or affixing of geolocator devices to assess nesting density, productivity, and survival in addition to movements, site fidelity, and other aspects of YBCU ecology in the LCR valley (e.g., McNeil et al. 2013, LCR MSCP 2018, Parametrix, Inc., and Southern Sierra Research Station 2019). Geolocator devices specifically were used to monitor YBCU during migration and the non-breeding season. Telemetry was conducted to assist in finding nests, and to monitor within-breeding season movements and behaviors. The LCR MSCP studied the hydrologic conditions preferred by YBCU separately, under Project C37, FY2010-2012.
+The LCR MSCP in FY2016 determined that its efforts under Project D07 had met many of its original objectives. Specifically, efforts under the project had provided a basic understanding of nest productivity, breeding season detections (abundance and density) and nesting at the Palo Verde Ecological Reserve (PVER), and some information on site fidelity, colonization, variation in detections with vegetation stand age, and migration and locations used outside breeding season. Evidence of YBCU colonization and nesting in planted cottonwood-willow vegetation cover in many conservation areas indicated (a) that this planting effort was effective at promoting both colonization and nesting and (b) that the LCR MSCP had a useful understanding of YBCU habitat requirements, especially in relation to stand age. The LCR MSCP therefore determined that, until adaptive management monitoring begins as part of conservation area management, the program did not need to place a high priority on further monitoring of nest success or site fidelity and survival at the scale of individual conservation areas. The program consequently reduced the scope of Project D07 in FY2016 to focus primarily on call-playback surveys to estimate detection probabilities, with nest searches performed opportunistically and mist-netting performed mostly to re-trap birds to recover and remove GPS tracking units (Parametrix, Inc., and Southern Sierra Research Station 2019). This reduction in project scope allowed the LCR MSCP to continue assessing colonization and abandonment rates as evidence for whether new conservation area habitat was being used for nesting, i.e., to continue tracking whether the design of newly created land cover remained suitable. In FY2018, further, the LCR MSCP split its system-wide monitoring for YBCU from its post-development surveys, as noted above. The former continued to be conducted under Project D07 until the end of FY2021 while the newly established Project F10 took over responsibility for the latter.
+The present protocol for conservation area surveys for YBCU under Project F10 consist of call-playback monitoring at fixed survey points along fixed transects within fixed survey sites (Parametrix, Inc., and Southern Sierra Research Station 2019). A survey site consists of an area of at least 20 ha (49 ac) of potential breeding habitat that contains Fremont cottonwood and Goodding’s willow of structural types I–III and sometimes also type IV (Anderson and Ohmart 1984) that can be monitored in one morning. Survey transects consist of spatially explicit trails spaced 200 to 250 m (656 to 820 ft) apart throughout a survey site. Full coverage of a survey site may require the surveying of multiple transects. Survey points are spatially explicit locations, spaced 100 m (328 ft) apart along transects (Halterman et al. 2016), where recordings of specific types of YBCU calls are broadcast at predetermined decibel levels to elicit responses.
+Call-playback surveys can be used to track habitat use and assess habitat associations to help guide the creation and maintenance of optimal YBCU habitat (MacKenzie et al. 2006). LCR MSCP five-year priorities for YBCU for 2018-2022 included: (a) determining characteristics in common between colonized sites at the system-wide scale and at the scale of individual conservation areas, which might inform habitat improvements (YBCU1, YBCU2), using data from both Projects D07 and F10; (b) estimating the effort required to confirm nesting; and (c) comparing historically-used areas along the Bill Williams River valley to currently occupied areas along the LCR valley (LCR MSCP 2018). These priorities necessarily have changed with the end of system-wide surveys at the end of FY2021.
+Call-playback surveys generally detect less than 100% of birds of a targeted species at any survey site (MacKenzie 2006; Williams et al. 2002), and call-playback surveys for YBCU are no exception (Halterman 2009). For example, using marked YBCU along the San Pedro River, southeast of Tucson, Arizona, Halterman (2009) showed that the response rate during call-playback surveys was 59.5% with male detections averaging higher than female detections. The current protocol for LCR MSCP call-playback surveys along the LCR valley is designed to maximize and standardize detection probability (Halterman et al. 2016). However, several intervening factors can affect detection rates, resulting in variation in detection probabilities within and among survey sites and dates independent of bird presence/absence. These possible intervening factors include seasonal and diel timing (Diefenbach et al. 2007; McClure et al. 2011; Skirvin 1981), observer (Alldredge et al. 2007; Kendall et al. 1996; Sauer et al. 1994), weather (Bas et al. 2008; O’Connor and Hicks 1980), and background noise (Griffith et al. 2010; McClure et al. 2015b; Ortega and Francis 2012). Methods are available to try to account statistically for effects of such intervening factors (MacKenzie et al. 2006). Field teams record information on all these intervening factors under the current protocol for LCR MSCP YBCU call-playback surveys (Parametrix, Inc., and Southern Sierra Research Station 2019).
+Project Plan Contributors
+Ronning, Carolyn
+Associated Species/Communities
+YBCU
+Associated Conservation Measures
+MRM1; MRM2
+Associated Locations
+Beal Lake Conservation Area; Cibola National Wildlife Refuge Unit #1; Cibola Valley Conservation Area; Hunters Hole; Laguna Division Conservation Area; Palo Verde Ecological Reserve; Planet Ranch; Yuma East Wetlands; Middle Bill Williams River National Wildlife Refuge
+Associated Ecological Goals
+n/a
+Other Affected Conservation Measures
+
+Other Affected Covered and Evaluation Species
+
+Related Projects
+Related Work Task ID	Relationship Type
+C37	Antecedent
+C60	Informs Habitat or Site Development or Management
+D05	Data Sharing
+D06	Data Sharing
+D07	Antecedent
+E01	Informs Habitat or Site Development or Management
+E04	Informs Habitat or Site Development or Management
+E05	Informs Habitat or Site Development or Management
+E14	Informs Habitat or Site Development or Management
+E16	Informs Habitat or Site Development or Management
+E21	Informs Habitat or Site Development or Management
+E24	Informs Habitat or Site Development or Management
+E27	Informs Habitat or Site Development or Management
+E28	Informs Habitat or Site Development or Management
+E31	Informs Habitat or Site Development or Management
+E39	Informs Habitat or Site Development or Management
+F01	Informs Monitoring Design
+F10	Informs Monitoring Design
+Decision Triggers
+Trigger Code	Trigger Name
+n/a	n/a
+Objectives
+Objective Code	Objective Name
+F10.01	Assess YBCU Detection Probabilities and Habitat Associations in Conservation Areas
+Outputs
+Output Code	Output Title	Output URL
+01	Yellow-billed Cuckoo Surveys in Conservation Areas on the Lower Colorado River and Bill Williams River, 2020 Annual Report	f10_annrep_2020.docx
+
+DECISION TRIGGER:n/a
+
+OBJECTIVE: F10.01
+Objective Code
+F10.01
+Objective Name
+Assess YBCU Detection Probabilities and Habitat Associations in Conservation Areas
+Objective Description
+Objective F10.01 calls for the LCR MSCP to conduct field investigations and data analyses to guide management of YBCU habitat in LCR MSCP conservation areas. Specifically, Objective F10.01 calls for the LCR MSCP to: (1) conduct call-playback surveys within cottonwood-willow vegetation of structural types I–III in LCR MSCP conservation areas to detect the presence/absence of YBCU and concurrently record diverse observations on environmental and vegetation conditions and survey conditions following the standard protocol; (2) use the resulting data annually to estimate YBCU detection probabilities, habitat use, colonization, and extinction probabilities within and among conservation areas; (3) periodically use the cumulative record of call-playback survey results statistically to assess possible trends in detection probabilities, habitat use, colonization, and extinction probabilities within and among conservation areas in relation to possible trends in vegetation conditions; and (4) periodically use the cumulative record of call-playback survey results statistically to assess the magnitude of possible intervening factors that may be affecting YBCU detections and resulting estimates of detection probabilities, habitat use, colonization, and extinction probabilities within and among conservation areas.
+Objective Start Date
+2023
+Objective End Date
+2055
+Objective Work-Flow Diagram
+
+Milestones
+Milestone ID	Milestone Name
+F10.01.01	Periodic assessment of possible trends in detection probabilities in relation to vegetation conditions
+F10.01.02	Periodic assessment of possible intervening factors that may be affecting YBCU detections within and among conservation areas
+Implementation Steps
+Step Code	Step Name
+F10.01.01	Review methods and results from previous year and from Projects D05 and D06
+F10.01.02	Develop annual work plan, including allocation of LCR MSCP resources
+F10.01.03	Conduct field monitoring operations
+F10.01.04	Compile raw field data and document metadata
+F10.01.05	Inspect, assure quality of, and add final field data to cumulative record
+F10.01.06	Use current-year call-playback data to estimate YBCU detection probabilities, habitat use, colonization, and extinction probabilities within and among conservation areas
+F10.01.07	Use cumulative call-playback data periodically to assess possible trends in detection probabilities, habitat use, colonization, and extinction probabilities within and among conservation areas in relation to possible trends in vegetation conditions
+F10.01.08	Use cumulative call-playback data periodically to assess possible intervening factors that may be affecting YBCU detections within and among conservation areas
+F10.01.09	Reporting
+
+MILESTONE: F10.01.01
+Milestone ID
+F10.01.01
+Milestone Name
+Periodic assessment of possible trends in detection probabilities in relation to vegetation conditions
+Milestone Description
+Periodically use the cumulative record of call-playback survey results statistically to assess possible trends in detection probabilities, habitat use, colonization, and extinction probabilities within and among conservation areas in relation to possible trends in vegetation conditions.
+Milestone Progress Reporting Date
+02-2019
+Milestone Progress Status
+Started
+Milestone Progress Description
+The LCR MSCP completed a first cycle of achieving this milestone in 2019 by analyzing the cumulative findings under Project D07 from the 2014-2018 field seasons.
+
+MILESTONE: F10.01.02
+Milestone ID
+F10.01.02
+Milestone Name
+Periodic assessment of possible intervening factors that may be affecting YBCU detections within and among conservation areas
+Milestone Description
+Periodically use the cumulative record of call-playback survey results statistically to assess the magnitude of possible intervening factors that may be affecting YBCU detections and resulting estimates of detection probabilities, habitat use, colonization, and extinction probabilities within and among conservation areas.
+Milestone Progress Reporting Date
+07-2022
+Milestone Progress Status
+Not-started
+Milestone Progress Description
+The LCR MSCP has not yet undertaken this kind of analysis.
+
+IMPLEMENTATION STEP: F10.01.01
+Step Code
+F10.01.01
+Step Name
+Review methods and results from previous year and from Projects D05 and D06
+Step Summary
+Implementation Step F10.01.01 reviews the accomplishments and lessons learned in the previous year’s efforts under Objective F10.01 and cumulative lessons learned under Projects D05, D06, and D07. The review examines the locations and numbers of detections of YBCU in conservation areas and determines whether the same methods will be used at the same locations, or if changes should be made. The review then identifies needs and opportunities to update the next work plan. The step minimally involves the following six activities: (1) Review procedures for selecting locations for survey; (2) review field operations and data collection methods; (3) review procedures for datafile compilation; (4) review procedures for initial tabulation of field results; (5) review procedures for periodically assessing possible trends in detection probabilities in relation to vegetation conditions; and (6) review procedures for periodically assessing possible intervening factors that may be affecting YBCU detections within and among conservation areas.
+Step Type
+Review of methods and results
+Step Start Date
+2023
+Step End Date
+2055
+Step Dependencies
+F10.01.09
+Step Methods
+Method Code	Method Title
+n/a
+IMPLEMENTATION STEP: F10.01.02
+Step Code
+F10.01.02
+Step Name
+Develop annual work plan, including allocation of LCR MSCP resources
+Step Summary
+Implementation Step F10.01.02 uses the results of Step F10.01.01 to establish the annual work plan for Objective F10.01, including methods for survey site selection, data collection, data analysis, quality assurance, and documentation. The step minimally involves the following six activities: (1) Update procedures for selecting locations for survey if/as needed; (2) update plan for field operations and data collection if/as needed; (3) update procedures for datafile compilation if/as needed; (4) update procedures for initial tabulation of field results if/as needed; (5) update procedures for periodically assessing possible trends in detection probabilities in relation to vegetation conditions if/as needed; and (6) update procedures for periodically assessing possible intervening factors that may be affecting YBCU detections within and among conservation areas if/as needed.
+Step Type
+Planning, including allocation of LCR MSCP resources (personnel, equipment, etc.)
+Step Start Date
+2023
+Step End Date
+2055
+Step Dependencies
+F10/01/01
+Step Methods
+Method Code	Method Title
+n/a
+IMPLEMENTATION STEP: F10.01.03
+Step Code
+F10.01.03
+Step Name
+Conduct field monitoring operations
+Step Summary
+Implementation Step F10.01.03 implements the annual plan for field operations, including equipment maintenance and calibration. The step minimally involves two activities: (1) Maintain and calibrate field data collection equipment and software; and (2) conduct field survey operations.
+Step Type
+Field data collection
+Step Start Date
+2023
+Step End Date
+2055
+Step Dependencies
+F10.01.02
+Step Methods
+Method Code	Method Title
+n/a
+IMPLEMENTATION STEP: F10.01.04
+Step Code
+F10.01.04
+Step Name
+Compile raw field data and document metadata
+Step Summary
+Implementation Step F10.01.04 checks the integrity of the raw field datafiles from Step F10.01.03, compiles them into the necessary data file structure for the field season and prepares a metadata file for the resulting raw master data file. The step minimally involves the following three activities: (1) Check datafile integrity for each survey event; (2) compile all survey datafiles for the season including both call-playback data and data on vegetation, environmental, and survey conditions; (3) prepare metadata documentation.
+Step Type
+Data compilation and documentation of metadata
+Step Start Date
+2023
+Step End Date
+2055
+Step Dependencies
+F10.01.03
+Step Methods
+Method Code	Method Title
+n/a
+IMPLEMENTATION STEP: F10.01.05
+Step Code
+F10.01.05
+Step Name
+Inspect, assure quality of, and add final field data to cumulative record
+Step Summary
+Implementation Step F10.01.05 implements data review and quality assurance procedures for the data compiled in Step F10.01.04, assesses possible needs for improving data review and quality assurance procedures in the next cycle of Steps F10.01.03 and F10.01.04 and adds the final data to cumulative project archives. The step minimally involves the following three activities: (1) Conduct data review and quality assurance for field operations record for each survey; (2) conduct data review and quality assurance for the record of observations for each survey; and (3) add final approved data to cumulative project archives.
+Step Type
+Data inspection and quality assurance
+Step Start Date
+2023
+Step End Date
+2055
+Step Dependencies
+F10.01.04
+Step Methods
+Method Code	Method Title
+n/a
+IMPLEMENTATION STEP: F10.01.06
+Step Code
+F10.01.06
+Step Name
+Use current-year call-playback data to estimate YBCU detection probabilities, habitat use, colonization, and extinction probabilities within and among conservation areas
+Step Summary
+Implementation Step F10.01.06 generates tabular summaries of the raw observations of YBCU detections versus non-detections both overall and for each conservation surveyed in the current year, estimates detection probabilities and other variables, and tabulates the relationship between detection probabilities and habitat and environmental conditions, implements routine procedures for quality assurance for the results, and documents the metadata for the results. The step minimally involves the following three activities: (1) Tabulate descriptive statistics; (2) estimate detection probabilities, habitat use, colonization, and extinction probabilities within and among conservation areas from the year’s survey results; (3) apply quality assurance procedure to these results; and (4) document metadata for the tabulation results.
+Step Type
+Statistical analysis and associated output quality assurance
+Step Start Date
+2023
+Step End Date
+2055
+Step Dependencies
+F10.01.05
+Step Methods
+Method Code	Method Title
+n/a
+IMPLEMENTATION STEP: F10.01.07
+Step Code
+F10.01.07
+Step Name
+Use cumulative call-playback data periodically to assess possible trends in detection probabilities, habitat use, colonization, and extinction probabilities within and among conservation areas in relation to possible trends in vegetation conditions
+Step Summary
+Implementation Step F10.01.07 periodically (e.g., every five years) (a) compiles the cumulative record of all LCR MSCP call-playback surveys of YBCU presence/absence and habitat associations under Projects D05, D06, D07, F10 (including from the current monitoring year) that follow or generate data comparable to the current monitoring protocol; and (b) uses this cumulative record to develop or update a statistical model of possible trends in detection probabilities, habitat use, colonization, and extinction probabilities within and among conservation areas in relation to possible trends in vegetation conditions. The step minimally involves the following three activities: (1) Develop or update statistical model; (2) apply quality assurance procedure to model results; and (3) document model metadata. Activity in this step provides the information for tracking Milestone F10.01.01.
+Step Type
+Modeling and associated output quality assurance (for example, occupancy modeling, demographic modeling, predictive modeling)
+Step Start Date
+2023
+Step End Date
+2055
+Step Dependencies
+F10.01.06; D05.00.00; D06.00.00; D07.00.00
+Step Methods
+Method Code	Method Title
+n/a
+IMPLEMENTATION STEP: F10.01.08
+Step Code
+F10.01.08
+Step Name
+Use cumulative call-playback data periodically to assess possible intervening factors that may be affecting YBCU detections within and among conservation areas
+Step Summary
+Implementation Step F10.01.08 periodically (e.g., every five years) (a) compiles the cumulative record of all LCR MSCP call-playback surveys of YBCU presence/absence and possible intervening factors under Projects D05, D06, D07, F10 (including from the current monitoring year) that follow or generate data comparable to the current monitoring protocol; and (b) uses this cumulative record to develop or update a statistical model of the effects of possible intervening factors on YBCU detections within and among conservation areas. Possible intervening factors to assess include seasonal and diel timing, observer, weather, and background noise. The step minimally involves the following three activities: (1) Develop or update statistical model; (2) apply quality assurance procedure to model results; and (3) document model metadata. Activity in this step provides the information for tracking Milestone F10.01.02.
+Step Type
+Modeling and associated output quality assurance (for example, occupancy modeling, demographic modeling, predictive modeling)
+Step Start Date
+2023
+Step End Date
+2055
+Step Dependencies
+F10.01.06; D05.00.00; D06.00.00; D07.00.00
+Step Methods
+Method Code	Method Title
+n/a
+IMPLEMENTATION STEP: F10.01.09
+Step Code
+F10.01.09
+Step Name
+Reporting
+Step Summary
+Implementation Step F10.01.09 summarizes and documents the results of Steps F10.01.03–F10.01.08, including implications for the next annual cycle of work under Objective F10.01. The step minimally involves the following seven activities: (1) Prepare annual report section on field operations; (2) prepare annual report section on compilation of raw field data; (3) prepare annual report section on quality assurance for field data; (4) prepare annual report section on tabulations and estimate YBCU detection probabilities, habitat use, colonization, and extinction probabilities within and among conservation areas; (5) periodically prepare a report section on possible trends in detection probabilities, habitat use, colonization, and extinction probabilities within and among conservation areas in relation to possible trends in vegetation conditions; (6) periodically prepare a report section on possible intervening factors that may be affecting YBCU detections within and among conservation areas; and (7) prepare annual report recommendations for next annual cycle of project.
+Step Type
+Reporting
+Step Start Date
+2023
+Step End Date
+2055
+Step Dependencies
+F10.01.03; F10.01.04; F10.01.05; F10.01.06; F10.01.07; F10.01.08
+Step Methods
+Method Code	Method Title
+n/a
+LITERATURE CITED
+Alldredge, M.W., T.R. Simons, K.H. Pollock. 2007. Factors affecting aural detections of songbirds. Ecological Applications 17: 948–955. https://doi.org/doi:10.1890/06-0685
+Anderson, B.W. and R.D. Ohmart. 1984. Vegetation Community Type Maps, Lower Colorado River. Bureau of Reclamation, Lower Colorado Region, Boulder City, Nevada.
+Bas, Y., V. Devictor, J.P. Moussus, F. Jiguet. 2008. Accounting for weather and time-of-day parameters when analysing count data from monitoring programs. Biodiversity Conservation 17:  3403–3416. https://doi.org/10.1007/s10531-008-9420-6
+Bureau of Reclamation (Reclamation). 2004. Lower Colorado River Multi-Species Conservation Program, Volume II: Habitat Conservation Plan. Bureau of Reclamation, Sacramento, CA.
+Diefenbach, D.R., M.R. Marshall, J.A. Mattice, D.W. Brauning, D.H. Johnson. 2007. Incorporating availability for detection in estimates of bird abundance. Auk 124, 96–106. https://doi.org/10.1642/0004-8038(2007)124[96:iafdie]2.0.co;2
+Griffith, E.H., J.R. Sauer, J.A. Royle. 2010. Traffic effects on bird counts on North American Breeding Bird Survey routes. Auk 127, 387–393. https://doi.org/10.1525/auk.2009.09056
+Halterman, M. 2018. Yellow-billed Cuckoo Project, 2006–2007. Submitted to the Bureau of Reclamation, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Halterman, M.D. M.J. Johnson, J.A. Holmes, S.A. Laymon. 2016. A Natural History Summary and Survey Protocol for the Western Distinct Population Segment of Yellow-billed Cuckoo. U.S. Fish and Wildlife Techniques and Methods.
+Halterman, M.M. 2009. Sexual Dimorphism, Detection Probability, Home Range, and Parental Care in the Yellow-Billed Cuckoo. Ph.D. Dissertation, University of Nevada Reno.
+Johnson, M.J., J.A. Holmes, C. Christopher, I. Samuels, S. Krantz, M.K. Sogge. 2006. Yellow-Billed Cuckoo Distribution, Abundance, and Habitat Use Along the Lower Colorado and Tributaries, 2006 Annual Report. U.S. Geological Survey Open-File Report 2007-1097, Southwest Biological Science Center, Flagstaff, Arizona.
+Kendall, W.L., B.G. Peterjohn, J.R. Sauer. 1996. First-time observer effects in the North American Breeding Bird Survey. Auk 113: 823–829.
+Lower Colorado River Multi-Species Conservation Program (LCR MSCP). 2018. Five-year Monitoring and Research Priorities for the Lower Colorado River Multi-Species Conservation Program (2018-2022). Bureau of Reclamation, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+MacKenzie, D.I., J.D. Nichols, J.A. Royle, K.H. Pollock, L.L. Bailey, J.E. Hines. 2006. Occupancy Estimation and Modeling: Inferring Patterns and Dynamics of Species Occurrence. Elsevier, Burlington, Massachusetts.
+MacKenzie, D.I. 2006. Modeling the probability of resource use: the effect of, and dealing with, detecting a species imperfectly. Journal of Wildlife Management 70: 367–374.
+McClure, C.J.W., N.D. Burkett-Cadena, R.A. Ligon, G.E. Hill. 2011. Actual or perceived abundance? Interpreting annual survey data in the face of changing phenologies. Condor 113: 490–500. https://doi.org/10.1525/cond.2011.100234
+McClure, C.J.W., E.A. Johnson, R. Unnasch. 2015a. Western Yellow-billed Cuckoo (Coccyzus americanus occidentalis) (YBCU) Basic Conceptual Ecological Model for the Lower Colorado River. Submitted to the Bureau of Reclamation, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada, by Sound Science, LLC, Boise, Idaho.
+McClure, C.J.W., A.C. Korte, J.A. Heath, J.R. Barber. 2015b. Pavement and riparian forest shape the bird community along an urban river corridor. Global Ecology and Conservation 4: 291-310. https://doi.org/10.1016/j.gecco.2015.07.004
+McNeil, S.E. C.L. Squibb, J.R. Stanek, D. Tracy. 2020. Yellow-billed Cuckoo Surveys in Conservation Areas on the Lower Colorado River and Bill Williams River, 2019 Annual Report. Submitted to the Bureau of Reclamation, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+McNeil, S.E. D. Tracy, J.R. Stanek, J.E. Stanek. 2013. Yellow-billed Cuckoo Distribution, Abundance, and Habitat Use on the Lower Colorado River and its Tributaries. 2008- 2012 Summary Report. Submitted to the Bureau of Reclamation, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+O’Connor, R.J., R.K. Hicks. 1980. The influence of weather conditions on the detection of birds during Common Birds Census fieldwork. Bird Study 27: 137–151.
+Ortega, C.P., C.D. Francis. 2012. Effects of gas-well-compressor noise on the ability to detect birds during surveys in northwest New Mexico. Ornithological Monographs 74(1): 78–90.
+Parametrix, Inc., and Southern Sierra Research Station 2019. Yellow-billed Cuckoo Surveys on the Lower Colorado River and Tributaries, 2014 to 2018 Summary Report. Submitted to the Bureau of Reclamation, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Rosenberg, K.V, R.D. Omhart, W.C. Hunter, B.W. Anderson. 1991. Birds of the Lower Colorado River Valley. University of Arizona Press, Tucson, Arizona.
+Sauer, J.R., B.G. Peterjohn, W.A. Link. 1994. Observer differences in the North American Breeding Bird Survey. Auk 111: 50–62.
+Skirvin, A.A. 1981. Effects of time of day and time of season on the number of observations and density estimates of breeding birds. Studies in Avian Biology 6: 271–274.
+U.S. Fish and Wildlife Service (USFWS). 2014. Endangered and Threatened Wildlife and Plants; Determination of Threatened Status for the Western Distinct Population Segment of the Yellow-billed Cuckoo (Coccyzus americanus). Federal Register 79 FR 59991-60038, October 3, 2014.
+Williams, B.K., J.D., Nichols, M.J. 2002. Conroy. Analysis and Management of Animal Populations. Academic Press, New York.
