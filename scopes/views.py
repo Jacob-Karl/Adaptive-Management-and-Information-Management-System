@@ -12,16 +12,68 @@ def hub(request):
     context_dict = {}
     
     all_species = SpeciesCommunity.objects.all()
-    context_dict['SpeciesCommunity'] = all_species
-    
+    species_selected_field = request.GET.get('species_fields')
+    if species_selected_field == 'TargetType':
+        context_dict['SpeciesCommunity'] = all_species.filter(TargetType__icontains=request.GET.get('species_search'))
+    elif species_selected_field == 'Acronym':
+        context_dict['SpeciesCommunity'] = all_species.filter(Acronym__icontains=request.GET.get('species_search'))
+    elif species_selected_field == 'CommonName':
+        context_dict['SpeciesCommunity'] = all_species.filter(CommonName__icontains=request.GET.get('species_search'))
+    elif species_selected_field == 'ScientificName':
+        context_dict['SpeciesCommunity'] = all_species.filter(ScientificName__icontains=request.GET.get('species_search'))
+    elif species_selected_field == 'ITISTSN':
+        context_dict['SpeciesCommunity'] = all_species.filter(ITISTSN__icontains=request.GET.get('species_search'))
+    elif species_selected_field == 'CommunityName':
+        context_dict['SpeciesCommunity'] = all_species.filter(CommunityName__icontains=request.GET.get('species_search'))
+    elif species_selected_field == 'Synonyms':
+        context_dict['SpeciesCommunity'] = all_species.filter(Synonyms__icontains=request.GET.get('species_search'))
+    elif species_selected_field == 'Comments':
+        context_dict['SpeciesCommunity'] = all_species.filter(Comments__icontains=request.GET.get('species_search'))
+    else: 
+        context_dict['SpeciesCommunity'] = all_species 
+        
     all_locations = Location.objects.all()
-    context_dict['Location'] = all_locations
+    location_selected_field = request.GET.get('location_fields')
+    if location_selected_field == 'LocationCode':
+        context_dict['Location'] = all_locations.filter(LocationCode__icontains=request.GET.get('location_search'))
+    elif location_selected_field == 'LocationName':
+        context_dict['Location'] = all_locations.filter(LocationName__icontains=request.GET.get('location_search'))
+    elif location_selected_field == 'Description':
+        context_dict['Location'] = all_locations.filter(Description__icontains=request.GET.get('location_search'))
+    elif location_selected_field == 'SpatialLayer':
+        context_dict['Location'] = all_locations.filter(SpatialLayer__icontains=request.GET.get('location_search'))
+    elif location_selected_field == 'SpatialID':
+        context_dict['Location'] = all_locations.filter(SpatialID__icontains=request.GET.get('location_search'))
+    else: 
+        context_dict['Location'] = all_locations
     
     all_measures = ConservationMeasure.objects.all()
-    context_dict['ConservationMeasure'] = all_measures
+    measure_selected_field = request.GET.get('conMeas_fields')
+    if measure_selected_field == 'CMCode':
+        context_dict['ConservationMeasure'] = all_measures.filter(CMCode__icontains=request.GET.get('conMeas_search'))
+    elif measure_selected_field == 'CMDescription':
+        context_dict['ConservationMeasure'] = all_measures.filter(CMDescription__icontains=request.GET.get('conMeas_search'))
+    elif measure_selected_field == 'SppHab':
+        context_dict['ConservationMeasure'] = all_measures.filter(SppHab__icontains=request.GET.get('conMeas_search'))
+    elif measure_selected_field == 'CMType':
+        context_dict['ConservationMeasure'] = all_measures.filter(CMType__icontains=request.GET.get('conMeas_search'))
+    elif measure_selected_field == 'CMSummary':
+        context_dict['ConservationMeasure'] = all_measures.filter(CMSummary__icontains=request.GET.get('conMeas_search'))
+    elif measure_selected_field == 'Status':
+        context_dict['ConservationMeasure'] = all_measures.filter(Status__icontains=request.GET.get('conMeas_search'))
+    else: 
+        context_dict['ConservationMeasure'] = all_measures
     
     all_goals = Goal.objects.all()
-    context_dict['Goal'] = all_goals
+    goal_selected_field = request.GET.get('goal_fields')
+    if goal_selected_field == 'GoalName':
+        context_dict['ConservationMeasure'] = all_goals.filter(GoalName__icontains=request.GET.get('goal_search'))
+    elif goal_selected_field == 'GoalType':
+        context_dict['ConservationMeasure'] = all_goals.filter(GoalType__icontains=request.GET.get('goal_search'))
+    elif goal_selected_field == 'GoalDescription':
+        context_dict['ConservationMeasure'] = all_goals.filter(GoalDescription__icontains=request.GET.get('goal_search'))
+    else: 
+        context_dict['Goal'] = all_goals
     
     return render(request, 'scopes/scope_hub.html', context_dict)
 
