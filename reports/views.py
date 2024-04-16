@@ -16,9 +16,40 @@ def hub(request):
     context_dict = {}
     
     all_projects = Project.objects.all()
-    context_dict = {
-        'All_Projects' : all_projects,
-    }
+    
+    try:
+        selected_field = request.GET.get('fields')
+        if selected_field == 'WorktaskID':
+            context_dict['All_Projects'] = all_projects.filter(WorktaskID__icontains=request.GET.get('search'))
+        elif selected_field == 'ProjectName':
+            context_dict['All_Projects'] = all_projects.filter(ProjectName__icontains=request.GET.get('search'))
+        elif selected_field == 'ProjectLead':
+            context_dict['All_Projects'] = all_projects.filter(ProjectLead__icontains=request.GET.get('search'))
+        elif selected_field == 'ProjectStatus':
+            context_dict['All_Projects'] = all_projects.filter(ProjectStatus__icontains=request.GET.get('search'))
+        elif selected_field == 'ProjectType':
+            context_dict['All_Projects'] = all_projects.filter(ProjectType__icontains=request.GET.get('search'))
+        elif selected_field == 'ProjectStart':
+            context_dict['All_Projects'] = all_projects.filter(ProjectStart__icontains=request.GET.get('search'))
+        elif selected_field == 'ProjectEnd':
+            context_dict['All_Projects'] = all_projects.filter(ProjectEnd__icontains=request.GET.get('search'))
+        elif selected_field == 'ProjectSummary':
+            context_dict['All_Projects'] = all_projects.filter(ProjectSummary__icontains=request.GET.get('search'))
+        elif selected_field == 'ProjectBackground':
+            context_dict['All_Projects'] = all_projects.filter(ProjectBackground__icontains=request.GET.get('search'))
+        elif selected_field == 'OtherConsMeas':
+            context_dict['All_Projects'] = all_projects.filter(OtherConsMeas__icontains=request.GET.get('search'))
+        elif selected_field == 'OtherSpecies':
+            context_dict['All_Projects'] = all_projects.filter(OtherSpecies__icontains=request.GET.get('search'))
+        elif selected_field == 'Reference':
+            context_dict['All_Projects'] = all_projects.filter(Reference__icontains=request.GET.get('search'))
+        elif selected_field == 'ProjectContributors':
+            context_dict['All_Projects'] = all_projects.filter(ProjectContributors__icontains=request.GET.get('search'))
+        else: 
+            context_dict['All_Projects'] = all_projects 
+        
+    except:
+        context_dict['All_Projects'] = all_projects  
     
     return render(request, 'reports/report_hub.html', context_dict)
 
@@ -43,7 +74,7 @@ def prepare_report(request, project_ID):
 
 @login_required
 def generate_project_report(request, project_ID):
-    template_file = open("C:/Users/Jacobs Laptop PC/Documents/AMATRA/AMATRA/AIMS/static/Annual project report template.txt", "r")
+    template_file = open("C:/Users/Jacob/Documents/AIMS/static/Annual project report template.txt", "r")
     template = template_file.read()
     template_file.close()
     
@@ -162,7 +193,7 @@ def generate_project_report(request, project_ID):
 
 @login_required
 def generate_report(request, project_ID):
-    template_file = open("C:/Users/Jacobs Laptop PC/Documents/AMATRA/AMATRA/AIMS/static/AIMS output template v2.txt", "r")
+    template_file = open("C:/Users/Jacob/Documents/AIMS/static/AIMS output template v2.txt", "r")
     template = template_file.read()
     template_file.close()
     
