@@ -8,7 +8,7 @@
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<title>AIMS</title>
    	<!-- Bootstrap core CSS -->
-	<Link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
+	<Link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <Link href="../static/css/bootsrap.min.css" rel="stylesheet">
 	<!--<Link href="{% static 'css/bootsrap.min.css' %}" rel="stylesheet">-->
 	<Link href="{% static 'css/bootsrap-grid.min.css' %}" rel="stylesheet">
@@ -57,7 +57,7 @@
 	}
 	footer {
   		background-color: #00415D;
-		height: 100px;
+		height: 200px;
 	}
 </style>
 
@@ -68,7 +68,7 @@
 	</h1>
 	<img class="Logo" src="{% static 'MSCP_logo.png' %}" alt="MSCP Logo" width="1460" height="600">
 </div>
-
+<br />
 <div class="row d-flex justify-content-center" style="grid-column-gap: 10px; grid-row-gap: 10px;">
 
 <div class="card mb-3" style="max-width: 540px;">
@@ -113,7 +113,7 @@
 	<a  href = "{% url 'user_functions:settings' user.id %}">
 		<div class="row no-gutters">
 			<div class="col-md-4">
-				<img src="{% static 'noun_Gear_3042492.png' %}" class="card-img" alt="connect"  href = "{% url 'scopes:hub' %}">
+				<img src="{% static 'noun-gear-2460563.png' %}" class="card-img" alt="connect"  href = "{% url 'scopes:hub' %}">
 			</div>
 			<div class="col-md-8">
 				<div class="card-body">
@@ -150,7 +150,7 @@
 		<a  href = "{% url 'user_functions:user_hub' %}">
 			<div class="row no-gutters">
 				<div class="col-md-4">
-					<img src="{% static 'noun_users_847321.png' %}" class="card-img" alt="connect"  href = "{% url 'scopes:hub' %}">
+					<img src="{% static 'noun-users-363173.png' %}" class="card-img" alt="connect"  href = "{% url 'scopes:hub' %}">
 				</div>
 				<div class="col-md-8">
 					<div class="card-body">
@@ -169,7 +169,7 @@
 		<a  href = "{% url 'user_functions:invitation' "nopassword" %}">
 			<div class="row no-gutters">
 				<div class="col-md-4">
-					<img src="{% static 'noun_User_847313.png' %}" class="card-img" alt="connect"  href = "{% url 'scopes:hub' %}">
+					<img src="{% static 'noun-letter-1317901.png' %}" class="card-img" alt="connect"  href = "{% url 'scopes:hub' %}">
 				</div>
 				<div class="col-md-8">
 					<div class="card-body">
@@ -188,7 +188,7 @@
 		<a  href = "{% url 'admin:index' %}">
 			<div class="row no-gutters">
 				<div class="col-md-4">
-					<img src="{% static 'noun_Shield_941924.png' %}" class="card-img" alt="connect"  href = "{% url 'scopes:hub' %}">
+					<img src="{% static 'noun-shield-6210232.png' %}" class="card-img" alt="connect"  href = "{% url 'scopes:hub' %}">
 				</div>
 				<div class="col-md-8">
 					<div class="card-body">

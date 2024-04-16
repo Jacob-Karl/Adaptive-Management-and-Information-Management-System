@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block style_block %}
-	.page_title{
+	.page-title{
 		margin-left: 40%;
 	}
 	.Add{
@@ -10,6 +10,10 @@
 	.card{
 		padding-left: 10px;
 	}
+    .center-list {
+        margin: auto;
+        width: 80%;
+    }
 {% endblock %}
 
 
@@ -18,42 +22,62 @@ Project Hub
 {% endblock %}
 
 {% block body_block %}
-<div>
-<br>
-<h3 class = "page_title">
-Report Hub
-</h3>
-<br>
-</div>	
-
-<div>
-
-<div id = "Project">
-	<div class="row pt-2">
-		{% for project in All_Projects %}
-		<div class="card mb-3" style="max-width: 340px; margin: 10px;">
-			<a  href = "{% url 'reports:report' project.id %}">
-				<div class="row">
-					<div class="col-md-4">
-						<img src="{% static 'noun_measure_3170678.png' %}" class="card-img" alt="connect"  href = "{% url 'reports:report' project.id %}">
-					</div>
-					<div class="col-md-8">
-						<div class="card-body">
-							<h3 class="card-title" style="color: #000000;">{{ project.WorktaskID }}</h3>
-							<h5 class="card-sub-title" style="color: #000000;">{{ project.ProjectName }}</h5>
-						</div>
-					</div>
-				</div>
-			</a>
-		</div>
-		<br>
-		{% endfor %}
-	</div>
+<div class="center">
+	<br>
+	<h3 class="page-title">
+		Report Hub
+	</h3>
 	<br>
 </div>
 
+<div>
+	<div style="margin-left:60%;">
+		<form action="">
+			<select name="fields" id="fields">
+				<option value="WorktaskID">Worktask ID</option>
+				<option value="ProjectName">Project Name</option>
+				<option value="ProjectLead">Project Lead</option>
+				<option value="ProjectStatus">Project Status</option>
+				<option value="ProjectType">Project Type</option>
+				<option value="ProjectStart">Project Start</option>
+				<option value="ProjectEnd">Project End</option>
+				<option value="ProjectSummary">Project Summary</option>
+				<option value="ProjectBackground">Project Background</option>
+				<option value="OtherConsMeas">Other Conservation Measures</option>
+				<option value="OtherSpecies">Other Species</option>
+				<option value="Reference">Reference</option>
+				<option value="ProjectContributors">Project Contributors</option>
+			</select>
+			<input type="text" name="search" placeholder="Search" value="">
+			<input type="submit" value="Search">
+		</form>
+	</div>
+	<div id="Project" class="center-list">
+		<div class="row pt-1">
+			{% for project in All_Projects %}
+			<div class="card col-sm-4 col-md-4 col-lg-4" style="max-width: 340px; margin: 10px;">
+				<a href="{% url 'reports:report' project.id %}" class="mb-2">
+					<div class="row">
+						<div class="col-md-4">
+							<img src="{% static 'noun_measure_3170678.png' %}" class="card-img" style="min-width: 100px; margin-top: 20px; margin:10px;" alt="connect" href="{% url 'reports:report' project.id %}">
+						</div>
+						<div class="col-md-8">
+							<div class="card-body">
+								<h3 class="card-title" style="color: #000000;">{{ project.WorktaskID }}</h3>
+								<h5 class="card-sub-title" style="color: #000000;">{{ project.ProjectName }}</h5>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<br>
+			{% endfor %}
+		</div>
+		<br>
+	</div>
 
-<script type="text/javascript">
 
-</script>
-{% endblock %}
+	<script type="text/javascript">
+
+	</script>
+	{% endblock %}
