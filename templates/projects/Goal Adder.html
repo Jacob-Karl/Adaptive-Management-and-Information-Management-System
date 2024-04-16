@@ -177,10 +177,12 @@
 <br>
 
 <div class = "Form">
-	<form id = "goal_adder_form" enctype="multipart/form-data" action = "{% url 'projects:goalAdder' project_ID %}" method = "post">
+	<form id="goal_adder_form" enctype="multipart/form-data" action="{% url 'projects:goalAdder' project_ID %}" method="post">
 		{% csrf_token %}
 		{{ goal_adder_form.as_p }}
-		<input class = "Button" type = "submit" value = "Submit">
+		<div class="d-flex justify-content-center">
+			<input class="Button center" type="submit" name="project_Submit" value="Submit">
+		</div>
 	</form>
 </div>
 </div>
