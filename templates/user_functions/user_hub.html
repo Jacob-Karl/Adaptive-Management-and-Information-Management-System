@@ -58,6 +58,7 @@ Register
 
 <table>
     <tr>
+		<th>|</th>
         <th>Name</th>
         <th>Email</th>
 		<th>Account Status</th>
@@ -65,6 +66,7 @@ Register
     </tr>
     {% for item in users %}
     <tr> 
+		<td>|</td>
         <td>{{ item.Person.FirstName }} {{ item.Person.LastName }}</td>
         <td>{{ item.User.email }}</td>
 		<td id = "status" onload = "setStatus()">{{ item.User.is_active}}</td>

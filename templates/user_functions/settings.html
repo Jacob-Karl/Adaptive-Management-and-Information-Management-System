@@ -56,14 +56,18 @@ Register
 	<form id = "password_form" action = "{% url 'user_functions:settings' user.id %}" method = "post">
 		{% csrf_token %}
 		{{ password_form.as_p }}
-		<input class = "Button" type = "submit" value = "Submit">
+		<div class="center">
+			<input class="Button" type="submit" value="Submit">
+		</div>
 	</form>
 </div>
 <div class = "Form">
 	<form id = "person_settings_form" action = "{% url 'user_functions:settings' user.id %}" method = "post">
 		{% csrf_token %}
 		{{ person_settings_form.as_p }}
-		<input class = "Button" type = "submit" value = "Submit">
+		<div class="center">
+			<input class="Button" type="submit" value="Submit">
+		</div>
 	</form>
 </div>
 

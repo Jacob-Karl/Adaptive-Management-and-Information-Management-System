@@ -40,6 +40,10 @@
 		margin-top: 25px;
 		margin-bottom: 25px;
 	}
+	.Paragraph {
+		margin-left: 10%;
+		margin-right: 10%;
+	}
 	footer {
   		background-color: #00415D;
 		height: 100px;
@@ -52,27 +56,28 @@ Register
 
 {% block body_block %}
 
-<div class = "Form">
-	<form id = "invitation_form" action = "{% url 'user_functions:invitation' password %}" method = "post">
+<div class="Form">
+	<form id="invitation_form" action="{% url 'user_functions:invitation' password %}" method="post">
 		{% csrf_token %}
 		{{ invitation_form.as_p }}
-		<input class = "Button" type = "submit" value = "Submit">
+		<div class="center">
+			<input class="Button" type="submit" value="Submit">
+		</div>
 	</form>
 </div>
 
-<div class = "Paragraph">
-{% if password != "nopassword" %}
-<p>Here's a template email to send to the invited user. Even if you don't end up using it, remember that it contains their temporary password.</p>
+<div class="Paragraph">
+	{% if password != "nopassword" %}
+	<p>Here's a template email to send to the invited user. Even if you don't end up using it, remember that it contains their temporary password.</p>
 
-<p>-USER-,</p>
-<p>-INVITEE- has invited you to the Lower Colorado River Multi-Species Conservation Program Adaptive Management Information Management System. When you login for the first time, use the email address that you received this email from and the temporary password included at the bottom to create your account.</p>
-<p></p>
-<p>Temporary Password: {{ password }}</p>
-{% endif %}
+	<p>-USER-,</p>
+	<p>-INVITEE- has invited you to the Lower Colorado River Multi-Species Conservation Program Adaptive Management Information Management System. When you login for the first time, use the email address that you received this email at as the username and the temporary password included at the bottom to create your account.</p>
+	<p></p>
+	<p>Temporary Password: {{ password }}</p>
+	{% endif %}
 </div>
 
 <footer>
-
 </footer>
-	
+
 {% endblock %}
