@@ -13,7 +13,40 @@ def hub(request):
     context_dict = {}
     
     all_projects = Project.objects.all()
-    context_dict['All_Projects'] = all_projects
+    
+    try:
+        selected_field = request.GET.get('fields')
+        if selected_field == 'WorktaskID':
+            context_dict['All_Projects'] = all_projects.filter(WorktaskID__icontains=request.GET.get('search'))
+        elif selected_field == 'ProjectName':
+            context_dict['All_Projects'] = all_projects.filter(ProjectName__icontains=request.GET.get('search'))
+        elif selected_field == 'ProjectLead':
+            context_dict['All_Projects'] = all_projects.filter(ProjectLead__icontains=request.GET.get('search'))
+        elif selected_field == 'ProjectStatus':
+            context_dict['All_Projects'] = all_projects.filter(ProjectStatus__icontains=request.GET.get('search'))
+        elif selected_field == 'ProjectType':
+            context_dict['All_Projects'] = all_projects.filter(ProjectType__icontains=request.GET.get('search'))
+        elif selected_field == 'ProjectStart':
+            context_dict['All_Projects'] = all_projects.filter(ProjectStart__icontains=request.GET.get('search'))
+        elif selected_field == 'ProjectEnd':
+            context_dict['All_Projects'] = all_projects.filter(ProjectEnd__icontains=request.GET.get('search'))
+        elif selected_field == 'ProjectSummary':
+            context_dict['All_Projects'] = all_projects.filter(ProjectSummary__icontains=request.GET.get('search'))
+        elif selected_field == 'ProjectBackground':
+            context_dict['All_Projects'] = all_projects.filter(ProjectBackground__icontains=request.GET.get('search'))
+        elif selected_field == 'OtherConsMeas':
+            context_dict['All_Projects'] = all_projects.filter(OtherConsMeas__icontains=request.GET.get('search'))
+        elif selected_field == 'OtherSpecies':
+            context_dict['All_Projects'] = all_projects.filter(OtherSpecies__icontains=request.GET.get('search'))
+        elif selected_field == 'Reference':
+            context_dict['All_Projects'] = all_projects.filter(Reference__icontains=request.GET.get('search'))
+        elif selected_field == 'ProjectContributors':
+            context_dict['All_Projects'] = all_projects.filter(ProjectContributors__icontains=request.GET.get('search'))
+        else: 
+            context_dict['All_Projects'] = all_projects 
+        
+    except:
+        context_dict['All_Projects'] = all_projects        
     
     return render(request, 'projects/project_hub.html', context_dict)
 
@@ -36,6 +69,8 @@ def directory(request):
 
 @login_required
 def project(request, project_ID):
+
+    all_projects = Project.objects.all()    
     
     initial_dict = {
         }
@@ -68,7 +103,9 @@ def project(request, project_ID):
             'RelatedProjects':project_Obj.RelatedProjects.all(),
         }
         
-        project_form = ProjectForm(request.POST or None, initial=initial_dict, instance=project_Obj,)
+        project_form = ProjectForm(request.POST or None, request.FILES or None, initial=initial_dict, instance=project_Obj,)
+        print(project_form.is_bound)
+        print(initial_dict)
         
     trigger_helper_form = TriggerHelperForm()
     output_helper_form = OutputHelperForm()
@@ -118,27 +155,29 @@ def project(request, project_ID):
         context_dict.update(initial_dict)
         return render(request, 'projects/Project.html', context_dict)        
     
-    elif 'project_Submit' in request.POST:
-        if project_form.is_valid():
+    elif 'project_Submit1' or 'project_Submit2' in request.POST:
+        if project_form.is_valid():  
+            print("Submit")    
             with reversion.create_revision():
                 project = project_form.save(commit=False)
                 try:
                     logged_in_profile = UserProfile.objects.get(User = request.user.id)
                     logged_in_person = logged_in_profile.Person
-                    #try:
-                    project_contributor = Contributor(PeopleID = logged_in_person)
-                    project_contributor.save()
-                    #except:
-                    #    project_contributor = Contributor.objects.get(PeopleID = logged_in_person.id)
+                    try:
+                        project_contributor = Contributor(PeopleID = logged_in_person)
+                        project_contributor.save()
+                    except:
+                        project_contributor = Contributor.objects.get(PeopleID = logged_in_person.id)
                     project.ProjectContributors.add(project_contributor)  
                 except:
                     pass
                 project.save()
                 reversion.set_user(request.user)
-                reversion.set_comment("revision test")                
-                return redirect('/projects/')
+                reversion.set_comment("revision test")
+                return render(request, 'projects/Project.html', context_dict)
         else:
             print("Form invalid")
+            context_dict.update(initial_dict)
             return render(request, 'projects/Project.html', context_dict)
     
     else:
