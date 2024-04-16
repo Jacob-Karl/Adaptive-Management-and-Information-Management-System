@@ -8,7 +8,7 @@
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<title>AIMS</title>
    	<!-- Bootstrap core CSS -->
-	<Link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
+	<Link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <Link href="../static/css/bootsrap.min.css" rel="stylesheet">
 	<!--<Link href="{% static 'css/bootsrap.min.css' %}" rel="stylesheet">-->
 	<Link href="{% static 'css/bootsrap-grid.min.css' %}" rel="stylesheet">
@@ -44,6 +44,10 @@
 			height: 75px;
 			width: 177px;
 		}
+        .center {
+            margin: auto;
+            width: 50%;
+        }
 		.row{
 			/*display:flex;*/
 
@@ -78,13 +82,13 @@
 			font: arial;
 		}
 		.Button{
-			margin-top: 25px;
-			margin-bottom: 25px;
-			margin-left: 15%;
+			margin: 25px 25%;
+			width: 50%;
 			background-color: #CD9157;
 			border: none;
 			color: white;
 			padding: 10px 180px;
+			width:100%;
 			text-align: center;
 			text-decoration: none;
 			display: inline-block;
@@ -104,7 +108,7 @@
 		}
 		footer {
   			background-color: #00415D;
-			height: 100px;
+			height: 200px;
 		}
 		{% block style_block %}
 		{% endblock %}
@@ -124,16 +128,16 @@
 			<li><a href="{% url 'projects:hub' %}">Project Hub</a></li>
 			<li><a href="{% url 'scopes:hub' %}">Scope Hub</a></li>
 			<li><a href="{% url 'user_functions:settings' user.id %}">Settings</a></li>
-			{% if user.level is "Lead" or "Admin" %}
-			<li><a href="">Report Hub</a></li>
+			{% if user.groups.all.0.name == 'Admin' or  user.groups.all.0.name == 'Lead'  %}
+			<li><a href="{% url 'reports:hub' %}">Report Hub</a></li>
 			{% endif %}
-			{% if user.level is "Lead" or "Admin" %}
-			<li><a href="">User Hub</a></li>
+			{% if user.groups.all.0.name == 'Admin' or  user.groups.all.0.name == 'Lead' %}
+			<li><a href="{% url 'user_functions:user_hub' %}">User Hub</a></li>
 			{% endif %}
-			{% if user.level is "Lead" or "Admin" %}
-			<li><a href="">User Invitation</a></li>
+			{% if user.groups.all.0.name == 'Admin' %}
+			<li><a href="{% url 'user_functions:invitation' "nopassword" %}">User Invitation</a></li>
 			{% endif %}
-			{% if user.level is "Lead" or "Admin" %}
+			{% if user.groups.all.0.name == 'Admin' %}
 			<li><a href="{% url 'admin:index' %}">Admin</a></li>
 			{% endif %}
 		</ul>
