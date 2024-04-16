@@ -184,112 +184,123 @@
 			{% endfor %}
 </div>
 <div class = "col-8">
-<div class = "row" style="margin-left:-15%">
+	<div class="row" style="margin-left:-15%">
 
-<br>
-<button class = "unlock" id = "unlock" onclick = "unlockIt()">
-	<img src = "{% static 'noun_Lock_99.png' %}" alt="connect" width="50" height="50">
-</button>
-<button class = "lock" id = "lock" onclick = "lockIt()">
-	<img src = "{% static 'noun_Unlock_99.png' %}" alt="connect" width="50" height="50"> 
-</button>
-<div class = "Form">
-	<form id = "objective_form" enctype="multipart/form-data" action = "{% url 'projects:objective' objective_ID %}" method = "post">
-		{% csrf_token %}
-		{{ objective_form.as_p }}
-		<div class="d-flex justify-content-center">
-			<input class = "Button" type = "submit" value = "Submit">
-		</div>
-	</form>
-</div>
-<div class = "container">
-	<div class = "Title_Card">
-		Steps
-	</div>
-	<div class="row pt-2 d-flex justify-content-between">
-	{% for step in Steps %}
-		<!--<div class="col-sm-4 col-md-2 col-lg-3">
-			<a href="{% url 'projects:step' step.id %}" class = "card" style = "width: 150px; height: 250px; margin: 10px;">
-				<div class = "card-body">
-					<img class = "card-img" src = "{% static 'noun_Book_2342158.png' %}" alt="connect" width="150" height="115">
-					<h3 class="card-title" style="color: #000000;">{{ step.StepName }}</h3>
-				</div>
-			</a>
-		</div>
-		<br>-->
-		<div class="card mb-3" style="max-width: 340px; margin: 10px;">
-			<a  href = "{% url 'projects:step' step.id %}">
-				<div class="row">
-					<div class="col-md-4">
-						<img src="{% static 'noun_Book_2342158.png' %}" class="card-img" alt="connect"  href = "{% url 'projects:step' step.id %}">
-					</div>
-					<div class="col-md-8">
-						<div class="card-body">
-							<p class="card-text" style="color: #000000;">{{ step.StepName }}</p>
-						</div>
-					</div>
-				</div>
-			</a>
-		</div>
 		<br>
-	{% endfor %}
-	<div class = "Steps">
-		<div>
-			<form id = "step_helper_form" enctype="multipart/form-data" action = "{% url 'projects:objective' objective_ID %}" method = "get">
-				{% csrf_token %}
-				{{ step_helper_form }}
+		{% if user.groups.all.0.name == 'Admin' or  user.groups.all.0.name == 'Lead' %}
+		<button class="unlock" id="unlock" onclick="unlockIt()">
+			<img src="{% static 'noun_Lock_99.png' %}" alt="connect" width="50" height="50">
+		</button>
+		<button class="lock" id="lock" onclick="lockIt()">
+			<img src="{% static 'noun_Unlock_99.png' %}" alt="connect" width="50" height="50">
+		</button>
+		{% endif %}
+		<div class="Form">
+			<form id="objective_form" enctype="multipart/form-data" action="{% url 'projects:objective' objective_ID %}" method="post">
 				<div class="d-flex justify-content-center">
-					<input class = "Button" type = "submit" name = "add_Step" value = "Add Step">
+					<input class="Button" name="Submit1" type="submit" value="Submit">
+				</div>
+				{% csrf_token %}
+				{{ objective_form.as_p }}
+				<div class="d-flex justify-content-center">
+					<input class="Button" name="Submit2" type="submit" value="Submit">
 				</div>
 			</form>
 		</div>
-	</div>
-</div>
-<div class = "container">
-	<div class = "Title_Card">
-		Milestones
-	</div>
-	<div class="row pt-2 d-flex justify-content-between">
-	{% for milestone in Milestones %}
-		<!--<div class="col-sm-4 col-md-2 col-lg-3">
-			<a href="{% url 'projects:milestone' milestone.id %}" class = "card" style = "width: 150px; height: 250px; margin: 10px;">
-				<div class = "card-body">
-					<img class = "card-img" src = "{% static 'noun_Book_2342158.png' %}" alt="connect" width="150" height="115">
-					<h3 class="card-title" style="color: #000000;">{{ milestone.TriggerName }}</h3>
-				</div>
-			</a>
-		</div>
-		<br>-->
-		<div class="card mb-3" style="max-width: 340px; margin: 10px;">
-			<a  href = "{% url 'projects:milestone' milestone.id %}">
-				<div class="row">
-					<div class="col-md-4">
-						<img src="{% static 'noun_Book_2342158.png' %}" class="card-img" alt="connect"  href = "{% url 'projects:milestone' milestone.id %}">
+		<div class="container">
+			<div class="Title_Card">
+				Steps
+			</div>
+			<div class="row pt-2 d-flex justify-content-between">
+				{% for step in Steps %}
+				<!--<div class="col-sm-4 col-md-2 col-lg-3">
+				<a href="{% url 'projects:step' step.id %}" class = "card" style = "width: 150px; height: 250px; margin: 10px;">
+					<div class = "card-body">
+						<img class = "card-img" src = "{% static 'noun_Book_2342158.png' %}" alt="connect" width="150" height="115">
+						<h3 class="card-title" style="color: #000000;">{{ step.StepName }}</h3>
 					</div>
-					<div class="col-md-8">
-						<div class="card-body">
-							<p class="card-text" style="color: #000000;">{{ milestone.MilestoneName }}</p>
+				</a>
+			</div>
+			<br>-->
+				<div class="card mb-3" style="max-width: 340px; margin: auto;">
+					<a href="{% url 'projects:step' step.id %}">
+						<div class="row">
+							<div class="col-md-4">
+								<img src="{% static 'noun_Book_2342158.png' %}" class="card-img" alt="connect" href="{% url 'projects:step' step.id %}">
+							</div>
+							<div class="col-md-8">
+								<div class="card-body">
+									<p class="card-title" style="color: #000000;">{{ step.StepCode }}</p>
+									<p class="card-text" style="color: #000000;">{{ step.StepName }}</p>
+								</div>
+							</div>
 						</div>
+					</a>
+				</div>
+				<br>
+				{% endfor %}
+				<div style="max-width: 340px; margin: auto;">
+				</div>
+				<div class="Steps">
+					<div>
+						<form id="step_helper_form" enctype="multipart/form-data" action="{% url 'projects:objective' objective_ID %}" method="get">
+							{% csrf_token %}
+							{{ step_helper_form }}
+							<div class="d-flex justify-content-center">
+								<input class="Button" type="submit" name="add_Step" value="Add Step">
+							</div>
+						</form>
 					</div>
 				</div>
-			</a>
+			</div>
 		</div>
-		<br>
-	{% endfor %}
-	<div class = "Milestones">
-		<div>
-			<form id = "milestone_helper_form" enctype="multipart/form-data" action = "{% url 'projects:objective' objective_ID %}" method = "get">
-				{% csrf_token %}
-				{{ milestone_helper_form }}
-				<div class="d-flex justify-content-center">
-					<input class = "Button" type = "submit" name = "add_Milestone" value = "Add Milestone">
+		<div class="container">
+			<div class="Title_Card">
+				Milestones
+			</div>
+			<div class="row pt-2 d-flex justify-content-between">
+				{% for milestone in Milestones %}
+				<!--<div class="col-sm-4 col-md-2 col-lg-3">
+				<a href="{% url 'projects:milestone' milestone.id %}" class = "card" style = "width: 150px; height: 250px; margin: 10px;">
+					<div class = "card-body">
+						<img class = "card-img" src = "{% static 'noun_Book_2342158.png' %}" alt="connect" width="150" height="115">
+						<h3 class="card-title" style="color: #000000;">{{ milestone.TriggerName }}</h3>
+					</div>
+				</a>
+			</div>
+			<br>-->
+				<div class="card mb-3" style="max-width: 340px; margin: auto;">
+					<a href="{% url 'projects:milestone' milestone.id %}">
+						<div class="row">
+							<div class="col-md-4">
+								<img src="{% static 'noun_Book_2342158.png' %}" class="card-img" alt="connect" href="{% url 'projects:milestone' milestone.id %}">
+							</div>
+							<div class="col-md-8">
+								<div class="card-body">
+									<p class="card-text" style="color: #000000;">{{ milestone.MilestoneName }}</p>
+								</div>
+							</div>
+						</div>
+					</a>
 				</div>
-			</form>
+				<br>
+				{% endfor %}
+				<div style="max-width: 340px; margin: auto;">
+				</div>
+				<div class="Milestones">
+					<div>
+						<form id="milestone_helper_form" enctype="multipart/form-data" action="{% url 'projects:objective' objective_ID %}" method="get">
+							{% csrf_token %}
+							{{ milestone_helper_form }}
+							<div class="d-flex justify-content-center">
+								<input class="Button" type="submit" name="add_Milestone" value="Add Milestone">
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
-	</div>
-	</div>
-</div>
 </div>
 </div>
 </div>
@@ -299,35 +310,51 @@
 
 function lockIt(){
 	const elements = ['ObjCode','ObjName','ObjDescription','ObjStartDate','ObjEndDate','ObjFlowDiagram','Reference']
-	elements.forEach(element => lockItHelper(element));
+    const buttons = ['Submit1', 'Submit2', 'add_Step','add_Milestone']
 
-	var lock_button = document.getElementById("lock");
-	var unlock_button = document.getElementById("unlock");
+    elements.forEach(element => lockItHelper(element));
+    buttons.forEach(button => lockItHelperButton(button));
 
-	lock_button.style.display = "none";
-	unlock_button.style.display = "block";
+    var lock_button = document.getElementById("lock");
+    var unlock_button = document.getElementById("unlock");
+
+    lock_button.style.display = "none";
+    unlock_button.style.display = "block";
+}
 }
 
 function lockItHelper(element){
 	var field = document.getElementsByName(element)[0];
 	field.readOnly = true;
 }
+function lockItHelperButton(button) {
+    var button_1 = document.getElementsByName(button)[0];
+    button_1.style.display = "none";
+}
 
 
 function unlockIt(){
 	const elements = ['ObjCode','ObjName','ObjDescription','ObjStartDate','ObjEndDate','ObjFlowDiagram','Reference']
-	elements.forEach(element => unlockItHelper(element));
+    const buttons = ['Submit1', 'Submit2', 'add_Step', 'add_Milestone']
 
-	var lock_button = document.getElementById("lock");
-	var unlock_button = document.getElementById("unlock");
+    elements.forEach(element => unlockItHelper(element));
+    buttons.forEach(button => unlockItHelperButton(button));
 
-	lock_button.style.display = "block";
-	unlock_button.style.display = "none";
+    var lock_button = document.getElementById("lock");
+    var unlock_button = document.getElementById("unlock");
+
+    lock_button.style.display = "block";
+    unlock_button.style.display = "none";
+}
 }
 
 function unlockItHelper(element){
 	var field = document.getElementsByName(element)[0];
 	field.readOnly = false;
+}
+function unlockItHelperButton(button) {
+    var button_1 = document.getElementsByName(button)[0];
+    button_1.style.display = "block";
 }
 
 </script>

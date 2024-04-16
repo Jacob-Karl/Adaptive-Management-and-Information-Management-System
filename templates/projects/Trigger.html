@@ -184,103 +184,122 @@
 			{% endfor %}
 </div>
 <div class = "col-8">
-<div class = "row" style="margin-left:-15%">
+	<div class="row" style="margin-left:-15%">
 
-<br>
-<button class = "unlock" id = "unlock" onclick = "unlockIt()">
-	<img src = "{% static 'noun_Lock_99.png' %}" alt="connect" width="50" height="50">
-</button>
-<button class = "lock" id = "lock" onclick = "lockIt()">
-	<img src = "{% static 'noun_Unlock_99.png' %}" alt="connect" width="50" height="50"> 
-</button>
-<div class = "Form">
-	<form id = "trigger_form" enctype="multipart/form-data" action = "{% url 'projects:trigger' trigger_ID %}" method = "post">
-		{% csrf_token %}
-		{{ trigger_form.as_p }}
-		<div class="d-flex justify-content-center">
-			<input class = "Button" type = "submit" name = "Submit" value = "Submit">
-		</div>
-	</form>
-</div>
-<div class = "container">
-	<div class = "Title_Card">
-		Trigger Status
-	</div>
-	<div class="row pt-2 d-flex justify-content-between">
-	{% for trigger_status in TriggerStatuses %}
-		<!--<div class="col-sm-4 col-md-2 col-lg-3">
-			<a href="{% url 'projects:triggerStatus' trigger_status.id %}" class = "card" style = "width: 150px; height: 250px; margin: 10px;">
-				<div class = "card-body">
-					<img class = "card-img" src = "{% static 'noun_Book_2342158.png' %}" alt="connect" width="150" height="115">
-					<h3 class="card-title" style="color: #000000;">{{ trigger_status.ReportingDate }}</h3>
-				</div>
-			</a>
-		</div>
-		<br>-->
-		<div class="card mb-3" style="max-width: 340px; margin: 10px;">
-			<a  href = "{% url 'projects:triggerStatus' trigger_status.id %}">
-				<div class="row">
-					<div class="col-md-4">
-						<img src="{% static 'noun_Book_2342158.png' %}" class="card-img" alt="connect"  href = "{% url 'projects:triggerStatus' trigger_status.id %}">
-					</div>
-					<div class="col-md-8">
-						<div class="card-body">
-							<p class="card-text" style="color: #000000;">{{ trigger_status.ReportingDate }}</p>
-						</div>
-					</div>
-				</div>
-			</a>
-		</div>
 		<br>
-	{% endfor %}
-	<div class = "TriggerStatus">
-		<div>
-			<form id = "trigger_status_helper_form" enctype="multipart/form-data" action = "{% url 'projects:trigger' trigger_ID %}" method = "get">
-				{% csrf_token %}
-				{{ trigger_status_helper_form }}
+		{% if user.groups.all.0.name == 'Admin' or  user.groups.all.0.name == 'Lead' %}
+		<button class="unlock" id="unlock" onclick="unlockIt()">
+			<img src="{% static 'noun_Lock_99.png' %}" alt="connect" width="50" height="50">
+		</button>
+		<button class="lock" id="lock" onclick="lockIt()">
+			<img src="{% static 'noun_Unlock_99.png' %}" alt="connect" width="50" height="50">
+		</button>
+		{% endif %}
+		<div class="Form">
+			<form id="trigger_form" enctype="multipart/form-data" action="{% url 'projects:trigger' trigger_ID %}" method="post">
 				<div class="d-flex justify-content-center">
-					<input class = "Button" type = "submit" name = "add_Trigger_Status" value = "Add Trigger Status">
+					<input class="Button" name="Submit1" type="submit" value="Submit">
+				</div>
+				{% csrf_token %}
+				{{ trigger_form.as_p }}
+				<div class="d-flex justify-content-center">
+					<input class="Button" name="Submit2" type="submit" value="Submit">
 				</div>
 			</form>
 		</div>
+		<div class="container">
+			<div class="Title_Card">
+				Trigger Status
+			</div>
+			<div class="row pt-2 d-flex justify-content-between">
+				{% for trigger_status in TriggerStatuses %}
+				<!--<div class="col-sm-4 col-md-2 col-lg-3">
+				<a href="{% url 'projects:triggerStatus' trigger_status.id %}" class = "card" style = "width: 150px; height: 250px; margin: 10px;">
+					<div class = "card-body">
+						<img class = "card-img" src = "{% static 'noun_Book_2342158.png' %}" alt="connect" width="150" height="115">
+						<h3 class="card-title" style="color: #000000;">{{ trigger_status.ReportingDate }}</h3>
+					</div>
+				</a>
+			</div>
+			<br>-->
+				<div class="card mb-3" style="max-width: 340px; margin: auto;">
+					<a href="{% url 'projects:triggerStatus' trigger_status.id %}">
+						<div class="row">
+							<div class="col-md-4">
+								<img src="{% static 'noun_Book_2342158.png' %}" class="card-img" alt="connect" href="{% url 'projects:triggerStatus' trigger_status.id %}">
+							</div>
+							<div class="col-md-8">
+								<div class="card-body">
+									<p class="card-text" style="color: #000000;">{{ trigger_status.ReportingDate }}</p>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<br>
+				{% endfor %}
+				<div style="max-width: 340px; margin: auto;">
+				</div>
+				<div class="TriggerStatus">
+					<div>
+						<form id="trigger_status_helper_form" enctype="multipart/form-data" action="{% url 'projects:trigger' trigger_ID %}" method="get">
+							{% csrf_token %}
+							{{ trigger_status_helper_form }}
+							<div class="d-flex justify-content-center">
+								<input class="Button" type="submit" name="add_Trigger_Status" value="Add Trigger Status">
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
-	</div>
-</div>
 </div>
 
 <script type="text/javascript">
+function lockIt() {
+	const elements = ['TriggerName', 'TriggerDescription', 'TriggerIndicators', 'ProposedResponse', 'Reference']
+    const buttons = ['Submit1', 'Submit2', 'add_Trigger_Status']
 
-function lockIt(){
-	const elements = ['TriggerName','TriggerDescription','TriggerIndicators','ProposedResponse','Reference']
-	elements.forEach(element => lockItHelper(element));
+    elements.forEach(element => lockItHelper(element));
+    buttons.forEach(button => lockItHelperButton(button));
 
-	var lock_button = document.getElementById("lock");
-	var unlock_button = document.getElementById("unlock");
+    var lock_button = document.getElementById("lock");
+    var unlock_button = document.getElementById("unlock");
 
-	lock_button.style.display = "none";
-	unlock_button.style.display = "block";
+    lock_button.style.display = "none";
+    unlock_button.style.display = "block";
 }
-
-function lockItHelper(element){
+function lockItHelper(element) {
 	var field = document.getElementsByName(element)[0];
 	field.readOnly = true;
 }
-
-
-function unlockIt(){
-	const elements = ['TriggerName','TriggerDescription','TriggerIndicators','ProposedResponse','Reference']
-	elements.forEach(element => unlockItHelper(element));
-
-	var lock_button = document.getElementById("lock");
-	var unlock_button = document.getElementById("unlock");
-
-	lock_button.style.display = "block";
-	unlock_button.style.display = "none";
+function lockItHelperButton(button) {
+    var button_1 = document.getElementsByName(button)[0];
+    button_1.style.display = "none";
 }
 
-function unlockItHelper(element){
+function unlockIt() {
+	const elements = ['TriggerName', 'TriggerDescription', 'TriggerIndicators', 'ProposedResponse', 'Reference']
+    const buttons = ['Submit1', 'Submit2', 'add_Trigger_Status']
+
+    elements.forEach(element => unlockItHelper(element));
+    buttons.forEach(button => unlockItHelperButton(button));
+
+    var lock_button = document.getElementById("lock");
+    var unlock_button = document.getElementById("unlock");
+
+    lock_button.style.display = "block";
+    unlock_button.style.display = "none";
+}
+
+function unlockItHelper(element) {
 	var field = document.getElementsByName(element)[0];
 	field.readOnly = false;
+}
+function unlockItHelperButton(button) {
+    var button_1 = document.getElementsByName(button)[0];
+    button_1.style.display = "block";
 }
 
 </script>
