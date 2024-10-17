@@ -55,22 +55,31 @@ def hub(request):
 
 @login_required
 def prepare_report(request, project_ID):
-    report_selector_form = reportSelectorForm(request.POST)
+    report_selector_form = reportSelectorForm(project_ID, request.POST)
     project = Project.objects.get(pk = project_ID)
+    template_form = templateUploadForm(request.POST, request.FILES,)
     
     context_dict = {
         'project':project,
         'project_ID':project_ID,
         'report_selector_form':report_selector_form,
+        'template_form':template_form,
+        'user':request.user,
+        'POST':request.POST,
     }
     
-    print(render(request, 'reports/report_hub.html', context_dict))
-    if report_selector_form.is_valid():
-        return render(request, 'reports/report_hub.html', context_dict)    
+    print(template_form.is_valid())
+    print(template_form.cleaned_data)
+    print(template_form.errors)
+    if template_form.is_valid() and report_selector_form.is_valid():
+            print("Saving template")
+            template = template_form.save(commit=False)
+            print(report_selector_form.cleaned_data)
+            template.save()
+            generate_report(report_selector_form.cleaned_data, project_ID, template_form.cleaned_data)
+            return redirect('/reports/')    
     return render(request, 'reports/report.html', context_dict)
 
-#generate report need to be reworked to take the output of the report prepare via the URL
-#It then needs to take the input and break when appropriate
 
 @login_required
 def generate_project_report(request, project_ID):
@@ -81,9 +90,7 @@ def generate_project_report(request, project_ID):
     test_dict = {
         'projectToggle':True,
     }
-    
-    report_selector_form = reportSelectorForm(request.POST or None, initial=test_dict)
-    context_dict = {'report_selector_form':report_selector_form,}  
+
     
     all_projects = Project.objects.all()
     context_dict= {
@@ -91,6 +98,9 @@ def generate_project_report(request, project_ID):
     }    
     
     projectObj = Project.objects.get(id=project_ID)
+    
+    report_selector_form = reportSelectorForm(project_IDm, request.POST or None)
+    context_dict = {'report_selector_form':report_selector_form,}  
     
     chunks = template.split("//chunk//")
     
@@ -191,16 +201,36 @@ def generate_project_report(request, project_ID):
     
     return render(request, 'reports/report_hub.html', context_dict)
 
-@login_required
-def generate_report(request, project_ID):
-    template_file = open("C:/Users/Jacob/Documents/AIMS/static/AIMS output template v2.txt", "r")
-    template = template_file.read()
-    template_file.close()
+
+def generate_report(request, project_ID, template_Obj):
+    print("______________")
+    print(template_Obj)
+    if(template_Obj["file"] == None):
+        template_file = open(template_Obj["template"].file.path, "r")
+        template = template_file.read()
+        template_file.close()        
+    else:
+        custom_Template_Obj = CustomTemplate.objects.get(name = "User Generated")
+        template_file = custom_Template_Obj.file.open('r')
+        template = template_file.read()
+        template_file.close()
     
-    report_selector_form = reportSelectorForm(request.POST)
+    for i in CustomTemplate.objects.filter(name = "User Generated"):
+        i.delete()
+    '''if(template_Obj["file"] != None):
+        if(template_Obj["file"].name == "User Generated"):
+            template_Obj.delete()'''
+    
+    print(request)
+    '''print(request.FILES)
+    template_path = os.path.abspath(request.POST.get('template')).replace('/',"\\")
+    template_file = open(os.path.abspath(request.POST.get('template')), "r")
+    template = template_file.read()
+    template_file.close()'''
+    
     
     projectObj = Project.objects.get(id=project_ID)
-    context_dict = {report_selector_form,}
+    #template_form = templateUploadForm(request.POST or None, request.FILES or None,)
     
     all_projects = Project.objects.all()
     context_dict= {
@@ -266,68 +296,72 @@ def generate_report(request, project_ID):
     
     report = projectTemplate.format(project_id = projectObj.WorktaskID, project_name = projectObj.ProjectName, time_now = time.asctime( time.localtime(time.time()) ), project_lead = projectObj.ProjectLead, project_contributors = projectObj.ProjectContributors, project_status = projectObj.ProjectStatus, project_type = projectObj.ProjectType, project_startDate = projectObj.ProjectStart, project_endDate = projectObj.ProjectEnd, project_summary = projectObj.ProjectSummary, project_background = projectObj.ProjectBackground, project_speComs = all_obj_acryonyms, project_conMeas = all_conMeas_codes, project_locations = all_loc_codes, project_goals = all_goal_names, project_otherConMeas = projectObj.OtherConsMeas, project_otherSpeComs = projectObj.OtherSpecies, project_relatedProject = all_related_projects)                                    
                
-    projectTriggers = Trigger.objects.filter(ProjectID = project_ID)
-    triggerNumber = 1
+    print(request)
+    print(request["objectives"])    
                
+    projectTriggers = Trigger.objects.filter(ProjectID = project_ID)
+    projectTriggers = projectTriggers.filter(pk__in=request["triggers"])
+    triggerNumber = 1
+
     for trigger in projectTriggers:
-        if request.POST.get('triggerToggle','') != 'on':
-            break
-        report = report + projectTriggerTemplate.format(number = triggerNumber, trigger_name = trigger.TriggerName, trigger_description = trigger.TriggerDescription, trigger_indicators = trigger.TriggerIndicators, trigger_response = trigger.ProposedResponse)
-        triggerNumber = triggerNumber + 1
+        if request['triggerToggle'] == True:
+            report = report + projectTriggerTemplate.format(trigger_number = triggerNumber, trigger_name = trigger.TriggerName, trigger_description = trigger.TriggerDescription, trigger_indicators = trigger.TriggerIndicators, trigger_response = trigger.ProposedResponse)
+            triggerNumber = triggerNumber + 1
         
         triggerStatuses = TriggerStatus.objects.filter(TriggerID = trigger.id)
+        triggerStatuses = triggerStatuses.filter(pk__in=request["triggerStatuses"])
         
         for status in triggerStatuses:
-            if request.POST.get('triggerStatusToggle','') != 'on':
-                break
-            report = report + triggerStatusTemplate.format(status_trend = status.StatusTrend, status_date = status.ReportingDate, status_interpretation = status.MgmtInterp, status_response = status.MgmtResponse)
+            if request['triggerStatusToggle'] == True:
+                report = report + triggerStatusTemplate.format(status_trend = status.StatusTrend, status_date = status.ReportingDate, status_interpretation = status.MgmtInterp, status_response = status.MgmtResponse)
      
     projectObjectives = Objective.objects.filter(ProjectID = project_ID)
+    projectObjectives = projectObjectives.filter(pk__in=request["objectives"])
             
     for objective in projectObjectives:
-        if request.POST.get('objectiveToggle','') != 'on':
-            break        
-        report = report + projectObjectiveTemplate.format(objective_code = objective.ObjCode, objective_name = objective.ObjName, objective_description = objective.ObjDescription, objective_startDate = objective.ObjStartDate, objective_endDate = objective.ObjEndDate, objective_flowDiagram = objective.ObjFlowDiagram)
+        if request['objectiveToggle'] == True:
+            report = report + projectObjectiveTemplate.format(objective_code = objective.ObjCode, objective_name = objective.ObjName, objective_description = objective.ObjDescription, objective_startDate = objective.ObjStartDate, objective_endDate = objective.ObjEndDate, objective_flowDiagram = objective.ObjFlowDiagram)
         
         objectiveMilestones = Milestone.objects.filter(ObjectiveID = objective.id)
+        objectiveMilestones = objectiveMilestones.filter(pk__in=request["milestones"])
         
         for milestone in objectiveMilestones:
-            if request.POST.get('milestoneToggle','') != 'on':
-                break            
+            if request['milestoneToggle'] == True:
+                report = report + objectiveMilestoneTemplate.format(milestone_id = milestone.MilestoneID, milestone_description = milestone.Description, milestone_progress = milestoneProgress.Description)
+                
             milestoneProgress = MilestoneProgress.objects.filter(MilestoneID = milestone.id)
-            report = report + objectiveMilestoneTemplate.format(milestone_description = milestone.Description, milestone_progress = 'test' '''milestoneProgress.Description''')
+            milestoneProgress = milestoneProgress.filter(pk__in=request["milestones"])
             
         objectiveSteps = Step.objects.filter(ObjectiveID = objective.id)
+        objectiveSteps = objectiveSteps.filter(pk__in=request["steps"])
         
         for step in objectiveSteps:
-            if request.POST.get('stepToggle','') != 'on':
-                break            
-            report = report + objectiveStepTemplate.format(step_code = step.StepCode, step_name = step.StepName, step_type = step.StepType, step_summary = step.StepSummary, step_startDate = step.StepStartDate, step_endDate = step.StepEndDate, step_dependancies = step.StepDependencies)
+            if request['stepToggle'] == True:
+                report = report + objectiveStepTemplate.format(step_code = step.StepCode, step_name = step.StepName, step_type = step.StepType, step_summary = step.StepSummary, step_startDate = step.StepStartDate, step_endDate = step.StepEndDate, step_dependancies = step.StepDependencies)
             
             stepMethods = Method.objects.filter(StepID = step.id)
+            stepMethods = stepMethods.filter(pk__in=request["methods"])
             
             for method in stepMethods:
-                if request.POST.get('methodToggle','') != 'on':
-                    break                
-                report = report + stepMethodTemplate.format(method_code = method.MethodCode, method_title = method.MethodTitle, method_type = method.MethodType, method_date = method.MethodDate, method_version = method.MethodVersion, method_description = method.MethodDescription, method_contact = method.MethodContact)
+                if request['methodToggle'] == True:
+                    report = report + stepMethodTemplate.format(method_code = method.MethodCode, method_title = method.MethodTitle, method_type = method.MethodType, method_date = method.MethodDate, method_version = method.MethodVersion, method_description = method.MethodDescription, method_contact = method.MethodContact)
                 
                 methodProtocols = Protocol.objects.filter(MethodID = method.id)
+                methodProtocols = methodProtocols.filter(pk__in=request["protocols"])
                 
                 for protocol in methodProtocols:
-                    if request.POST.get('protocolToggle','') != 'on':
-                        break                    
-                    report = report + methodProtocolTemplate.format(protocol_tile = protocol.ProtocolTitle, protocol_version = protocol.ProtocolVerision, protocol_date = protocol.ProtocolDate, protocol_author = protocol.ProtocolAuthor, protocol_description = protocol.ProtocolDescription, protocol_link = protocol.ProtocolLink)
+                    if request['protocolToggle'] == True:
+                        report = report + methodProtocolTemplate.format(protocol_code = protocol.ProtocolCode, protocol_tile = protocol.ProtocolTitle, protocol_version = protocol.ProtocolVerision, protocol_date = protocol.ProtocolDate, protocol_author = protocol.ProtocolAuthor, protocol_description = protocol.ProtocolDescription, protocol_link = protocol.ProtocolLink)
                     
     projectOutputs = Output.objects.filter(ProjectID = project_ID)
-    print(request.POST.get('outputToggle',''))
+    projectOutputs = projectOutputs.filter(pk__in=request["outputs"])
+    print(request['outputToggle'])
     for output in projectOutputs:
-        if request.POST.get('outputToggle','') != 'on':
-            break
-        print('here')
-        report = report + outputTemplate.format(output_type = output.OutputType, output_authors = output.OutputAuthors, output_date = output.OutputDate, output_title = output.OutputTitle, output_version = output.OutputVersion, output_description = output.OutputDescription, output_DOI = output.OutputDOI, output_citation = output.OutputCitation, output_URI = output.OutputURI, output_constraints = output.OutputConstraints)
+        if request['outputToggle'] == True:
+            print('here')
+            report = report + outputTemplate.format(output_type = output.OutputType, output_authors = output.OutputAuthors, output_date = output.OutputDate, output_title = output.OutputTitle, output_version = output.OutputVersion, output_description = output.OutputDescription, output_DOI = output.OutputDOI, output_citation = output.OutputCitation, output_URI = output.OutputURI, output_constraints = output.OutputConstraints)
         
     report_file = open(os.path.expanduser('~') + '\\Downloads\\' + projectObj.WorktaskID + "_report_" + str(datetime.datetime.now().strftime("%Y_%m_%d_%H_%M_%S")) + ".txt", "w")
     report_file.write(report)
     report_file.close()
-    
-    return render(request, 'reports/report_hub.html', context_dict)
+     

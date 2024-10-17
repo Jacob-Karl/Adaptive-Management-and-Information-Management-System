@@ -1,0 +1,78 @@
+LCR MSCP Adaptive Management Project Plan:
+{project_id} {project_name}
+
+PROJECT {project_id}
+
+Project (Work Task) ID
+{project_id}
+
+Project (Work Task) Name
+{project_name}
+
+Project Plan Version Date
+{time_now}
+
+Project Lead
+{project_lead}
+
+Project Plan Contributors
+
+Project Status
+{project_status}
+
+Project Type
+{project_type}
+
+Project Start Date
+{project_startDate}
+
+Project End Date
+{project_endDate}
+
+Project Summary
+{project_summary}
+
+Project Background
+{project_background}
+
+Associated Species and Cover Type Targets
+{project_speComs}
+
+Associated Conservation Measures
+{project_conMeas}
+
+Associated Locations
+{project_locations}
+
+Associated Ecological Goals
+{project_goals}
+
+Project Decision Triggers
+%for each project_trigger%
+	%trigger_name%
+%endfor%
+
+Other Affected Conservation Measures
+%project_otherConMeas%
+
+Other Affected Covered and Evaluation Species
+%project_otherSpeComs%
+
+Related Projects
+%for each project_relatedProject%
+	%relatedProject_name%
+%endfor%
+
+Project Objectives
+Objective ID	Objective Name
+%for each project_objectives%
+	%objective_code%	%objective_name%
+%endfor%
+
+Project Outputs
+Output Title	Output URL
+%for each project_output%
+	%output_title%	%output_URI%
+%endfor%
+
+LITERATURE CITED

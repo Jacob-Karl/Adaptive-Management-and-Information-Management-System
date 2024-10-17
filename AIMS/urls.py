@@ -18,6 +18,7 @@ from django.conf.urls.static import static
 from django.conf import settings
 from django.urls import include, path
 from user_functions import views
+from django.conf.urls import url, include
 
 
 urlpatterns = [
@@ -25,5 +26,7 @@ urlpatterns = [
     path('user_functions/', include('user_functions.urls')),
     path('scopes/', include('scopes.urls')),
     path('projects/', include('projects.urls')),
+    path('reports/', include('reports.urls')),
     path('admin/', admin.site.urls),
+    url(r'^advanced_filters/', include('advanced_filters.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -1,6 +1,7 @@
 from django.contrib import admin
 from .models import *
 from reversion.admin import VersionAdmin
+from reversion_compare.admin import CompareVersionAdmin
 from advanced_filters.admin import AdminAdvancedFiltersMixin
 
 class ClientModelAdmin(VersionAdmin):
@@ -8,7 +9,7 @@ class ClientModelAdmin(VersionAdmin):
 
 # Register your models here.
 @admin.register(SpeciesCommunity)
-class SpeciesCommunityAdmin(AdminAdvancedFiltersMixin, VersionAdmin):
+class SpeciesCommunityAdmin(AdminAdvancedFiltersMixin, CompareVersionAdmin):
     search_fields = [
         'TargetType',
         'Acronym',
@@ -25,7 +26,7 @@ class SpeciesCommunityAdmin(AdminAdvancedFiltersMixin, VersionAdmin):
         ('Acronym', 'Acronym'),
         ('CommonName', 'Common Name'),
         ('ScientificName', 'Scientific Name'),
-        ('ITISTSN',),
+        ('ITISTSN','ITISTSN'),
         ('CommunityName', 'CommunityName'),
         ('Synonyms', 'Synonyms'),
         ('Comments', 'Comments'),
@@ -33,7 +34,7 @@ class SpeciesCommunityAdmin(AdminAdvancedFiltersMixin, VersionAdmin):
     )
 
 @admin.register(Location)
-class LocationAdmin(AdminAdvancedFiltersMixin, VersionAdmin):
+class LocationAdmin(AdminAdvancedFiltersMixin, CompareVersionAdmin):
     search_fields = [
         'LocationCode',
         'LocationName',
@@ -51,7 +52,7 @@ class LocationAdmin(AdminAdvancedFiltersMixin, VersionAdmin):
     )    
 
 @admin.register(ConservationMeasure)
-class ConservationMeasureAdmin(AdminAdvancedFiltersMixin, VersionAdmin):
+class ConservationMeasureAdmin(AdminAdvancedFiltersMixin, CompareVersionAdmin):
     search_fields = [
         'CMCode',
         'CMDescription',
@@ -71,7 +72,7 @@ class ConservationMeasureAdmin(AdminAdvancedFiltersMixin, VersionAdmin):
     )    
 
 @admin.register(Goal)
-class GoalAdmin(AdminAdvancedFiltersMixin, VersionAdmin):
+class GoalAdmin(AdminAdvancedFiltersMixin, CompareVersionAdmin):
     search_fields = [
         'GoalName',
         'GoalType',

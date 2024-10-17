@@ -1,6 +1,7 @@
 from django.contrib import admin
 from .models import *
 from reversion.admin import VersionAdmin
+from reversion_compare.admin import CompareVersionAdmin
 from advanced_filters.admin import AdminAdvancedFiltersMixin
 
 class ClientModelAdmin(VersionAdmin):
@@ -8,7 +9,7 @@ class ClientModelAdmin(VersionAdmin):
 
 # Register your models here.
 @admin.register(Person)
-class PersonAdmin(AdminAdvancedFiltersMixin, VersionAdmin):
+class PersonAdmin(AdminAdvancedFiltersMixin, CompareVersionAdmin):
     search_fields = [
         'LastName',
         'FirstName',
@@ -28,7 +29,7 @@ class PersonAdmin(AdminAdvancedFiltersMixin, VersionAdmin):
     )    
 
 @admin.register(UserProfile)
-class UserProfileAdmin(AdminAdvancedFiltersMixin, VersionAdmin):
+class UserProfileAdmin(AdminAdvancedFiltersMixin, CompareVersionAdmin):
     search_fields = [
         'Level',
         'Status',
@@ -44,7 +45,7 @@ class UserProfileAdmin(AdminAdvancedFiltersMixin, VersionAdmin):
     )    
 
 @admin.register(Organization)
-class OrganizationAdmin(AdminAdvancedFiltersMixin, VersionAdmin):
+class OrganizationAdmin(AdminAdvancedFiltersMixin, CompareVersionAdmin):
     search_fields = [
         'Name',
         'ContactID__LastName',
@@ -66,7 +67,7 @@ class OrganizationAdmin(AdminAdvancedFiltersMixin, VersionAdmin):
     )    
     
 @admin.register(ChangeLog)
-class ChangeLogAdmin(AdminAdvancedFiltersMixin, VersionAdmin):
+class ChangeLogAdmin(AdminAdvancedFiltersMixin, CompareVersionAdmin):
     search_fields = [
         'User',
         'Date',

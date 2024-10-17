@@ -49,9 +49,10 @@ INSTALLED_APPS = [
     'user_functions.apps.UserFunctionsConfig',
     'scopes.apps.ScopesConfig',
     'projects.apps.ProjectsConfig',
+    'reports.apps.ReportsConfig',
     'reversion',
     'reversion_compare',
-    'debug_toolbar',
+    #'debug_toolbar',
     'advanced_filters',
 ]
 
@@ -63,7 +64,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'debug_toolbar.middleware.DebugToolbarMiddleware',
+    #'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
 
 INTERNAL_IPS = [

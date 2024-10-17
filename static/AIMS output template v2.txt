@@ -73,7 +73,7 @@ Related Projects
 
 //chunk//
 <project_trigger/>
-DECISION TRIGGER n
+DECISION TRIGGER {number}
 Trigger Name
 {trigger_name}
 Trigger Description

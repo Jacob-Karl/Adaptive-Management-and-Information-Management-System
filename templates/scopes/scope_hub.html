@@ -116,16 +116,16 @@ Scope Hub
 
 			<div class="row pt-2">
 				{% for speCom in SpeciesCommunity %}
-				<div class="card col-sm-4 col-md-4 col-lg-4 " style="max-width: 340px; margin: 10px;">
+				<div class="card col-sm-4 col-md-4 col-lg-4 " style="max-width: 340px; margin-top: 5px;">
 					<a href="{% url 'scopes:speCom' speCom.id %}" class="mb-2">
 						<div class="card-body">
 							<div class="row">
-								<div class="col-md-4">
+								<div class="col-md-4" style="min-width: 115px; min-height: 115px;">
 									<img class="card-img" src="{{ speCom.Picture.url }}" alt="connect" width="115" height="115">
 								</div>
 
-								<div class="col-md-8">
-									<div class="card-body" style="margin: 10px;">
+								<div class="col-md-6">
+									<div class="card-body" style="margin: 0px;">
 										<h3 class="card-title" style="color: #000000;">{{ speCom.Acronym }}</h3>
 										<h5 class="card-text" style="color: #000000;">{{ speCom.CommonName }}</h5>
 									</div>
@@ -138,9 +138,8 @@ Scope Hub
 				{% endfor %}
 				<br>
 				<div class="Add">
-					<a href="{% url 'scopes:speCom' 0 %}" class="card" style="width: 150px; background-color: #00415D; margin: 10px;">
+					<a href="{% url 'scopes:speCom' 0 %}" class="card" style="width: 350px; background-color: #00415D; margin: 10px;">
 						<div class="card-body" style="margin: 10px;">
-							<img class="card-img" src="{% static 'noun_Plus_White_2268151.png' %}" width="115" height="115">
 							<h5 class="card-title" style="text-decoration: none; color: #FFFFFF; align-items: center;"> Add New Species </h5>
 						</div>
 					</a>
@@ -167,15 +166,15 @@ Scope Hub
 
 			<div class="row pt-2">
 				{% for loc in Location %}
-				<div class="card col-sm-4 col-md-4 col-lg-4" style="max-width: 340px; margin: 10px;">
+				<div class="card col-sm-4 col-md-4 col-lg-4" style="max-width: 340px; margin-top: 5px;">
 					<a href="{% url 'scopes:location' loc.id %}" class="mb-2">
 						<div class="card-body">
 							<div class="row">
-								<div class="col-md-4">
+								<div class="col-md-4" style="min-width: 115px; min-height: 115px;">
 									<img class="card-img" src="{% static 'noun_Mountain_70698.png' %}" alt="connect" width="115" height="115">
 								</div>
-								<div class="col-md-8">
-									<div class="card-body" style="margin: 10px;">
+								<div class="col-md-6">
+									<div class="card-body" style="margin: 0px;">
 										<h3 class="card-title">{{ loc.LocationCode }}</h3>
 										<h5 class="card-text">{{ loc.LocationName }}</h5>
 									</div>
@@ -187,9 +186,8 @@ Scope Hub
 				<br>
 				{% endfor %}
 				<div class="Add">
-					<a href="{% url 'scopes:location' 0 %}" class="card" style="width: 150px; background-color: #00415D; margin: 10px;">
+					<a href="{% url 'scopes:location' 0 %}" class="card" style="width: 350px; background-color: #00415D; margin: 10px;">
 						<div class="card-body">
-							<img class="card-img" src="{% static 'noun_Plus_White_2268151.png' %}" width="115" height="115">
 							<h5 class="card-title" style="text-decoration: none; color: #FFFFFF; align-items: center;"> Add New Location </h5>
 						</div>
 					</a>
@@ -217,15 +215,15 @@ Scope Hub
 
 			<div class="row pt-2">
 				{% for conMeas in ConservationMeasure %}
-				<div class="card col-sm-4 col-md-4 col-lg-4" style="max-width: 340px; margin: 10px;">
+				<div class="card col-sm-4 col-md-4 col-lg-4" style="max-width: 340px; margin-top: 5px;">
 					<a href="{% url 'scopes:conMeasure' conMeas.id %}" class="mb-2">
 						<div class="card-body">
 							<div class="row">
-								<div class="col-md-4">
+								<div class="col-md-4" style="min-width: 115px; min-height: 115px;">
 									<img class="card-img" src="{% static 'noun_measure_3170678.png' %}" alt="connect" width="115" height="115">
 								</div>
-								<div class="col-md-8">
-									<div class="card-body" style="margin: 10px;">
+								<div class="col-md-6">
+									<div class="card-body" style="margin: 0px;">
 										<h3 class="card-title">{{ conMeas.CMCode }}</h3>
 										<h5 class="card-text">{{ speCom.CommonName }}</h5>
 									</div>
@@ -237,9 +235,8 @@ Scope Hub
 				<br>
 				{% endfor %}
 				<div class="Add">
-					<a href="{% url 'scopes:conMeasure' 0 %}" class="card" style="width: 150px; background-color: #00415D; margin: 10px;">
+					<a href="{% url 'scopes:conMeasure' 0 %}" class="card" style="width: 350px; background-color: #00415D; margin: 10px;">
 						<div class="card-body">
-							<img class="card-img" src="{% static 'noun_Plus_White_2268151.png' %}" width="150" height="115">
 							<h5 class="card-title" style="text-decoration: none; color: #FFFFFF; align-items: center;"> Add New Conservation Measure </h5>
 						</div>
 					</a>
@@ -264,15 +261,15 @@ Scope Hub
 
 			<div class="row pt-2">
 				{% for goal in Goal %}
-				<div class="card col-sm-4 col-md-4 col-lg-4" style="max-width: 340px; margin: 10px;">
+				<div class="card col-sm-4 col-md-4 col-lg-4" style="max-width: 340px; margin-top: 5px;">
 					<a href="{% url 'scopes:goal' goal.id %}" class="mb-2">
 						<div class="card-body">
 							<div class="row">
-								<div class="col-md-4">
+								<div class="col-md-4" style="min-width: 115px; min-height: 115px;">
 									<img class="card-img" src="{% static 'noun_Target_3805890.png' %}" alt="connect" width="115" height="115">
 								</div>
-								<div class="col-md-8">
-									<div class="card-body" style="margin: 10px;">
+								<div class="col-md-6">
+									<div class="card-body" style="margin: 0px;">
 										<h3 class="card-title">{{ goal.GoalName }}</h3>
 										<h5 class="card-text">{{ goal.GoalType }}</h5>
 									</div>
@@ -284,9 +281,8 @@ Scope Hub
 				<br>
 				{% endfor %}
 				<div class="Add">
-					<a href="{% url 'scopes:goal' 0 %}" class="card" style="width: 150px; background-color: #00415D; margin: 10px;">
+					<a href="{% url 'scopes:goal' 0 %}" class="card" style="width: 350px; background-color: #00415D; margin: 10px;">
 						<div class="card-body">
-							<img class="card-img" src="{% static 'noun_Plus_White_2268151.png' %}" width="150" height="115">
 							<h5 class="card-title" style="text-decoration: none; color: #FFFFFF; align-items: center;"> Add New Goal </h5>
 						</div>
 					</a>

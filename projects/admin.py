@@ -1,15 +1,16 @@
 from django.contrib import admin
 from .models import *
 from reversion.admin import VersionAdmin
+from reversion_compare.admin import CompareVersionAdmin
 from advanced_filters.admin import AdminAdvancedFiltersMixin
 
 #@admin.register(Project)
-class ClientModelAdmin(VersionAdmin):
+class ClientModelAdmin(CompareVersionAdmin):
     pass
 
 # Register your models here.
 @admin.register(Project)
-class ProjectAdmin(AdminAdvancedFiltersMixin, VersionAdmin): 
+class ProjectAdmin(AdminAdvancedFiltersMixin, CompareVersionAdmin): 
     search_fields = [
         'WorktaskID',
         'ProjectName',
@@ -73,7 +74,7 @@ class ProjectAdmin(AdminAdvancedFiltersMixin, VersionAdmin):
     )
 
 @admin.register(RelatedProject)
-class RelatedProjectAdmin(AdminAdvancedFiltersMixin, VersionAdmin):
+class RelatedProjectAdmin(AdminAdvancedFiltersMixin, CompareVersionAdmin):
     search_fields = [
         'Project__WorktaskID',
         'Project__ProjectName',
@@ -88,7 +89,7 @@ class RelatedProjectAdmin(AdminAdvancedFiltersMixin, VersionAdmin):
         )
 
 @admin.register(Trigger)
-class TriggerAdmin(AdminAdvancedFiltersMixin, VersionAdmin):
+class TriggerAdmin(AdminAdvancedFiltersMixin, CompareVersionAdmin):
     search_fields = [
         'ProjectID__WorktaskID',
         'ProjectID__ProjectName',        
@@ -111,7 +112,7 @@ class TriggerAdmin(AdminAdvancedFiltersMixin, VersionAdmin):
         )
 
 @admin.register(TriggerStatus)
-class TriggerStatusAdmin(AdminAdvancedFiltersMixin, VersionAdmin):
+class TriggerStatusAdmin(AdminAdvancedFiltersMixin, CompareVersionAdmin):
     search_fields = [
         'TriggerID__TriggerName',
         'ReportingDate',
@@ -130,7 +131,7 @@ class TriggerStatusAdmin(AdminAdvancedFiltersMixin, VersionAdmin):
         )
 
 @admin.register(Output)
-class OutputAdmin(AdminAdvancedFiltersMixin, VersionAdmin):
+class OutputAdmin(AdminAdvancedFiltersMixin, CompareVersionAdmin):
     search_fields = [
         'ProjectID__WorktaskID',
         'ProjectID__ProjectName',
@@ -163,7 +164,7 @@ class OutputAdmin(AdminAdvancedFiltersMixin, VersionAdmin):
         )
 
 @admin.register(Objective)
-class ObjectiveAdmin(AdminAdvancedFiltersMixin, VersionAdmin):
+class ObjectiveAdmin(AdminAdvancedFiltersMixin, CompareVersionAdmin):
     search_fields = [
         'ProjectID__WorktaskID',
         'ProjectID__ProjectName',
@@ -196,7 +197,7 @@ class ObjectiveAdmin(AdminAdvancedFiltersMixin, VersionAdmin):
         )
 
 @admin.register(Milestone)
-class MilestoneAdmin(AdminAdvancedFiltersMixin, VersionAdmin):
+class MilestoneAdmin(AdminAdvancedFiltersMixin, CompareVersionAdmin):
     search_fields = [
         'ObjectiveID__ObjCode',
         'ObjectiveID__ObjName',
@@ -220,7 +221,7 @@ class MilestoneAdmin(AdminAdvancedFiltersMixin, VersionAdmin):
 
 
 @admin.register(MilestoneProgress)
-class MilestoneProgressAdmin(AdminAdvancedFiltersMixin, VersionAdmin):
+class MilestoneProgressAdmin(AdminAdvancedFiltersMixin, CompareVersionAdmin):
     search_fields = [
         'MilestoneID__MilestoneID',
         'MilestoneID__MilestoneName',
@@ -239,7 +240,7 @@ class MilestoneProgressAdmin(AdminAdvancedFiltersMixin, VersionAdmin):
         )
 
 @admin.register(Step)
-class StepAdmin(AdminAdvancedFiltersMixin, VersionAdmin):
+class StepAdmin(AdminAdvancedFiltersMixin, CompareVersionAdmin):
     search_fields = [
         'ObjectiveID__ObjCode',
         'ObjectiveID__ObjName',
@@ -270,7 +271,7 @@ class StepAdmin(AdminAdvancedFiltersMixin, VersionAdmin):
         )
 
 @admin.register(Method)
-class MethodAdmin(AdminAdvancedFiltersMixin, VersionAdmin):
+class MethodAdmin(AdminAdvancedFiltersMixin, CompareVersionAdmin):
     search_fields = [
         'StepID__StepName',
         'StepID__StepCode',
@@ -301,7 +302,7 @@ class MethodAdmin(AdminAdvancedFiltersMixin, VersionAdmin):
         )
 
 @admin.register(Protocol)
-class ProtocolAdmin(AdminAdvancedFiltersMixin, VersionAdmin):
+class ProtocolAdmin(AdminAdvancedFiltersMixin, CompareVersionAdmin):
     search_fields = [
         'MethodID__MethodTitle',
         'MethodID__MethodCode',

@@ -179,7 +179,15 @@
 <div class = "Form">
 	<form id="goal_adder_form" enctype="multipart/form-data" action="{% url 'projects:goalAdder' project_ID %}" method="post">
 		{% csrf_token %}
-		{{ goal_adder_form.as_p }}
+		<div class="row ">
+			{%for gl in goal_adder_form.goals%}
+			<div class="col border-top border-bottom">
+				{{gl}}
+			</div>
+			{%endfor%}
+			<!--I can't figure out how to left align flexbox elements for the life of me so this is what these empty divs are for-->
+			<div class="col"></div><div class="col"></div><div class="col"></div><div class="col"></div><div class="col"></div><div class="col"></div>
+		</div>
 		<div class="d-flex justify-content-center">
 			<input class="Button center" type="submit" name="project_Submit" value="Submit">
 		</div>

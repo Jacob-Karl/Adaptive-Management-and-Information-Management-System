@@ -62,7 +62,7 @@ class ObjectiveHelperForm(forms.Form):
 
 class SpeComMultipleChoiceField(forms.ModelMultipleChoiceField):
     def label_from_instance(self, obj):
-        return obj.Acronym
+        return obj.CommonName
 
 class ConMeasMultipleChoiceField(forms.ModelMultipleChoiceField):
     def label_from_instance(self, obj):
@@ -77,25 +77,34 @@ class GoalMultipleChoiceField(forms.ModelMultipleChoiceField):
         return obj.GoalName    
 
 class SpeComAdderForm(forms.ModelForm):
-    SpeComs = SpeComMultipleChoiceField(queryset=SpeciesCommunity.objects.all(), widget=forms.CheckboxSelectMultiple)
+    def __init__(self, *args, **kwargs):   
+        super(SpeComAdderForm, self).__init__(*args, **kwargs)
+        self.fields['speComs'] = SpeComMultipleChoiceField(queryset=SpeciesCommunity.objects.all(), widget=forms.CheckboxSelectMultiple)
     class Meta:
         model = Project
         fields = ('SpeComs',)
-    
+        
 class ConMeasAdderForm(forms.ModelForm):
-    ConMeas = ConMeasMultipleChoiceField(queryset=ConservationMeasure.objects.all(), widget=forms.CheckboxSelectMultiple)
+    def __init__(self, *args, **kwargs):   
+        super(ConMeasAdderForm, self).__init__(*args, **kwargs)
+        self.fields['conMeas'] = ConMeasMultipleChoiceField(queryset=ConservationMeasure.objects.all(), widget=forms.CheckboxSelectMultiple(), required = False,)            
+    #ConMeas = ConMeasMultipleChoiceField(queryset=ConservationMeasure.objects.all(), widget=forms.CheckboxSelectMultiple)
     class Meta:
         model = Project
         fields = ('ConMeas',)
     
 class LocationAdderForm(forms.ModelForm):
-    Locations = LocationMultipleChoiceField(queryset=Location.objects.all(), widget=forms.CheckboxSelectMultiple)
+    def __init__(self, *args, **kwargs):   
+        super(LocationAdderForm, self).__init__(*args, **kwargs)
+        self.fields['locations'] = LocationMultipleChoiceField(queryset=Location.objects.all(), widget=forms.CheckboxSelectMultiple)
     class Meta:
         model = Project
         fields = ('Locations',)
     
 class GoalAdderForm(forms.ModelForm):
-    Goals = GoalMultipleChoiceField(queryset=Goal.objects.all(), widget=forms.CheckboxSelectMultiple)
+    def __init__(self, *args, **kwargs):   
+        super(GoalAdderForm, self).__init__(*args, **kwargs)
+        self.fields['goals'] = GoalMultipleChoiceField(queryset=Goal.objects.all(), widget=forms.CheckboxSelectMultiple)
     class Meta:
         model = Project
         fields = ('Goals',)
