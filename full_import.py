@@ -9,7 +9,7 @@ from projects.models import *
 from scopes.models import *
 import re
 
-f = open("..\LCR MSCP F10 Adaptive Management Plan DRAFT 2022-07-28.txt","rb")
+f = open("Full_Import\LCR MSCP F10 Adaptive Management Plan DRAFT 2022-07-28.txt","rb")
 f_text = str(f.readlines())
 
 f_text = f_text.replace('\\r', '')
@@ -146,8 +146,8 @@ Location_text = f_text[LocationStart+22:GoalStart-2]
 Goal_text = f_text[GoalStart+29:OtherConMeasStart-2]
 OtherConMeas_text = f_text[OtherConMeasStart+38:OtherSpeComStart-2]
 OtherSpeCom_text = f_text[OtherSpeComStart+47:RelatedProjectStart-2]
-RelatedProject_text = f_text[RelatedProjectStart+58:TriggerStart-2]
-Trigger_text = f_text[TriggerStart+50:ObjectiveStart-2]
+RelatedProject_text = f_text[RelatedProjectStart+59:TriggerStart-2] #changed
+Trigger_text = f_text[TriggerStart+51:ObjectiveStart-2]
 Objective_text = f_text[ObjectiveStart+44:ProductStart-2]
 Product_text = f_text[ProductStart+48:DecisionTriggerStart-4]
 
@@ -157,10 +157,16 @@ Background_text = Background_text.replace('\\n','\n')
 #print(SpeCom_text+'\n\n'+ConMeas_text+'\n\n'+Location_text+'\n\n'+Goal_text+'\n\n'+Trigger_text+'\n\n'+OtherConMeas_text+'\n\n'+OtherSpeCom_text+"\n"+RelatedProject_text+"\n"+Objective_text+"\n"+Product_text)
 
 #print(WorktaskID_text+"\n"+Name_text+"\n"+VersionDate_text+"\n"+Lead_text+"\n"+Contributor_text+"\n"+Status_text+"\n"+Type_text+"\n"+StartDate_text+"\n"+EndDate_text+"\n"+Summary_text+"\n"+Background_text+"\n"+SpeCom_text+"\n"+ConMeas_text+"\n"+Location_text+"\n"+Goal_text+"\n"+Trigger_text+"\n"+OtherConMeas_text+"\n"+OtherSpeCom_text+"\n"+RelatedProject_text+"\n"+Objective_text+"\n"+Product_text)
-
-StartDate_date = datetime.strptime("01/01/"+StartDate_text, '%M/%d/%Y')
-EndDate_date = datetime.strptime("01/01/"+EndDate_text, '%M/%d/%Y')
-
+try:
+    StartDate_date = datetime.strptime("01/01/"+StartDate_text, '%M/%d/%Y')
+except:
+    StartDate_date = '1900-01-01'
+    
+try:
+    EndDate_date = datetime.strptime("01/01/"+EndDate_text, '%M/%d/%Y')
+except:
+    EndDate_date = '1901-01-01'
+    
 SpeCom_list = SpeCom_text.split("; ")
 ConMeas_list = ConMeas_text.split("; ")
 Location_list = Location_text.split("; ")
@@ -273,10 +279,10 @@ for decTri in DecisionTriggers:
     
     Name_text = decTri[nameStart+14:descriptionStart-2]
     Description_text = decTri[descriptionStart+21:indicatorStart-2]
-    Indicator_text = decTri[indicatorStart+35:proResponseStart-2]
-    ProResponse_text = decTri[proResponseStart+26:statusStart-2]
-    Status_text = decTri[statusStart+26:interpretationStart-2]
-    Interpretation_text = decTri[interpretationStart+26:mgmResponseStart-2]
+    Indicator_text = decTri[indicatorStart+20:proResponseStart-2] #changed
+    ProResponse_text = decTri[proResponseStart+19:statusStart-2] #changed
+    Status_text = decTri[statusStart+30:interpretationStart-2]
+    Interpretation_text = decTri[interpretationStart+27:mgmResponseStart-2]
     MgmResponse_text = decTri[mgmResponseStart+26:-2]
     
     Description_text = Description_text.replace('\\n','\n')
@@ -310,11 +316,11 @@ for obj in Objectives:
     ID_text = obj[IDStart+12:objNameStart-2]
     Name_text = obj[objNameStart+16:objDescriptionStart-2]
     Description_text = obj[objDescriptionStart+23:startDateStart-2]
-    StartDate_text = obj[startDateStart+21:endDateStart-2]
-    EndDate_text = obj[endDateStart+20:diagramStart-2]
+    StartDate_text = obj[startDateStart:endDateStart-2]             #changed
+    EndDate_text = obj[endDateStart:diagramStart-2]                 #changed
     Diagram_text = obj[diagramStart+29:milestoneStart-2]
     Milestone_text = obj[milestoneStart+33:stepStart-2]
-    Step_text = obj[stepStart+22:objEnd-2]
+    Step_text = obj[stepStart+22:objEnd-3]
     
     Milestone_list = Milestone_text.split('\\n')
     Milestone_list.pop(0)
@@ -323,24 +329,33 @@ for obj in Objectives:
 
     Description_text = Description_text.replace('\\n','\n')
 
-    objID = Objective.objects.filter(ProjectID = project).filter(ObjName = Name_text).update(ObjDescription=Description_text, ObjFlowDiagram=Diagram_text)
+    try:
+        objID = Objective.objects.filter(ProjectID = project).filter(ObjName = Name_text).update(ObjDescription=Description_text, ObjFlowDiagram=Diagram_text)
+        objActual = Objective.objects.filter(ProjectID = project).get(ObjName = Name_text)
+    except:
+        pass
     
-    objActual = Objective.objects.filter(ProjectID = project).get(ObjName = Name_text)
     for mile in Milestone_list:
-        mileAndProgress = mile.split('\\t')
-        progressData = mileAndProgress[1].split(', ')
-        mile_object = Milestone.objects.create(ObjectiveID = objActual, MilestoneID = mileAndProgress[0], MilestoneName = mileAndProgress[1])
-        '''progress_object = MilestoneProgress.objects.create(MilestoneID = mile_object, ReportingDate = datetime.strptime("01/01/"+progressData[1], '%M/%d/%Y'), Status = progressData[0])
-        progress_object.save()
-        mile_object.MilestoneProgress.add(progress_object)'''
-        mile_object.save()
-        objActual.Milestones.add(mile_object)
+        try:
+            mileAndProgress = mile.split('\\t')
+            progressData = mileAndProgress[1].split(', ')
+            mile_object = Milestone.objects.create(ObjectiveID = objActual, MilestoneID = mileAndProgress[0], MilestoneName = mileAndProgress[1])
+            '''progress_object = MilestoneProgress.objects.create(MilestoneID = mile_object, ReportingDate = datetime.strptime("01/01/"+progressData[1], '%M/%d/%Y'), Status = progressData[0])
+            progress_object.save()
+            mile_object.MilestoneProgress.add(progress_object)'''
+            mile_object.save()
+            objActual.Milestones.add(mile_object)
+        except:
+            pass
 
     for step in Step_list:
-        stepParts = step.split('\\t')
-        step_object = Step.objects.create(ObjectiveID = objActual, StepName = stepParts[1], StepCode = stepParts[0])
-        step_object.save()
-        objActual.Steps.add(step_object)
+        try:
+            stepParts = step.split('\\t')
+            step_object = Step.objects.create(ObjectiveID = objActual, StepName = stepParts[1], StepCode = stepParts[0])
+            step_object.save()
+            objActual.Steps.add(step_object)
+        except:
+            pass
 
 for mile in Milestones:
     IDstart = mile.find("Milestone ID")
@@ -354,7 +369,7 @@ for mile in Milestones:
     Name_text = mile[NameStart+14:DescriptionStart-2]
     Description_text = mile[DescriptionStart+21:ProgressReportingDateStart-2]
     ProgressReportingDate_text = mile[ProgressReportingDateStart+33:ProgressStatusStart-2]
-    ProgressStatus_text = mile[ProgressStatusStart+25:ProgressDescriptionStart-2]
+    ProgressStatus_text = mile[ProgressStatusStart+27:ProgressDescriptionStart-2] #changed
     ProgressDescription_text = mile[ProgressDescriptionStart+30:-2]
     
     Description_text = Description_text.replace('\\n','\n')
@@ -365,11 +380,14 @@ for mile in Milestones:
     except:
         progressDate = '1900-01-01'
   
-    mileID = Milestone.objects.filter(MilestoneID = ID_text).update(Description=Description_text)
-    mileActual = Milestone.objects.get(MilestoneID = ID_text)
-    progress_object = MilestoneProgress.objects.create(MilestoneID = mileActual, ReportingDate = progressDate, Status = ProgressStatus_text, Description = ProgressDescription_text)
-    progress_object.save()
-    mileActual.MilestoneProgress.add(progress_object)
+    try:
+        mileID = Milestone.objects.filter(MilestoneID = ID_text).update(Description=Description_text)
+        mileActual = Milestone.objects.get(MilestoneID = ID_text)
+        progress_object = MilestoneProgress.objects.create(MilestoneID = mileActual, ReportingDate = progressDate, Status = ProgressStatus_text, Description = ProgressDescription_text)
+        progress_object.save()
+        mileActual.MilestoneProgress.add(progress_object)
+    except:
+        pass
     
 for impStep in ImplementationSteps:
     IDStart = impStep.find("Step Code")
@@ -413,8 +431,11 @@ for impStep in ImplementationSteps:
     Method_list = Method_text.split('\\n')
     Method_list.pop(0)
     
-    stepID = Step.objects.filter(StepName = Name_text).filter(StepCode = ID_text).update(StepType = Type_text, StepSummary = Summary_text, StepStartDate = impStep_StartDate_date, StepEndDate = impStep_EndDate_date, StepDependencies = Dependencies_text)
-    stepActual = Step.objects.get(StepCode = ID_text)
+    try:
+        stepID = Step.objects.filter(StepName = Name_text).filter(StepCode = ID_text).update(StepType = Type_text, StepSummary = Summary_text, StepStartDate = impStep_StartDate_date, StepEndDate = impStep_EndDate_date, StepDependencies = Dependencies_text)
+        stepActual = Step.objects.get(StepCode = ID_text)
+    except:
+        pass
     
     try:
         for method in Method_list:
@@ -442,7 +463,7 @@ for method in Methods:
     MethodVersion_text = method[MethodVersionStart+16:MethodDescriptionStart-2]
     MethodDescription_text = method[MethodDescriptionStart+20:MethodProtocolsStart-2]
     MethodProtocols_text = method[MethodProtocolsStart+18:MethodContactStart-2]
-    MethodContact_text = method[MethodContactStart+14:-2]    
+    MethodContact_text = method[MethodContactStart+16:-4] #changed   
 
     Protocol_list = MethodProtocols_text.split("\\n")
     Protocol_list.pop(0)
@@ -456,8 +477,11 @@ for method in Methods:
     except:
         Method_date = '1900-01-01'
 
-    methodID = Method.objects.filter(MethodCode = MethodCode_text).filter(MethodTitle = MethodTitle_text).update(MethodType = MethodType_text, MethodDate = Method_date, MethodVersion = MethodVersion_text, MethodDescription = MethodDescription_text, MethodContact = MethodContact_text,)
-    methodActual = Method.objects.get(MethodCode = MethodCode_text)
+    try:
+        methodID = Method.objects.filter(MethodCode = MethodCode_text).filter(MethodTitle = MethodTitle_text).update(MethodType = MethodType_text, MethodDate = Method_date, MethodVersion = MethodVersion_text, MethodDescription = MethodDescription_text, MethodContact = MethodContact_text,)
+        methodActual = Method.objects.get(MethodCode = MethodCode_text)
+    except:
+        pass
 
     for protocol in Protocol_list:
         protocol_parts = protocol.split('\\t')

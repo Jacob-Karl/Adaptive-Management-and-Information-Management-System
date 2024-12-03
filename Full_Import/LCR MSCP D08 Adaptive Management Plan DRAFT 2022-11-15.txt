@@ -238,7 +238,6 @@ D08.01.06	Inspect, assure quality of, and add final data to cumulative record
 D08.01.07	Estimate RASU, BONY larval and post-larval demographic parameter values and associated 95% confidence intervals by sub-reach and Reach, and document the estimation metadata
 D08.01.08	Reporting
 
-
 OBJECTIVE: D08.02
 Objective Code
 D08.02
@@ -280,7 +279,6 @@ Step Code	Step Name
 D08.03.01	Develop or update statistical models of the effects of habitat characteristics at the monitoring site, Reach, and sub-reach scales on the abundances and spatial distributions of larval and post-larval RASU and BONY and the post-stocking survival rates of post-larval RASU and BONY
 D08.03.02	Develop or update statistical model of the effects of rearing and release histories on the abundances and spatial distributions of larval and post-larval RASU and BONY and the post-stocking survival rates of post-larval RASU and BONY
 D08.03.03	Reporting
-
 
 OBJECTIVE: D08.04
 Objective Code
@@ -383,7 +381,6 @@ Milestone Progress Reporting Date
 Milestone Progress Status
 Not started
 Milestone Progress Description
-
 
 MILESTONE: D08.03.02
 Milestone ID
