@@ -1,0 +1,27 @@
+LCR MSCP Adaptive Management Project Plan for C01, Brown-Headed Cowbird Trap Assessment
+Template Version 2021-08-10
+PROJECT OVERVIEW TEMPLATE
+Project (Work Task) ID
+C01
+Project (Work Task) Name
+Brown-Headed Cowbird Trap Assessment
+Project Lead
+Olson, Theresa
+Project Status
+Closed
+Project Start Date
+2005
+Project End Date
+2006
+Project Summary
+The long-term goal of the project is to evaluate the brown-headed cowbird (BHCO) control program. Specifically, the project assesses the effectiveness of BHCO trapping on the productivity and nest success of southwestern willow flycatcher (WIFL, aka SWFL) and other neotropical birds. The study provides information necessary for managing created habitats that target covered species susceptible to BHCO parasitism. The project builds on work completed prior to the initiation of the LCR MSCP. Specifically, from 1998 to 2001, Reclamation implemented a BHCO control program in accordance with the 1997 Biological Opinion. The BHCO traps were placed at Alamo Lake SWA, Bill Williams River NWR, and Havasu NWR (1998 only). Trapping was suspended after the 2001 breeding season and post-trap monitoring was implemented in 2002 to measure the effectiveness of the control program and to determine when BHCO populations, parasitism rates, and host nest success reached pre-trap levels. Data obtained were intended to help determine trapping interval for future BHCO control programs. In turn, after completion of Project C01, additional BHCO trapping studies were conducted at SWFL life history study sites under Project D02. Control of BHCO may become necessary to reduce parasitism rates for covered species, especially SWFL. The USFWS issued an SIA BO in 2001, which calls for initiation of a BHCO trapping program under Reasonable and Prudent Measure 5 (RPM 5) if: (1) Nest monitoring of SWFL nests found between Parker and Imperial Dams shows a 40% or greater parasitism rate in any one year or averages more than 20% in any two or more consecutive years; or (2) no nesting SWFL can be detected at occupied sites due to poor sub-population stability. In addition, the LCR MSCP HCP states that research must be conducted to determine and address the effects of BHCO parasitism on reproduction of covered species. To effectively and efficiently conduct BHCO control, trapping effectiveness needs to be determined. Post-trap monitoring will be conducted until BHCO population numbers and parasitism rates reach pre-trap numbers. These data will enable Reclamation to determine potential BHCO trapping intervals to protect LCR MSCP covered species.
+Associated Species and Cover Type Targets
+WIFL
+Associated Conservation Measures
+MRM4
+Associated Locations
+Alamo Lake State Wildlife Area; Bill Williams River NWR
+Project Outputs
+Output Title	Output URL
+Brown-Headed Cowbird Control Program, Results of Follow-up Monitoring—Years 2002-2004, Alamo Lake State Wildlife Area and Bill Williams River National Wildlife Refuge, Arizona	https://lcrsp.bor.doi.net/reports/final_reports/c01_bhco_2002-2004.pdf
+Brown-Headed Cowbird Control Program, Results of Follow-up Monitoring—Years 2002-2005, Alamo Lake State Wildlife Area and Bill Williams River National Wildlife Refuge, Arizona	https://lcrsp.bor.doi.net/reports/final_reports/c01_bhco_2002-2005.pdf

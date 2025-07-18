@@ -1,0 +1,527 @@
+This report was generated on 2025-06-27 by  
+Work Task ID
+F98
+
+Work Task Title
+Razorback Sucker and Bonytail Stock Assessment
+
+Contact
+Stolberg, Jim
+
+
+
+Start Date
+None
+
+Expected Duration
+None
+
+Long-Term Goal
+test11; test22; test33; 
+
+Conservation Measures
+
+
+Location
+TST, Test; TST, Test; WERT, wertwert; 
+
+Purpose
+
+
+
+
+
+Connections with Other Work Tasks (Past and Future)
+
+Project Description
+testUser text. test test 123 321 test test this is lead   user making a change lead user making another change <u>test </u>test
+
+Previous Activities
+testUser text. 321 test test
+
+2024 Accomplishments
+
+: 
+
+
+
+2025 Activities
+
+F99.01.01
+Review methods and results from previous year and antecedent Projects D12 and C62, conservation area priorities, and expectations for upcoming conservation area management actions
+Implementation Step F99.01.01 reviews the accomplishments and lessons learned in the previous year's efforts under Objective F99.01 along with applicable cumulative lessons learned under antecedent Projects D12 and C62 and lessons learned by other institutions involved in monitoring NMGS, CRTO, or LLFR in the region. These other institutions may include, for example, AZGFD, the National Park Service, Northern Arizona University, and the USFWS. The review looks at (1) the effectiveness of field survey methods including their cost-effectiveness and the likely backward compatibility of potential new methods with past survey methods; (2) the selection of conservation areas to target for monitoring for NMGS, CRTO, LLFR; (3) plans for upcoming management actions and expectations for changes in habitat conditions at the targeted conservation areas that might affect NMGS, CRTO, LLFR and associated management concerns in these conservation areas; (4) the possible effects of habitat conditions and management actions during previous monitoring cycles on NMGS, CRTO, and LLFR contact frequencies and distributions and the effectiveness of the statistical methods used to assess these possible relationships; (5) the possible effects of intervening environmental factors during previous monitoring cycles on NMGS, CRTO, and LLFR contact frequencies and distributions and the effectiveness of the statistical methods used to assess these possible relationships; and (6) the results of any statistical comparison(s) of NMGS versus CRTO, LLFR cumulative contact frequencies and spatial distributions across previous monitoring cycles to assess whether the inter-annual frequencies of monitoring for CRTO, LLFR could be reduced by using NMGS detection data as an annual indicator of likely CRTO, LLFR presence.
+
+
+F99.01.02
+Develop annual work plan, including allocation of LCR MSCP resources
+Implementation Step F99.01.02 uses the results of Step F99.01.01 to establish the annual work plan for Objective F99.01. The step minimally involves the following eight activities as needed: (1) Update the selection of conservation areas to target for monitoring for NMGS, CRTO, LLFR; (2) update field survey methods and sampling designs, including to address management questions concerning possible impacts of management actions and changes in habitat conditions at the targeted conservation areas; (3) update plans for tabulating the cumulative records of baseline NMGS, CRTO, LLFR contact frequencies and spatial distributions by conservation area and overall; (4) update plans for statistically assessing possible effects of habitat conditions and management actions on NMGS, CRTO, and LLFR contact frequencies and distributions; (5) update plans for statistically assessing possible effects of intervening environmental factors on NMGS, CRTO, and LLFR contact frequencies and distributions; (6) update plans for statistically comparing NMGS versus CRTO, LLFR cumulative contact frequencies and spatial distributions across previous monitoring cycles to assess whether the inter-annual frequencies of monitoring for CRTO, LLFR could be reduced by using NMGS detection data as an annual indicator of likely CRTO, LLFR presence; (7) review LCR MSCP resources available to support the project; and (8) prepare annual work plan.
+
+
+F99.01.03
+Conduct annual cycle of field surveys
+Implementation Step F99.01.03 implements the annual plan for field operations to survey NMGS, CRTO, and LLFR and associated habitat conditions at selected conservation areas for Objective F99.01. The step minimally involves the following three activities: (1) Check monitoring equipment and both monitoring and data recording procedures as needed; (2) confirm timing of any monitoring planned to follow on management activities that might adversely affect NMGS, CRTO, or LLFR; and (3) conduct planned field monitoring.
+
+
+F99.01.04
+Compile raw field survey data and document metadata
+Implementation Step F99.01.04 compiles the raw field data from Step F99.01.03 into the necessary data file structure and prepares a metadata file for each resulting raw field data file. The step minimally involves the following three activities: (1) Compile the raw record of NMGS, CRTO, LLFR contacts for all monitoring events; (2) compile the raw record of habitat conditions for all monitoring events; and (3) compile the raw record of environmental conditions for all monitoring events.
+
+
+F99.01.05
+Inspect, assure quality of, and add final field survey data to cumulative record
+Implementation Step F99.01.05 implements data review and quality assurance procedures for the data compiled in Step F99.01.04, assesses possible needs for improving data review and quality assurance procedures in the next cycle of Steps F99.01.03, F99.01.04, and F99.01.05 and adds the final data to cumulative project archives. These archives include the data accumulated during the two antecedent projects, D12 and C62. The step minimally involves the following three activities: (1) Apply data quality assurance procedures; (2) assess needs and opportunities for improving data quality; and (3) transfer final data to the cumulative project records of survey data on NMGS, CRTO, and LLFR and associated habitat and environmental conditions by conservation area.
+
+
+F99.01.06
+Update cumulative baseline tabulations of NMGS, CRTO, LLFR contact frequencies and spatial distributions and cumulative tabulations of habitat conditions, and document the tabulation metadata
+Implementation Step F99.01.06 tabulates and assesses the cumulative baseline record of NMGS, CRTO, and LLFR contacts by survey location within conservation area, by conservation area, and overall. "Baseline" here refers to all contacts during annual or seasonal monitoring including following disturbances from management actions, covering all years of record. The step minimally involves the following four activities: (1) Tabulate the cumulative year-to-year baseline data on NMGS, CRTO, and LLFR contacts by survey location within conservation area, by conservation area, and overall; (2) tabulate the cumulative data on marsh and adjacent cottonwood-willow habitat conditions by conservation area, focusing on habitat variables identified in the LCR MSCP species accounts and basic conceptual ecological models as important to NMGS, CRTO, or LLFR occurrence and reproduction; (3) assess the ranges of variation, long-term averages, and any trends in contact frequencies or spatial distributions by species; and (4) prepare the metadata file for the tabulations and assessment for each species.
+
+
+F99.01.07
+Assess records of NMGS, CRTO, LLFR contact frequencies and spatial distributions for evidence of effects from changes in habitat conditions or from conservation area management actions, and document the assessment metadata
+Implementation Step F99.01.07 carries out statistical analyses of the cumulative records of NMGS, CRTO, LLFR contacts and their spatial distributions for evidence of effects from changes in habitat conditions or from conservation area management actions. The step minimally involves the following four activities: (1) Statistically compare the cumulative records of NMGS, CRTO, and LLFR contacts and their spatial distributions by conservation area to the cumulative records of marsh and cottonwood-willow habitat conditions at each conservation area, using the habitat data tabulated in Step F99.01.06;  (2) statistically compare the records of NMGS, CRTO, and LLFR contacts and their spatial distributions before and after any potentially harmful management actions at any monitored conservation area, with the concurrent records of marsh and cottonwood-willow habitat conditions; (3) use the results of these statistical analyses to propose hypotheses as needed concerning ways in which marsh or cottonwood-willow habitat conditions or the effects of management actions on these conditions may have affected NMGS, CRTO, or LLFR contact frequencies or spatial distributions; and (4) prepare a metadata file for the statistical assessment for each conservation area.
+
+
+F99.01.08
+Assess cumulative records of NMGS, CRTO, LLFR contact frequencies and spatial distributions for evidence of effects from variation in intervening environmental factors affecting detection likelihoods, and document the assessment metadata
+Implementation Step F99.01.08 carries out statistical analyses of the cumulative records of NMGS, CRTO, and LLFR contacts and their spatial distributions for evidence of effects of intervening environmental factors on the likelihood of NMGS, CRTO, and LLFR contacts. These factors may include weather conditions and, for some survey methods, vegetation density. Their effects could bias survey results if ignored in the analyses of those results. The step minimally involves the following four activities: (1) Tabulate the cumulative data on potentially biasing environmental factors by conservation area, focusing on factors identified in the LCR MSCP species accounts and basic conceptual ecological models and the literature cited therein; (2) statistically compare the records of NMGS, CRTO, and LLFR contacts and their spatial distributions with the concurrent records of potential intervening environmental factors; (3) use the results of these statistical analyses to propose hypotheses as needed concerning possible biasing effects and ways to compensate for these effects in interpreting the NMGS, CRTO, and LLFR survey results; and (4) prepare a metadata file for the statistical assessment.
+
+
+F99.01.09
+Assess whether inter-annual frequencies of monitoring for CRTO, LLFR could be reduced by using NMGS detection data as an annual indicator of likely CRTO, LLFR presence, and document the assessment metadata
+Implementation Step F99.01.09 carries out statistical comparisons of NMGS versus CRTO, LLFR contact frequencies and spatial distributions to assess whether the inter-annual frequencies of monitoring for CRTO, LLFR could be reduced by using NMGS detection data as an annual indicator of likely CRTO, LLFR presence. If statistically justifiable, this use of NMGS detection data as a surrogate-e.g., in alternating years-for estimating CRTO and LLFR presence could reduce project costs without interfering with project goals. The step minimally involves the following three activities: (1) Statistically compare the cumulative records of NMGS contacts with the records of CRTO and LLFR contacts both by conservation area and overall; (2) use the results of these statistical analyses to assess whether and how data on NMGS contacts might be used as an indicator of likely CRTO and LLFR presence by conservation area and overall, and how reliable this indicator might be; and (3) prepare a metadata file for the statistical assessment.
+
+
+F99.01.10
+Reporting
+Implementation Step F99.01.10 summarizes and documents the results of Steps F99.01.03-F99.01.09, including implications for the next cycle of Objective F99.01. The step minimally involves the following seven activities: (1) Prepare annual report section on field operations; (2) prepare annual report section on field data quality assurance; (3) prepare annual report section on cumulative baseline records of NMGS, CRTO, and LLFR contact frequencies and spatial distributions and associated habitat conditions; (4) prepare annual report section on possible effects of changes in habitat conditions and conservation area management actions on NMGS, CRTO, and LLFR contact frequencies; (5) prepare annual report section on possible effects of intervening environmental factors on NMGS, CRTO, and LLFR contact frequencies; (6) prepare annual report section on possibility of using NMGS detection data as an annual indicator of likely CRTO, LLFR presence; and (7) prepare annual report section on recommendations for next annual cycle of project.
+
+
+F03.01.01
+Review methods and results from previous year and antecedent projects, conservation area plans and priorities, and possible improvements to monitoring procedures
+Implementation Step F0.01.01 reviews the methods and results from previous year and from antecedent Projects C27 and D10, opportunities for testing improvements to monitoring procedures to reduce costs while sustaining or improving accuracy, and management and monitoring priorities for conservation areas with suitable habitat for CRCR and YHCR. The review looks at (1) the effectiveness of current and potential updated field survey methods including their cost-effectiveness and the likely backward compatibility of potential new methods with past survey methods; (2) the selection of conservation areas to target for monitoring for CRCR, YHCR, and DPMO; (3) plans for upcoming management actions and expectations for changes in habitat conditions at the targeted conservation areas that might affect CRCR, YHCR, or DPMO; (4) the possible effects of habitat conditions and management actions during previous monitoring cycles on CRCR, YHCR, or DPMO contact frequencies and distributions; (5) the possible effects of intervening environmental factors during previous monitoring cycles on CRCR, YHCR, or DPMO contact frequencies and distributions; and (6) possible needs to clarify the subspecies identity of pocket mice captured incidental to the field surveys for CRCR and YHCR.
+
+
+F03.01.02
+Develop annual work plan, including allocation of LCR MSCP resources
+Implementation Step F03.01.02 uses the results of Step F03.01.01 to establish the annual work plan for Objective F03.01. The step minimally involves the following five activities as needed: (1) Update the selection of conservation areas to target for monitoring for CRCR, YHCR, and DPMO; (2) update field survey methods and sampling designs, including plans for testing alternative survey methods; (3) update plans for compiling descriptive statistics on annual and cumulative monitoring results for the project; (4) update plans for assessing statistically the possible effects of meteorological conditions and lunar phase on live-trapping captures across the cumulative records of Projects C27, D10, and F03; and (5) update plans for clarifying the subspecies identity of pocket mice captured incidental to the field surveys for CRCR and YHCR.
+
+
+F03.01.04
+Compile raw field monitoring data and document metadata
+Implementation Step F03.01.04 compiles the raw field data from Step F03.01.03 into the necessary data file structure and prepares a metadata file for each resulting raw field data file. The step minimally involves the following three activities: (1) Compile the raw record of CRCR, YHCR, and DPMO contacts by monitoring event and method; (2) compile the raw record of habitat conditions for all monitoring events; and (3) compile the raw record of environmental conditions for all monitoring events.
+
+
+F03.01.05
+Inspect, assure quality of, and add final field monitoring data to cumulative record
+Implementation Step F03.01.05 implements data review and quality assurance procedures for the data compiled in Step F03.01.04, assesses possible needs for improving data review and quality assurance procedures in the next cycle of Steps F03.01.03, F03.01.04, and F03.01.05 and adds the final data to cumulative project archives. These archives include the data accumulated during the two antecedent projects, C27 and D10. The step minimally involves the following three activities: (1) Apply data quality assurance procedures; (2) assess needs and opportunities for improving data quality; and (3) transfer final data to the cumulative project records of survey data and associated habitat and environmental conditions by conservation area.
+
+
+F03.01.06
+Tabulate and interpret cumulative record of the subspecies identities of the desert pocket mice encountered in LCR MSCP conservation areas
+Implementation Step F03.01.06 implements the procedures developed by the LCR MSCP to achieve Milestone F03.01.02. The step minimally involves the following four activities: (1) Tabulate the field evidence, if any, collected in Step F03.01.02 and processed in Steps F03.01.03 and Steps F03.01.04 on the subspecies of desert pocket mice (Chaetodipus penicillatus) captured during surveys for CRCR and YHCR; (2) tabulate the results of laboratory genetic analyses of field samples collected and sent to a laboratory in Steps F03.01.03 and F03.01.04, if any, for genetic analysis; (3) combine the results of field and laboratory evaluations into an integrated tabulation; and (4) prepare the metadata file for the tabulations.
+
+
+F03.01.07
+Tabulate and interpret annual and cumulative descriptive statistics on CRCR, YHCR, and DPMO presence and capture frequency within and among conservation areas
+Implementation Step F03.01.07 tabulates and assesses the current-year and cumulative records of CRCR, YHCR, and DPMO captures within and among conservation areas in terms of species presence/absence and presence capture frequencies, distinguishing the sobrinus subspecies of the desert pocket mouse whenever the data permit. The step minimally involves the following five activities: (1) Tabulate the current-year data on species presence/absence and presence capture frequencies, by conservation area and overall; (2) tabulate the cumulative data on species presence/absence and presence capture frequencies, by conservation area and overall, across all years of monitoring under Project F03 and its antecedents; (3) assess the ranges of variation, long-term averages, and any trends in presence/absence, capture frequencies, or spatial distributions by species; (4) identify possible changes in habitat conditions that may account for patterns of change in , including changes due to management activities and due to unplanned disturbances species presence/absence, capture frequencies, or spatial distributions; and (5) prepare the metadata file for the tabulations and assessment for each species.
+
+
+F03.01.08
+Compile or update cumulative record of meteorological conditions and lunar phase for all monitoring nights under Projects C27, D10, and F03
+Implementation Step F03.01.08, together with Step F03.01.09, allows the LCR MSCP to achieve Milestone F03.01.01. Specifically, Implementation Step F03.01.08 calls for the LCR MSCP to acquire data on the meteorological conditions experienced by the fauna at each monitoring location on each monitoring night and the associated phase of the lunar cycle. Once the LCR MSCP has compiled this information for past years of monitoring under Projects C27, D10, and F03, the investigative team will only need to update the dataset for the current year. Meteorological data will be obtained from the nearest weather recording station(s), and may include air temperature (min, max, mean), humidity or wet bulb temperature (min, max, mean), wind speed (min, max, mean), precipitation (total), and cloud cover (min, max, mean). Lunar phase may be expressed simply as phase (percent full), percent of maximum illumination, or other measure of the brightness of the moonlight-one set of data for the entire valley for each monitoring night. The step minimally involves the following five activities: (1) Identify the weather recording stations nearest to the monitoring conservation areas; (2) identify the meteorological data to acquire; (3) acquire the meteorological data for all rodent monitoring dates for all past years of monitoring under Projects C27, D10, and F03 and/or for the current monitoring year; (4) acquire the associated lunar data; (5) organize the data so that it is possible to compare rodent capture presence/absence and frequencies to meteorological conditions and lunar phase; and (5) prepare the metadata file for the cumulative dataset.
+
+
+F03.01.09
+Analyze cumulative record from Step F03.01.08 for potential statistical effects of meteorological conditions and lunar phase on variation in species presence/absence and capture frequency within and among conservation areas
+Implementation Step F03.01.09, together with Step F03.01.08, allows the LCR MSCP to achieve Milestone F03.01.01. Specifically, Implementation Step F03.01.09 calls for the LCR MSCP to carry out a statistical analysis of the data assembled in Step F03.01.08 to test the null hypothesis that meteorological conditions and lunar phase have no effect on variation in species presence/absence and capture frequencies within and among conservation areas. If initial results indicate that the null hypothesis may be rejected, the analysis will estimate the directions(s) and magnitude(s) of effect(s). The purpose of this second step is to identify monitoring dates when these effects may have significantly distorted monitoring findings-i.e., resulted in higher or lower capture frequencies than would be expected to have occurred in the absence of the effects. The LCR MSCP can then determine if its understanding of variation in CRCR, YHCR, and DPMO captures at conservation sites has been biased by effects of meteorological conditions and lunar phase. The step minimally involves the following five activities: (1) Test for statistical relationships between meteorological variables and capture frequencies for each of the three species; (2) test for statistical relationships between lunar illumination and capture frequencies for each of the three species; (3) for potentially statistically significant relationships (either positive or negative), identify monitoring locations and dates when each such relationship may have resulted in a particularly high or low capture frequency; (4) assess whether LCR MSCP understanding of the presence, frequencies, and spatial distributions of CRCR, YHCR, and DPMO captures would be different if dates were excluded from analysis when meteorological and/or lunar conditions suppressed rodent activity; and (5) prepare metadata files for the resulting analyses.
+
+
+F03.01.10
+Compare any trialed alternative monitoring methods (if any) to standard monitoring methods for the project based on encounter frequencies, logistical difficulty, and costs
+Implementation Step F03.01.10 calls for the LCR MSCP to develop and implement procedures for assessing any alternative monitoring methods the program may test in the field under Project F03. The LCR MSCP will make such assessments through side-by-side comparisons of the encounter frequencies, logistical difficulty, and costs for each trialed method with those documented for the standard monitoring methods for the same monitoring locations and dates. The LCR MSCP does not currently plan to test any alternative methods. Consequently, it is not possible currently to identify the details of Step F03.01.10. However, in general, this step minimally will involve the following four activities: (1) Tabulate the encounter frequencies recorded using each alternative method alongside the frequencies recorded using the standard method for all sites and dates when the two methods were both deployed; (2) using either qualitative or quantitative procedures to compare the logistical difficulty and fiscal costs of the alternative method with those of the standard method for all sites and dates when the two methods were both deployed; (3) summarize the findings in terms of the effectiveness and costs of the alternative method relative to those of the standard method; and (4) prepare a metadata file for the results.
+
+
+F03.01.11
+Reporting
+Implementation Step F03.01.11 summarizes and documents the results of Steps F03.01.03-F03.01.10, including implications for the next cycle of Objective F03.01. The step minimally involves the following seven activities: (1) Prepare annual report section on field operations and laboratory analyses (if any); (2) prepare annual report section on field data quality assurance; (3) prepare annual report section on subspecies identities of the desert pocket mice encountered during monitoring; (4) prepare annual report section on annual and cumulative descriptive statistics on CRCR, YHCR, and DPMO presence and capture frequency within and among conservation areas; (5) prepare annual report section on possible statistical effects of meteorological conditions and lunar phase on variation in species presence/absence and capture frequency within and among conservation areas; (6) prepare annual report section on comparative effectiveness, difficulty, and costs of trialed alternative monitoring methods (if any); and (7) prepare annual report section on recommendations for next annual cycle of project.
+
+
+F10.01.01
+Review methods and results from previous year and from Projects D05 and D06
+Implementation Step F10.01.01 reviews the accomplishments and lessons learned in the previous year's efforts under Objective F10.01 and cumulative lessons learned under Projects D05, D06, and D07. The review examines the locations and numbers of detections of YBCU in conservation areas and determines whether the same methods will be used at the same locations, or if changes should be made. The review then identifies needs and opportunities to update the next work plan. The step minimally involves the following six activities: (1) Review procedures for selecting locations for survey; (2) review field operations and data collection methods; (3) review procedures for datafile compilation; (4) review procedures for initial tabulation of field results; (5) review procedures for periodically assessing possible trends in detection probabilities in relation to vegetation conditions; and (6) review procedures for periodically assessing possible intervening factors that may be affecting YBCU detections within and among conservation areas.
+
+
+F10.01.02
+Develop annual work plan, including allocation of LCR MSCP resources
+Implementation Step F10.01.02 uses the results of Step F10.01.01 to establish the annual work plan for Objective F10.01, including methods for survey site selection, data collection, data analysis, quality assurance, and documentation. The step minimally involves the following six activities: (1) Update procedures for selecting locations for survey if/as needed; (2) update plan for field operations and data collection if/as needed; (3) update procedures for datafile compilation if/as needed; (4) update procedures for initial tabulation of field results if/as needed; (5) update procedures for periodically assessing possible trends in detection probabilities in relation to vegetation conditions if/as needed; and (6) update procedures for periodically assessing possible intervening factors that may be affecting YBCU detections within and among conservation areas if/as needed.
+
+
+F10.01.03
+Conduct field monitoring operations
+Implementation Step F10.01.03 implements the annual plan for field operations, including equipment maintenance and calibration. The step minimally involves two activities: (1) Maintain and calibrate field data collection equipment and software; and (2) conduct field survey operations.
+
+
+F10.01.04
+Compile raw field data and document metadata
+Implementation Step F10.01.04 checks the integrity of the raw field datafiles from Step F10.01.03, compiles them into the necessary data file structure for the field season and prepares a metadata file for the resulting raw master data file. The step minimally involves the following three activities: (1) Check datafile integrity for each survey event; (2) compile all survey datafiles for the season including both call-playback data and data on vegetation, environmental, and survey conditions; (3) prepare metadata documentation.
+
+
+F10.01.05
+Inspect, assure quality of, and add final field data to cumulative record
+Implementation Step F10.01.05 implements data review and quality assurance procedures for the data compiled in Step F10.01.04, assesses possible needs for improving data review and quality assurance procedures in the next cycle of Steps F10.01.03 and F10.01.04 and adds the final data to cumulative project archives. The step minimally involves the following three activities: (1) Conduct data review and quality assurance for field operations record for each survey; (2) conduct data review and quality assurance for the record of observations for each survey; and (3) add final approved data to cumulative project archives.
+
+
+F10.01.06
+Use current-year call-playback data to estimate YBCU detection probabilities, habitat use, colonization, and extinction probabilities within and among conservation areas
+Implementation Step F10.01.06 generates tabular summaries of the raw observations of YBCU detections versus non-detections both overall and for each conservation surveyed in the current year, estimates detection probabilities and other variables, and tabulates the relationship between detection probabilities and habitat and environmental conditions, implements routine procedures for quality assurance for the results, and documents the metadata for the results. The step minimally involves the following three activities: (1) Tabulate descriptive statistics; (2) estimate detection probabilities, habitat use, colonization, and extinction probabilities within and among conservation areas from the year's survey results; (3) apply quality assurance procedure to these results; and (4) document metadata for the tabulation results.
+
+
+F10.01.07
+Use cumulative call-playback data periodically to assess possible trends in detection probabilities, habitat use, colonization, and extinction probabilities within and among conservation areas in relation to possible trends in vegetation conditions
+Implementation Step F10.01.07 periodically (e.g., every five years) (a) compiles the cumulative record of all LCR MSCP call-playback surveys of YBCU presence/absence and habitat associations under Projects D05, D06, D07, F10 (including from the current monitoring year) that follow or generate data comparable to the current monitoring protocol; and (b) uses this cumulative record to develop or update a statistical model of possible trends in detection probabilities, habitat use, colonization, and extinction probabilities within and among conservation areas in relation to possible trends in vegetation conditions. The step minimally involves the following three activities: (1) Develop or update statistical model; (2) apply quality assurance procedure to model results; and (3) document model metadata. Activity in this step provides the information for tracking Milestone F10.01.01.
+
+
+F10.01.08
+Use cumulative call-playback data periodically to assess possible intervening factors that may be affecting YBCU detections within and among conservation areas
+Implementation Step F10.01.08 periodically (e.g., every five years) (a) compiles the cumulative record of all LCR MSCP call-playback surveys of YBCU presence/absence and possible intervening factors under Projects D05, D06, D07, F10 (including from the current monitoring year) that follow or generate data comparable to the current monitoring protocol; and (b) uses this cumulative record to develop or update a statistical model of the effects of possible intervening factors on YBCU detections within and among conservation areas. Possible intervening factors to assess include seasonal and diel timing, observer, weather, and background noise. The step minimally involves the following three activities: (1) Develop or update statistical model; (2) apply quality assurance procedure to model results; and (3) document model metadata. Activity in this step provides the information for tracking Milestone F10.01.02.
+
+
+F10.01.09
+Reporting
+Implementation Step F10.01.09 summarizes and documents the results of Steps F10.01.03-F10.01.08, including implications for the next annual cycle of work under Objective F10.01. The step minimally involves the following seven activities: (1) Prepare annual report section on field operations; (2) prepare annual report section on compilation of raw field data; (3) prepare annual report section on quality assurance for field data; (4) prepare annual report section on tabulations and estimate YBCU detection probabilities, habitat use, colonization, and extinction probabilities within and among conservation areas; (5) periodically prepare a report section on possible trends in detection probabilities, habitat use, colonization, and extinction probabilities within and among conservation areas in relation to possible trends in vegetation conditions; (6) periodically prepare a report section on possible intervening factors that may be affecting YBCU detections within and among conservation areas; and (7) prepare annual report recommendations for next annual cycle of project.
+
+
+F99.01.01
+Review methods and results from previous year and antecedent Projects D12 and C62, conservation area priorities, and expectations for upcoming conservation area management actions
+Implementation Step F99.01.01 reviews the accomplishments and lessons learned in the previous year's efforts under Objective F99.01 along with applicable cumulative lessons learned under antecedent Projects D12 and C62 and lessons learned by other institutions involved in monitoring NMGS, CRTO, or LLFR in the region. These other institutions may include, for example, AZGFD, the National Park Service, Northern Arizona University, and the USFWS. The review looks at (1) the effectiveness of field survey methods including their cost-effectiveness and the likely backward compatibility of potential new methods with past survey methods; (2) the selection of conservation areas to target for monitoring for NMGS, CRTO, LLFR; (3) plans for upcoming management actions and expectations for changes in habitat conditions at the targeted conservation areas that might affect NMGS, CRTO, LLFR and associated management concerns in these conservation areas; (4) the possible effects of habitat conditions and management actions during previous monitoring cycles on NMGS, CRTO, and LLFR contact frequencies and distributions and the effectiveness of the statistical methods used to assess these possible relationships; (5) the possible effects of intervening environmental factors during previous monitoring cycles on NMGS, CRTO, and LLFR contact frequencies and distributions and the effectiveness of the statistical methods used to assess these possible relationships; and (6) the results of any statistical comparison(s) of NMGS versus CRTO, LLFR cumulative contact frequencies and spatial distributions across previous monitoring cycles to assess whether the inter-annual frequencies of monitoring for CRTO, LLFR could be reduced by using NMGS detection data as an annual indicator of likely CRTO, LLFR presence.
+
+
+F99.01.02
+Develop annual work plan, including allocation of LCR MSCP resources
+Implementation Step F99.01.02 uses the results of Step F99.01.01 to establish the annual work plan for Objective F99.01. The step minimally involves the following eight activities as needed: (1) Update the selection of conservation areas to target for monitoring for NMGS, CRTO, LLFR; (2) update field survey methods and sampling designs, including to address management questions concerning possible impacts of management actions and changes in habitat conditions at the targeted conservation areas; (3) update plans for tabulating the cumulative records of baseline NMGS, CRTO, LLFR contact frequencies and spatial distributions by conservation area and overall; (4) update plans for statistically assessing possible effects of habitat conditions and management actions on NMGS, CRTO, and LLFR contact frequencies and distributions; (5) update plans for statistically assessing possible effects of intervening environmental factors on NMGS, CRTO, and LLFR contact frequencies and distributions; (6) update plans for statistically comparing NMGS versus CRTO, LLFR cumulative contact frequencies and spatial distributions across previous monitoring cycles to assess whether the inter-annual frequencies of monitoring for CRTO, LLFR could be reduced by using NMGS detection data as an annual indicator of likely CRTO, LLFR presence; (7) review LCR MSCP resources available to support the project; and (8) prepare annual work plan.
+
+
+F99.01.03
+Conduct annual cycle of field surveys
+Implementation Step F99.01.03 implements the annual plan for field operations to survey NMGS, CRTO, and LLFR and associated habitat conditions at selected conservation areas for Objective F99.01. The step minimally involves the following three activities: (1) Check monitoring equipment and both monitoring and data recording procedures as needed; (2) confirm timing of any monitoring planned to follow on management activities that might adversely affect NMGS, CRTO, or LLFR; and (3) conduct planned field monitoring.
+
+
+F99.01.04
+Compile raw field survey data and document metadata
+Implementation Step F99.01.04 compiles the raw field data from Step F99.01.03 into the necessary data file structure and prepares a metadata file for each resulting raw field data file. The step minimally involves the following three activities: (1) Compile the raw record of NMGS, CRTO, LLFR contacts for all monitoring events; (2) compile the raw record of habitat conditions for all monitoring events; and (3) compile the raw record of environmental conditions for all monitoring events.
+
+
+F99.01.05
+Inspect, assure quality of, and add final field survey data to cumulative record
+Implementation Step F99.01.05 implements data review and quality assurance procedures for the data compiled in Step F99.01.04, assesses possible needs for improving data review and quality assurance procedures in the next cycle of Steps F99.01.03, F99.01.04, and F99.01.05 and adds the final data to cumulative project archives. These archives include the data accumulated during the two antecedent projects, D12 and C62. The step minimally involves the following three activities: (1) Apply data quality assurance procedures; (2) assess needs and opportunities for improving data quality; and (3) transfer final data to the cumulative project records of survey data on NMGS, CRTO, and LLFR and associated habitat and environmental conditions by conservation area.
+
+
+F99.01.06
+Update cumulative baseline tabulations of NMGS, CRTO, LLFR contact frequencies and spatial distributions and cumulative tabulations of habitat conditions, and document the tabulation metadata
+Implementation Step F99.01.06 tabulates and assesses the cumulative baseline record of NMGS, CRTO, and LLFR contacts by survey location within conservation area, by conservation area, and overall. "Baseline" here refers to all contacts during annual or seasonal monitoring including following disturbances from management actions, covering all years of record. The step minimally involves the following four activities: (1) Tabulate the cumulative year-to-year baseline data on NMGS, CRTO, and LLFR contacts by survey location within conservation area, by conservation area, and overall; (2) tabulate the cumulative data on marsh and adjacent cottonwood-willow habitat conditions by conservation area, focusing on habitat variables identified in the LCR MSCP species accounts and basic conceptual ecological models as important to NMGS, CRTO, or LLFR occurrence and reproduction; (3) assess the ranges of variation, long-term averages, and any trends in contact frequencies or spatial distributions by species; and (4) prepare the metadata file for the tabulations and assessment for each species.
+
+
+F99.01.07
+Assess records of NMGS, CRTO, LLFR contact frequencies and spatial distributions for evidence of effects from changes in habitat conditions or from conservation area management actions, and document the assessment metadata
+Implementation Step F99.01.07 carries out statistical analyses of the cumulative records of NMGS, CRTO, LLFR contacts and their spatial distributions for evidence of effects from changes in habitat conditions or from conservation area management actions. The step minimally involves the following four activities: (1) Statistically compare the cumulative records of NMGS, CRTO, and LLFR contacts and their spatial distributions by conservation area to the cumulative records of marsh and cottonwood-willow habitat conditions at each conservation area, using the habitat data tabulated in Step F99.01.06;  (2) statistically compare the records of NMGS, CRTO, and LLFR contacts and their spatial distributions before and after any potentially harmful management actions at any monitored conservation area, with the concurrent records of marsh and cottonwood-willow habitat conditions; (3) use the results of these statistical analyses to propose hypotheses as needed concerning ways in which marsh or cottonwood-willow habitat conditions or the effects of management actions on these conditions may have affected NMGS, CRTO, or LLFR contact frequencies or spatial distributions; and (4) prepare a metadata file for the statistical assessment for each conservation area.
+
+
+F99.01.08
+Assess cumulative records of NMGS, CRTO, LLFR contact frequencies and spatial distributions for evidence of effects from variation in intervening environmental factors affecting detection likelihoods, and document the assessment metadata
+Implementation Step F99.01.08 carries out statistical analyses of the cumulative records of NMGS, CRTO, and LLFR contacts and their spatial distributions for evidence of effects of intervening environmental factors on the likelihood of NMGS, CRTO, and LLFR contacts. These factors may include weather conditions and, for some survey methods, vegetation density. Their effects could bias survey results if ignored in the analyses of those results. The step minimally involves the following four activities: (1) Tabulate the cumulative data on potentially biasing environmental factors by conservation area, focusing on factors identified in the LCR MSCP species accounts and basic conceptual ecological models and the literature cited therein; (2) statistically compare the records of NMGS, CRTO, and LLFR contacts and their spatial distributions with the concurrent records of potential intervening environmental factors; (3) use the results of these statistical analyses to propose hypotheses as needed concerning possible biasing effects and ways to compensate for these effects in interpreting the NMGS, CRTO, and LLFR survey results; and (4) prepare a metadata file for the statistical assessment.
+
+
+F99.01.09
+Assess whether inter-annual frequencies of monitoring for CRTO, LLFR could be reduced by using NMGS detection data as an annual indicator of likely CRTO, LLFR presence, and document the assessment metadata
+Implementation Step F99.01.09 carries out statistical comparisons of NMGS versus CRTO, LLFR contact frequencies and spatial distributions to assess whether the inter-annual frequencies of monitoring for CRTO, LLFR could be reduced by using NMGS detection data as an annual indicator of likely CRTO, LLFR presence. If statistically justifiable, this use of NMGS detection data as a surrogate-e.g., in alternating years-for estimating CRTO and LLFR presence could reduce project costs without interfering with project goals. The step minimally involves the following three activities: (1) Statistically compare the cumulative records of NMGS contacts with the records of CRTO and LLFR contacts both by conservation area and overall; (2) use the results of these statistical analyses to assess whether and how data on NMGS contacts might be used as an indicator of likely CRTO and LLFR presence by conservation area and overall, and how reliable this indicator might be; and (3) prepare a metadata file for the statistical assessment.
+
+
+F99.01.10
+Reporting
+Implementation Step F99.01.10 summarizes and documents the results of Steps F99.01.03-F99.01.09, including implications for the next cycle of Objective F99.01. The step minimally involves the following seven activities: (1) Prepare annual report section on field operations; (2) prepare annual report section on field data quality assurance; (3) prepare annual report section on cumulative baseline records of NMGS, CRTO, and LLFR contact frequencies and spatial distributions and associated habitat conditions; (4) prepare annual report section on possible effects of changes in habitat conditions and conservation area management actions on NMGS, CRTO, and LLFR contact frequencies; (5) prepare annual report section on possible effects of intervening environmental factors on NMGS, CRTO, and LLFR contact frequencies; (6) prepare annual report section on possibility of using NMGS detection data as an annual indicator of likely CRTO, LLFR presence; and (7) prepare annual report section on recommendations for next annual cycle of project.
+
+
+F03.01.01
+Review methods and results from previous year and antecedent projects, conservation area plans and priorities, and possible improvements to monitoring procedures
+Implementation Step F0.01.01 reviews the methods and results from previous year and from antecedent Projects C27 and D10, opportunities for testing improvements to monitoring procedures to reduce costs while sustaining or improving accuracy, and management and monitoring priorities for conservation areas with suitable habitat for CRCR and YHCR. The review looks at (1) the effectiveness of current and potential updated field survey methods including their cost-effectiveness and the likely backward compatibility of potential new methods with past survey methods; (2) the selection of conservation areas to target for monitoring for CRCR, YHCR, and DPMO; (3) plans for upcoming management actions and expectations for changes in habitat conditions at the targeted conservation areas that might affect CRCR, YHCR, or DPMO; (4) the possible effects of habitat conditions and management actions during previous monitoring cycles on CRCR, YHCR, or DPMO contact frequencies and distributions; (5) the possible effects of intervening environmental factors during previous monitoring cycles on CRCR, YHCR, or DPMO contact frequencies and distributions; and (6) possible needs to clarify the subspecies identity of pocket mice captured incidental to the field surveys for CRCR and YHCR.
+
+
+F03.01.02
+Develop annual work plan, including allocation of LCR MSCP resources
+Implementation Step F03.01.02 uses the results of Step F03.01.01 to establish the annual work plan for Objective F03.01. The step minimally involves the following five activities as needed: (1) Update the selection of conservation areas to target for monitoring for CRCR, YHCR, and DPMO; (2) update field survey methods and sampling designs, including plans for testing alternative survey methods; (3) update plans for compiling descriptive statistics on annual and cumulative monitoring results for the project; (4) update plans for assessing statistically the possible effects of meteorological conditions and lunar phase on live-trapping captures across the cumulative records of Projects C27, D10, and F03; and (5) update plans for clarifying the subspecies identity of pocket mice captured incidental to the field surveys for CRCR and YHCR.
+
+
+F03.01.04
+Compile raw field monitoring data and document metadata
+Implementation Step F03.01.04 compiles the raw field data from Step F03.01.03 into the necessary data file structure and prepares a metadata file for each resulting raw field data file. The step minimally involves the following three activities: (1) Compile the raw record of CRCR, YHCR, and DPMO contacts by monitoring event and method; (2) compile the raw record of habitat conditions for all monitoring events; and (3) compile the raw record of environmental conditions for all monitoring events.
+
+
+F03.01.05
+Inspect, assure quality of, and add final field monitoring data to cumulative record
+Implementation Step F03.01.05 implements data review and quality assurance procedures for the data compiled in Step F03.01.04, assesses possible needs for improving data review and quality assurance procedures in the next cycle of Steps F03.01.03, F03.01.04, and F03.01.05 and adds the final data to cumulative project archives. These archives include the data accumulated during the two antecedent projects, C27 and D10. The step minimally involves the following three activities: (1) Apply data quality assurance procedures; (2) assess needs and opportunities for improving data quality; and (3) transfer final data to the cumulative project records of survey data and associated habitat and environmental conditions by conservation area.
+
+
+F03.01.06
+Tabulate and interpret cumulative record of the subspecies identities of the desert pocket mice encountered in LCR MSCP conservation areas
+Implementation Step F03.01.06 implements the procedures developed by the LCR MSCP to achieve Milestone F03.01.02. The step minimally involves the following four activities: (1) Tabulate the field evidence, if any, collected in Step F03.01.02 and processed in Steps F03.01.03 and Steps F03.01.04 on the subspecies of desert pocket mice (Chaetodipus penicillatus) captured during surveys for CRCR and YHCR; (2) tabulate the results of laboratory genetic analyses of field samples collected and sent to a laboratory in Steps F03.01.03 and F03.01.04, if any, for genetic analysis; (3) combine the results of field and laboratory evaluations into an integrated tabulation; and (4) prepare the metadata file for the tabulations.
+
+
+F03.01.07
+Tabulate and interpret annual and cumulative descriptive statistics on CRCR, YHCR, and DPMO presence and capture frequency within and among conservation areas
+Implementation Step F03.01.07 tabulates and assesses the current-year and cumulative records of CRCR, YHCR, and DPMO captures within and among conservation areas in terms of species presence/absence and presence capture frequencies, distinguishing the sobrinus subspecies of the desert pocket mouse whenever the data permit. The step minimally involves the following five activities: (1) Tabulate the current-year data on species presence/absence and presence capture frequencies, by conservation area and overall; (2) tabulate the cumulative data on species presence/absence and presence capture frequencies, by conservation area and overall, across all years of monitoring under Project F03 and its antecedents; (3) assess the ranges of variation, long-term averages, and any trends in presence/absence, capture frequencies, or spatial distributions by species; (4) identify possible changes in habitat conditions that may account for patterns of change in , including changes due to management activities and due to unplanned disturbances species presence/absence, capture frequencies, or spatial distributions; and (5) prepare the metadata file for the tabulations and assessment for each species.
+
+
+F03.01.08
+Compile or update cumulative record of meteorological conditions and lunar phase for all monitoring nights under Projects C27, D10, and F03
+Implementation Step F03.01.08, together with Step F03.01.09, allows the LCR MSCP to achieve Milestone F03.01.01. Specifically, Implementation Step F03.01.08 calls for the LCR MSCP to acquire data on the meteorological conditions experienced by the fauna at each monitoring location on each monitoring night and the associated phase of the lunar cycle. Once the LCR MSCP has compiled this information for past years of monitoring under Projects C27, D10, and F03, the investigative team will only need to update the dataset for the current year. Meteorological data will be obtained from the nearest weather recording station(s), and may include air temperature (min, max, mean), humidity or wet bulb temperature (min, max, mean), wind speed (min, max, mean), precipitation (total), and cloud cover (min, max, mean). Lunar phase may be expressed simply as phase (percent full), percent of maximum illumination, or other measure of the brightness of the moonlight-one set of data for the entire valley for each monitoring night. The step minimally involves the following five activities: (1) Identify the weather recording stations nearest to the monitoring conservation areas; (2) identify the meteorological data to acquire; (3) acquire the meteorological data for all rodent monitoring dates for all past years of monitoring under Projects C27, D10, and F03 and/or for the current monitoring year; (4) acquire the associated lunar data; (5) organize the data so that it is possible to compare rodent capture presence/absence and frequencies to meteorological conditions and lunar phase; and (5) prepare the metadata file for the cumulative dataset.
+
+
+F03.01.09
+Analyze cumulative record from Step F03.01.08 for potential statistical effects of meteorological conditions and lunar phase on variation in species presence/absence and capture frequency within and among conservation areas
+Implementation Step F03.01.09, together with Step F03.01.08, allows the LCR MSCP to achieve Milestone F03.01.01. Specifically, Implementation Step F03.01.09 calls for the LCR MSCP to carry out a statistical analysis of the data assembled in Step F03.01.08 to test the null hypothesis that meteorological conditions and lunar phase have no effect on variation in species presence/absence and capture frequencies within and among conservation areas. If initial results indicate that the null hypothesis may be rejected, the analysis will estimate the directions(s) and magnitude(s) of effect(s). The purpose of this second step is to identify monitoring dates when these effects may have significantly distorted monitoring findings-i.e., resulted in higher or lower capture frequencies than would be expected to have occurred in the absence of the effects. The LCR MSCP can then determine if its understanding of variation in CRCR, YHCR, and DPMO captures at conservation sites has been biased by effects of meteorological conditions and lunar phase. The step minimally involves the following five activities: (1) Test for statistical relationships between meteorological variables and capture frequencies for each of the three species; (2) test for statistical relationships between lunar illumination and capture frequencies for each of the three species; (3) for potentially statistically significant relationships (either positive or negative), identify monitoring locations and dates when each such relationship may have resulted in a particularly high or low capture frequency; (4) assess whether LCR MSCP understanding of the presence, frequencies, and spatial distributions of CRCR, YHCR, and DPMO captures would be different if dates were excluded from analysis when meteorological and/or lunar conditions suppressed rodent activity; and (5) prepare metadata files for the resulting analyses.
+
+
+F03.01.10
+Compare any trialed alternative monitoring methods (if any) to standard monitoring methods for the project based on encounter frequencies, logistical difficulty, and costs
+Implementation Step F03.01.10 calls for the LCR MSCP to develop and implement procedures for assessing any alternative monitoring methods the program may test in the field under Project F03. The LCR MSCP will make such assessments through side-by-side comparisons of the encounter frequencies, logistical difficulty, and costs for each trialed method with those documented for the standard monitoring methods for the same monitoring locations and dates. The LCR MSCP does not currently plan to test any alternative methods. Consequently, it is not possible currently to identify the details of Step F03.01.10. However, in general, this step minimally will involve the following four activities: (1) Tabulate the encounter frequencies recorded using each alternative method alongside the frequencies recorded using the standard method for all sites and dates when the two methods were both deployed; (2) using either qualitative or quantitative procedures to compare the logistical difficulty and fiscal costs of the alternative method with those of the standard method for all sites and dates when the two methods were both deployed; (3) summarize the findings in terms of the effectiveness and costs of the alternative method relative to those of the standard method; and (4) prepare a metadata file for the results.
+
+
+F03.01.11
+Reporting
+Implementation Step F03.01.11 summarizes and documents the results of Steps F03.01.03-F03.01.10, including implications for the next cycle of Objective F03.01. The step minimally involves the following seven activities: (1) Prepare annual report section on field operations and laboratory analyses (if any); (2) prepare annual report section on field data quality assurance; (3) prepare annual report section on subspecies identities of the desert pocket mice encountered during monitoring; (4) prepare annual report section on annual and cumulative descriptive statistics on CRCR, YHCR, and DPMO presence and capture frequency within and among conservation areas; (5) prepare annual report section on possible statistical effects of meteorological conditions and lunar phase on variation in species presence/absence and capture frequency within and among conservation areas; (6) prepare annual report section on comparative effectiveness, difficulty, and costs of trialed alternative monitoring methods (if any); and (7) prepare annual report section on recommendations for next annual cycle of project.
+
+
+F10.01.01
+Review methods and results from previous year and from Projects D05 and D06
+Implementation Step F10.01.01 reviews the accomplishments and lessons learned in the previous year's efforts under Objective F10.01 and cumulative lessons learned under Projects D05, D06, and D07. The review examines the locations and numbers of detections of YBCU in conservation areas and determines whether the same methods will be used at the same locations, or if changes should be made. The review then identifies needs and opportunities to update the next work plan. The step minimally involves the following six activities: (1) Review procedures for selecting locations for survey; (2) review field operations and data collection methods; (3) review procedures for datafile compilation; (4) review procedures for initial tabulation of field results; (5) review procedures for periodically assessing possible trends in detection probabilities in relation to vegetation conditions; and (6) review procedures for periodically assessing possible intervening factors that may be affecting YBCU detections within and among conservation areas.
+
+
+F10.01.02
+Develop annual work plan, including allocation of LCR MSCP resources
+Implementation Step F10.01.02 uses the results of Step F10.01.01 to establish the annual work plan for Objective F10.01, including methods for survey site selection, data collection, data analysis, quality assurance, and documentation. The step minimally involves the following six activities: (1) Update procedures for selecting locations for survey if/as needed; (2) update plan for field operations and data collection if/as needed; (3) update procedures for datafile compilation if/as needed; (4) update procedures for initial tabulation of field results if/as needed; (5) update procedures for periodically assessing possible trends in detection probabilities in relation to vegetation conditions if/as needed; and (6) update procedures for periodically assessing possible intervening factors that may be affecting YBCU detections within and among conservation areas if/as needed.
+
+
+F10.01.03
+Conduct field monitoring operations
+Implementation Step F10.01.03 implements the annual plan for field operations, including equipment maintenance and calibration. The step minimally involves two activities: (1) Maintain and calibrate field data collection equipment and software; and (2) conduct field survey operations.
+
+
+F10.01.04
+Compile raw field data and document metadata
+Implementation Step F10.01.04 checks the integrity of the raw field datafiles from Step F10.01.03, compiles them into the necessary data file structure for the field season and prepares a metadata file for the resulting raw master data file. The step minimally involves the following three activities: (1) Check datafile integrity for each survey event; (2) compile all survey datafiles for the season including both call-playback data and data on vegetation, environmental, and survey conditions; (3) prepare metadata documentation.
+
+
+F10.01.05
+Inspect, assure quality of, and add final field data to cumulative record
+Implementation Step F10.01.05 implements data review and quality assurance procedures for the data compiled in Step F10.01.04, assesses possible needs for improving data review and quality assurance procedures in the next cycle of Steps F10.01.03 and F10.01.04 and adds the final data to cumulative project archives. The step minimally involves the following three activities: (1) Conduct data review and quality assurance for field operations record for each survey; (2) conduct data review and quality assurance for the record of observations for each survey; and (3) add final approved data to cumulative project archives.
+
+
+F10.01.06
+Use current-year call-playback data to estimate YBCU detection probabilities, habitat use, colonization, and extinction probabilities within and among conservation areas
+Implementation Step F10.01.06 generates tabular summaries of the raw observations of YBCU detections versus non-detections both overall and for each conservation surveyed in the current year, estimates detection probabilities and other variables, and tabulates the relationship between detection probabilities and habitat and environmental conditions, implements routine procedures for quality assurance for the results, and documents the metadata for the results. The step minimally involves the following three activities: (1) Tabulate descriptive statistics; (2) estimate detection probabilities, habitat use, colonization, and extinction probabilities within and among conservation areas from the year's survey results; (3) apply quality assurance procedure to these results; and (4) document metadata for the tabulation results.
+
+
+F10.01.07
+Use cumulative call-playback data periodically to assess possible trends in detection probabilities, habitat use, colonization, and extinction probabilities within and among conservation areas in relation to possible trends in vegetation conditions
+Implementation Step F10.01.07 periodically (e.g., every five years) (a) compiles the cumulative record of all LCR MSCP call-playback surveys of YBCU presence/absence and habitat associations under Projects D05, D06, D07, F10 (including from the current monitoring year) that follow or generate data comparable to the current monitoring protocol; and (b) uses this cumulative record to develop or update a statistical model of possible trends in detection probabilities, habitat use, colonization, and extinction probabilities within and among conservation areas in relation to possible trends in vegetation conditions. The step minimally involves the following three activities: (1) Develop or update statistical model; (2) apply quality assurance procedure to model results; and (3) document model metadata. Activity in this step provides the information for tracking Milestone F10.01.01.
+
+
+F10.01.08
+Use cumulative call-playback data periodically to assess possible intervening factors that may be affecting YBCU detections within and among conservation areas
+Implementation Step F10.01.08 periodically (e.g., every five years) (a) compiles the cumulative record of all LCR MSCP call-playback surveys of YBCU presence/absence and possible intervening factors under Projects D05, D06, D07, F10 (including from the current monitoring year) that follow or generate data comparable to the current monitoring protocol; and (b) uses this cumulative record to develop or update a statistical model of the effects of possible intervening factors on YBCU detections within and among conservation areas. Possible intervening factors to assess include seasonal and diel timing, observer, weather, and background noise. The step minimally involves the following three activities: (1) Develop or update statistical model; (2) apply quality assurance procedure to model results; and (3) document model metadata. Activity in this step provides the information for tracking Milestone F10.01.02.
+
+
+F10.01.09
+Reporting
+Implementation Step F10.01.09 summarizes and documents the results of Steps F10.01.03-F10.01.08, including implications for the next annual cycle of work under Objective F10.01. The step minimally involves the following seven activities: (1) Prepare annual report section on field operations; (2) prepare annual report section on compilation of raw field data; (3) prepare annual report section on quality assurance for field data; (4) prepare annual report section on tabulations and estimate YBCU detection probabilities, habitat use, colonization, and extinction probabilities within and among conservation areas; (5) periodically prepare a report section on possible trends in detection probabilities, habitat use, colonization, and extinction probabilities within and among conservation areas in relation to possible trends in vegetation conditions; (6) periodically prepare a report section on possible intervening factors that may be affecting YBCU detections within and among conservation areas; and (7) prepare annual report recommendations for next annual cycle of project.
+
+
+F99.01.01
+Review methods and results from previous year and antecedent Projects D12 and C62, conservation area priorities, and expectations for upcoming conservation area management actions
+Implementation Step F99.01.01 reviews the accomplishments and lessons learned in the previous year's efforts under Objective F99.01 along with applicable cumulative lessons learned under antecedent Projects D12 and C62 and lessons learned by other institutions involved in monitoring NMGS, CRTO, or LLFR in the region. These other institutions may include, for example, AZGFD, the National Park Service, Northern Arizona University, and the USFWS. The review looks at (1) the effectiveness of field survey methods including their cost-effectiveness and the likely backward compatibility of potential new methods with past survey methods; (2) the selection of conservation areas to target for monitoring for NMGS, CRTO, LLFR; (3) plans for upcoming management actions and expectations for changes in habitat conditions at the targeted conservation areas that might affect NMGS, CRTO, LLFR and associated management concerns in these conservation areas; (4) the possible effects of habitat conditions and management actions during previous monitoring cycles on NMGS, CRTO, and LLFR contact frequencies and distributions and the effectiveness of the statistical methods used to assess these possible relationships; (5) the possible effects of intervening environmental factors during previous monitoring cycles on NMGS, CRTO, and LLFR contact frequencies and distributions and the effectiveness of the statistical methods used to assess these possible relationships; and (6) the results of any statistical comparison(s) of NMGS versus CRTO, LLFR cumulative contact frequencies and spatial distributions across previous monitoring cycles to assess whether the inter-annual frequencies of monitoring for CRTO, LLFR could be reduced by using NMGS detection data as an annual indicator of likely CRTO, LLFR presence.
+
+
+F99.01.02
+Develop annual work plan, including allocation of LCR MSCP resources
+Implementation Step F99.01.02 uses the results of Step F99.01.01 to establish the annual work plan for Objective F99.01. The step minimally involves the following eight activities as needed: (1) Update the selection of conservation areas to target for monitoring for NMGS, CRTO, LLFR; (2) update field survey methods and sampling designs, including to address management questions concerning possible impacts of management actions and changes in habitat conditions at the targeted conservation areas; (3) update plans for tabulating the cumulative records of baseline NMGS, CRTO, LLFR contact frequencies and spatial distributions by conservation area and overall; (4) update plans for statistically assessing possible effects of habitat conditions and management actions on NMGS, CRTO, and LLFR contact frequencies and distributions; (5) update plans for statistically assessing possible effects of intervening environmental factors on NMGS, CRTO, and LLFR contact frequencies and distributions; (6) update plans for statistically comparing NMGS versus CRTO, LLFR cumulative contact frequencies and spatial distributions across previous monitoring cycles to assess whether the inter-annual frequencies of monitoring for CRTO, LLFR could be reduced by using NMGS detection data as an annual indicator of likely CRTO, LLFR presence; (7) review LCR MSCP resources available to support the project; and (8) prepare annual work plan.
+
+
+F99.01.03
+Conduct annual cycle of field surveys
+Implementation Step F99.01.03 implements the annual plan for field operations to survey NMGS, CRTO, and LLFR and associated habitat conditions at selected conservation areas for Objective F99.01. The step minimally involves the following three activities: (1) Check monitoring equipment and both monitoring and data recording procedures as needed; (2) confirm timing of any monitoring planned to follow on management activities that might adversely affect NMGS, CRTO, or LLFR; and (3) conduct planned field monitoring.
+
+
+F99.01.04
+Compile raw field survey data and document metadata
+Implementation Step F99.01.04 compiles the raw field data from Step F99.01.03 into the necessary data file structure and prepares a metadata file for each resulting raw field data file. The step minimally involves the following three activities: (1) Compile the raw record of NMGS, CRTO, LLFR contacts for all monitoring events; (2) compile the raw record of habitat conditions for all monitoring events; and (3) compile the raw record of environmental conditions for all monitoring events.
+
+
+F99.01.05
+Inspect, assure quality of, and add final field survey data to cumulative record
+Implementation Step F99.01.05 implements data review and quality assurance procedures for the data compiled in Step F99.01.04, assesses possible needs for improving data review and quality assurance procedures in the next cycle of Steps F99.01.03, F99.01.04, and F99.01.05 and adds the final data to cumulative project archives. These archives include the data accumulated during the two antecedent projects, D12 and C62. The step minimally involves the following three activities: (1) Apply data quality assurance procedures; (2) assess needs and opportunities for improving data quality; and (3) transfer final data to the cumulative project records of survey data on NMGS, CRTO, and LLFR and associated habitat and environmental conditions by conservation area.
+
+
+F99.01.06
+Update cumulative baseline tabulations of NMGS, CRTO, LLFR contact frequencies and spatial distributions and cumulative tabulations of habitat conditions, and document the tabulation metadata
+Implementation Step F99.01.06 tabulates and assesses the cumulative baseline record of NMGS, CRTO, and LLFR contacts by survey location within conservation area, by conservation area, and overall. "Baseline" here refers to all contacts during annual or seasonal monitoring including following disturbances from management actions, covering all years of record. The step minimally involves the following four activities: (1) Tabulate the cumulative year-to-year baseline data on NMGS, CRTO, and LLFR contacts by survey location within conservation area, by conservation area, and overall; (2) tabulate the cumulative data on marsh and adjacent cottonwood-willow habitat conditions by conservation area, focusing on habitat variables identified in the LCR MSCP species accounts and basic conceptual ecological models as important to NMGS, CRTO, or LLFR occurrence and reproduction; (3) assess the ranges of variation, long-term averages, and any trends in contact frequencies or spatial distributions by species; and (4) prepare the metadata file for the tabulations and assessment for each species.
+
+
+F99.01.07
+Assess records of NMGS, CRTO, LLFR contact frequencies and spatial distributions for evidence of effects from changes in habitat conditions or from conservation area management actions, and document the assessment metadata
+Implementation Step F99.01.07 carries out statistical analyses of the cumulative records of NMGS, CRTO, LLFR contacts and their spatial distributions for evidence of effects from changes in habitat conditions or from conservation area management actions. The step minimally involves the following four activities: (1) Statistically compare the cumulative records of NMGS, CRTO, and LLFR contacts and their spatial distributions by conservation area to the cumulative records of marsh and cottonwood-willow habitat conditions at each conservation area, using the habitat data tabulated in Step F99.01.06;  (2) statistically compare the records of NMGS, CRTO, and LLFR contacts and their spatial distributions before and after any potentially harmful management actions at any monitored conservation area, with the concurrent records of marsh and cottonwood-willow habitat conditions; (3) use the results of these statistical analyses to propose hypotheses as needed concerning ways in which marsh or cottonwood-willow habitat conditions or the effects of management actions on these conditions may have affected NMGS, CRTO, or LLFR contact frequencies or spatial distributions; and (4) prepare a metadata file for the statistical assessment for each conservation area.
+
+
+F99.01.08
+Assess cumulative records of NMGS, CRTO, LLFR contact frequencies and spatial distributions for evidence of effects from variation in intervening environmental factors affecting detection likelihoods, and document the assessment metadata
+Implementation Step F99.01.08 carries out statistical analyses of the cumulative records of NMGS, CRTO, and LLFR contacts and their spatial distributions for evidence of effects of intervening environmental factors on the likelihood of NMGS, CRTO, and LLFR contacts. These factors may include weather conditions and, for some survey methods, vegetation density. Their effects could bias survey results if ignored in the analyses of those results. The step minimally involves the following four activities: (1) Tabulate the cumulative data on potentially biasing environmental factors by conservation area, focusing on factors identified in the LCR MSCP species accounts and basic conceptual ecological models and the literature cited therein; (2) statistically compare the records of NMGS, CRTO, and LLFR contacts and their spatial distributions with the concurrent records of potential intervening environmental factors; (3) use the results of these statistical analyses to propose hypotheses as needed concerning possible biasing effects and ways to compensate for these effects in interpreting the NMGS, CRTO, and LLFR survey results; and (4) prepare a metadata file for the statistical assessment.
+
+
+F99.01.09
+Assess whether inter-annual frequencies of monitoring for CRTO, LLFR could be reduced by using NMGS detection data as an annual indicator of likely CRTO, LLFR presence, and document the assessment metadata
+Implementation Step F99.01.09 carries out statistical comparisons of NMGS versus CRTO, LLFR contact frequencies and spatial distributions to assess whether the inter-annual frequencies of monitoring for CRTO, LLFR could be reduced by using NMGS detection data as an annual indicator of likely CRTO, LLFR presence. If statistically justifiable, this use of NMGS detection data as a surrogate-e.g., in alternating years-for estimating CRTO and LLFR presence could reduce project costs without interfering with project goals. The step minimally involves the following three activities: (1) Statistically compare the cumulative records of NMGS contacts with the records of CRTO and LLFR contacts both by conservation area and overall; (2) use the results of these statistical analyses to assess whether and how data on NMGS contacts might be used as an indicator of likely CRTO and LLFR presence by conservation area and overall, and how reliable this indicator might be; and (3) prepare a metadata file for the statistical assessment.
+
+
+F99.01.10
+Reporting
+Implementation Step F99.01.10 summarizes and documents the results of Steps F99.01.03-F99.01.09, including implications for the next cycle of Objective F99.01. The step minimally involves the following seven activities: (1) Prepare annual report section on field operations; (2) prepare annual report section on field data quality assurance; (3) prepare annual report section on cumulative baseline records of NMGS, CRTO, and LLFR contact frequencies and spatial distributions and associated habitat conditions; (4) prepare annual report section on possible effects of changes in habitat conditions and conservation area management actions on NMGS, CRTO, and LLFR contact frequencies; (5) prepare annual report section on possible effects of intervening environmental factors on NMGS, CRTO, and LLFR contact frequencies; (6) prepare annual report section on possibility of using NMGS detection data as an annual indicator of likely CRTO, LLFR presence; and (7) prepare annual report section on recommendations for next annual cycle of project.
+
+
+F03.01.01
+Review methods and results from previous year and antecedent projects, conservation area plans and priorities, and possible improvements to monitoring procedures
+Implementation Step F0.01.01 reviews the methods and results from previous year and from antecedent Projects C27 and D10, opportunities for testing improvements to monitoring procedures to reduce costs while sustaining or improving accuracy, and management and monitoring priorities for conservation areas with suitable habitat for CRCR and YHCR. The review looks at (1) the effectiveness of current and potential updated field survey methods including their cost-effectiveness and the likely backward compatibility of potential new methods with past survey methods; (2) the selection of conservation areas to target for monitoring for CRCR, YHCR, and DPMO; (3) plans for upcoming management actions and expectations for changes in habitat conditions at the targeted conservation areas that might affect CRCR, YHCR, or DPMO; (4) the possible effects of habitat conditions and management actions during previous monitoring cycles on CRCR, YHCR, or DPMO contact frequencies and distributions; (5) the possible effects of intervening environmental factors during previous monitoring cycles on CRCR, YHCR, or DPMO contact frequencies and distributions; and (6) possible needs to clarify the subspecies identity of pocket mice captured incidental to the field surveys for CRCR and YHCR.
+
+
+F03.01.02
+Develop annual work plan, including allocation of LCR MSCP resources
+Implementation Step F03.01.02 uses the results of Step F03.01.01 to establish the annual work plan for Objective F03.01. The step minimally involves the following five activities as needed: (1) Update the selection of conservation areas to target for monitoring for CRCR, YHCR, and DPMO; (2) update field survey methods and sampling designs, including plans for testing alternative survey methods; (3) update plans for compiling descriptive statistics on annual and cumulative monitoring results for the project; (4) update plans for assessing statistically the possible effects of meteorological conditions and lunar phase on live-trapping captures across the cumulative records of Projects C27, D10, and F03; and (5) update plans for clarifying the subspecies identity of pocket mice captured incidental to the field surveys for CRCR and YHCR.
+
+
+F03.01.04
+Compile raw field monitoring data and document metadata
+Implementation Step F03.01.04 compiles the raw field data from Step F03.01.03 into the necessary data file structure and prepares a metadata file for each resulting raw field data file. The step minimally involves the following three activities: (1) Compile the raw record of CRCR, YHCR, and DPMO contacts by monitoring event and method; (2) compile the raw record of habitat conditions for all monitoring events; and (3) compile the raw record of environmental conditions for all monitoring events.
+
+
+F03.01.05
+Inspect, assure quality of, and add final field monitoring data to cumulative record
+Implementation Step F03.01.05 implements data review and quality assurance procedures for the data compiled in Step F03.01.04, assesses possible needs for improving data review and quality assurance procedures in the next cycle of Steps F03.01.03, F03.01.04, and F03.01.05 and adds the final data to cumulative project archives. These archives include the data accumulated during the two antecedent projects, C27 and D10. The step minimally involves the following three activities: (1) Apply data quality assurance procedures; (2) assess needs and opportunities for improving data quality; and (3) transfer final data to the cumulative project records of survey data and associated habitat and environmental conditions by conservation area.
+
+
+F03.01.06
+Tabulate and interpret cumulative record of the subspecies identities of the desert pocket mice encountered in LCR MSCP conservation areas
+Implementation Step F03.01.06 implements the procedures developed by the LCR MSCP to achieve Milestone F03.01.02. The step minimally involves the following four activities: (1) Tabulate the field evidence, if any, collected in Step F03.01.02 and processed in Steps F03.01.03 and Steps F03.01.04 on the subspecies of desert pocket mice (Chaetodipus penicillatus) captured during surveys for CRCR and YHCR; (2) tabulate the results of laboratory genetic analyses of field samples collected and sent to a laboratory in Steps F03.01.03 and F03.01.04, if any, for genetic analysis; (3) combine the results of field and laboratory evaluations into an integrated tabulation; and (4) prepare the metadata file for the tabulations.
+
+
+F03.01.07
+Tabulate and interpret annual and cumulative descriptive statistics on CRCR, YHCR, and DPMO presence and capture frequency within and among conservation areas
+Implementation Step F03.01.07 tabulates and assesses the current-year and cumulative records of CRCR, YHCR, and DPMO captures within and among conservation areas in terms of species presence/absence and presence capture frequencies, distinguishing the sobrinus subspecies of the desert pocket mouse whenever the data permit. The step minimally involves the following five activities: (1) Tabulate the current-year data on species presence/absence and presence capture frequencies, by conservation area and overall; (2) tabulate the cumulative data on species presence/absence and presence capture frequencies, by conservation area and overall, across all years of monitoring under Project F03 and its antecedents; (3) assess the ranges of variation, long-term averages, and any trends in presence/absence, capture frequencies, or spatial distributions by species; (4) identify possible changes in habitat conditions that may account for patterns of change in , including changes due to management activities and due to unplanned disturbances species presence/absence, capture frequencies, or spatial distributions; and (5) prepare the metadata file for the tabulations and assessment for each species.
+
+
+F03.01.08
+Compile or update cumulative record of meteorological conditions and lunar phase for all monitoring nights under Projects C27, D10, and F03
+Implementation Step F03.01.08, together with Step F03.01.09, allows the LCR MSCP to achieve Milestone F03.01.01. Specifically, Implementation Step F03.01.08 calls for the LCR MSCP to acquire data on the meteorological conditions experienced by the fauna at each monitoring location on each monitoring night and the associated phase of the lunar cycle. Once the LCR MSCP has compiled this information for past years of monitoring under Projects C27, D10, and F03, the investigative team will only need to update the dataset for the current year. Meteorological data will be obtained from the nearest weather recording station(s), and may include air temperature (min, max, mean), humidity or wet bulb temperature (min, max, mean), wind speed (min, max, mean), precipitation (total), and cloud cover (min, max, mean). Lunar phase may be expressed simply as phase (percent full), percent of maximum illumination, or other measure of the brightness of the moonlight-one set of data for the entire valley for each monitoring night. The step minimally involves the following five activities: (1) Identify the weather recording stations nearest to the monitoring conservation areas; (2) identify the meteorological data to acquire; (3) acquire the meteorological data for all rodent monitoring dates for all past years of monitoring under Projects C27, D10, and F03 and/or for the current monitoring year; (4) acquire the associated lunar data; (5) organize the data so that it is possible to compare rodent capture presence/absence and frequencies to meteorological conditions and lunar phase; and (5) prepare the metadata file for the cumulative dataset.
+
+
+F03.01.09
+Analyze cumulative record from Step F03.01.08 for potential statistical effects of meteorological conditions and lunar phase on variation in species presence/absence and capture frequency within and among conservation areas
+Implementation Step F03.01.09, together with Step F03.01.08, allows the LCR MSCP to achieve Milestone F03.01.01. Specifically, Implementation Step F03.01.09 calls for the LCR MSCP to carry out a statistical analysis of the data assembled in Step F03.01.08 to test the null hypothesis that meteorological conditions and lunar phase have no effect on variation in species presence/absence and capture frequencies within and among conservation areas. If initial results indicate that the null hypothesis may be rejected, the analysis will estimate the directions(s) and magnitude(s) of effect(s). The purpose of this second step is to identify monitoring dates when these effects may have significantly distorted monitoring findings-i.e., resulted in higher or lower capture frequencies than would be expected to have occurred in the absence of the effects. The LCR MSCP can then determine if its understanding of variation in CRCR, YHCR, and DPMO captures at conservation sites has been biased by effects of meteorological conditions and lunar phase. The step minimally involves the following five activities: (1) Test for statistical relationships between meteorological variables and capture frequencies for each of the three species; (2) test for statistical relationships between lunar illumination and capture frequencies for each of the three species; (3) for potentially statistically significant relationships (either positive or negative), identify monitoring locations and dates when each such relationship may have resulted in a particularly high or low capture frequency; (4) assess whether LCR MSCP understanding of the presence, frequencies, and spatial distributions of CRCR, YHCR, and DPMO captures would be different if dates were excluded from analysis when meteorological and/or lunar conditions suppressed rodent activity; and (5) prepare metadata files for the resulting analyses.
+
+
+F03.01.10
+Compare any trialed alternative monitoring methods (if any) to standard monitoring methods for the project based on encounter frequencies, logistical difficulty, and costs
+Implementation Step F03.01.10 calls for the LCR MSCP to develop and implement procedures for assessing any alternative monitoring methods the program may test in the field under Project F03. The LCR MSCP will make such assessments through side-by-side comparisons of the encounter frequencies, logistical difficulty, and costs for each trialed method with those documented for the standard monitoring methods for the same monitoring locations and dates. The LCR MSCP does not currently plan to test any alternative methods. Consequently, it is not possible currently to identify the details of Step F03.01.10. However, in general, this step minimally will involve the following four activities: (1) Tabulate the encounter frequencies recorded using each alternative method alongside the frequencies recorded using the standard method for all sites and dates when the two methods were both deployed; (2) using either qualitative or quantitative procedures to compare the logistical difficulty and fiscal costs of the alternative method with those of the standard method for all sites and dates when the two methods were both deployed; (3) summarize the findings in terms of the effectiveness and costs of the alternative method relative to those of the standard method; and (4) prepare a metadata file for the results.
+
+
+F03.01.11
+Reporting
+Implementation Step F03.01.11 summarizes and documents the results of Steps F03.01.03-F03.01.10, including implications for the next cycle of Objective F03.01. The step minimally involves the following seven activities: (1) Prepare annual report section on field operations and laboratory analyses (if any); (2) prepare annual report section on field data quality assurance; (3) prepare annual report section on subspecies identities of the desert pocket mice encountered during monitoring; (4) prepare annual report section on annual and cumulative descriptive statistics on CRCR, YHCR, and DPMO presence and capture frequency within and among conservation areas; (5) prepare annual report section on possible statistical effects of meteorological conditions and lunar phase on variation in species presence/absence and capture frequency within and among conservation areas; (6) prepare annual report section on comparative effectiveness, difficulty, and costs of trialed alternative monitoring methods (if any); and (7) prepare annual report section on recommendations for next annual cycle of project.
+
+
+F10.01.01
+Review methods and results from previous year and from Projects D05 and D06
+Implementation Step F10.01.01 reviews the accomplishments and lessons learned in the previous year's efforts under Objective F10.01 and cumulative lessons learned under Projects D05, D06, and D07. The review examines the locations and numbers of detections of YBCU in conservation areas and determines whether the same methods will be used at the same locations, or if changes should be made. The review then identifies needs and opportunities to update the next work plan. The step minimally involves the following six activities: (1) Review procedures for selecting locations for survey; (2) review field operations and data collection methods; (3) review procedures for datafile compilation; (4) review procedures for initial tabulation of field results; (5) review procedures for periodically assessing possible trends in detection probabilities in relation to vegetation conditions; and (6) review procedures for periodically assessing possible intervening factors that may be affecting YBCU detections within and among conservation areas.
+
+
+F10.01.02
+Develop annual work plan, including allocation of LCR MSCP resources
+Implementation Step F10.01.02 uses the results of Step F10.01.01 to establish the annual work plan for Objective F10.01, including methods for survey site selection, data collection, data analysis, quality assurance, and documentation. The step minimally involves the following six activities: (1) Update procedures for selecting locations for survey if/as needed; (2) update plan for field operations and data collection if/as needed; (3) update procedures for datafile compilation if/as needed; (4) update procedures for initial tabulation of field results if/as needed; (5) update procedures for periodically assessing possible trends in detection probabilities in relation to vegetation conditions if/as needed; and (6) update procedures for periodically assessing possible intervening factors that may be affecting YBCU detections within and among conservation areas if/as needed.
+
+
+F10.01.03
+Conduct field monitoring operations
+Implementation Step F10.01.03 implements the annual plan for field operations, including equipment maintenance and calibration. The step minimally involves two activities: (1) Maintain and calibrate field data collection equipment and software; and (2) conduct field survey operations.
+
+
+F10.01.04
+Compile raw field data and document metadata
+Implementation Step F10.01.04 checks the integrity of the raw field datafiles from Step F10.01.03, compiles them into the necessary data file structure for the field season and prepares a metadata file for the resulting raw master data file. The step minimally involves the following three activities: (1) Check datafile integrity for each survey event; (2) compile all survey datafiles for the season including both call-playback data and data on vegetation, environmental, and survey conditions; (3) prepare metadata documentation.
+
+
+F10.01.05
+Inspect, assure quality of, and add final field data to cumulative record
+Implementation Step F10.01.05 implements data review and quality assurance procedures for the data compiled in Step F10.01.04, assesses possible needs for improving data review and quality assurance procedures in the next cycle of Steps F10.01.03 and F10.01.04 and adds the final data to cumulative project archives. The step minimally involves the following three activities: (1) Conduct data review and quality assurance for field operations record for each survey; (2) conduct data review and quality assurance for the record of observations for each survey; and (3) add final approved data to cumulative project archives.
+
+
+F10.01.06
+Use current-year call-playback data to estimate YBCU detection probabilities, habitat use, colonization, and extinction probabilities within and among conservation areas
+Implementation Step F10.01.06 generates tabular summaries of the raw observations of YBCU detections versus non-detections both overall and for each conservation surveyed in the current year, estimates detection probabilities and other variables, and tabulates the relationship between detection probabilities and habitat and environmental conditions, implements routine procedures for quality assurance for the results, and documents the metadata for the results. The step minimally involves the following three activities: (1) Tabulate descriptive statistics; (2) estimate detection probabilities, habitat use, colonization, and extinction probabilities within and among conservation areas from the year's survey results; (3) apply quality assurance procedure to these results; and (4) document metadata for the tabulation results.
+
+
+F10.01.07
+Use cumulative call-playback data periodically to assess possible trends in detection probabilities, habitat use, colonization, and extinction probabilities within and among conservation areas in relation to possible trends in vegetation conditions
+Implementation Step F10.01.07 periodically (e.g., every five years) (a) compiles the cumulative record of all LCR MSCP call-playback surveys of YBCU presence/absence and habitat associations under Projects D05, D06, D07, F10 (including from the current monitoring year) that follow or generate data comparable to the current monitoring protocol; and (b) uses this cumulative record to develop or update a statistical model of possible trends in detection probabilities, habitat use, colonization, and extinction probabilities within and among conservation areas in relation to possible trends in vegetation conditions. The step minimally involves the following three activities: (1) Develop or update statistical model; (2) apply quality assurance procedure to model results; and (3) document model metadata. Activity in this step provides the information for tracking Milestone F10.01.01.
+
+
+F10.01.08
+Use cumulative call-playback data periodically to assess possible intervening factors that may be affecting YBCU detections within and among conservation areas
+Implementation Step F10.01.08 periodically (e.g., every five years) (a) compiles the cumulative record of all LCR MSCP call-playback surveys of YBCU presence/absence and possible intervening factors under Projects D05, D06, D07, F10 (including from the current monitoring year) that follow or generate data comparable to the current monitoring protocol; and (b) uses this cumulative record to develop or update a statistical model of the effects of possible intervening factors on YBCU detections within and among conservation areas. Possible intervening factors to assess include seasonal and diel timing, observer, weather, and background noise. The step minimally involves the following three activities: (1) Develop or update statistical model; (2) apply quality assurance procedure to model results; and (3) document model metadata. Activity in this step provides the information for tracking Milestone F10.01.02.
+
+
+F10.01.09
+Reporting
+Implementation Step F10.01.09 summarizes and documents the results of Steps F10.01.03-F10.01.08, including implications for the next annual cycle of work under Objective F10.01. The step minimally involves the following seven activities: (1) Prepare annual report section on field operations; (2) prepare annual report section on compilation of raw field data; (3) prepare annual report section on quality assurance for field data; (4) prepare annual report section on tabulations and estimate YBCU detection probabilities, habitat use, colonization, and extinction probabilities within and among conservation areas; (5) periodically prepare a report section on possible trends in detection probabilities, habitat use, colonization, and extinction probabilities within and among conservation areas in relation to possible trends in vegetation conditions; (6) periodically prepare a report section on possible intervening factors that may be affecting YBCU detections within and among conservation areas; and (7) prepare annual report recommendations for next annual cycle of project.
+
+
+
+Proposed 2026 Activities
+
+
+Pertinent Reports
+This report was generated on 2025-06-27 by  
+Work Task ID
+F98
+
+Work Task Title
+Razorback Sucker and Bonytail Stock Assessment
+
+Contact
+Stolberg, Jim
+
+
+
+Start Date
+None
+
+Expected Duration
+None
+
+Long-Term Goal
+test11; test22; test33; 
+
+Conservation Measures
+
+
+Location
+TST, Test; TST, Test; WERT, wertwert; 
+
+Purpose
+
+
+
+
+
+Connections with Other Work Tasks (Past and Future)
+
+None
+This is a maximum length output title blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+

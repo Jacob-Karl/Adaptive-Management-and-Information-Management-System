@@ -1,0 +1,62 @@
+This report was generated on 2025-04-03 by  
+This is an example of a custom template:
+F98 Razorback Sucker and Bonytail Stock Assessment
+
+I can make this stuff say whatever I want F98
+
+Cuttlefish (Work Task) ID
+F98
+
+Boat (Work Task) Name
+Razorback Sucker and Bonytail Stock Assessment
+
+Project Plan Version Date
+Thu Apr  3 13:44:33 2025
+
+Project Lead
+Stolberg, Jim
+
+Project Plan Contributors
+%project_contributors%
+
+Project Status
+Open
+
+Project Type
+Fish Augmentation
+
+Project Start Date
+None
+
+Project End Date
+None
+
+Project Summary
+testUser text. test test 123 321 test test this is lead   user making a change lead user making another change
+
+Project Background
+testUser text. 321 test test
+
+Associated Species and Cover Type Targets
+RASU BONY BLRA CLNB 
+
+Associated Conservation Measures
+
+
+Associated Locations
+TST TST WERT 
+
+Associated Ecological Goals
+Test Test2 Test3 Test4 
+
+Other Affected Conservation Measures
+%project_otherConMeas%
+
+Other Affected Covered and Evaluation Species
+%project_otherSpeComs%
+
+Related Projects
+%foreach project_relatedProject%
+	%relatedProject_name%
+%endfor%
+

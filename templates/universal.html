@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>AMIMS</title>
+   	<!-- Bootstrap core CSS -->
+	<Link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <Link href="../static/css/bootsrap.min.css" rel="stylesheet">
+	<!--<Link href="{% static 'css/bootsrap.min.css' %}" rel="stylesheet">-->
+	<Link href="{% static 'css/bootsrap-grid.min.css' %}" rel="stylesheet">
+	<Link href="{% static 'css/bootsrap-reboot.min.css' %}" rel="stylesheet">
+	<Link href="{% static 'css/bootsrap-utilities.min.css' %}" rel="stylesheet">
+
+	<style>
+		html	{
+			width: 100%;
+		}
+		body {
+			background-color: #F8F8F8;
+			width: 100%;
+		}
+		.AMIMS-header {
+			background-color: #00415D;
+			height: 100px;
+			display: flex;
+			align-items: center;
+			position: relative;
+		}
+		.title {
+			color: #FFFFFF;
+			font: bold 75px arial;
+			margin-left: 10 px;
+			position: absolute;
+			left: 0;
+			padding: 10px;
+		}
+		.Logo{
+			margin-right: 10px;
+			position: absolute;
+			right: 0;
+			height: 75px;
+			width: 177px;
+		}
+        .center {
+            margin: auto;
+            width: 50%;
+        }
+		.row{
+			/*display:flex;*/
+
+		}
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #CD9157;
+		}
+
+		li {
+			float: left;
+		}
+
+		li a {
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 10px 35px;
+			text-decoration: none;
+		}
+
+		li a:hover {
+			background-color: #c47d3b;
+		}
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.4);
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+		.Form{
+			margin: auto;
+			width: 60%;
+			padding: 10px;
+			font: arial;
+		}
+		.Button{
+			margin: 25px 25%;
+			width: 50%;
+			background-color: #CD9157;
+			border: none;
+			color: white;
+			padding: 10px 180px;
+			width:100%;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font: bold 35px arial;
+		}
+		.card-title{
+			font-size:25px;
+			text-overflow: clip;
+			white-space: wrap;
+			overflow: hidden;
+		}
+		.card-text{
+			font-size:20px;
+			text-overflow: clip;
+			white-space: wrap;
+			overflow: hidden;
+		}
+		footer {
+  			background-color: #00415D;
+			height: 200px;
+		}
+		{% block style_block %}
+		{% endblock %}
+	</style>
+</head>
+
+<body>
+	<header class="AMIMS-header" >
+		<h1 class="title">
+			AMIMS
+		</h1>
+		<img class="Logo" src="{% static 'MSCP_logo.png' %}" alt="MSCP Logo" width="1460" height="600">
+	</header>
+
+	<div>
+		<ul>
+			<li><a href="{% url 'projects:hub' %}">Project Hub</a></li>
+			<li><a href="{% url 'scopes:hub' %}">Scope Hub</a></li>
+			<li><a href="{% url 'user_functions:settings' user.id %}">Settings</a></li>
+			{% if user.groups.all.0.name == 'Admin' or  user.groups.all.0.name == 'Contributor'  %}
+			<li><a href="{% url 'reports:hub' %}">Report Hub</a></li>
+			{% endif %}
+			{% if user.groups.all.0.name == 'Admin' or  user.groups.all.0.name == 'Contributor' %}
+			<li><a href="{% url 'user_functions:user_hub' %}">User Hub</a></li>
+			{% endif %}
+			{% if user.groups.all.0.name == 'Admin' %}
+			<li><a href="{% url 'user_functions:invitation' "nopassword" %}">User Invitation</a></li>
+			{% endif %}
+			{% if user.groups.all.0.name == 'Admin' %}
+			<li><a href="{% url 'admin:index' %}">Admin</a></li>
+			{% endif %}
+		</ul>
+	</div>		          
+	{% block body_block %}
+	{% endblock %}
+	<footer>
+
+	</footer>
+	<!-- Bootstrap Scripts -->
+	<!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>-->
+	<script type="text/javascript" src="{% static 'js/bootsrap.bundle.min.js' %}">
+	{% block script_block %}
+	{% endblock %}
+	</script>
+
+</body>
+
+</html>

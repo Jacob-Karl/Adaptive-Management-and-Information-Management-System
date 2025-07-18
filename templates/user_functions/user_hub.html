@@ -1,0 +1,120 @@
+﻿{% extends 'universal.html' %}
+{% load static %}
+
+{% block style_block %}
+	.AIMS-header {
+		background-color: #00415D;
+		height: 100px;
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	.title {
+		color: #FFFFFF;
+		font: bold 75px arial;
+		margin-left: 10 px;
+		position: absolute;
+		left: 0;
+		padding: 10px;
+	}
+	.Logo{
+		margin-right: 10px;
+		position: absolute;
+		right: 0;
+		height: 75px;
+		width: 177px;
+	}
+	.Button{
+		margin-top: 25px;
+		margin-bottom: 25px;
+		background-color: #CD9157;
+		border: none;
+		color: white;
+		padding: 10px 180px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font: bold 15px arial;
+	}
+	.Filler{
+		margin-top: 25px;
+		margin-bottom: 25px;
+	}
+	table{
+		width: 100%;
+	}
+	footer {
+  		background-color: #00415D;
+		height: 100px;
+	}
+	tr:nth-child(even) {background-color: #f0f0f0;}
+{% endblock %}
+
+{% block title_block %}
+Register
+{% endblock %}
+
+{% block body_block %}
+
+<table>
+	<tr>
+		<th>|</th>
+		<th>Name</th>
+		<th>Email</th>
+		{% if user.groups.all.0.name == 'Admin' %}
+		<th>Account Status</th>
+		{% endif %}
+		<th>Change Status</th>
+	</tr>
+    {% for item in users %}
+	<tr>
+		<td>|</td>
+		<td>{{ item.Person.FirstName }} {{ item.Person.LastName }}</td>
+		<td>{{ item.User.email }}</td>
+		<td id="status" onload="setStatus()">{{ item.User.is_active}}</td>
+		{% if user.groups.all.0.name == 'Admin' %}
+		<td>
+			<form action="{% url 'user_functions:user_hub'%}" method="post">
+				{% csrf_token %}
+				<button class="btn btn-danger" id={{ item.User }} type="submit" name="submit" value={{ item.User }}>
+					Change Account Status
+				</button>
+			</form>
+		</td>
+		{% endif %}
+		<td>
+			<a class="btn btn-primary" href="{% url 'user_functions:user_changelog' item.id %}" type="submit" name="submit">
+				Changelog
+			</a>
+		</td>
+	</tr>
+    {% endfor %}
+</table>
+
+<footer>
+</footer>
+<script type="text/javascript" defer>
+
+function setStatus(){
+
+	var table = document.getElementsByTagName('table')[0];
+	var rows = table.rows;
+	for (var i = 1; i < rows.length; i++) {
+		var rowText = rows[i].childNodes[5].innerText;
+
+		if(rowText.includes('True')) {
+			rows[i].childNodes[5].textContent = "Active";
+		} else {
+			rows[i].childNodes[5].textContent = "Deactive";
+		}
+	}
+}
+
+window.onload = setStatus();
+
+function setDeactive(){
+}
+
+</script>
+	
+{% endblock %}

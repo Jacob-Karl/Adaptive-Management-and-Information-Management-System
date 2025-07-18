@@ -1,0 +1,393 @@
+﻿{% extends 'universal.html' %}
+{% load static %}
+
+{% block style_block %}
+	.page_title{
+		margin-left: 40%;
+	}
+	.Add{
+	}
+	.card{
+		padding-left: 10px;
+	}
+	.Species_Selector{
+		background-color: #CD9157;
+		color: #FFFFFF;
+		text-align: center;
+		padding: 10px 10px;
+		border: 1px #777777;
+		border-style: hidden solid hidden hidden;
+	}
+	.Location_Selector{
+		background-color: #00415D;
+		color: #FFFFFF;
+		text-align: center;
+		padding: 10px 10px;
+		border: 1px #777777;
+		border-style: hidden solid hidden solid;
+	}
+	.ConMea_Selector{
+		background-color: #00415D;
+		color: #FFFFFF;
+		text-align: center;
+		padding: 10px 10px;
+		border: 1px #777777;
+		border-style: hidden solid hidden solid;
+	}
+	.Goal_Selector{
+		background-color: #00415D;
+		color: #FFFFFF;
+		text-align: center;
+		padding: 10px 10px;
+		border: 1px #777777;
+		border-style: hidden hidden hidden solid;
+	}
+    .center {
+        margin: auto;
+        width: 50%;
+    }
+    .center-list {
+        margin: auto;
+        width: 80%;
+    }
+{% endblock %}
+
+
+{% block title_block %}
+Scope Hub
+{% endblock %}
+
+{% block body_block %}
+<div class="center">
+	<br>
+	<h3 class="page_title">
+		Scope Hub
+	</h3>
+	<br>
+</div>
+
+<div>
+
+	<div class="container">
+		<div class="row g-0">
+			<div class="col">
+				<div id="Species_Selector" class="Species_Selector" onclick="speciesCollapse()">
+					Species/Communities
+				</div>
+			</div>
+			<div class="col">
+				<div id="Location_Selector" class="Location_Selector" onclick="locationCollapse()">
+					Locations
+				</div>
+			</div>
+			<div class="col">
+				<div id="ConMea_Selector" class="ConMea_Selector" onclick="conMeaCollapse()">
+					Conservation Measures
+				</div>
+			</div>
+			<div class="col">
+				<div id="Goal_Selector" class="Goal_Selector" onclick="goalCollapse()">
+					Goals
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="center-list">
+		<div id="Species" style="display:block">
+			<div style="margin-left:60%;">
+				<form action="">
+					<select name="species_fields" id="species_fields">
+						<option value="TargetType">Target Type</option>
+						<option value="Acronym">Acronym</option>
+						<option value="CommonName">Common Name</option>
+						<option value="ScientificName">Scientific Name</option>
+						<option value="ProjectType">Project Type</option>
+						<option value="ITISTSN">ITISTSN</option>
+						<option value="CommunityName">Community Name</option>
+						<option value="Synonyms">Synonyms</option>
+						<option value="Comments">Comments</option>
+					</select>
+					<input type="text" name="species_search" placeholder="Search" value="">
+					<input type="submit" value="Search">
+				</form>
+			</div>
+
+
+			<div class="row pt-2">
+				{% for speCom in SpeciesCommunity %}
+				<div class="card col-sm-4 col-md-4 col-lg-4 " style="max-width: 340px; margin-top: 5px;">
+					<a href="{% url 'scopes:speCom' speCom.id %}" class="mb-2">
+						<div class="card-body">
+							<div class="row">
+								<div class="col-md-4" style="min-width: 115px; min-height: 115px;">
+									<img class="card-img" src="{{ speCom.Picture.url }}" alt="connect" width="115" height="115">
+								</div>
+
+								<div class="col-md-6">
+									<div class="card-body" style="margin: 0px;">
+										<h3 class="card-title" style="color: #000000;">{{ speCom.Acronym }}</h3>
+										<h5 class="card-text" style="color: #000000;">{{ speCom.CommonName }}</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<br>
+				{% endfor %}
+				<br>
+				<div class="Add">
+					<a href="{% url 'scopes:speCom' 0 %}" class="card" style="width: 350px; background-color: #00415D; margin: 10px;">
+						<div class="card-body" style="margin: 10px;">
+							<h5 class="card-title" style="text-decoration: none; color: #FFFFFF; align-items: center;"> Add New Species </h5>
+						</div>
+					</a>
+				</div>
+			</div>
+			<br>
+		</div>
+
+		<div id="Locations" style="display:none">
+			<div style="margin-left:60%;">
+				<form action="">
+					<select name="location_fields" id="location_fields">
+						<option value="LocationCode">Location Code</option>
+						<option value="LocationName">Location Name</option>
+						<option value="Description">Description</option>
+						<option value="SpatialLayer">Spatial Layer</option>
+						<option value="SpatialID">Spatial ID</option>
+					</select>
+					<input type="text" name="location_search" placeholder="Search" value="">
+					<input type="submit" value="Search">
+				</form>
+			</div>
+
+
+			<div class="row pt-2">
+				{% for loc in Location %}
+				<div class="card col-sm-4 col-md-4 col-lg-4" style="max-width: 340px; margin-top: 5px;">
+					<a href="{% url 'scopes:location' loc.id %}" class="mb-2">
+						<div class="card-body">
+							<div class="row">
+								<div class="col-md-4" style="min-width: 115px; min-height: 115px;">
+									<img class="card-img" src="{% static 'noun_Mountain_70698.png' %}" alt="connect" width="115" height="115">
+								</div>
+								<div class="col-md-6">
+									<div class="card-body" style="margin: 0px;">
+										<h3 class="card-title">{{ loc.LocationCode }}</h3>
+										<h5 class="card-text">{{ loc.LocationName }}</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<br>
+				{% endfor %}
+				<div class="Add">
+					<a href="{% url 'scopes:location' 0 %}" class="card" style="width: 350px; background-color: #00415D; margin: 10px;">
+						<div class="card-body">
+							<h5 class="card-title" style="text-decoration: none; color: #FFFFFF; align-items: center;"> Add New Location </h5>
+						</div>
+					</a>
+				</div>
+			</div>
+			<br>
+		</div>
+
+		<div id="Con_Measure" style="display:none">
+			<div style="margin-left:60%;">
+				<form action="">
+					<select name="conMeas_fields" id="conMeas_fields">
+						<option value="CMCode">Conservation Measure Code</option>
+						<option value="CMDescription">Conservation Measure Description</option>
+						<option value="SppHab">Spatial Habitat</option>
+						<option value="CMType">Conservation Measure Type</option>
+						<option value="CMSummary">Conservation Measure Summary</option>
+						<option value="Status">Status</option>
+					</select>
+					<input type="text" name="conMeas_search" placeholder="Search" value="">
+					<input type="submit" value="Search">
+				</form>
+			</div>
+
+
+			<div class="row pt-2">
+				{% for conMeas in ConservationMeasure %}
+				<div class="card col-sm-4 col-md-4 col-lg-4" style="max-width: 340px; margin-top: 5px;">
+					<a href="{% url 'scopes:conMeasure' conMeas.id %}" class="mb-2">
+						<div class="card-body">
+							<div class="row">
+								<div class="col-md-4" style="min-width: 115px; min-height: 115px;">
+									<img class="card-img" src="{% static 'noun_measure_3170678.png' %}" alt="connect" width="115" height="115">
+								</div>
+								<div class="col-md-6">
+									<div class="card-body" style="margin: 0px;">
+										<h3 class="card-title">{{ conMeas.CMCode }}</h3>
+										<h5 class="card-text">{{ speCom.CommonName }}</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<br>
+				{% endfor %}
+				<div class="Add">
+					<a href="{% url 'scopes:conMeasure' 0 %}" class="card" style="width: 350px; background-color: #00415D; margin: 10px;">
+						<div class="card-body">
+							<h5 class="card-title" style="text-decoration: none; color: #FFFFFF; align-items: center;"> Add New Conservation Measure </h5>
+						</div>
+					</a>
+				</div>
+			</div>
+			<br>
+		</div>
+
+		<div id="Goals" style="display:none">
+			<div style="margin-left:60%;">
+				<form action="">
+					<select name="goal_fields" id="goal_fields">
+						<option value="GoalName">Goal Name</option>
+						<option value="GoalType">Goal Type</option>
+						<option value="GoalDescription">Goal Description</option>
+					</select>
+					<input type="text" name="goal_search" placeholder="Search" value="">
+					<input type="submit" value="Search">
+				</form>
+			</div>
+
+
+			<div class="row pt-2">
+				{% for goal in Goal %}
+				<div class="card col-sm-4 col-md-4 col-lg-4" style="max-width: 340px; margin-top: 5px;">
+					<a href="{% url 'scopes:goal' goal.id %}" class="mb-2">
+						<div class="card-body">
+							<div class="row">
+								<div class="col-md-4" style="min-width: 115px; min-height: 115px;">
+									<img class="card-img" src="{% static 'noun_Target_3805890.png' %}" alt="connect" width="115" height="115">
+								</div>
+								<div class="col-md-6">
+									<div class="card-body" style="margin: 0px;">
+										<h3 class="card-title">{{ goal.GoalName }}</h3>
+										<h5 class="card-text">{{ goal.GoalType }}</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<br>
+				{% endfor %}
+				<div class="Add">
+					<a href="{% url 'scopes:goal' 0 %}" class="card" style="width: 350px; background-color: #00415D; margin: 10px;">
+						<div class="card-body">
+							<h5 class="card-title" style="text-decoration: none; color: #FFFFFF; align-items: center;"> Add New Goal </h5>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+
+		function speciesCollapse() {
+			var species = document.getElementById("Species");
+			var location = document.getElementById("Locations");
+			var conMea = document.getElementById("Con_Measure");
+			var goal = document.getElementById("Goals");
+
+			var species_selector = document.getElementById("Species_Selector");
+			var location_selector = document.getElementById("Location_Selector");
+			var conMea_selector = document.getElementById("ConMea_Selector");
+			var goal_selector = document.getElementById("Goal_Selector");
+
+
+			species.style.display = "block";
+			location.style.display = "none";
+			conMea.style.display = "none";
+			goal.style.display = "none";
+
+			species_selector.style.backgroundColor = "#CD9157";
+			location_selector.style.backgroundColor = "#00415D";
+			conMea_selector.style.backgroundColor = "#00415D";
+			goal_selector.style.backgroundColor = "#00415D";
+
+		}
+
+		function locationCollapse() {
+			var species = document.getElementById("Species");
+			var location = document.getElementById("Locations");
+			var conMea = document.getElementById("Con_Measure");
+			var goal = document.getElementById("Goals");
+
+			var species_selector = document.getElementById("Species_Selector");
+			var location_selector = document.getElementById("Location_Selector");
+			var conMea_selector = document.getElementById("ConMea_Selector");
+			var goal_selector = document.getElementById("Goal_Selector");
+
+
+			species.style.display = "none";
+			location.style.display = "block";
+			conMea.style.display = "none";
+			goal.style.display = "none";
+
+			species_selector.style.backgroundColor = "#00415D";
+			location_selector.style.backgroundColor = "#CD9157";
+			conMea_selector.style.backgroundColor = "#00415D";
+			goal_selector.style.backgroundColor = "#00415D";
+
+		}
+
+		function conMeaCollapse() {
+			var species = document.getElementById("Species");
+			var location = document.getElementById("Locations");
+			var conMea = document.getElementById("Con_Measure");
+			var goal = document.getElementById("Goals");
+
+			var species_selector = document.getElementById("Species_Selector");
+			var location_selector = document.getElementById("Location_Selector");
+			var conMea_selector = document.getElementById("ConMea_Selector");
+			var goal_selector = document.getElementById("Goal_Selector");
+
+
+			species.style.display = "none";
+			location.style.display = "none";
+			conMea.style.display = "block";
+			goal.style.display = "none";
+
+			species_selector.style.backgroundColor = "#00415D";
+			location_selector.style.backgroundColor = "#00415D";
+			conMea_selector.style.backgroundColor = "#CD9157";
+			goal_selector.style.backgroundColor = "#00415D";
+
+		}
+
+		function goalCollapse() {
+			var species = document.getElementById("Species");
+			var location = document.getElementById("Locations");
+			var conMea = document.getElementById("Con_Measure");
+			var goal = document.getElementById("Goals");
+
+			var species_selector = document.getElementById("Species_Selector");
+			var location_selector = document.getElementById("Location_Selector");
+			var conMea_selector = document.getElementById("ConMea_Selector");
+			var goal_selector = document.getElementById("Goal_Selector");
+
+
+			species.style.display = "none";
+			location.style.display = "none";
+			conMea.style.display = "none";
+			goal.style.display = "block";
+
+			species_selector.style.backgroundColor = "#00415D";
+			location_selector.style.backgroundColor = "#00415D";
+			conMea_selector.style.backgroundColor = "#00415D";
+			goal_selector.style.backgroundColor = "#CD9157";
+
+		}
+
+	</script>
+	{% endblock %}

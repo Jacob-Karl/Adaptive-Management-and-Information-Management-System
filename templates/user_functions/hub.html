@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>AMIMS</title>
+   	<!-- Bootstrap core CSS -->
+	<Link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <Link href="../static/css/bootsrap.min.css" rel="stylesheet">
+	<!--<Link href="{% static 'css/bootsrap.min.css' %}" rel="stylesheet">-->
+	<Link href="{% static 'css/bootsrap-grid.min.css' %}" rel="stylesheet">
+	<Link href="{% static 'css/bootsrap-reboot.min.css' %}" rel="stylesheet">
+	<Link href="{% static 'css/bootsrap-utilities.min.css' %}" rel="stylesheet">
+</head>
+
+<style>
+	.AMIMS-header {
+		background-color: #00415D;
+		height: 100px;
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	.title {
+		color: #FFFFFF;
+		font: bold 75px arial;
+		margin-left: 10 px;
+		position: absolute;
+		left: 0;
+		padding: 10px;
+	}
+	.Logo{
+		margin-right: 10px;
+		position: absolute;
+		right: 0;
+		height: 75px;
+		width: 177px;
+	}
+	.Button{
+		margin-top: 25px;
+		margin-bottom: 25px;
+		background-color: #CD9157;
+		border: none;
+		color: white;
+		padding: 10px 180px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font: bold 15px arial;
+	}
+	.Filler{
+		margin-top: 25px;
+		margin-bottom: 25px;
+	}
+	footer {
+  		background-color: #00415D;
+		height: 200px;
+	}
+</style>
+
+{% block body_block %}
+<div class="AMIMS-header">
+	<h1 class="title">
+		AMIMS
+	</h1>
+	<img class="Logo" src="{% static 'MSCP_logo.png' %}" alt="MSCP Logo" width="1460" height="600">
+</div>
+<br />
+<div class="row d-flex justify-content-center" style="grid-column-gap: 10px; grid-row-gap: 10px;">
+
+	<div class="card mb-3" style="max-width: 540px;">
+		<a href="{% url 'scopes:hub' %}">
+			<div class="row">
+				<div class="col-md-4">
+					<img src="{% static 'noun_Fish_2156218.png' %}" class="card-img" alt="connect" href="{% url 'scopes:hub' %}">
+				</div>
+				<div class="col-md-8">
+					<div class="card-body">
+						<h5 class="card-title" style="color: #000000;">Scope Hub</h5>
+						<p class="card-text" style="color: #000000;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id elit nec nibh fringilla gravida.</p>
+					</div>
+				</div>
+			</div>
+		</a>
+	</div>
+
+
+	<br>
+
+	<div class="card mb-3" style="max-width: 540px;">
+		<a href="{% url 'projects:hub' %}">
+			<div class="row no-gutters">
+				<div class="col-md-4">
+					<img src="{% static 'noun_Book_2342158.png' %}" class="card-img" alt="connect" href="{% url 'scopes:hub' %}">
+				</div>
+				<div class="col-md-8">
+					<div class="card-body">
+						<h5 class="card-title" style="color: #000000;">Project Hub</h5>
+						<p class="card-text" style="color: #000000;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id elit nec nibh fringilla gravida.</p>
+					</div>
+				</div>
+			</div>
+		</a>
+	</div>
+
+
+	<br>
+
+	<div class="card mb-3" style="max-width: 540px;">
+		<a href="{% url 'user_functions:settings' user.id %}">
+			<div class="row no-gutters">
+				<div class="col-md-4">
+					<img src="{% static 'noun-gear-2460563.png' %}" class="card-img" alt="connect" href="{% url 'scopes:hub' %}">
+				</div>
+				<div class="col-md-8">
+					<div class="card-body">
+						<h5 class="card-title" style="color: #000000;">Settings</h5>
+						<p class="card-text" style="color: #000000;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id elit nec nibh fringilla gravida.</p>
+					</div>
+				</div>
+			</div>
+		</a>
+	</div>
+
+	<br>
+	{% if user.groups.all.0.name == 'Admin' or  user.groups.all.0.name == 'Contributor' %}
+	<div class="card mb-3" style="max-width: 540px;">
+		<a href="{% url 'reports:hub' %}">
+			<div class="row no-gutters">
+				<div class="col-md-4">
+					<img src="{% static 'noun_measure_3170678.png' %}" class="card-img" alt="connect" href="{% url 'scopes:hub' %}">
+				</div>
+				<div class="col-md-8">
+					<div class="card-body">
+						<h5 class="card-title" style="color: #000000;">Report Hub</h5>
+						<p class="card-text" style="color: #000000;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id elit nec nibh fringilla gravida.</p>
+					</div>
+				</div>
+			</div>
+		</a>
+	</div>
+
+	<br>
+	{% endif %}
+	{% if user.groups.all.0.name == 'Admin' or  user.groups.all.0.name == 'Contributor' %}
+	<div class="card mb-3" style="max-width: 540px;">
+		<a href="{% url 'user_functions:user_hub' %}">
+			<div class="row no-gutters">
+				<div class="col-md-4">
+					<img src="{% static 'noun-users-363173.png' %}" class="card-img" alt="connect" href="{% url 'scopes:hub' %}">
+				</div>
+				<div class="col-md-8">
+					<div class="card-body">
+						<h5 class="card-title" style="color: #000000;">User Hub</h5>
+						<p class="card-text" style="color: #000000;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id elit nec nibh fringilla gravida.</p>
+					</div>
+				</div>
+			</div>
+		</a>
+	</div>
+
+	<br>
+	{% endif %}
+	{% if user.groups.all.0.name == 'Admin' %}
+	<div class="card mb-3" style="max-width: 540px;">
+		<a href="{% url 'user_functions:invitation' "nopassword" %}">
+			<div class="row no-gutters">
+				<div class="col-md-4">
+					<img src="{% static 'noun-letter-1317901.png' %}" class="card-img" alt="connect" href="{% url 'scopes:hub' %}">
+				</div>
+				<div class="col-md-8">
+					<div class="card-body">
+						<h5 class="card-title" style="color: #000000;">User Invitation</h5>
+						<p class="card-text" style="color: #000000;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id elit nec nibh fringilla gravida.</p>
+					</div>
+				</div>
+			</div>
+		</a>
+	</div>
+
+	<br>
+	{% endif %}
+	{% if user.groups.all.0.name == 'Admin' %}
+	<div class="card mb-3" style="max-width: 540px;">
+		<a href="{% url 'admin:index' %}">
+			<div class="row no-gutters">
+				<div class="col-md-4">
+					<img src="{% static 'noun-shield-6210232.png' %}" class="card-img" alt="connect" href="{% url 'scopes:hub' %}">
+				</div>
+				<div class="col-md-8">
+					<div class="card-body">
+						<h5 class="card-title" style="color: #000000;">Admin</h5>
+						<p class="card-text" style="color: #000000;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id elit nec nibh fringilla gravida.</p>
+					</div>
+				</div>
+			</div>
+		</a>
+	</div>
+
+	{% endif %}
+</div>
+<div class="d-flex justify-content-center">
+	<a href= "{% url 'user_functions:logout' %}" class="Button"> Logout </a>
+</div>
+
+<footer>
+
+</footer>
+	
+{% endblock %}

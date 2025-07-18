@@ -1,0 +1,524 @@
+LCR MSCP Adaptive Management Project Plan:
+F99, Reptile and Amphibian Monitoring at Conservation Areas
+PROJECT: F99
+Work Task ID
+F99
+Project (Work Task) Name
+Reptile and Amphibian Monitoring at Conservation Areas
+Project Plan Version Date
+2022-08-26
+Project Lead
+Sabin, Laura
+Project Status
+Open
+Project Type
+Post-Development Monitoring
+Project Start Date
+2018
+Project End Date
+2055
+Project Summary
+Project F08 monitors the presence of one covered species, the northern Mexican gartersnake (Thamnophis eques megalops, NMGS) and two LCR MSCP evaluation species, the Colorado River toad (Bufo = Incilius alvarius, CRTO) and lowland leopard frog (Rana = Lithobates yavapaiensis, LLFR) in LCR MSCP conservation areas with created marsh habitat and adjacent cottonwood-willow habitat. The monitored locations include Beal Lake Conservation Area (BLCA) in Havasu National Wildlife Refuge, and Planet Ranch in the Bill Williams River valley and eventually may include other conservation areas. The amphibians are not only LCR MSCP evaluation species but also prey for the gartersnake. The project began in FY2018 and will continue to FY2055. The primary purpose of the project is to support adaptive management of 1,496 acres of habitat created and/or maintained for NMGS under Conservation Measure NMGS1, consisting of 512 acres of marsh habitat and 984 acres of adjacent cottonwood-willow habitat. The LCR MSCP also recognizes that additional habitat for NMGS may be provided by marsh vegetation that becomes established along margins of 360 acres of backwaters that will be created for the benefit of other covered species; and that habitat created for NMGS reciprocally will benefit these other covered species. These other covered species include the Yuma clapper rail (Rallus longirostris yumanensis, CLRA), razorback sucker (Xyrauchen texanus, RASU), and bonytail (Gila elegans, BONY). A secondary purpose of Project F08 is to help the LCR MSCP ensure that the creation and management of habitat for other covered species does not adversely affect NMGS, which is listed as Threatened under the U.S. Endangered Species Act. Project F08 formally calls for the LCR MSCP to conduct monitoring at BLCA, Planet Ranch, and possibly other conservation areas to address five conservation measures: (1) NMGS1 (create 1,496 acres of habitat for NMGS); (2) NMGS2 (implement measures to avoid/minimize take of NMGS); (3) MRM2 (monitor and adaptively manage created habitat for NMGS); (4) CRTO1 (surveys to assess distribution, habitat affinity, limiting factors); and (5) LLFR1 (surveys to assess distribution, habitat affinity, limiting factors). Secondarily, Project F08 provides the LCR MSCP with information to help it address Conservation Measures CRTO2 and LLFR2 (protect existing occupied habitat) and CRTO3 and LLFR3 (research to establish in unoccupied habitat). The adaptive management cycle for Project F08 consists of reviewing results and methods from the previous year, reviewing the results of related monitoring and conservation efforts by other institutions (USFWS, AGFD, NPS, Northern Arizona University), planning for the current year including monitoring design (where and when), data collection and quality assurance, statistical analysis, and reporting of results.
+Project Background
+Project F08 addresses monitoring for three species at LCR MSCP conservation areas: the northern Mexican gartersnake (Thamnophis eques megalops, NMGS), Colorado River toad (Bufo = Incilius alvarius, CRTO), and lowland leopard frog (Rana = Lithobates yavapaiensis, LLFR). The LCR MSCP Habitat Conservation Plan (HCP) approved in 2004 (LCR MSCP 2004) recognized the two amphibians as evaluation species. However, the HCP but did not address the gartersnake, which at that time was thought to have disappeared from the LCR valley decades earlier (Ohmart et al. 1988, Sabin 2018). The LCR MSCP initiated Project D12 in 2010 to survey system wide for CRTO and LLFR, both along the LCR mainstem valley and along the Bill Williams River valley downstream from Alamo Dam. The LCR MSCP then initiated Project C62 in 2014 for two purposes: (1) to characterize CRTO and LLFR habitat, and (2) to identify the most cost-effective methods for monitoring the two species. Both projects concluded in 2017. The two projects together produced numerous reports and presentations (Cotten 2011, 2012, 2013, 2013, Cotten and Grandmaison 2013, Cotten and Leavitt 2014a, 2014b, 2016, Cotten et al. 2015, Miller and Leavitt 2015, Miller and Cotten 2016a, 2016b, Leavitt et al. 2017, O’Donnell and Leavitt 2017a, 2017b, 2017c).
+Monitoring under Project D12 in 2012 detected NMGS along the Bill Williams River valley between Planet Ranch and Alamo Dam. This detection occurred during a period of increasing concern about the conservation status of this species in the U.S. within the U.S. Fish and Wildlife Service (USFWS), the Arizona Game and Fish Department (AZGFD) Nongame and Endangered Wildlife Program, and other organizations. The state of Arizona designated the NMGS as a Species of Special Concern in 2012; the state of New Mexico designated it Threatened and a Species of Greatest Conservation Need in 2013; and the USFWS in 2013 both designated it as Threatened under the U.S. Endangered Species Act and issued a Proposed Rule for the designation of NMGS Critical Habitat (Arizona Game and Fish Department (AZGFD) 2012, Sabin 2018). In 2015, the LCR MSCP incidentally detected NMGS in Havasu National Wildlife Refuge during system-wide bird surveys, and in succeeding years detected additional NMGS both in Beal Lake Conservation Area (BLCA), part of Havasu National Wildlife Refuge, and again in Planet Ranch during surveys designed specifically to detect NMGS. Consequently, following a resolution from its Steering Committee, the LCR MSCP in 2018 formally asked the USFWS to include the NMGS as one of its covered species. The USFWS approved this request later in 2018 and modified the LCR MSCP permit accordingly (U.S. Fish and Wildlife Service (USFWS) 2018a, 2018b, U.S. Fish and Wildlife Service (USFWS) and Bureau of Reclamation (Reclamation) 2018). The modified permit recognizes decisions by the LCR MSCP Steering Committee to add Conservation Measures NMGS1 and NMGS2 to the HCP (see below) (LCR MSCP 2020a).
+The LCR MSCP initiated Project F08 in 2018 to succeed both Projects C62 and D12. Project F08 focuses on post-development monitoring for NMGS in LCR MSCP conservation areas with known occurrences of NMGS and created marsh habitat with adjacent cottonwood-willow habitat, but also includes post-development monitoring for CRTO and LLFR in these same places. The project calls for monitoring specifically in Planet Ranch and the BLCA but allows for the inclusion of other conservation areas as needed. The LCR MSCP in 2018 also formally adopted conservation measures focused on NMGS, as noted above. Initially, for FY2018, it simply expanded the scope of conservation measure AMM1 (“To the extent practicable, avoid and minimize impacts of implementing the LCR MSCP on existing covered species habitat” (LCR MSCP 2017). Beginning with FY2019, however, the LCR MSCP replaced this with the two new conservation measures specifically focused on NMGS: NMGS1 (“Create 1,496 acres” of NMGS habitat) and NMGS2 (“Implement measures to avoid/minimize take”) (LCR MSCP 2018, 2020a). The LCR MSCP in 2020 formally requested that the USFWS exclude lands within the LCR MSCP implementation area from the designation of NMGS Critical Habitat (LCR MSCP 2020c); and in 2021 the USFWS approved this exclusion in its NMGS Critical Habitat Final Rule (U.S. Fish and Wildlife Service (USFWS) 2021). This exclusion requires the LCR MSCP to maintain NMGS habitat in its conservation areas and avoid or minimize takings of the species or damage to its habitat that might otherwise result from LCR MSCP actions. Project F08 is the primary mechanism through which the LCR MSCP assesses its compliance with these requirements. Project F08 has not yet produced any technical reports; reporting to date consists of summaries in LCR MSCP annual reports (LCR MSCP 2017, 2018, 2019, 2020b, 2021, 2022).
+Project F08 faces inherent challenges in conducting cost-effective monitoring for NMGS, CRTO, and LLFR in a single project. The challenges concern surveying methods rather than geography: The three species are known to occur and reproduce in the same general environmental settings (Cotten 2011, 2012, 2013, 2013, Cotten and Grandmaison 2013, Cotten and Leavitt 2014a, 2014b, 2016, Cotten et al. 2015, Miller and Leavitt 2015, Miller and Cotten 2016a, 2016b, Leavitt et al. 2017, O’Donnell and Leavitt 2017a, 2017b, 2017c, Sabin 2018, O’Donnell et al. 2020, Braun et al. 2020a, 2020b, Johnson and Unnasch 2021). The challenges arise from the fact that each species is monitored most cost-effectively during a different set of seasons with different methods: No one set of seasons and methods works well for all three species. The LCR MSCP therefore must choose between monitoring jointly for all three species using a single but sub-optimal set of methods during a single set of seasons or monitoring separately for each species using the methods and season(s) best for each; or must find a compromise between these two main options. The decision will depend not only on what methods and timing work best or at least well enough for each species but also on what questions the monitoring must answer to help the LCR MSCP address its conservation measures and goals. The following paragraphs summarize the key information bearing on this decision.
+The two most effective tools for monitoring NMGS occurrence and abundance are coverboards and funnel traps, specifically minnow traps (e.g., Boyarski et al. 2019, Greenawalt and Emmons 2021). Surveying with coverboards has the highest likelihood of detections “… during the spring and fall months, to coincide with increased movement patterns before and after the brumation period (a period of sluggishness in winter)” while surveying with minnow traps has the highest likelihood of detections “… during the warmer summer months of the active season to coincide with foraging and movements near water features” (Greenawalt and Emmons 2021). NMGS are difficult to detect in any season and monitoring during their season of greatest activity—and therefore greatest probability of detection—therefore is crucial. However, there may be advantages to placing and checking minnow traps to monitor NMGS additionally “… in spring and fall when snakes are migrating to and from terrestrial overwintering sites [which] may result in the capture of additional larger snakes” (Greenawalt and Emmons 2021). Greenawalt and Emmons (2021) have observed that it can be impractical to place and check minnow traps in deeper water and that the resulting lack of surveying in deeper water during the warmer months may bias survey results against detecting larger adults that are more likely to move through the deeper portions of marshes than are younger, smaller individuals. Monitoring for NMGS environmental deoxyribonucleic acid (eDNA) in water samples may offer an alternative or supplement to monitoring for NMGS with coverboards and minnow traps: The U.S. National Park Service currently (2022) is experimenting with this method in its Sonoran Desert monitoring network (https://www.nps.gov/articles/000/sodn_edna_inventories.htm), the U.S. Geological Survey has experimented with this method for a related gartersnake species (Halstead et al. 2017), and the Washington State University-Goldberg Lab of Spatial Ecology and Conservation Genetics is working on a protocol for NMGS eDNA analysis (https://labs.wsu.edu/goldberglab/edna-assays-and-protocols/).
+In contrast, after evaluating five methods for monitoring adult CRTO and LLFR occurrence in the Bill Williams valley for the LCR MSCP under Project C62—(1) visual encounter surveys (VESs), (2) VESs with an audio broadcast call/response component (VES C/Rs), (3) funnel trap arrays (FTAs), (4) eDNA analysis of water samples, and (5) digital automated recordings (DARs)—AZGFD investigators found the most cost-effective survey method for adult CRTO to be VES C/Rs and DARs and for adult LLFR to be VES C/Rs (Miller and Leavitt 2015, Miller and Cotten 2016a, O’Donnell and Leavitt 2017a, 2017b). Further, the effectiveness of these methods for these two species hinges on the monitoring taking place during their breeding (active calling) periods: March through May and late September through October for LLFR, July through September for CRTO (see also Braun et al. 2020a, 2020b). These time windows are mutually exclusive, although the window(s) for each overlap(s) with at least one of the windows for monitoring NMGS. Additionally, while the AZGFD studies found minnow traps moderately effective for surveying for adult LLFR, they found them ineffective for surveying for adult CRTO. The openings of the minnow traps used in these studies were too small to allow adult CRTO to enter, and the investigators were unable to place the traps at precisely the right times and places to capture CRTO during their limited pulses of activity after monsoon rainfall (O’Donnell and Leavitt 2017a, 2017b).
+At the same time, the AZGFD investigators in these studies under Project C62 noted that FTAs of minnow traps can be combined with VESs to create an effective monitoring approach for both NMGS and at least LLFR (O’Donnell and Leavitt 2017b). The combination is particularly cost-effective because field crews can conduct their VES surveys while walking between minnow traps to check their contents and condition. Separately, the investigators noted with respect to CRTO that “… VESs alone, at 0.62 CCDI [Cost-Corrected Detection Index], were not as cost effective as VES C/Rs [at detecting CRTO] due to the greater labor required; however, in this study they were the most consistently effective means of detecting Colorado River toads” [emphasis added]. Thus, a monitoring design for Project F08 that combines FTAs with VESs but without a C/R or DAR component, and otherwise follows the monitoring procedures followed under Project C62, theoretically could produce monitoring data on all three species backwardly compatible with those under Project C62, as well as compatible with data from other institutions monitoring the same species in the region. Unfortunately, combining FTAs with VESs may not resolve the problem of incompatible time windows for detection noted above.
+Another option for monitoring for LLFR and CRTO might be to focus on trapping their larvae: Funnel traps are effective for monitoring for amphibian larvae (tadpoles) (Richter 1995, Boyarski et al. 2019, Greenawalt and Emmons 2021). Although no publications formally evaluate this idea specifically for LLFR or CRTO, the AZGFD investigations along the Bill Williams valley under LCR MSCP Project C62 (see above) did consider the possibility. The investigators noted that funnel traps to monitor tadpoles advantageously would not need to be deployed to coincide precisely with CRTO breeding events (O’Donnell and Leavitt 2017b). However, they did not capture any CRTO or LLFR larvae in their FTAs, despite observing CRTO larvae in the vicinity of some traps during monitoring operations (Miller and Leavitt 2015, O’Donnell and Leavitt 2017a, 2017b). The suitability of minnow traps for monitoring for either CRTO or LLFR larvae for the LCR MSCP therefore remains unknown. Further, the time windows for surveying for larvae differ between the two species: if breeding has taken place, the two species’ larvae occur shortly after breeding, which takes place at a different time of the year for each species as noted above (e.g., Braun et al. 2020a, 2020b). While the resulting time windows are compatible with monitoring for NMGS, they prohibit monitoring simultaneously for both LLFR and CRTO larvae.
+Relying on FTAs to detect NMGS and either CRTO or LLFR would pose further challenges. Minnow traps can be left in place for weeks at a time but must be checked frequently to count, release, and minimize harm to trapped individuals. Greenawalt and Emmons (2021) suggest leaving minnow traps for NMGS in place for two weeks at a time as a compromise between one week (too short) and four weeks (too costly). However, AZGFD investigators under Project C62 noted a hypothetical risk that, when minnow traps capture LLFR, NMGS may be attracted to these traps to can prey on the captive frogs (presumably including their larvae)—although the investigators did not observe any such events (Miller and Leavitt 2015, O’Donnell and Leavitt 2017a, 2017b). Conducting any kind of survey for reptiles or amphibians in dense marsh vegetation, including with minnow traps, also requires significantly more effort than doing so in more open habitat. However, avoiding densely vegetated areas, as has occurred during surveys for LLFR (Braun et al. 2020a, 2020b), may bias findings. On the other hand, clearing vegetation to improve access to densely vegetated areas (e.g., to deploy minnow traps) may affect the behavior of the target species and not be appropriate for conservation purposes.
+Additional factors may affect the results of monitoring for NMGS adults and CRTO and LLFR adults or larvae. Correcting for these effects may improve the accuracy or interpretability of the monitoring results. Intervening factors that may affect the results of monitoring for NMGS adults and CRTO and LLFR adults or larvae include (a) habitat conditions such as water levels and flow velocities, magnitudes and elapsed time since summer rainfall (for monitoring during the monsoon), and the local abundances of predators including non-natives such as larval and adult American bullfrog (Rana catesbeiana) and the virile or northern crayfish (Faxonius = Orconectes virilis) and (b) weather conditions during and immediately preceding monitoring and (as noted above) vegetation density (Miller and Leavitt 2015, Miller and Cotten 2016a, O’Donnell and Leavitt 2017a, 2017b, Boyarski et al. 2019, Greenawalt and Emmons 2021). Collecting backwardly compatible data on these possible intervening factors would allow for statistical analyses to measure their effects. It should be noted, too, that minnow traps will capture bullfrogs, crayfish, and a variety of other predators, and knowledge of their presence in conservation areas may be useful to the LCR MSCP.
+Other, emerging technologies in addition to eDNA (see above) may have advantages for monitoring all three species but have not yet been tested in the LCR implementation area. These include nocturnal camera traps in general, and nocturnal camera traps specifically equipped to monitor for biofluorescent species. Gutiérrez-González et al. (2016) report nocturnal detections of CRTO adults with camera traps equipped for night-detection in the Northern Jaguar Reserve, Sonora, Mexico. And several authors recently have advocated for taking advantage of widespread natural biofluorescence in reptiles and amphibians to improve their nocturnal monitoring (Cottrill 2019, Lamb and Davis 2020, Paul and Mendyk 2021). Nocturnal camera traps of course will detect any wildlife active at night that triggers their sensors, require decisions about their placement, and require post-processing of the digital imagery. No data yet have been published on possible biofluorescence specifically in NMGS, CRTO, or LLFR. Adding the use of nocturnal camera traps, with or without monitoring for biofluorescence, would require testing to evaluate the comparability of the resulting data with data obtained using proven methods.
+As noted above, LCR MSCP decisions on what methods and timing to employ in Project F08 also depend on what questions the monitoring must answer to help the LCR MSCP address its conservation measures and goals. The highest priorities for Project F08 are to support conservation of NMGS under Conservation Measures NMGS1 (create 1,496 acres of habitat for NMGS), NMGS2 (implement measures to avoid/minimize take of NMGS), and MRM2 (monitor and adaptively manage created habitat). Addressing these conservation measures is key to the LCR MSCP meeting its obligations under its USFWS permit and the USFWS agreement to exclude lands within the LCR MSCP implementation area from the designation of NMGS Critical Habitat as part of the NMGS Critical Habitat Final Rule (U.S. Fish and Wildlife Service (USFWS) 2021). These latter obligations may commit the LCR MSCP to conducting both (a) annual or even seasonal monitoring at the selected conservation areas to establish baseline data on species presence/absence or detection frequency and (b) monitoring following specific management activities or other potentially harmful events at these conservation areas. The first component of monitoring will allow the LCR MSCP to document its compliance with the terms of the USFWS permit and exclusion and help it plan maintenance activities to avoid impacts to NMGS. The second component of monitoring will allow the LCR MSCP to assess the impacts of maintenance activities or other potential stressors, which otherwise may not be discernable without a baseline record for comparison.
+In turn, the relevant conservation measures for CRTO and LLFR—CRTO1 and LLFR1 (surveys to assess distribution, habitat affinity, limiting factors), CRTO2 and LLFR2 (protect existing occupied habitat) and CRTO3 and LLFR3 (research to establish in unoccupied habitat)—do not call for event-specific monitoring. However, these two sets of measures may require at least annual monitoring. The habitat requirements of the three species are similar but not identical (Sabin 2018, Braun et al. 2020a, 2020b). Further, the LCR MSCP presently does not have enough data to determine whether the distribution and abundance of NMGS in its conservation areas provide unambiguous information on the distributions and abundances of CRTO and LLFR as well. An assessment of this possibility, to use NMGS contact data as an indicator of the likely presence of CRTO and/or LLFR, could become feasible as additional data accumulate. At the same time, for logistical efficiency, the LCR MSCP may want to find ways to combine at least some aspects of the monitoring of CRTO and LLFR under Project F08 with the monitoring of NMGS and vice versa. For example, the LCR MSCP could conduct monitoring for both NMGS and LLFR during the spring and for both NMGS and CRTO during the summer, resulting in two seasons of data on NMGS per year and one season of data each on LLFR and CRTO. Such pairing would also address the principal noted by Greenawalt and Emmons (2021), discussed above, that NMGS monitoring in the spring and summer will produce complementary rather than duplicative survey data on NMGS distribution and abundance.
+Project Plan Contributors
+
+Associated Species/Communities
+CRTO; LLFR; NMGS
+Associated Conservation Measures
+CRTO1; LLFR1; NMGS1; NMGS2; MRM2
+Associated Locations
+Beal Lake Conservation Area; Planet Ranch
+Associated Ecological Goals
+
+Other Affected Conservation Measures
+CRTO2; CRTO3; LLFR2; LLFR3
+Other Affected Covered and Evaluation Species
+
+Related Projects
+Related Work Task ID	Relationship Type
+C60	Informs Habitat or Site Development or Management
+C62	Antecedent
+D12	Antecedent
+E01	Informs Habitat or Site Development or Management
+E21	Informs Habitat or Site Development or Management
+F01	Informs Habitat or Site Development or Management
+Decision Triggers
+Trigger Code	Trigger Name
+01	Adverse Effect of Conservation Area Management Action on NMGS
+Objectives
+Objective Code	Objective Name
+F99.01	Assess Presence and Distribution of NMGS, CRTO, and LLFR and Associated Habitat Conditions at LCR MSCP Conservation Areas
+Outputs
+Output Code	Output Title	Output URL
+01	Summary of Preliminary Mammal Trapping Efforts at Cibola National Wildlife Refuge and at the Pratt Agricultural Restoration Site 2004-05	d10_f03_trap_cnwr_pratt_2004-2005.pdf
+02	Small Mammal Colonization at Habitat Creation Sites along the Lower Colorado River: 2006	d10_f03_annrep_2006.pdf
+03	Small Mammal Colonization at Habitat Creation Sites along the Lower Colorado River 2007	d10_f03_annrep_2007.pdf
+
+DECISION TRIGGER: 01
+Trigger Code
+01
+Trigger Name
+Adverse Effect of Conservation Area Management Action on NMGS
+Trigger Description
+Per agreement with the USFWS, the LCR MSCP must determine if potentially harmful management activities at conservation areas with created, occupied NMGS habitat do adversely affect NMGS presence/absence or abundance and distribution.
+Trigger Indicator(s)
+The detection frequency for NMGS OR the spatial distribution of NMGS in a conservation area with created, occupied NMGS habitat declines relative to preceding baseline conditions within the first 12 months following habitat disturbance caused by conservation area management actions.
+Proposed Response
+If the triggering condition occurs, the LCR MSCP will evaluate whether any other concurrent events, such as an environmental disturbance, could have caused the decline in detection frequency or spatial distribution. If the LCR MSCP determines that decline did result from management actions, it will (1) conduct follow-up monitoring to determine whether NMGS detections or their spatial distribution rebound following the decline within the next normally active season for the species and (2) notify appropriate state and federal offices of the likely taking. If NMGS detections or their spatial distribution do not rebound, the LCR MSCP will identify and implement management actions—through “E” work tasks specific to the conservation area(s) involved in the triggering event—to restore beneficial habitat conditions. Whether or not detections or their spatial distribution rebound, the LCR MSCP also will identify and implement procedures to avoid any recurrence(s) or minimize their adverse effects.
+Trigger Status Reporting Date
+
+Trigger Indicator Status/Trend
+
+Management Interpretation
+
+Management Response
+
+
+OBJECTIVE: F99.01
+Objective Code
+F99.01
+Objective Name
+Assess Presence and Distribution of NMGS, CRTO, and LLFR and Associated Habitat Conditions at LCR MSCP Conservation Areas
+Objective Description
+Objective F99.01 calls for the LCR MSCP to establish procedures for and conduct field surveys and data analyses focused on NMGS, CRTO, and LLFR at conservation areas with created marsh and adjacent cottonwood-willow habitat for NMGS, for five purposes, to: (1) assess species baseline presence/absence or abundances and distributions and the status of potential intervening environmental factors that may affect these demographic variables; (2) assess possible impacts of management actions or other potentially harmful events at the conservation areas of interest on species presence/absence or abundances and distributions, particularly for NMGS; (3) periodically assess species distributions and abundances in relation to marsh and adjacent cottonwood-willow habitat conditions; (4) periodically assess possible effects of intervening environmental factors on species detections during formal monitoring; and (5) periodically assess appropriate CRTO and LLFR monitoring frequencies relative to NMGS monitoring frequency.
+Objective Start Date
+2023
+Objective End Date
+2055
+Objective Work-Flow Diagram
+
+Milestones
+Milestone ID	Milestone Name
+F99.01.01	Assemble and analyze cumulative record of meteorological conditions and lunar phase for all monitoring under Projects C27, D10, and F03
+F99.01.02	Assemble and analyze cumulative data on the subspecies identities of the desert pocket mice present in LCR MSCP conservation areas
+Implementation Steps
+Step Code	Step Name
+F99.01.01	Review methods and results from previous year and antecedent Projects D12 and C62, conservation area priorities, and expectations for upcoming conservation area management actions
+F99.01.02	Develop annual work plan, including allocation of LCR MSCP resources
+F99.01.03	Conduct annual cycle of field surveys
+F99.01.04	Compile raw field survey data and document metadata
+F99.01.05	Inspect, assure quality of, and add final field survey data to cumulative record
+F99.01.06	Update cumulative baseline tabulations of NMGS, CRTO, LLFR contact frequencies and spatial distributions and cumulative tabulations of habitat conditions, and document the tabulation metadata
+F99.01.07	Assess records of NMGS, CRTO, LLFR contact frequencies and spatial distributions for evidence of effects from changes in habitat conditions or from conservation area management actions, and document the assessment metadata
+F99.01.08	Assess cumulative records of NMGS, CRTO, LLFR contact frequencies and spatial distributions for evidence of effects from variation in intervening environmental factors affecting detection likelihoods, and document the assessment metadata
+F99.01.09	Assess whether inter-annual frequencies of monitoring for CRTO, LLFR could be reduced by using NMGS detection data as an annual indicator of likely CRTO, LLFR presence, and document the assessment metadata
+F99.01.10	Reporting
+
+MILESTONE: F99.01.01
+Milestone ID
+F99.01.01
+Milestone Name
+Assemble and analyze cumulative record of meteorological conditions and lunar phase for all monitoring under Projects C27, D10, and F03
+Milestone Description
+Cotton rat and pocket mouse activity in the LCR valley likely varies with several environmental factors that affect the likelihood of their encountering a trap during a survey window, as is the case for many small, nocturnal ground-dwelling mammals. Specifically, as noted in the Project Background statement, excessively cold or hot air temperatures, precipitation, or strong moonlight commonly cause small, nocturnal ground-dwelling mammals to limit their foraging. The LCR MSCP can assemble meteorological and lunar phase data for the dates/nights of survey activity under Projects C27, D10, and F03 from weather monitoring stations close to the surveyed locations. Using this dataset, the LCR MSCP can evaluate statistically whether any such effects are evident in the monitoring data for these Projects and estimate the degree to which they may affect detection rates. This information will assist the LCR MSCP in interpreting the survey results. Since the LCR MSCP has not previously carried out such a compilation and analysis, the initial compilation and analysis will mark a milestone for Project F99.
+Milestone Progress Reporting Date
+
+Milestone Progress Status
+Not-started
+Milestone Progress Description
+
+
+MILESTONE: F99.01.02
+Milestone ID
+F99.01.02
+Milestone Name
+Assemble and analyze cumulative data on the subspecies identities of the desert pocket mice present in LCR MSCP conservation areas
+Milestone Description
+One of the three species addressed by Project F03 is the and the sobrinus subspecies of the desert pocket mouse (Chaetodipus penicillatus sobrinus), an LCR MSCP evaluation species. The distribution of this subspecies is thought to be limited to Reaches 1 and 2, while other subspecies occur further south along the LCR valley. Unfortunately, as noted in the Project Background statement, the most definitive way to identify a desert pocket mouse (Chaetodipus penicillatus) as a member of the sobrinus subspecies is through genetic testing. Such testing entails logistical and financial costs, and the LCR MSCP does not routinely include it in its work under Project F99. Consequently, in the absence of such testing, the LCR MSCP presently identifies captured individuals by species but not subspecies. Alternatives would include collecting genetic samples (e.g., blood, hair, feces) from captured individuals or sampling habitat for eDNA; if appropriate, samples could be collected and properly stored for later analysis. At some point, the LCR MSCP will need to plan and conduct such a testing program to guide decisions on the conservation of the subspecies.
+Milestone Progress Reporting Date
+
+Milestone Progress Status
+Not-started
+Milestone Progress Description
+
+
+IMPLEMENTATION STEP: F99.01.01
+Step Code
+F99.01.01
+Step Name
+Review methods and results from previous year and antecedent Projects D12 and C62, conservation area priorities, and expectations for upcoming conservation area management actions
+Step Summary
+Implementation Step F99.01.01 reviews the accomplishments and lessons learned in the previous year’s efforts under Objective F99.01 along with applicable cumulative lessons learned under antecedent Projects D12 and C62 and lessons learned by other institutions involved in monitoring NMGS, CRTO, or LLFR in the region. These other institutions may include, for example, AZGFD, the National Park Service, Northern Arizona University, and the USFWS. The review looks at (1) the effectiveness of field survey methods including their cost-effectiveness and the likely backward compatibility of potential new methods with past survey methods; (2) the selection of conservation areas to target for monitoring for NMGS, CRTO, LLFR; (3) plans for upcoming management actions and expectations for changes in habitat conditions at the targeted conservation areas that might affect NMGS, CRTO, LLFR and associated management concerns in these conservation areas; (4) the possible effects of habitat conditions and management actions during previous monitoring cycles on NMGS, CRTO, and LLFR contact frequencies and distributions and the effectiveness of the statistical methods used to assess these possible relationships; (5) the possible effects of intervening environmental factors during previous monitoring cycles on NMGS, CRTO, and LLFR contact frequencies and distributions and the effectiveness of the statistical methods used to assess these possible relationships; and (6) the results of any statistical comparison(s) of NMGS versus CRTO, LLFR cumulative contact frequencies and spatial distributions across previous monitoring cycles to assess whether the inter-annual frequencies of monitoring for CRTO, LLFR could be reduced by using NMGS detection data as an annual indicator of likely CRTO, LLFR presence.
+Step Type
+Review of methods and results
+Step Start Date
+2023
+Step End Date
+2055
+Step Dependencies
+F99.01.10; C62.00.00; D12.00.00; E01.00.00; E21.00.00
+Step Methods
+Method Code	Method Title
+	
+
+IMPLEMENTATION STEP: F99.01.02
+Step Code
+F99.01.02
+Step Name
+Develop annual work plan, including allocation of LCR MSCP resources
+Step Summary
+Implementation Step F99.01.02 uses the results of Step F99.01.01 to establish the annual work plan for Objective F99.01. The step minimally involves the following eight activities as needed: (1) Update the selection of conservation areas to target for monitoring for NMGS, CRTO, LLFR; (2) update field survey methods and sampling designs, including to address management questions concerning possible impacts of management actions and changes in habitat conditions at the targeted conservation areas; (3) update plans for tabulating the cumulative records of baseline NMGS, CRTO, LLFR contact frequencies and spatial distributions by conservation area and overall; (4) update plans for statistically assessing possible effects of habitat conditions and management actions on NMGS, CRTO, and LLFR contact frequencies and distributions; (5) update plans for statistically assessing possible effects of intervening environmental factors on NMGS, CRTO, and LLFR contact frequencies and distributions; (6) update plans for statistically comparing NMGS versus CRTO, LLFR cumulative contact frequencies and spatial distributions across previous monitoring cycles to assess whether the inter-annual frequencies of monitoring for CRTO, LLFR could be reduced by using NMGS detection data as an annual indicator of likely CRTO, LLFR presence; (7) review LCR MSCP resources available to support the project; and (8) prepare annual work plan.
+Step Type
+Planning, including allocation of LCR MSCP resources (personnel, equipment, etc.)
+Step Start Date
+2023
+Step End Date
+2055
+Step Dependencies
+F99.01.01
+Step Methods
+Method Code	Method Title
+	
+
+IMPLEMENTATION STEP: F99.01.03
+Step Code
+F99.01.03
+Step Name
+Conduct annual cycle of field surveys
+Step Summary
+Implementation Step F99.01.03 implements the annual plan for field operations to survey NMGS, CRTO, and LLFR and associated habitat conditions at selected conservation areas for Objective F99.01. The step minimally involves the following three activities: (1) Check monitoring equipment and both monitoring and data recording procedures as needed; (2) confirm timing of any monitoring planned to follow on management activities that might adversely affect NMGS, CRTO, or LLFR; and (3) conduct planned field monitoring.
+Step Type
+Field data collection
+Step Start Date
+2023
+Step End Date
+2055
+Step Dependencies
+F99.01.02
+Step Methods
+Method Code	Method Title
+M01A	Repeatable Monitoring Plan for Lowland Leopard Frogs and Colorado River Toads on the Lower Colorado River
+M01B	Surveying Methods for Northern Mexican Gartersnakes (Thamnophis eques megalops)
+
+IMPLEMENTATION STEP: F99.01.04
+Step Code
+F99.01.04
+Step Name
+Compile raw field survey data and document metadata
+Step Summary
+Implementation Step F99.01.04 compiles the raw field data from Step F99.01.03 into the necessary data file structure and prepares a metadata file for each resulting raw field data file. The step minimally involves the following three activities: (1) Compile the raw record of NMGS, CRTO, LLFR contacts for all monitoring events; (2) compile the raw record of habitat conditions for all monitoring events; and (3) compile the raw record of environmental conditions for all monitoring events.
+Step Type
+Data compilation and documentation of metadata
+Step Start Date
+2023
+Step End Date
+2055
+Step Dependencies
+F99.01.03
+Step Methods
+Method Code	Method Title
+	
+
+IMPLEMENTATION STEP: F99.01.05
+Step Code
+F99.01.05
+Step Name
+Inspect, assure quality of, and add final field survey data to cumulative record
+Step Summary
+Implementation Step F99.01.05 implements data review and quality assurance procedures for the data compiled in Step F99.01.04, assesses possible needs for improving data review and quality assurance procedures in the next cycle of Steps F99.01.03, F99.01.04, and F99.01.05 and adds the final data to cumulative project archives. These archives include the data accumulated during the two antecedent projects, D12 and C62. The step minimally involves the following three activities: (1) Apply data quality assurance procedures; (2) assess needs and opportunities for improving data quality; and (3) transfer final data to the cumulative project records of survey data on NMGS, CRTO, and LLFR and associated habitat and environmental conditions by conservation area.
+Step Type
+Data inspection and quality assurance
+Step Start Date
+2023
+Step End Date
+2055
+Step Dependencies
+F99.01.04; C62.00.00; D12.00.00
+Step Methods
+Method Code	Method Title
+	
+
+IMPLEMENTATION STEP: F99.01.06
+Step Code
+F99.01.06
+Step Name
+Update cumulative baseline tabulations of NMGS, CRTO, LLFR contact frequencies and spatial distributions and cumulative tabulations of habitat conditions, and document the tabulation metadata
+Step Summary
+Implementation Step F99.01.06 tabulates and assesses the cumulative baseline record of NMGS, CRTO, and LLFR contacts by survey location within conservation area, by conservation area, and overall. “Baseline” here refers to all contacts during annual or seasonal monitoring including following disturbances from management actions, covering all years of record. The step minimally involves the following four activities: (1) Tabulate the cumulative year-to-year baseline data on NMGS, CRTO, and LLFR contacts by survey location within conservation area, by conservation area, and overall; (2) tabulate the cumulative data on marsh and adjacent cottonwood-willow habitat conditions by conservation area, focusing on habitat variables identified in the LCR MSCP species accounts and basic conceptual ecological models as important to NMGS, CRTO, or LLFR occurrence and reproduction; (3) assess the ranges of variation, long-term averages, and any trends in contact frequencies or spatial distributions by species; and (4) prepare the metadata file for the tabulations and assessment for each species.
+Step Type
+Statistical analysis and associated output quality assurance
+Step Start Date
+2023
+Step End Date
+2055
+Step Dependencies
+F99.01.05
+Step Methods
+Method Code	Method Title
+	
+
+IMPLEMENTATION STEP: F99.01.07
+Step Code
+F99.01.07
+Step Name
+Assess records of NMGS, CRTO, LLFR contact frequencies and spatial distributions for evidence of effects from changes in habitat conditions or from conservation area management actions, and document the assessment metadata
+Step Summary
+Implementation Step F99.01.07 carries out statistical analyses of the cumulative records of NMGS, CRTO, LLFR contacts and their spatial distributions for evidence of effects from changes in habitat conditions or from conservation area management actions. The step minimally involves the following four activities: (1) Statistically compare the cumulative records of NMGS, CRTO, and LLFR contacts and their spatial distributions by conservation area to the cumulative records of marsh and cottonwood-willow habitat conditions at each conservation area, using the habitat data tabulated in Step F99.01.06;  (2) statistically compare the records of NMGS, CRTO, and LLFR contacts and their spatial distributions before and after any potentially harmful management actions at any monitored conservation area, with the concurrent records of marsh and cottonwood-willow habitat conditions; (3) use the results of these statistical analyses to propose hypotheses as needed concerning ways in which marsh or cottonwood-willow habitat conditions or the effects of management actions on these conditions may have affected NMGS, CRTO, or LLFR contact frequencies or spatial distributions; and (4) prepare a metadata file for the statistical assessment for each conservation area.
+Step Type
+Statistical analysis and associated output quality assurance
+Step Start Date
+2023
+Step End Date
+2055
+Step Dependencies
+F99.01.05; F99.01.06
+Step Methods
+Method Code	Method Title
+	
+
+IMPLEMENTATION STEP: F99.01.08
+Step Code
+F99.01.08
+Step Name
+Assess cumulative records of NMGS, CRTO, LLFR contact frequencies and spatial distributions for evidence of effects from variation in intervening environmental factors affecting detection likelihoods, and document the assessment metadata
+Step Summary
+Implementation Step F99.01.08 carries out statistical analyses of the cumulative records of NMGS, CRTO, and LLFR contacts and their spatial distributions for evidence of effects of intervening environmental factors on the likelihood of NMGS, CRTO, and LLFR contacts. These factors may include weather conditions and, for some survey methods, vegetation density. Their effects could bias survey results if ignored in the analyses of those results. The step minimally involves the following four activities: (1) Tabulate the cumulative data on potentially biasing environmental factors by conservation area, focusing on factors identified in the LCR MSCP species accounts and basic conceptual ecological models and the literature cited therein; (2) statistically compare the records of NMGS, CRTO, and LLFR contacts and their spatial distributions with the concurrent records of potential intervening environmental factors; (3) use the results of these statistical analyses to propose hypotheses as needed concerning possible biasing effects and ways to compensate for these effects in interpreting the NMGS, CRTO, and LLFR survey results; and (4) prepare a metadata file for the statistical assessment.
+Step Type
+Modeling and associated output quality assurance (for example, occupancy modeling, demographic modeling, predictive modeling)
+Step Start Date
+2023
+Step End Date
+2055
+Step Dependencies
+F99.01.05
+Step Methods
+Method Code	Method Title
+	
+
+IMPLEMENTATION STEP: F99.01.09
+Step Code
+F99.01.09
+Step Name
+Assess whether inter-annual frequencies of monitoring for CRTO, LLFR could be reduced by using NMGS detection data as an annual indicator of likely CRTO, LLFR presence, and document the assessment metadata
+Step Summary
+Implementation Step F99.01.09 carries out statistical comparisons of NMGS versus CRTO, LLFR contact frequencies and spatial distributions to assess whether the inter-annual frequencies of monitoring for CRTO, LLFR could be reduced by using NMGS detection data as an annual indicator of likely CRTO, LLFR presence. If statistically justifiable, this use of NMGS detection data as a surrogate—e.g., in alternating years—for estimating CRTO and LLFR presence could reduce project costs without interfering with project goals. The step minimally involves the following three activities: (1) Statistically compare the cumulative records of NMGS contacts with the records of CRTO and LLFR contacts both by conservation area and overall; (2) use the results of these statistical analyses to assess whether and how data on NMGS contacts might be used as an indicator of likely CRTO and LLFR presence by conservation area and overall, and how reliable this indicator might be; and (3) prepare a metadata file for the statistical assessment.
+Step Type
+Modeling and associated output quality assurance (for example, occupancy modeling, demographic modeling, predictive modeling)
+Step Start Date
+2023
+Step End Date
+2055
+Step Dependencies
+F99.01.05
+Step Methods
+Method Code	Method Title
+	
+
+IMPLEMENTATION STEP: F99.01.10
+Step Code
+F99.01.10
+Step Name
+Reporting
+Step Summary
+Implementation Step F99.01.10 summarizes and documents the results of Steps F99.01.03–F99.01.09, including implications for the next cycle of Objective F99.01. The step minimally involves the following seven activities: (1) Prepare annual report section on field operations; (2) prepare annual report section on field data quality assurance; (3) prepare annual report section on cumulative baseline records of NMGS, CRTO, and LLFR contact frequencies and spatial distributions and associated habitat conditions; (4) prepare annual report section on possible effects of changes in habitat conditions and conservation area management actions on NMGS, CRTO, and LLFR contact frequencies; (5) prepare annual report section on possible effects of intervening environmental factors on NMGS, CRTO, and LLFR contact frequencies; (6) prepare annual report section on possibility of using NMGS detection data as an annual indicator of likely CRTO, LLFR presence; and (7) prepare annual report section on recommendations for next annual cycle of project.
+Step Type
+Reporting
+Step Start Date
+2023
+Step End Date
+2055
+Step Dependencies
+F99.01.03; F99.01.04; F99.01.05; F99.01.06; F99.01.07; F99.01.08; F99.01.09
+Step Methods
+Method Code	Method Title
+	
+
+METHOD: M01A
+Method Code
+M01A
+Method Title
+Repeatable Monitoring Plan for Lowland Leopard Frogs and Colorado River Toads on the Lower Colorado River
+Method Type
+Field or laboratory data collection and recording
+Method Date
+11-2017
+Method Version
+
+Method Description
+The purpose of this study was to identify monitoring strategies for two species of amphibians on the lower Colorado River by evaluating the cost efficiency of different methods. Five different survey methods were evaluated for their ability to efficiently detect two study species, the Colorado River toad (Bufo alvarius = Incilius alvarius) and the lowland leopard frog (Rana yavapaiensis = Lithobates yavapaiensis). Surveys for Colorado River toads occurred along the Bill Williams River in the Swansea Wilderness, La Paz and Mohave Counties, Arizona, and surveys for lowland leopard frogs were conducted in the Bill Williams River National Wildlife Refuge, La Paz and Mohave Counties, and the Big Sandy River, Mohave County, Arizona. The five survey methods examined for each species were (1) visual encounter surveys (VESs), (2) VESs with an audio broadcast call/response component (VES C/Rs), (3) funnel trap arrays (FTAs), (4) environmental deoxyribonucleic acid (eDNA) sampling, and (5) digital automated recorder (DAR) recordings. Surveys occurred during the breeding seasons: summer monsoons for Colorado River toads and spring for lowland leopard frogs. Surveys for Colorado River toads were completed in the summers of 2014 and 2015. In 2014, Colorado River toads were detected 11 times with VESs, 7 times with VES C/R broadcast calls, 0 times with FTAs, and 80 times with DARs. In 2015, Colorado River toads were detected six times with VESs, and they were not detected with any other method. eDNA was a very effective method for detecting this species when water was present (toad deoxyribonucleic acid [DNA] was detected in 10 of 11 samples), but only 3 sites in 1 year had enough water to conduct eDNA sampling. Surveys for lowland leopard frogs were conducted in the springs of 2015 and 2016. There were many more detections of lowland leopard frogs in 2015, including 211 VES detections, 152 VES C/R detections, 232 individuals captured in FTAs, and 668 DAR recordings. In 2016, lowland leopard frogs were detected 57 times with VESs, 31 times with VES C/Rs, 12 times with FTAs, and 367 times with DARs. Results from eDNA samples from 2015 indicated that eDNA was a very effective method for detecting this species, with a higher detection probability than any other method. A cost-corrected detection index was developed to quantitatively compare the amount of effort required to survey and the probability of detecting an animal. This index suggests that the VES method was the most cost-effective method for surveying Colorado River toads and lowland leopard frogs in this study, but other concerns, such as labor needs and equipment costs, affect which method is the best for a given application. In 2016, a trial monitoring plan for Colorado River toads was tested, and it confirmed that the use of DARs is an effective and efficient method for detecting Colorado River toads if sufficient monsoon rains occur to prompt calling. In 2017, a trial monitoring plan for lowland leopard frogs was tested, and it confirmed that a VES is an effective and efficient method for detecting the species, especially when combined with VES C/Rs.
+Method Protocols
+Protocol Code	Protocol Title
+P01A	Development and Implementation of a Repeatable Monitoring Plan for Lowland Leopard Frogs and Colorado River Toads on the Lower Colorado River
+Method Contact
+Sabin, Laura
+
+METHOD: M01B
+Method Code
+M01B
+Method Title
+Surveying Methods for Northern Mexican Gartersnakes (Thamnophis eques megalops)
+Method Type
+Field or laboratory data collection and recording
+Method Date
+08-2021
+Method Version
+
+Method Description
+Since 2011, we have used two methods to survey for northern Mexican gartersnakes with guidance and assistance from Erika Nowak, Assistant Research Professor at Northern Arizona University. In one method, we used coverboards, which consist of 2’x 3’ plywood boards that can be used as cover for the gartersnakes. There are approximately 50 of these plywood coverboards around the perimeter of Tavasci Marsh. During the survey, the coverboard is flipped over in order to see what is underneath. These surveys are less effort-intensive than the second method and are conducted primarily during the spring and fall months, to coincide with increased movement patterns before and after the brumation period (a period of sluggishness in winter). Trapping surveys (second method) with minnow traps require more effort but have typically resulted in a higher number of gartersnakes captured. These surveys are conducted primarily during the warmer summer months of the active season to coincide with foraging and movements near water features. Trapping surveys had been conducted by NAU in 2012 and then initiated again by park staff with assistance from NAU in 2016. These surveys consist of using metal minnow traps that have a funnel opening at each end (Figure 3). The traps are placed partially submerged in the marsh. Prey species such as tadpoles or fish get caught in the trap, which then attract the gartersnakes. Snakes can also enter traps when the traps are placed strategically in travel corridors and natural funnel areas. Trapping surveys were conducted in June and September of 2016 and July through September of 2017. In 2016, 90 to 100 1/8 inch Gee minnow traps were set out in the marsh. In 2017, 92 traps were set out in July and early August and approximately 50 traps were set out in late August and September. Traps were located in areas where gartersnakes were likely to occur during the warmer summer months including along the edge of the marsh both in and out of the water, in and along channels in the marsh, and in shallow pools of water. Traps were checked twice a day during the duration of the trapping surveys. Survey hours were calculated by taking a sum of the person hours for conducting the coverboard or trapping surveys each year. Survey hours for checking coverboards will hereafter be identified as “board hours,” while survey hours for checking traps will be identified as “trap hours.” During the morning trap checks, all captured vertebrates were counted and identified to species. This method allowed us to determine relative abundance of the snakes, potential prey, and predator species (Emmons and Nowak 2016). We recorded the length of vertebrates in 5 different size classes (<1 inch, 1-2 inches, 2-3 inches, 3-4 inches, and 4-5 inches). Additional measurements were taken for amphibians including weight and snout to vent length. They were also categorized by age class according to previous studies done in Arizona (Sullivan 1983; Emmons et al. 2016). Age class categories were adult (> 135 mm), subadult (<135 mm and >80 mm), juvenile (<80 mm), and tadpole for American bullfrog (Lithobates catesbeianus) and adult (>60 mm), juvenile (<60 mm), and tadpole for Woodhouse’s toad (Anaxyrus woodhousii). Crayfish (Orconectes virilis) were categorized in size classes of less than 3 inches and greater than 3 inches (Emmons and Nowak 2016). Afternoon trap checks involved simply checking the traps for gartersnake presence. All captured gartersnakes were measured, weighed, sexed, and marked with unique microbrand combinations on the scales on the underside of the snake’s tail using a medical cautery (Winne et al. 2006). Larger snakes also had a small passive integrated transponder (PIT) tag implanted as a secondary method of identification (Emmons and Nowak 2016). PIT tags, also called microchips, are commonly used as identification for family dogs. Every time a snake was captured it was checked for microbrand markings and a PIT tag.
+Method Protocols
+Protocol Code	Protocol Title
+P01B	Surveying for Northern Mexican Gartersnakes (Thamnophis eques megalops) at Tuzigoot National Monument
+Method Contact
+Sabin, Laura
+
+PROTOCOL: P01A
+Protocol Code
+P01A
+Protocol Title
+Development and Implementation of a Repeatable Monitoring Plan for Lowland Leopard Frogs and Colorado River Toads on the Lower Colorado River
+Protocol Version
+
+Protocol Date
+11-2017
+Protocol Authors
+O’Donnell, Ryan; Leavitt, Daniel
+Protocol Description
+This is the methodology described in O’Donnell, R. P., and D. J. Leavitt. 2017. Development and Implementation of a Repeatable Monitoring Plan for Lowland Leopard Frogs and Colorado River Toads on the Lower Colorado River. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Protocol URL
+https://lcrsp.bor.doi.net/reports/final_reports/d12_finrep_2017.pdf
+
+PROTOCOL: P01B
+Protocol Code
+P01B
+Protocol Title
+Surveying for Northern Mexican Gartersnakes (Thamnophis eques megalops) at Tuzigoot National Monument
+Protocol Version
+
+Protocol Date
+08-2021
+Protocol Authors
+Greenawalt, Tina; Emmons, Iain
+Protocol Description
+This is the methodology described in Greenawalt, T., and I. Emmons. 2021. Surveying for Northern Mexican Gartersnakes (Thamnophis eques megalops) at Tuzigoot National Monument. Intermountain Park Science 1:online.
+Protocol URL
+https://www.nps.gov/articles /000/surveying-for-northern-mexican-gartersnakes-at-tuzigoot-national-monument.htm
+
+OUTPUT: 01
+Output Code
+01
+Output Type
+Report or publication
+Output Authors
+Dodge, Chris
+Output Date
+01-2006
+Output Title
+Summary of Preliminary Mammal Trapping Efforts at Cibola National Wildlife Refuge and at the Pratt Agricultural Restoration Site 2004-05
+Output Version
+
+Output Description
+During the winter of 2004-05, the Natural Resources Group of the Lower Colorado Region of the US Bureau of Reclamation initiated a preliminary study of small mammal use of two restoration sites. Two species of Peryomiscus, and at least one Sigmodon spp., were captured at both sites. All captures occurred in areas with dense ground cover of Baccharus spp. or Johnson grass (Sorghum halapense). The presence of Sigmodon spp. at both sites may indicate that the cottonwood/willow and mesquite restoration efforts, conducted under the auspices of the Lower Colorado River Multi-Species Conservation program, may create more habitat for these species than was originally assumed.
+Output DOI
+
+Output Citation
+Dodge, C. 2006. Summary of Preliminary Mammal Trapping Efforts at Cibola National Wildlife Refuge and at the Pratt Agricultural Restoration Site 2004-05. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Output URL
+https://lcrsp.bor.doi.net/reports/final_reports/d10_f03_trap_cnwr_pratt_2004-2005.pdf
+Output Constraints
+
+
+OUTPUT: 02
+Output Code
+02
+Output Type
+Report or publication
+Output Authors
+Calvert, Allen
+Output Date
+12-2007
+Output Title
+Small Mammal Colonization at Habitat Creation Sites along the Lower Colorado River: 2006
+Output Version
+
+Output Description
+The Bureau of Reclamation is the lead agency for the Lower Colorado River Multi-Species Conservation Program (LCR MSCP). One goal of the LCR MSCP is to create habitat for species covered under the Habitat Conservation Plan. The Colorado River cotton rat (Sigmodon arizonae plenus) and the Yuma hispid cotton rat (Sigmodon hispidus eremicus) are listed as covered species. Monitoring small mammals at current and future habitat creation sites will allow Reclamation to determine whether cotton rats are colonizing these sites. Two sites were surveyed in 2005. In 2006, trapping was increased to include five new sites. In 2005, cotton rats were found at both the Pratt site and the Cibola Nature Trail site. The Cibola site was not trapped in 2006. The only cotton rat captured in 2006 was found at the Beal Lake site inside Havasu National Wildlife Refuge. Eight total species were captured in 2006. Most captures were in areas that had a dense understory. Monitoring took place at two sites prior to the creation of habitat. Both sites were agricultural fields before planting occurred. This pre-monitoring trapping appeared to show that agricultural fields are low quality habitat for small mammals. Trapping in agricultural fields prior to conversion into habitat will continue in 2007 to acquire enough trap nights to understand the habitat suitability of agricultural fields. Trapping in areas adjacent to habitat creation sites may begin in the future to determine whether source populations of cotton rats exist in the vicinity.
+Output DOI
+
+Output Citation
+Calvert, A. 2007. Small Mammal Colonization at Habitat Creation Sites along the Lower Colorado River: 2006. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Output URL
+https://lcrsp.bor.doi.net/reports/final_reports/d10_f03_annrep_2006.pdf
+Output Constraints
+
+
+OUTPUT: 03
+Output Code
+03
+Output Type
+Report or publication
+Output Authors
+Calvert, Allen
+Output Date
+08-2009
+Output Title
+Small Mammal Colonization at Habitat Creation Sites along the Lower Colorado River 2007
+Output Version
+
+Output Description
+The Bureau of Reclamation is the lead agency for the Lower Colorado River Multi-Species Conservation Program (LCR MSCP). One purpose of the MSCP is to create habitat for species covered under the Habitat Conservation Plan. Sigmodon arizonae plenus (Colorado River cotton rat) and Sigmodon hispidus eremicus (Yuma hispid cotton rat) are listed as covered species. Monitoring small mammals at current and future habitat creation sites will allow Reclamation to determine whether Sigmodon spp. are colonizing these sites. Two sites were surveyed in 2005. In 2006, trapping was increased to include five new sites. In 2007, seven sites were surveyed, six of which had been surveyed in previous years. In 2005, Sigmodon spp. were found at both the Pratt site near Yuma, Arizona, and the Cibola Nature Trail site at Cibola National Wildlife Refuge (NWR). One Sigmodon spp. was found at only one site at Havasu NWR in 2006. All sites showed an increase in capture rate and species richness in 2007, except for the Pratt site, which only had two species captured. In 2007, Sigmodon spp. were found at the Cibola Nature Trail, Imperial NWR, and at a reference site between Laguna Dam and Mittry Lake north of Yuma, Arizona. Mus musculus (house mouse) was the most common species at two sites, and Peromyscus eremicus (cactus mouse) was the most common species at all other sites except for Cibola NWR, where Chaetodipus penicillatus (desert pocket mouse) was the most frequently captured species. After further searching at Havasu NWR, no further Sigmodon spp. have been found. The habitat characteristics that appear to be important for the species are not as prevalent at this refuge. The two plant species that have been dominant where Sigmodon spp. have been caught are common reed (Phragmites australis) and Johnsongrass (Sorghum halepense). Reithrodontomys megalotis (western harvest mouse) may be a good indicator of Sigmodon spp. habitat because it is co-exists in the same habitat as Sigmodon spp. elsewhere.
+Output DOI
+
+Output Citation
+Calvert, A. 2009. Small Mammal Colonization at Habitat Creation Sites along the Lower Colorado River: 2007. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Output URL
+https://lcrsp.bor.doi.net/reports/final_reports/d10_f03_annrep_2007.pdf
+Output Constraints
+
+
+LITERATURE CITED
+Arizona Game and Fish Department (AZGFD). 2012. Thamnophis eques megalops. Arizona Game and Fish Department, Heritage Data Management System, Animal Abstract, Element Code ARADB36061, Phoenix, AZ.
+Boyarski, V.L., M.J. Ryan, and T.B. Cotten. 2019. Population Ecology of Northern Mexican Gartersnakes (Thamnophis eques megalops) at Bubbling Ponds Hatchery Complex. Arizona Game and Fish Department, Nongame and Endangered Wildlife Program, Technical Report #317, Phoenix, Arizona.
+Braun, D.P., E.A. Johnson, and R. Unnasch. 2020a. Lowland Leopard Frog (Rana = Lithobates yavapaiensis) Basic Conceptual Ecological Model for the Lower Colorado River. Submitted to the Lower Colorado River Multi-Species Conservation Program, Bureau of Reclamation, Boulder City, Nevada, by Sound Science, LLC, Boise, Idaho, under contract No. R16PC00028, Boulder City, Nevada.
+Braun, D.P., E.A. Johnson, and R. Unnasch. 2020b. Colorado River Toad (Bufo = Incilius alvarius) (CRTO) Basic Conceptual Ecological Model for the Lower Colorado River. Submitted to the Lower Colorado River Multi-Species Conservation Program, Bureau of Reclamation, Boulder City, Nevada, by Sound Science, LLC, Boise, Idaho, under contract No. R16PC00028, Boulder City, Nevada.
+Cotten, T. 2011. Lowland Leopard Frog (Rana yavapaiensis) and Colorado River Toad (Bufo alvarius) Distribution and Habitat Use in the Greater Lower Colorado River Ecosystem. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Cotten, T.B. 2012. Lowland Leopard Frog and Colorado River Toad Distribution. Colorado River Terrestrial and Riparian (CRTR) Meeting Presentation, January, 2012, Laughlin, Nevada.
+Cotten, T.B. 2013. Amphibian Conservation and Fisheries Management, the Role of Habitat. Colorado River Terrestrial and Riparian (CRTR) Meeting Presentation, January, 2013, Laughlin, Nevada.
+Cotten, T.B., and D J. Leavitt. 2014a. Lowland Leopard Frog and Colorado River Toad Distribution and Habitat Use in the Greater Lower Colorado River Ecosystem. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Cotten, T.B., and D.J. Leavitt. 2014b. Current Distribution and Habitat of the Lowland Leopard Frog and Colorado River Toad. Colorado River Terrestrial and Riparian (CRTR) Meeting Presentation, January, 2014, Laughlin, Nevada.
+Cotten, T.B., and D.J. Leavitt. 2016. Ecology and Breeding Habitat of Colorado River Toads, 2014 Annual Report. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Cotten, T.B., J.D. Miller, and D.J. Leavitt. 2015. Northern Mexican Gartersnake (Thamnophis eques megalops) in the Bill Williams River. Colorado River Terrestrial and Riparian (CRTR) Meeting Presentation, January, 2015, Laughlin, Nevada.
+Cotten, T., and D. Grandmaison. 2013. Lowland Leopard Frog and Colorado River Toad Distribution and Habitat Use in the Greater Lower Colorado River Ecosystem, 2012 Annual Report. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Cottrill, S. 2019. Go With The Glow! UV-Induced Fluorescence in Great Lakes Biota. Canadian Science Fair Journal 1.
+Greenawalt, T., and I. Emmons. 2021. Surveying for Northern Mexican Gartersnakes (Thamnophis eques megalops) at Tuzigoot National Monument. Intermountain Park Science 1: online.
+Gutiérrez-González, C.E., M.A. Gómez-Ramírez, D. Gutierrez-Garcia, J. Valenzuela, J.C. Rorabaugh, and A.D. Flesch. 2016. Interactions between Sonoran Desert Toads (Incilius alvarius) and mammalian predators at the Northern Jaguar reserve, Sonora, Mexico. Sonoran Herpetologist 29:26–27.
+Halstead, B.J., D.A. Wood, L. Bowen, S.C. Waters, A.G. Vandergast, J.S. Ersan, S.M. Skalos, and M. L. Casazza. 2017. An Evaluation of the Efficacy of Using Environmental DNA (eDNA) to Detect Giant Gartersnakes (Thamnophis gigas). U.S. Geological Survey Open-File Report 2017-1123, Reston, Virginia.
+Johnson, E.A., and R. Unnasch. 2021. Northern Mexican Gartersnake (Thamnophis eques megalops) (NMGS) Basic Conceptual Ecological Model for the Lower Colorado River. Submitted to the Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada, by Sound Science, LLC, Boise, Idaho, under contract No. R16PC00028, Boulder City, Nevada.
+Lamb, J.Y., and M.P. Davis. 2020. Salamanders and other amphibians are aglow with biofluorescence. Scientific Reports 10:1–7.
+Leavitt, D.J., K.O. Sullivan, J.D. Miller, and T.B. Cotten. 2017. Ecology and Habitat Requirements of Lowland Leopard Frogs and Colorado River Toads, 2015 Annual Report. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Lower Colorado River Multi-Species Conservation Program (LCR MSCP). 2004. Final Lower Colorado River Multi-Species Conservation Program Volume II: Habitat Conservation Plan. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Lower Colorado River Multi-Species Conservation Program (LCR MSCP). 2017. Final Implementation Report, Fiscal Year 2018 Work Plan and Budget, Fiscal Year 2016 Accomplishment Report. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River, Multi-Species Conservation Program, Boulder City, Nevada.
+Lower Colorado River Multi-Species Conservation Program (LCR MSCP). 2018. Final Implementation Report, Fiscal Year 2019 Work Plan and Budget, Fiscal Year 2017 Accomplishment Report. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Lower Colorado River Multi-Species Conservation Program (LCR MSCP). 2019. Final Implementation Report, Fiscal Year 2020 Work Plan and Budget, Fiscal Year 2018 Accomplishment Report. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River, Multi-Species Conservation Program, Boulder City, Nevada.
+Lower Colorado River Multi-Species Conservation Program (LCR MSCP). 2020a. Lower Colorado River Multi-Species Conservation Program, Volume VII – Northern Mexican Gartersnake Amendment. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Lower Colorado River Multi-Species Conservation Program (LCR MSCP). 2020b. Final Implementation Report, Fiscal Year 2021 Work Plan and Budget, Fiscal Year 2019 Accomplishment Report. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Lower Colorado River Multi-Species Conservation Program (LCR MSCP). 2020c. Comments in Response to the Proposed Designation of Critical Habitat for the Northern Mexican Gartersnake. Submitted to the U.S. Fish and Wildlife Service re: Docket No. FWS–R2–ES–2020–0011, by the Bureau of Reclamation, Lower Colorado Region, Lower Colorado River, Multi-Species Conservation Program, Boulder City, Nevada.
+Lower Colorado River Multi-Species Conservation Program (LCR MSCP). 2021. Final Implementation Report, Fiscal Year 2022 Work Plan and Budget, Fiscal Year 2020 Accomplishment Report. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River, Multi-Species Conservation Program, Boulder City, Nevada.
+Lower Colorado River Multi-Species Conservation Program (LCR MSCP). 2022. Final Implementation Report, Fiscal Year 2023 Work Plan and Budget, Fiscal Year 2021 Accomplishment Report. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Miller, J.D., and T.B. Cotten. 2016a. Amphibian Monitoring on the Bill Williams River, 2014 Annual Report. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Miller, J.D., and T.B. Cotten. 2016b. Amphibian Monitoring on the Bill Williams River. Colorado River Terrestrial and Riparian (CRTR) Meeting Presentation, January, 2016, Laughlin, Nevada.
+Miller, J.D., and D.J. Leavitt. 2015. Development and Implementation of a Repeatable Monitoring Plan for Lowland Leopard Frogs and Colorado River Toads on the Lower Colorado River, 2015 Annual Report. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+O’Donnell, R.P., S.J. Baker, and M.F. Ingraldi. 2020, January. Mexican Gartersnakes in the Bill Williams Drainage, Western Arizona. Colorado River Terrestrial and Riparian (CRTR) Meeting Presentation, January, 2020, Laughlin, Nevada.
+O’Donnell, R.P., and D.J. Leavitt. 2017a. Development and Implementation of a Repeatable Monitoring Plan for Lowland Leopard Frogs and Colorado River Toads on the Lower Colorado River, 2016 Annual Report. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+O’Donnell, R.P., and D.J. Leavitt. 2017b. Development and Implementation of a Repeatable Monitoring Plan for Lowland Leopard Frogs and Colorado River Toads on the Lower Colorado River. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+O’Donnell, R.P., and D J. Leavitt. 2017c. Development of a Monitoring Plan for Lowland Leopard Frogs and Colorado River Toads. Colorado River Terrestrial and Riparian (CRTR) Meeting Presentation, January, 2017, Laughlin, Nevada.
+Ohmart, R.D., B.W. Anderson, and W.C. Hunter. 1988. The Ecology of the Lower Colorado River from Davis Dam to the Mexico-United States International Boundary: A Community Profile. U.S. Department of the Interior, Fish and Wildlife Service, Research and Development, Biological Report 85(7.19), Washington, D.C.
+Paul, L., and R.W. Mendyk. 2021. Glow and behold: Biofluorescence and new insights on the tails of pitvipers (Viperidae: Crotalinae) and other snakes. Herpetological Review 52:221–237.
+Richter, K.O. 1995. A simple aquatic funnel trap and its application to wetland amphibian monitoring. Herpetological Review 26:90–91.
+Sabin, L.B. 2018. Northern Mexican Gartersnake (Thamnophis eques megalops) Species Profile. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+U.S. Fish and Wildlife Service (USFWS). 2018a. Finding of No Significant Impact: Approval of the Amended Lower Colorado River Multi-Species Conservation Program and Issuance of Multiple Section 10(a)(1)(B) Permits for Incidental Take of the Northern Mexican Gartersnake (Thamnophis eques megalops) Resulting from Colorado River Activities Within the Plan Area in Arizona, California, and Nevada. U.S. Fish and Wildlife Service, Albuquerque, New Mexico.
+U.S. Fish and Wildlife Service (USFWS). 2018b. Final Intra-Service Biological Opinion for the Lower Colorado River Multi-Species Conservation Program -Addition of Northern Mexican Gartersnake (Thamnophis eques megalops) as a Covered Species. Memorandum To: Program Manager, Lower Colorado River Multi-Species Conservation Program, Bureau of Reclamation, Boulder City, Nevada (LC-8000) From: Field Supervisor, U.S. Department of the Interior Fish and Wildlife Service Arizona Ecological Services Office, Phoenix, Arizona.
+U.S. Fish and Wildlife Service (USFWS). 2021. Endangered and Threatened Wildlife and Plants; Designation of Critical Habitat for the Northern Mexican Gartersnake, Final Rule, 50 CFR Part 17 [Docket No. FWS–R2–ES–2020–0011]. Federal Register 86:22518–22580.
+U.S. Fish and Wildlife Service (USFWS) and Bureau of Reclamation (Reclamation). 2018. Final Environmental Assessment for the Final Amendment to Add Northern Mexican Gartersnake to the Lower Colorado River Multi-Species Conservation Program as a Covered Species. U.S. Fish and Wildlife Service and Bureau of Reclamation, Phoenix, Arizona, and Boulder City, Nevada.

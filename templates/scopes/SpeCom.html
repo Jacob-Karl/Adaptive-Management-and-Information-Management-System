@@ -1,0 +1,98 @@
+﻿{% extends 'universal.html' %}
+{% load static %}
+<!DOCTYPE html>
+
+{% block style_block %}
+	.unlock{
+		background-color: #ffffff;
+		border: none;
+		display: block;
+		margin: auto;
+	}
+	.lock{
+		background-color: #ffffff;
+		border: none;
+		display: none;
+		margin: auto;
+	}
+{% endblock %}
+
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+</head>
+{% block body_block %}
+<br>
+{% if user.groups.all.0.name == 'Admin' or  user.groups.all.0.name == 'Lead' %}
+<button class="unlock" id="unlock" onclick="unlockIt()">
+	<img src="{% static 'noun_Lock_99.png' %}" alt="connect" width="50" height="50">
+</button>
+<button class="lock" id="lock" onclick="lockIt()">
+	<img src="{% static 'noun_Unlock_99.png' %}" alt="connect" width="50" height="50">
+</button>
+{% endif %}
+<div class="Form">
+	<form id="species_community_form" enctype="multipart/form-data" action="{% url 'scopes:speCom' speCom_ID %}" method="post">
+		<div class="d-flex justify-content-center">
+			<input class="Button center" name="Submit1" type="submit" value="Submit" style="display: none">
+		</div>
+		{% csrf_token %}
+		{{ spe_com_form.as_p }}
+		<div class="d-flex justify-content-center">
+			<input class="Button center" name="Submit2" type="submit" value="Submit" style="display: none">
+		</div>
+	</form>
+</div>
+
+<script type="text/javascript">
+
+	function lockIt() {
+		const elements = ['TargetType', 'Acronym', 'CommonName', 'ScientificName', 'ITISTSN', 'CommunityName', 'Synonyms', 'Comments']
+        const buttons = ['Submit1', 'Submit2']
+
+        elements.forEach(element => lockItHelper(element));
+        buttons.forEach(button => lockItHelperButton(button));
+
+        var lock_button = document.getElementById("lock");
+        var unlock_button = document.getElementById("unlock");
+
+        lock_button.style.display = "none";
+        unlock_button.style.display = "block";
+    }
+
+    function lockItHelper(element) {
+        var field = document.getElementsByName(element)[0];
+        field.readOnly = true;
+    }
+    function lockItHelperButton(button) {
+        var button_1 = document.getElementsByName(button)[0];
+        button_1.style.display = "none";
+    }
+
+
+	function unlockIt() {
+		const elements = ['TargetType', 'Acronym', 'CommonName', 'ScientificName', 'ITISTSN', 'CommunityName', 'Synonyms', 'Comments']
+        const buttons = ['Submit1', 'Submit2']
+
+        elements.forEach(element => unlockItHelper(element));
+        buttons.forEach(button => unlockItHelperButton(button));
+
+        var lock_button = document.getElementById("lock");
+        var unlock_button = document.getElementById("unlock");
+
+        lock_button.style.display = "block";
+        unlock_button.style.display = "none";
+    }
+
+    function unlockItHelper(element) {
+        var field = document.getElementsByName(element)[0];
+        field.readOnly = false;
+    }
+    function unlockItHelperButton(button) {
+        var button_1 = document.getElementsByName(button)[0];
+        button_1.style.display = "block";
+    }
+
+</script>
+{% endblock %}
+</html>

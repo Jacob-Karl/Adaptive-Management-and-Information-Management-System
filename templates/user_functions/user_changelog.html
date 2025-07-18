@@ -1,0 +1,78 @@
+﻿{% extends 'universal.html' %}
+{% load static %}
+
+{% block style_block %}
+	.AIMS-header {
+		background-color: #00415D;
+		height: 100px;
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	.title {
+		color: #FFFFFF;
+		font: bold 75px arial;
+		margin-left: 10 px;
+		position: absolute;
+		left: 0;
+		padding: 10px;
+	}
+	.Logo{
+		margin-right: 10px;
+		position: absolute;
+		right: 0;
+		height: 75px;
+		width: 177px;
+	}
+	.Button{
+		margin-top: 25px;
+		margin-bottom: 25px;
+		background-color: #CD9157;
+		border: none;
+		color: white;
+		padding: 10px 180px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font: bold 15px arial;
+	}
+	.Filler{
+		margin-top: 25px;
+		margin-bottom: 25px;
+	}
+	table{
+		width: 100%;
+	}
+	footer {
+  		background-color: #00415D;
+		height: 100px;
+	}
+	tr:nth-child(even) {background-color: #f0f0f0;}
+{% endblock %}
+
+{% block title_block %}
+Register
+{% endblock %}
+
+{% block body_block %}
+
+<table>
+    <tr>
+        <th>Change Location</th>
+		<th>Change Date</th>
+    </tr>
+    {% for change in user_changes %}
+    <tr> 
+        <td>{{ change.0 }}</td>
+        <td>{{ change.1 }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+<footer>
+</footer>
+<script type="text/javascript" defer>
+
+</script>
+	
+{% endblock %}

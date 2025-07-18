@@ -1,0 +1,322 @@
+﻿{% extends 'universal.html' %}
+{% load static %}
+<!DOCTYPE html>
+
+{% block style_block %}
+	.page_title{
+		margin-left: 20%;
+	}
+	.Button{
+		margin-top: 25px;
+		margin-bottom: 25px;
+		background-color: #CD9157;
+		color: white;
+		text-align: center;
+		text-decoration: none;
+		font: bold 15px arial;
+	}
+	.modal_button{
+		background-color: #CD9157;
+		color: white;
+		text-align: center;
+		text-decoration: none;
+		font: bold 15px arial;
+		width:5%;
+	}
+	.col{
+		overflow: auto;
+		white-space: nowrap;
+		max-width: 50%;
+		min-width: 50%;
+		min-height: 35px;
+		background-color: white;
+		position:relative;
+		z-index:0;
+	}
+{% endblock %}
+
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+</head>
+{% block body_block %}
+<div class="center">
+	<br>
+	<h3 class="center">
+		{{ project.WorktaskID }}: {{ project.ProjectName }} Report
+	</h3>
+	<br>
+</div>
+
+
+
+<div class="Form">
+	<form id="report_form" action="{% url 'reports:generate_project_report' project_ID %}" method="post">
+		{% csrf_token %}
+		<div class="d-flex justify-content-center">
+			<input class="Button" type="submit" name="generate_annual" value="Generate Annual Report">
+		</div>
+	</form>
+</div>
+<hr style="width: 75%; margin: auto; height: 2px;">
+
+<div id="myModal" class="modal">
+	<div class="modal-content">
+		<span class="close">&times;</span>
+		<p>
+			In order to use the custom report generator you either need to select a template from the drop down menu or upload your own. Uploaded templates are plain text files that follow a specific format. The template is broken into pieces based on AMIMS project objects, i.e. project, trigger, trigger status, objective, milestone, step, method, and protocol. These pieces are separated by a ‘//chunk//’ tag and begin with a tag based on the object beginning with ‘<’ and ending with ‘ />’. These chunks can be in any order. All valid chunk tags are included in the example template at the bottom of this box. Within these chunks are field tags that begin with ‘{‘ and end with ‘}’ and contain the precise name of the field. All valid field tags are included in the example. These field tags can be placed in any order and repeated any number of times. Between these tags any plain text can be written. Additionally, no tags or chunks are required to be included.
+			<br>
+			Example:<br>
+			//chunk//<br>
+			&lt;project/><br>
+			This is an example of a custom template:<br>
+			{project_id}<br>
+			Any plain text can be written in between these tags.<br>
+			{project_name}<br>
+			These tags can be placed in any order, duplicated, or removed.<br>
+			{time_now}<br>
+			{project_lead}<br>
+			{project_contributors}<br>
+			{project_status}<br>
+			{project_type}<br>
+			{project_startDate}
+			{project_endDate}<br>
+			{project_summary}<br>
+			{project_background}<br>
+			{project_speComs}<br>
+			{project_conMeas}<br>
+			{project_locations}<br>
+			{project_goals}<br>
+			{project_otherConMeas}<br>
+			{project_otherSpeComs}<br>
+			{project_relatedProject}<br>
+			<br>
+			//chunk//<br>
+			&lt;project_trigger/><br>
+			{trigger_number}<br>
+			{trigger_name}<br>
+			{trigger_description}<br>
+			{trigger_indicators}<br>
+			{trigger_response}<br>
+			<br>
+			//chunk//<br>
+			&lt;trigger_status/><br>
+			{status_trend}<br>
+			{status_date}<br>
+			{status_interpretation}<br>
+			{status_response}<br>
+			<br>
+			//chunk//<br>
+			&lt;project_objective/><br>
+			{objective_code}<br>
+			{objective_name}<br>
+			{objective_description}<br>
+			{objective_startDate}<br>
+			{objective_endDate}<br>
+			{objective_flowDiagram}<br>
+			<br>
+			//chunk//<br>
+			&lt;objective_milestone/><br>
+			{milestone_id}<br>
+			{milestone_description}<br>
+			{milestone_progress}<br>
+			<br>
+			//chunk//<br>
+			&lt;objective_step/><br>
+			{step_code}<br>
+			{step_name}<br>
+			{step_type}<br>
+			{step_summary}<br>
+			{step_startDate}<br>
+			{step_endDate}<br>
+			{step_dependancies}<br>
+			<br>
+			//chunk//<br>
+			&lt;step_method/><br>
+			{method_code}<br>
+			{method_title}<br>
+			{method_type}<br>
+			{method_date}<br>
+			{method_version}<br>
+			{method_description}<br>
+			{method_contact}<br>
+			<br>
+			//chunk//<br>
+			&lt;method_protocol/><br>
+			{protocol_code}<br>
+			{protocol_tile}<br>
+			{protocol_version}<br>
+			{protocol_date}<br>
+			{protocol_author}<br>
+			{protocol_description}<br>
+			{protocol_link}<br>
+		</p>
+	</div>
+</div>
+
+<div class="Form">
+
+</div>
+<form id="report_form" action="{% url 'reports:generate_report' project_ID %}" method="post" enctype="multipart/form-data">
+	{% csrf_token %}
+	<div>
+	</div>
+	<div class="container-sm">
+		<div class="row">
+			<div class="col border-bottom">
+				<b>Template: </b>{{template_form.as_p}}
+			</div>
+			<div class="col border-bottom">
+				<div id="myBtn" class="modal_button"> ? </div>
+			</div>
+		</div>
+			<b>Project: {{report_selector_form.projectToggle}}</b>
+			<div class="row ">
+				<div class="col border-top border-bottom">
+					{{report_selector_form.triggerToggle}} <b>Triggers:</b>
+				</div>
+				{%for trig in report_selector_form.triggers%}
+				<div class="col border-top border-bottom">
+					{{trig}}
+				</div>
+				{%endfor%}
+			</div>			
+			<br />
+			<div class="row">
+				<div class="col border-top border-bottom">
+					{{report_selector_form.triggerStatusToggle}} <b>Trigger Statuses:</b>
+				</div>
+				{%for trigStat in report_selector_form.triggerStatuses%}
+				<div class="col border-top border-bottom ">
+					{{trigStat}}
+				</div>
+				{%endfor%}
+			</div>
+			<br />
+			<div class="row">
+				<div class="col border-top border-bottom">
+					{{report_selector_form.objectiveToggle}} <b>Objectives:</b>
+				</div>
+				{%for obj in report_selector_form.objectives%}
+				<div class="col border-top border-bottom ">
+					{{obj}}
+				</div>
+				{%endfor%}
+			</div>
+			<br />
+			<div class="row">
+				<div class="col border-top border-bottom">
+					{{report_selector_form.milestoneToggle}} <b>Milestones:</b>
+				</div>
+				{%for mil in report_selector_form.milestones%}
+				<div class="col border-top border-bottom ">
+					{{mil}}
+				</div>
+				{%endfor%}
+			</div>
+			<br />
+			<div class="row">
+				<div class="col border-top border-bottom">
+					{{report_selector_form.stepToggle}} <b>Steps:</b>
+				</div>
+				{%for stp in report_selector_form.steps%}
+				<div class="col border-top border-bottom ">
+					{{stp}}
+				</div>
+				{%endfor%}
+			</div>
+			<br />
+			<div class="row">
+				<div class="col border-top border-bottom">
+					{{report_selector_form.methodToggle}} <b>Methods:</b>
+				</div>
+				{%for mth in report_selector_form.methods%}
+				<div class="col border-top border-bottom ">
+					{{mth}}
+				</div>
+				{%endfor%}
+			</div>
+			<br />
+			<div class="row">
+				<div class="col border-top border-bottom">
+					{{report_selector_form.protocolToggle}} <b>Protocols:</b>
+				</div>
+				{%for ptc in report_selector_form.protocols%}
+				<div class="col border-top border-bottom ">
+					{{ptc}}
+				</div>
+				{%endfor%}
+			</div>
+			<br />
+			<div class="row">
+				<div class="col border-top border-bottom">
+					{{report_selector_form.outputToggle}} <b>Outputs:</b>
+				</div>
+				{%for otp in report_selector_form.outputs%}
+				<div class="col border-top border-bottom" style="background-color: white;">
+					{{otp}}
+				</div>
+				{%endfor%}
+			</div>
+		</div>
+	<div style="margin:auto; width:50%;">
+		<input class="Button" style=" margin: auto;" type="submit" name="generate_report" value="Generate Project Report">
+	</div>
+</form>
+
+<script type="text/javascript">
+	// Get the modal
+	var modal = document.getElementById("myModal");
+
+	// Get the button that opens the modal
+	var btn = document.getElementById("myBtn");
+
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close")[0];
+
+	// When the user clicks the button, open the modal
+	btn.onclick = function () {
+		modal.style.display = "block";
+	}
+
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function () {
+		modal.style.display = "none";
+	}
+
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function (event) {
+		if (event.target == modal) {
+			modal.style.display = "none";
+		}
+	}
+
+	function masterToggle(elem) {
+		if (elem.checked == true) {
+			masterUncheck(elem);
+		} else {
+			masterCheck(elem);
+		}
+	}
+
+	function masterCheck(elem) {
+		var master = document.getElementById(elem);
+		master.checked = true;
+	}
+	function masterUncheck(elem) {
+		var master = document.getElementById(elem);
+		master.checked = false;
+	}
+
+	function secondaryToggle(elem) {
+		var secondary = document.getElementsByClassName(elem);
+		for (const sec of secondary) {
+			sec.checked = !sec.checked;
+		}
+
+	}
+
+
+</script>
+{% endblock %}
+</html>

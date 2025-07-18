@@ -1,0 +1,160 @@
+//chunk//
+<template/>
+project
+-trigger
+--trigger_status
+-objective
+--milestone
+--step
+---method
+----protocol
+//chunk//
+<project/>
+This is an example of a custom template:
+{project_id} {project_name}
+
+I can make this stuff say whatever I want {project_id}
+
+Cuttlefish (Work Task) ID
+{project_id}
+
+Boat (Work Task) Name
+{project_name}
+
+Project Plan Version Date
+{time_now}
+
+Project Lead
+{project_lead}
+
+Project Plan Contributors
+%project_contributors%
+
+Project Status
+{project_status}
+
+Project Type
+{project_type}
+
+Project Start Date
+{project_startDate}
+
+Project End Date
+{project_endDate}
+
+Project Summary
+{project_summary}
+
+Project Background
+{project_background}
+
+Associated Species and Cover Type Targets
+{project_speComs}
+
+Associated Conservation Measures
+{project_conMeas}
+
+Associated Locations
+{project_locations}
+
+Associated Ecological Goals
+{project_goals}
+
+Other Affected Conservation Measures
+%project_otherConMeas%
+
+Other Affected Covered and Evaluation Species
+%project_otherSpeComs%
+
+Related Projects
+%foreach project_relatedProject%
+	%relatedProject_name%
+%endfor%
+
+//chunk//
+<project_trigger/>
+DECISION TRIGGER {number}
+Trigger Name
+{trigger_name}
+Trigger Description
+{trigger_description}
+Trigger Indicator(s) and Value(s)
+Trigger Indicator-Value Boolean Expression
+{trigger_indicators}
+Proposed Response
+{trigger_response}
+
+//chunk//
+<trigger_status/>
+Trigger Indicator Status/Trend
+{status_trend}
+Reporting Date
+{status_date}
+Management Interpretation
+{status_interpretation}
+Management Response
+{status_response}
+
+//chunk//
+<project_objective/>
+OBJECTIVE {objective_code}
+Objective ID
+{objective_code}
+Objective Name
+{objective_name}
+Objective Description
+{objective_description}
+Objective Start Date
+{objective_startDate}
+Objective End Date
+{objective_endDate}
+Objective Work-Flow Diagram
+{objective_flowDiagram}
+Objective Milestones and Status
+
+//chunk//
+<objective_milestone/>
+Objective Milestone Description
+{milestone_description}	
+Objective Milestone Status
+{milestone_progress}
+
+//chunk//
+<objective_step/>
+IMPLEMENTATION STEP {step_code}
+Step ID
+{step_code}
+Step Name
+{step_name}
+Step Type
+{step_type}
+Step Summary
+{step_summary}
+Step Start Date
+{step_startDate}
+Step End Date
+{step_endDate}
+Step Tracking Metrics
+Metric Name	Metric Purpose
+
+Step Dependencies
+{step_dependancies}
+
+//chunk//
+<step_method/>
+{method_code}
+{method_title}
+{method_type}
+{method_date}
+{method_version}
+{method_description}
+{method_contact}
+
+//chunk//
+<method_protocol/>
+{protocol_tile}
+{protocol_version}
+{protocol_date}
+{protocol_author}
+{protocol_description}
+{protocol_link}

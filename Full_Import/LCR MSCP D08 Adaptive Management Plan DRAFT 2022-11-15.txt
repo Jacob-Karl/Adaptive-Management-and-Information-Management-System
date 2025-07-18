@@ -1,0 +1,881 @@
+LCR MSCP Adaptive Management Project Plan:
+D08, Razorback Sucker and Bonytail Stock Assessment
+PROJECT: D08
+Work Task ID
+D08
+Project (Work Task) Name
+Razorback Sucker and Bonytail Stock Assessment
+Project Plan Version Date
+2022-11-15
+Project Lead
+Stolberg, Jim
+Project Status
+Open
+Project Type
+System Monitoring
+Project Start Date
+2005-10-01
+Project End Date
+2055-09-30
+Project Summary
+Project D08 is an annual system-wide assessment of larval and post-larval abundances and spatial distributions, and post-larval survival for both razorback sucker (Xyrauchen texanus, RASU) and bonytail (Gila elegans, BONY) in Reaches 1–5, from Lake Mead to Imperial Dam. The assessments of post-larval abundances, spatial distributions, and survival address both wild-born and repatriated fish. (Project D08 also produces data on flannelmouth sucker (Catostomus latipinnis, FLSU) abundance and distribution.) Project D08 began in FY05 and will continue to FY55. These assessments use data collected directly by the LCR MSCP and its contractors and comparable data gleaned from other investigations. Project D08 combines the data from these several sources into master records of (a) larval and post-larval captures and (b) contacts with tagged post-larval RASU and BONY in the LCR ecosystem. Analyses of the resulting data assess how RASU and BONY larval and post-larval abundances and distributions in each Reach vary from year to year, how RASU and BONY post-larval survival varies from year to year, and the statistical confidence in these estimates. This knowledge guides species conservation efforts under LCR MSCP Monitoring and Research Conservation Measures BONY2, BONY3, BONY5, RASU2, RASU3, RASU5, RASU6, and RASU7.
+Additionally, Project D08 seeks to improve management of RASU and BONY within the LCR MSCP planning area by addressing two related sets of questions: First, what methods for monitoring RASU and BONY, including the spatial design of the monitoring, have the highest contact probabilities and produce the statistically most representative data for the stock assessments, and do these methods differ in their effectiveness depending on species or on Reach, sub-reach, or site-specific habitat conditions or weather conditions? Project D08 has addressed this first set of questions in coordination with Project C64 and continues to address it following the closing of Project C64 in FY 2022. Second, do RASU or BONY contact probabilities, survival, abundance, or dispersion vary depending on Reach, sub-reach, or site-specific habitat conditions, or on cohort rearing and release histories? And if so, are the LCR MSCP and its partners monitoring these variables sufficiently under Project D08, and with effective methods, to help guide conservation management of RASU and BONY? Project D08 has addressed this second set of questions in coordination with Project C64, as well, and continues to address it following the closing of Project C64 in FY 2022.
+The monitoring of RASU and BONY under Project D08 faces three additional challenges. First, the LCR MSCP and its partners have identified sub-reaches (aka zones) exist within Reach 2, between which RASU are thought to show little population exchange, and which therefore are thought to be better monitored (sampled) separately for purposes of assessing RASU population dynamics based on mark/recapture analyses. However, sampling by sub-reach affects the costs of monitoring and data analysis. The LCR MSCP and its partners therefore face a management decision: whether, based on costs versus the benefits to RASU demographic estimates, to continue monitoring RASU separately in all currently recognized sub-reaches, versus merging some sub-reaches or, alternatively, even further sub-dividing the currently recognized sub-reaches or recognize sub-reaches in other Reaches. Second, anticipated reductions in the overall LCR MSCP budget will put pressure on all projects to reduce costs without compromising the ability of the program to address all conservation measures. For Project D08, this poses a challenge specifically to find ways to reduce monitoring costs, which might entail changes in field contact methods or in the spatial density or frequency of monitoring by Reach and/or sub-reach. Finally, all data collected under Project D08 has shown that BONY repatriated into habitat within or connected to the LCR main stem, including its impoundments, consistently experience very low rates of survival (e.g., < 6%/day) regardless of the Reach into which they were released. The LCR MSCP and its partners therefore face a management decision: whether to continue this part of the augmentation effort at considerable cost and no evidence that it will ever overcome the causes of poor survivorship or discontinue that effort and invest instead in other conservation actions within the LCR MSCP planning area.
+Project D08 thus has one primary objective and five secondary objectives. Its primary objective is annually to assess the larval and post-larval abundances and spatial distributions, and post-larval survival of RASU and BONY in Reaches 1–5. Its secondary objectives are as follows: (1) identify and implement the monitoring methods that optimize contact probabilities for both RASU and BONY at a reasonable cost; (2) identify Reach, sub-reach, and site-specific habitat conditions and cohort rearing and release histories that affect RASU or BONY contact probabilities, survival, abundance, or dispersion; (3) review the costs versus benefits to RASU population estimates from monitoring for RASU separately by sub-reach; (4) identify ways to reduce monitoring costs without compromising the ability of the project to address all associated conservation measures; and (5) assess the value of continuing the stocking of BONY into LCR main stem waters and connected backwaters versus investing in alternative conservation measures for BONY.
+Project Background
+Minckley et al. (2003), Mueller and Mueller (2005), Schooley and Marsh (2007), LCR MSCP (2015a, 2016a, 2021a), Marsh et al. (2015), and Kesner et al. (2016) summarize the history of RASU stocking (repatriation) and stock assessments in the LCR ecosystem up to 2015. Minckley et al. (2003), Pacey and Marsh (2008), Minckley and Marsh (2009), and LCR MSCP (2015a, 2016a, 2021a) summarize the more limited history of stock assessments up to 2015 for BONY. The latter species nearly became extinct in LCR ecosystem before regular monitoring began and has responded poorly to stocking efforts. The LCR MSCP initiated Project D08 in FY05 after becoming the lead agency for RASU and BONY stock assessments in the LCR ecosystem, fourteen years after the start of the larger RASU repatriation effort along the LCR (Marsh et al. 2015). LCR MSCP annual Final Implementation-Work Plan and Budget-Accomplishment reports since FY05 (most recently, LCR MSCP 2022), numerous contractor reports and meeting presentations, the historical summaries cited above, and annual “razorback roundup” reports document the broad range of activities that contribute to the history of Project D08. These numerous reports include:
+1.LCR MSCP annual Final Implementation-Work Plan and Budget-Accomplishment reports for Project D08 and its antecedent Projects C08, C12, C13, C15, C16, C29, and C57 (LCR MSCP 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015b, 2016b, 2017, 2018, 2019, 2020, 2021b, 2022), and the LCR MSCP five-year Fish Augmentation Plans (most recently LCR MSCP 2021a).
+2.Published technical reports and journal articles on methods and findings under Project D08 and its antecedents. As noted above, Minckley et al. (2003), Mueller and Mueller (2005), Schooley and Marsh (2007), LCR MSCP (2015a, 2016a), Marsh et al. (2015), and Kesner et al. (2016) summarize the history of RASU stocking (repatriation) and stock assessments up to 2015; and Minckley et al. (2003), Pacey and Marsh (2008), Minckley and Marsh (2009), and LCR MSCP (2015a, 2016a) summarize the more limited history of BONY stock assessments in the LCR ecosystem up to 2015. Technical reports, round-up reports, and meeting presentations since 2015 concerning methods and findings under Project D08 and the closely related Project C64 include Albrecht et al. (2016, 2017), Ehlo et al. (2016), Humphrey et al. (2016), Kegerries et al. (2016, 2017), LCR MSCP Fisheries Group (2016a, 2016b), Marsh & Associates (2016a, 2016b), Wisenall et al. (2016, 2018, 2019), Nevada Department of Wildlife & National Park Service (2016a, 2016b), Stolberg (2016), U.S. Fish and Wildlife Service (2016), Kesner et al. (2016), Kesner et al. (2017), Mohn et al. (2017a, 2017b), Leavitt et al. (2018), Bullard et al. (2019), Burgad et al. (2019), Rogers et al. (2019a, 2019b, 2019c, 2021a, 2021b), Haas et al. (2020), Miller et al. (2020, 2021), Kelley et al. (2021, 2022), Bullard and Best (2022), and Kesner et al. (2022).
+The LCR MSCP (e.g., LCR MSCP 2020) established Project D08 to
+“… supplement and maintain sufficient knowledge and understanding of razorback sucker and bonytail populations within the LCR MSCP planning area in order to have an effective Adaptive Management Program… Under this work task, razorback sucker and bonytail population and distribution data will be collected and organized to maintain up-to-date, system-wide, stock assessments for these species. Data acquisition work is accomplished by one of two strategies: (1) gleaning information from ongoing fish monitoring and fish research activities and (2) direct data collection through field surveys within the LCR MSCP planning area not covered under other work tasks. Additionally, as short-term research activities are completed under separate work tasks, a portion of those activities may transition into or be included as part of ongoing, long-term monitoring projects under this work task… Work routinely includes trammel netting and electrofishing, but visual surveys are also periodically conducted as well as surveys using specialized equipment and techniques (e.g., scuba divers, underwater photography, and video recordings). Funding described under this work task provides for all costs associated with conducting field surveys, including salaries, travel, and materials necessary to accomplish this work. Funding for monitoring agreements, gleaning, or capturing data from ongoing research actions and monitoring programs; transfer of the data into record archives; and organizing the data into a cohesive report is also provided under this work task.”
+The reports on Project D08 and its antecedents identify several factors that may affect project findings by Reach and year:
+?Individual sub-reaches (aka “Zones”) within a river Reach may sustain sub-populations of RASU that do not mix significantly with each other. If such sub-populations exist, they may require separate monitoring designs to ensure that each is properly sampled. The estimation of population sizes from mark-recapture data also requires assumptions about whether a population is open or closed (e.g., Albrecht et al. 2014; Ehlo et al. 2016). Investigations under Project D08 and its antecedents have identified separate RASU sub-populations in four riverine and lacustrine sub-reaches of Reach 2—referred to as the River, Liberty, Basin, and Katherine zones from north to south. These sub-reaches are sampled separately, and their sub-population sizes estimated separately, although the contact rates and size estimates for the Liberty and Katherine zones typically are only approximately 1/20 those for the River and Basin zones (e.g., Kesner et al. 2022). In contrast, investigations of both stocked and wild RASU in Lake Mead have documented movement among all four study areas around the lake, i.e., the Colorado River Inflow area, Las Vegas Bay, Echo Bay, and the Virgin River/Muddy River inflow area, “… creating a need to assess the population at the larger, lake-wide scale” (Albrecht et al. 2014).
+?Different methods for contacting BONY and RASU to assess abundance and survival can differ in their contact probabilities, reliability, cost efficiency, and other metrics. For example, trammel netting of tagged RASU in Lake Mohave has produced smaller sample sizes and less reliable estimates of abundance and survival than has tagging with passive integrated transponders (aka PIT tags), particularly 134.2-kilohertz (kHz) PIT tags, and contacting tagged fishes through remote scanning (e.g., Kesner et al. 2022). In contrast, monitoring in Lake Havasu in 2014 resulted in several contacts with PIT-tagged BONY using trammel nets but no contacts using remote scanners (Humphrey et al. 2014). Further, contact probabilities and the statistical representativeness of contact data for different monitoring methods also can vary with the spatial design of the monitoring.
+?Contact probabilities for different monitoring methods can vary between monitoring locations with different habitat conditions. For example, BONY and RASU use of cover—e.g., aquatic vegetation, overhangs, or habitat cavities—and diurnal variation in this use can affect contact probabilities for trammel netting, electrofishing, and scanning for PIT tags, as can water depth. The effectiveness of electrofishing also can vary with water clarity and weather conditions, which can affect the ability of a field team to visually detect and recover shocked fishes. Similarly, trammel netting and electrofishing reportedly also can be ineffective in fast-flowing waters (Kesner et al. 2016).
+?Finally, several intervening factors shaped by the stocking programs for the two species, unrelated to habitat conditions, monitoring methods, or monitoring conditions, also potentially can affect contact or survival probability. These factors include the lengths of the released individuals in each cohort, the size of the cohort released at each location, the release season and time of day, rearing history, and release history. These latter factors are not independent (e.g., higher contact rates for relatively small cohorts of larger fish from rearing ponds vs. larger cohorts of smaller fish from hatcheries). Projects C64 and D08 both include investigations to help the LCR MSCP better understand these possible interactions. Project C64 closed in FY 2022.
+The LCR MSCP needs to understand how these several factors affect the findings from Project D08, to distinguish ecologically and demographically meaningful variation in RASU and BONY contacts from variation due to other, intervening factors and sources of uncertainty. Further, the LCR MSCP needs to identify ways to reduce the costs of Project D08 without compromising the overall purposes of the project. Further, as noted in the Project Summary, the LCR MSCP therefore faces a dilemma, whether to continue the augmentation and monitoring of stocked BONY along the LCR main stem or discontinue that effort and invest instead in additional or expanded efforts to augment BONY elsewhere. Second, upcoming reductions in the overall LCR MSCP budget will put pressure on all projects to reduce costs without compromising the ability of the program to address all conservation measures. For Project D08, this poses a challenge specifically to find ways to reduce monitoring costs, which might entail changes in field contact methods or in the spatial density or frequency of monitoring by Reach and/or sub-reach.
+Project Plan Contributors
+Rudd, Nathan
+Associated Species/Communities
+BONY; RASU
+Associated Conservation Measures
+BONY2; BONY3; BONY5; RASU2; RASU3; RASU5; RASU6; RASU7
+Associated Locations
+Reach 1; Reach 2; Reach 3; Reach 4; Reach 5
+Associated Ecological Goals
+
+Other Affected Conservation Measures
+FLSU3
+Other Affected Covered and Evaluation Species
+FLSU
+Related Projects
+Related Work Task ID	Relationship Type
+C08	Antecedent
+C12	Antecedent
+C13	Antecedent
+C15	Antecedent
+C16	Antecedent
+C29	Antecedent
+C57	Antecedent
+C58	Antecedent
+C63	Antecedent
+B08	Supports Monitoring
+C64	Informs Fish Augmentation
+F05	Informs Fish Augmentation
+G01	Informs Fish Augmentation
+G03	Informs Fish Augmentation
+Decision Triggers
+Trigger Code	Trigger Name
+01	Optimize Fish Monitoring Protocol for Stock Assessments
+02	Optimize Habitat Monitoring Protocol for Stock Assessment
+03	Optimize Incorporation of Sub-Reaches into RASU Stock Assessment Spatial Design
+04	Optimize Monitoring Frequency Design
+05	Reorient BONY Augmentation and Stock Assessment away from LCR Main Stem
+Objectives
+Objective Code	Objective Name
+D08.01	RASU and BONY Annual Stock Assessment
+D08.02	Identify Optimal Monitoring Methods and Application Protocol
+D08.03	Identify Critical Habitat, Rearing, and Release Factors in RASU, BONY Survival
+D08.04	Assess Costs Versus Benefits of Monitoring RASU by Sub-Reach
+D08.05	Identify Changes to Monitoring Protocols to Reduce Costs Without Compromising RASU and BONY Annual Assessment Quality
+D08.06	Identify Alternatives to BONY Conservation Through Main-Stem Stocking
+Outputs
+Output Code	Output Title	Output URL
+01	Lake Mohave Razorback Sucker Monitoring 2012 Annual Report	https://lcrsp.bor.doi.net/reports/final_reports/d08_rasu_mohave_annrep_2012.pdf
+02	Lake Mohave Razorback Sucker Monitoring 2013 Annual Report	https://lcrsp.bor.doi.net/reports/final_reports/d08_rasu_mohave_annrep_2013.pdf
+03	Demographics and Monitoring of Repatriated Razorback Suckers in Lake Mohave 2011-2014	https://lcrsp.bor.doi.net/reports/final_reports/d08_rasu_mohave_sumrep_2011-2014.pdf
+04	Demographics and Monitoring of Repatriated Razorback Suckers in Lake Mohave 2015 Annual Report	https://lcrsp.bor.doi.net/reports/final_reports/d08_rasu_mohave_annrep_2015.pdf
+05	Demographics and Monitoring of Repatriated Razorback Suckers in Lake Mohave 2016 Annual Report	https://lcrsp.bor.doi.net/reports/final_reports/d08_rasu_mohave_annrep_2016.pdf
+06	Demographics and Monitoring of Repatriated Razorback Suckers in Lake Mohave 2017 Annual Report	https://lcrsp.bor.doi.net/reports/final_reports/d08_rasu_mohave_annrep_2017.pdf
+07	Demographics and Monitoring of Repatriated Razorback Suckers in Lake Mohave 2018 Annual Report	https://lcrsp.bor.doi.net/reports/final_reports/d08_rasu_mohave_annrep_2018.pdf
+08	Demographics and Monitoring of Repatriated Razorback Suckers in Lake Mohave 2015-2019	https://lcrsp.bor.doi.net/reports/final_reports/d08_finrep_2015-2019.pdf
+09	Demographics and Monitoring of Repatriated Razorback Suckers in Lake Mohave 2020 Annual Report	https://lcrsp.bor.doi.net/reports/final_reports/d08_annrep_2020.pdf
+10	Razorback Sucker (Xyrauchen texanus) Studies on Lake Mead, Nevada and Arizona 2011–2012 Annual Report	https://lcrsp.bor.doi.net/reports/final_reports/d08_rasu_mead_annrep_2011-2012.pdf
+11	Razorback Sucker (Xyrauchen texanus) Studies on Lake Mead, Nevada and Arizona 2012–2013 Annual Report	https://lcrsp.bor.doi.net/reports/final_reports/d08_rasu_mead_annrep_2012-2013.pdf
+12	Razorback Sucker (Xyrauchen texanus) Studies on Lake Mead, Nevada and Arizona 2013–2014 Annual Report	https://lcrsp.bor.doi.net/reports/final_reports/d08_rasu_mead_annrep_2013-2014.pdf
+13	Razorback Sucker (Xyrauchen texanus) Studies on Lake Mead, Nevada and Arizona 2014–2015 Annual Report	https://lcrsp.bor.doi.net/reports/final_reports/d08_rasu_mead_annrep_2014-2015.pdf
+14	Razorback Sucker (Xyrauchen texanus) Studies on Lake Mead, Nevada and Arizona 2015–2016 Annual Report	https://lcrsp.bor.doi.net/reports/final_reports/d08_rasu_mead_annrep_2015-2016.pdf
+15	Razorback Sucker (Xyrauchen texanus) Studies on Lake Mead, Nevada and Arizona 2016–2017 Annual Report	https://lcrsp.bor.doi.net/reports/final_reports/d08_rasu_mead_annrep_2016-2017.pdf
+16	Razorback Sucker (Xyrauchen texanus) Studies on Lake Mead, Nevada and Arizona 2017–2018 Annual Report	https://lcrsp.bor.doi.net/reports/final_reports/d08_rasu_mead_annrep_2017-2018.pdf
+17	Razorback Sucker (Xyrauchen texanus) Studies on Lake Mead, Nevada and Arizona 2018–2019 Annual Report	https://lcrsp.bor.doi.net/reports/final_reports/d08_rasu_mead_annrep_2018-2019.pdf
+18	Razorback Sucker (Xyrauchen texanus) Studies on Lake Mead, Nevada and Arizona 2019–2020 Annual Report	https://lcrsp.bor.doi.net/reports/final_reports/d08_rasu_mead_annrep_2019-2020.pdf
+19	Razorback Sucker Studies on Lake Mead, Nevada and Arizona, 2020-2021 Annual Report	https://lcrsp.bor.doi.net/reports/final_reports/d08_rasu_mead_annrep_2020-2021.pdf
+20	The Status of Razorback Suckers in the Colorado River between Davis and Parker Dams (Lake Havasu), 2003 to 2005	https://lcrsp.bor.doi.net/reports/final_reports/d08_rasu_davis_sumrep_2003-2005.pdf
+21	Movements of Sonic Tagged Razorback Suckers Between Davis and Parker Dams (Lake Havasu)	https://lcrsp.bor.doi.net/reports/final_reports/d08_rasu_davis_annrep_2010.pdf
+22	Movements of Sonic Tagged Razorback Suckers between Davis and Parker Dams (Lake Havasu) 2007–2010	https://lcrsp.bor.doi.net/reports/final_reports/d08_rasu_davis_sumrep_2007-2010.pdf
+23	Comparative Survival of Repatriated Razorback Suckers in Lower Colorado River Reach 3 2015 Annual Report 	https://lcrsp.bor.doi.net/reports/final_reports/d08_rasu_lcr_annrep_2015.pdf
+24	Comparative Survival of Repatriated Razorback Suckers in Lower Colorado River Reach 3 2014–2016	https://lcrsp.bor.doi.net/reports/final_reports/d08_rasu_lcr_sumrep_2014-2016.pdf
+25	Native Fish Monitoring in Reach 3 of the Lower Colorado River 2016–2017 Annual Report	https://lcrsp.bor.doi.net/reports/final_reports/d08_reach3_annrep_2017.pdf
+26	Demographics and Monitoring of Repatriated Razorback Suckers in Lake Mohave, 2021 Annual Report	https://lcrsp.bor.doi.net/reports/final_reports/d08_reach3_annrep_2018.pdf
+27	Native Fish Monitoring in Reach 3 of the Lower Colorado River, 2018 Annual Report	https://lcrsp.bor.doi.net/reports/final_reports/d08_rasu_mohave_annrep_2021.pdf
+
+DECISION TRIGGER: 01
+Trigger Code
+01
+Trigger Name
+Optimize Fish Monitoring Protocol for Stock Assessments
+Trigger Description
+Investigations under Projects C64 and D08 indicate that different combinations of monitoring methods have different contact probabilities and produce the statistically more or less representative data for assessing BONY and RASU demographic parameters. The optimal combination may differ among Reaches or sub-reaches. Through a quantitative analysis of the cumulative record of the two projects and other investigations, the LCR MSCP will (1) statistically assess the strength of any such effects of monitoring methods on contact probabilities and representativeness by Reach and sub-reach, (2) identify combinations of monitoring methods that, if implemented in each Reach or sub-reach, would reduce bias and/or increase precision in estimates of BONY and RASU abundances, spatial distributions, and survival.
+Trigger Indicators
+Analysis of cumulative data identifies combinations of monitoring methods that, if implemented in each Reach or sub-reach, would optimize contact probabilities and representativeness by Reach and sub-reach and thereby allow the LCR MSCP to reduce bias and/or increase precision in estimates of BONY and RASU abundances by N%, survival by M%, and spatial distributions.
+Proposed Response
+The LCR MSCP will implement combinations of monitoring methods that optimize contact probabilities and representativeness by Reach and sub-reach, as appropriate, and thereby allow the LCR MSCP to reduce bias and/or increase precision in estimates of BONY and RASU abundances, spatial distributions, and survival.
+Trigger Status Reporting Date
+
+Trigger Indicator Status/Trend
+
+Management Interpretation
+
+Management Response
+
+
+DECISION TRIGGER: 02
+Trigger Code
+02
+Trigger Name
+Optimize Habitat Monitoring Protocol for Stock Assessment
+Trigger Description
+Investigations under Projects C64 and D08 indicate that site, sub-reach, and Reach-scale habitat characteristics may affect (a) the abundances and spatial distributions of larval and post-larval BONY and RASU and (b) the post-stocking survival rates of post-larval BONY and RASU. Through a quantitative analysis of the cumulative record of the two projects and other investigations, the LCR MSCP will (1) statistically assess the strength of any such effects, (2) assess the improvement (if any) in the accuracy and precision of the demographic estimates that would result from regularly recording and statistically taking into account these effects, and (3) implement field procedures for recording habitat data and statistical procedures for taking habitat characteristics into account in demographic analyses that would reduce bias and/or increase precision in estimates of BONY and RASU abundances, spatial distributions, and survival by X%.
+Trigger Indicators
+Analysis of cumulative data identifies an optimal set of monitoring site, sub-reach, and Reach-scale habitat characteristics that, if taken into account statistically in demographic analyses, would reduce bias and/or increase precision in estimates of BONY and RASU abundances by N%, survival by X% and spatial distributions.
+Proposed Response
+The LCR MSCP will update the monitoring protocol for Project D08 to implement optimal field procedures for recording habitat data and statistical procedures for taking habitat characteristics into account in demographic analyses, to reduce bias and/or increase precision in estimates of BONY and RASU abundances, spatial distributions, and survival by X%.
+Trigger Status Reporting Date
+
+Trigger Indicator Status/Trend
+
+Management Interpretation
+
+Management Response
+
+
+DECISION TRIGGER: 03
+Trigger Code
+03
+Trigger Name
+Optimize Incorporation of Sub-Reaches into RASU Stock Assessment Spatial Design
+Trigger Description
+Investigations under Projects C64 and D08 and their antecedents produced tag contact and/or genetic evidence that four different zones or sub-reaches exist within Reach 2, between which RASU show little population exchange compared to their movements within these same sub-reaches. These four sub-reaches are designated, from north to south, the River, Liberty, Basin, and Katherine zones. The LCR MSCP and its partners carry out demographic monitoring separately in each of these four sub-reaches to estimate the abundances and spatial distributions of larval and post-larval RASU and the post-stocking survival rates of post-larval RASU. However, the contact rates and population size estimates for the Liberty and Katherine sub-reaches typically are only approximately 1/20 those for the River and Basin sub-reaches and therefore contribute little to the estimates of the total RASU population in Reach 2 or in the LCR overall. Through a quantitative analysis of the cumulative record of the two projects and other investigations, the LCR MSCP will (1) statistically assess the effects on estimates of RASU demographic parameters, both by Reach and overall, from including versus excluding the monitoring data from the River and Basin sub-reaches in the development of these estimates; and (2) identify and implement an optimal program of sampling that may or may not including sampling by sub-reach.
+Trigger Indicator(s)
+Analysis of cumulative data identifies an optimal set of sub-reach designations for separate sampling that, if implemented will reduce LCR MSCP costs without reducing the precision of overall Reach- and LCR-scale estimates of RASU abundances, spatial distributions, and survival by more than K%.
+Proposed Response
+The LCR MSCP will implement the optimal set of sub-reach designations for separate sampling to reduce LCR MSCP costs without reducing the precision of overall Reach- and LCR-scale estimates of RASU abundances, spatial distributions, and survival by more than K%.
+Trigger Status Reporting Date
+
+Trigger Indicator Status/Trend
+
+Management Interpretation
+
+Management Response
+
+
+DECISION TRIGGER: 04
+Trigger Code
+04
+Trigger Name
+Optimize Monitoring Frequency Design
+Trigger Description
+Analyses of RASU monitoring data from LCR Reaches 1–5 since the inception of the LCR MSCP indicates generally upward trends in both abundance and survivorship, especially since the shift to repatriating only longer (e.g., > 450 mm TL) adults. Trammel netting takes place twice a year (December and March) while remote monitoring (PIT tag remote sensing) takes place several throughout the year. However, based on captures of PIT-tagged RASU by trammel netting in Reach 2 (Lake Mohave), such netting produces smaller sample sizes and less reliable estimates of abundance and survival than does remote sensing (see Project Background). Through a quantitative analysis of the cumulative record of Projects C64, D08, and other investigations, the LCR MSCP will (1) statistically assess the potential effects of reducing the frequency of trammel netting—either to one season/year or to both seasons but every other year—both overall and by sub-reach on estimates of RASU abundance and survivorship in Reach 2; (2) identify reductions in the frequency of trammel netting either overall or by sub-reach in Reach 2 that will reduce LCR MSCP costs without reducing the precision of single-year estimates of RASU abundances, spatial distributions, and survival by more than W%; and (3) implement these reductions in the frequency and changes in the schedule of monitoring so long as the overall population trend (3-year moving average) remain positive but revert to the original frequency if the overall population trend turns negative.
+Trigger Indicator(s)
+Analysis of cumulative data identifies reductions in the frequency of trammel netting either overall or by sub-reach in Reach 2 that will reduce LCR MSCP costs without reducing the precision of single-year estimates of RASU abundances, spatial distributions, and survival by more than W%.
+Proposed Response
+The LCR MSCP will implement the reductions in the frequency of trammel netting either overall or by sub-reach in Reach 2 that will reduce LCR MSCP costs without reducing the precision of single-year estimates of RASU abundances, spatial distributions, and survival by more than W%, so long as the overall population trend (3-year moving average) remain positive but revert to the original frequency of the overall population trend turns negative.
+Trigger Status Reporting Date
+
+Trigger Indicator Status/Trend
+
+Management Interpretation
+
+Management Response
+
+
+DECISION TRIGGER: 05
+Trigger Code
+05
+Trigger Name
+Reorient BONY Augmentation and Stock Assessment away from LCR Main Stem
+Trigger Description
+The LCR MSCP repatriates large numbers of hatchery-raised BONY into the LCR annually. In FY2021, for example, the LCR MSCP stocked 400 bonytail into Reach 2, 3,026 bonytail into Reach 3, and 8,059 into Reaches 4 and 5 (LCR MSCP 2022). Recontacts are so infrequent after the first 30 days that it is not possible statistically to estimate BONY survivorship or abundance other than to say that perhaps only one individual per Reach per year survives after one year following release, or that a stocked cohort experiences a day-to-day mortality rate of 94% following release (e.g., Bullard and Best 2022, Kelley et al. 2022). The stocking of BONY into the LCR main stem thus provides very few or no benefits for conserving the species, at considerable cost for rearing, releasing, and monitoring. In contrast, BONY stocked into isolated ponds and backwaters not only survive for multiple years but also reproduce. The LCR MSCP therefore faces a dilemma, whether to continue the augmentation and monitoring of stocked BONY along the LCR main stem or discontinue that effort. The LCR MSCP could then invest those numbers of BONY and those efforts instead into additional or expanded efforts to augment BONY elsewhere, potentially in water bodies isolated from the main stem and its large numbers of diverse aquatic non-native predators against which BONY appear nearly defenseless. The LCR MSCP will undertake a statistical comparison of cumulative records of survivorship and reproduction among BONY stocked into the LCR main stem and waters directly connected to the main stem (e.g., connected backwaters) versus stocked into water bodies isolated from the main stem. If the results of this comparison indicate that survivorship is > J% higher in the isolated water bodies, the LCR MSCP will propose to its Steering Committee that it be allowed to change the terms of its Habitat Conservation Plan and associated federal and state permits to allow it to discontinue augmentation of BONY into the LCR main stem and continue or expand augmentation into isolated off-channel water bodies.
+Trigger Indicator(s)
+A statistical comparison of cumulative records of survivorship among BONY stocked into the LCR main stem and waters directly connected to the main stem (e.g., connected backwaters) versus stocked into water bodies isolated from the main stem shows that survivorship is > J% higher in the isolated water bodies.
+Proposed Response
+The LCR MSCP will propose to its Steering Committee that it be allowed to change the terms of its Habitat Conservation Plan and associated federal and state permits to allow it to discontinue augmentation of BONY into the LCR main stem and continue or expand augmentation into isolated off-channel water bodies.
+Trigger Status Reporting Date
+
+Trigger Indicator Status/Trend
+
+Management Interpretation
+
+Management Response
+
+
+OBJECTIVE: D08.01
+Objective Code
+D08.01
+Objective Name
+RASU and BONY Annual Stock Assessment
+Objective Description
+Objective D08.01 calls for the LCR MSCP to:
+(1)Annually collect monitoring data in Reaches 1–5, including its reservoirs and connected off-channel waters, with which to assess (a) the abundances and spatial distributions of larval and post-larval RASU and BONY, (b) the post-stocking survival rates of post-larval RASU and BONY, (c) variation in contact rates among monitoring methods and the effects of field conditions on contact rates (analyzed under Objective D08.02), and (d) demographic effects of Reach- and sub-reach-scale habitat characteristics and rearing and release history (analyzed under Objective D08.03).
+(2)Annually assess the abundances and spatial distributions of larval and post-larval RASU and BONY and the post-stocking survival rates of post-larval RASU and BONY with the assembled monitoring data, by Reach and by sub-reach (zone) where applicable, with sufficient precision to be able to detect a year-to-year XX% change in abundance and a YY% change in survival in each Reach (and sub-reach where applicable) over ZZ years with 95% confidence interval widths of 20% of the estimated interannual change.
+Objective Start Date
+2023-10-01
+Objective End Date
+2055-09-30
+Objective Work-Flow Diagram
+
+Milestones
+Milestone ID	Milestone Name
+	
+Implementation Steps
+Step Code	Step Name
+D08.01.01	Review methods and results from previous year under all six objectives
+D08.01.02	Develop annual work plan, including allocation of LCR MSCP resources
+D08.01.03	Conduct annual direct data collection
+D08.01.04	Conduct annual data gleaning
+D08.01.05	Compile raw field data and document metadata
+D08.01.06	Inspect, assure quality of, and add final data to cumulative record
+D08.01.07	Estimate RASU, BONY larval and post-larval demographic parameter values and associated 95% confidence intervals by sub-reach and Reach, and document the estimation metadata
+D08.01.08	Reporting
+
+OBJECTIVE: D08.02
+Objective Code
+D08.02
+Objective Name
+Identify Optimal Monitoring Methods and Application Protocol
+Objective Description
+Objective D08.02 calls for the LCR MSCP to:
+(1)Develop and regularly improve statistical models identifying combinations of monitoring methods that have the highest contact probabilities and produce the statistically most representative data for assessing RASU and BONY post-larval abundances, spatial distributions, and post-stocking post-larval survival by Reach and sub-reach.
+(2)Develop and regularly improve statistical models of the effects of monitoring site characteristics and field conditions on the contact probabilities for different combinations of monitoring methods.
+(3)Combine these findings into recommendations and decisions on optimizing monitoring methods—both the methods and the protocol for selecting and applying these methods— in the annual RASU and BONY stock assessments.
+The investigations under Objective D08.02 provide the data needed to address Decision Trigger 01.
+Objective Start Date
+2023-10-01
+Objective End Date
+2055-09-30
+Objective Work-Flow Diagram
+
+
+OBJECTIVE: D08.03
+Objective Code
+D08.03
+Objective Name
+Identify Critical Habitat, Rearing, and Release Factors in RASU, BONY Survival
+Objective Description
+Objective D08.03 calls for the LCR MSCP to develop and regularly improve statistical models of the effects of (a) Reach- and sub-reach-scale habitat characteristics and (b) rearing and release histories on the abundances and spatial distributions of larval and post-larval RASU and BONY and the post-stocking survival rates of post-larval RASU and BONY. The LCR MSCP can use the results of these investigations to (a) identify habitat characteristics at RASU and/or BONY monitoring sites to record and with what methods, (b) guide rearing and release efforts, and (c) guide conservation management of RASU and BONY. The investigations under Objective D08.03 provide the data needed to address Decision Trigger 02.
+Reach-scale and site-scale habitat conditions that may affect RASU or BONY abundance, survival, and contact probabilities include the following: (1) water quality, including temperature (surface and bottom), turbidity, pH, salinity (or conductivity), and dissolved oxygen; (2) weather conditions during fish monitoring, including wind or waves, cloud cover, and rain incidence; (3) water depth and movement during fish monitoring, including flow velocity, eddies, etc.; (4) the types present and abundances (e.g., spatial extent) of structural features such as submerged woody debris, reefs, and rock cavities; emergent aquatic vegetation species composition, spatial extent, density, ranges of heights and depths, etc.; (5) the species and abundances of potential aquatic and avian predators present, and the presence of features that provide perches or cover for these predators; and (6) characteristics of location morphology, including (a) mesohabitat type (e.g., riverine pool, eddy, cove or embayment, or other shoreline, lacustrine, backwater, or other off-channel habitat), (b) dominant substrate type (e.g., silt, sand, or gravel), (c) bathymetry, and (d) the number and relative openness versus narrowness of off-channel connections to the main channel. Potentially important aspects of rearing and release history may include body size and condition at the time of release, rearing conditioning for swimming strength and for predator avoidance, and the occurrence and duration of acclimation in enclosures at release sites prior to full release.
+Objective Start Date
+2023-10-01
+Objective End Date
+2055-09-30
+Objective Work-Flow Diagram
+
+Milestones
+Milestone ID	Milestone Name
+D08.03.01	Develop initial statistical models of the effects of monitoring site, sub-reach, and Reach-scale habitat characteristics on RASU and BONY population sizes and survivorship rates
+D08.03.02	Develop initial statistical model of the effects of rearing and release histories on RASU and BONY survivorship rates
+Implementation Steps
+Step Code	Step Name
+D08.03.01	Develop or update statistical models of the effects of habitat characteristics at the monitoring site, Reach, and sub-reach scales on the abundances and spatial distributions of larval and post-larval RASU and BONY and the post-stocking survival rates of post-larval RASU and BONY
+D08.03.02	Develop or update statistical model of the effects of rearing and release histories on the abundances and spatial distributions of larval and post-larval RASU and BONY and the post-stocking survival rates of post-larval RASU and BONY
+D08.03.03	Reporting
+
+OBJECTIVE: D08.04
+Objective Code
+D08.04
+Objective Name
+Assess Costs Versus Benefits of Monitoring RASU by Sub-Reach
+Objective Description
+Objective D08.01 calls for the LCR MSCP to develop and regularly improve a statistical model assessing the usefulness of current distinctions among sub-reaches or possible new distinctions for planning monitoring and assessing the abundances and spatial distributions of larval and post-larval RASU and the post-stocking survival rates of post-larval RASU. The investigations under Objective D08.04 provide the data needed to address Decision Trigger 03.
+Objective Start Date
+2023-10-01
+Objective End Date
+2055-09-30
+Objective Work-Flow Diagram
+
+Milestones
+Milestone ID	Milestone Name
+D08.04.01	Develop initial statistical model for assessing the usefulness of distinctions among sub-reaches for purposes of RASU demographic analyses
+Implementation Steps
+Step Code	Step Name
+D08.04.01	Develop or update statistical model for assessing the usefulness of distinctions among sub-reaches for purposes of planning monitoring efforts and assessing RASU post-larval abundances, spatial distributions, and post-stocking post-larval survival
+D08.02.02	Reporting
+
+OBJECTIVE: D08.05
+Objective Code
+D08.05
+Objective Name
+Identify Changes to Monitoring Protocols to Reduce Costs Without Compromising RASU and BONY Annual Assessment Quality
+Objective Description
+Objective D08.05 calls for the LCR MSCP to review the cumulative history of monitoring efforts and results to assess the costs of continuing to monitor all targeted Reaches and sub-reaches at the current levels versus reducing the frequency of monitoring and/or the mix of monitoring methods in some Reaches or sub-reaches without impairing the long-term capabilities of the project to achieve its core purposes. Specifically, through a quantitative analysis of the cumulative record of Projects C64, D08, and other investigations, the investigations under Objective D08.05 will (1) statistically assess the potential effects of reducing the frequency of trammel netting—either to one season/year or to both seasons but every other year—both overall and by sub-reach on estimates of RASU abundance and survivorship in Reach 2; and (2) identify reductions in the frequency of trammel netting either overall or by sub-reach in Reach 2 that will reduce LCR MSCP costs without reducing the precision of single-year estimates of RASU abundances, spatial distributions, and survival by more than W%. These investigations provide the data needed to address Decision Trigger 04.
+Objective Start Date
+2023-10-01
+Objective End Date
+2055-09-30
+Objective Work-Flow Diagram
+
+Milestones
+Milestone ID	Milestone Name
+D08.05.01	Develop initial statistical model for assessing potential consequences of reducing the scope or frequency of monitoring in some sub-reaches
+Implementation Steps
+Step Code	Step Name
+D08.05.01	Develop or update statistical model for assessing potential consequences of reducing the scope or frequency of monitoring in some sub-reaches on the accuracy and precision of estimates of RASU and BONY population sizes and survivorship rates
+D08.05.02	Reporting
+
+OBJECTIVE: D08.06
+Objective Code
+D08.06
+Objective Name
+Identify Alternatives to BONY Conservation Through Main-Stem Stocking
+Objective Description
+Objective D08.06 calls for the LCR MSCP to undertake a statistical comparison of cumulative records of survivorship and reproduction among BONY stocked into the LCR main stem and waters directly connected to the main stem (e.g., connected backwaters) versus stocked into water bodies isolated from the main stem. The investigation will calculate the difference in survivorship rate between the two settings, and the total numbers of BONY stocked that survived for more than a year after release and the frequency of evidence of reproduction in the two settings. These investigations provide data needed for the LCR MSCP to address Decision Trigger 05.
+Objective Start Date
+2023-10-01
+Objective End Date
+2055-09-30
+Objective Work-Flow Diagram
+
+Milestones
+Milestone ID	Milestone Name
+	
+Implementation Steps
+Step Code	Step Name
+D08.06.01	Statistically compare cumulative records of survivorship and reproduction among BONY stocked into the LCR main stem and waters directly connected to the main stem versus stocked into water bodies isolated from the main stem
+D08.06.02	Reporting
+
+MILESTONE: D08.02.01
+Milestone ID
+D08.02.01
+Milestone Name
+Develop initial statistical model of effectiveness of alternative monitoring method combinations for producing accurate, precise data on RASU and BONY population sizes and survivorship rates
+Milestone Description
+Develop initial statistical model of the combinations of monitoring methods that have the highest contact probabilities and produce the statistically most representative data for assessing RASU and BONY post-larval abundances, spatial distributions, and post-stocking post-larval survival.
+Milestone Progress Reporting Date
+11-2022
+Milestone Progress Status
+Not started
+Milestone Progress Description
+
+MILESTONE: D08.02.02
+Milestone ID
+D08.02.02
+Milestone Name
+Develop initial statistical model of the effects of monitoring site habitat characteristics and field conditions on RASU and BONY contact frequencies
+Milestone Description
+Develop initial statistical model of the effects of monitoring site habitat characteristics and field conditions on the contact probabilities for different combinations of monitoring methods.
+Milestone Progress Reporting Date
+11-2022
+Milestone Progress Status
+Not started
+Milestone Progress Description
+
+MILESTONE: D08.03.01
+Milestone ID
+D08.03.01
+Milestone Name
+Develop initial statistical models of the effects of monitoring site, sub-reach, and Reach-scale habitat characteristics on RASU and BONY population sizes and survivorship rates
+Milestone Description
+Develop initial statistical models of the effects of monitoring site, sub-reach, and Reach-scale habitat characteristics on the abundances and spatial distributions of larval and post-larval RASU and BONY and the post-stocking survival rates of post-larval RASU and BONY.
+Milestone Progress Reporting Date
+11-2022
+Milestone Progress Status
+Not started
+Milestone Progress Description
+
+MILESTONE: D08.03.02
+Milestone ID
+D08.03.02
+Milestone Name
+Develop initial statistical model of the effects of rearing and release histories on RASU and BONY survivorship rates
+Milestone Description
+Develop initial statistical model of the effects of RASU and BONY rearing and release histories on post-stocking survivorship rates
+Milestone Progress Reporting Date
+11-2022
+Milestone Progress Status
+Not started
+Milestone Progress Description
+
+MILESTONE: D08.04.01
+Milestone ID
+D08.04.01
+Milestone Name
+Develop initial statistical model for assessing the usefulness of distinctions among sub-reaches for purposes of RASU and BONY demographic analyses
+Milestone Description
+Through a quantitative analysis of the cumulative record of Projects D08 and C64 and other investigations, the LCR MSCP will develop an initial statistical model for assessing the effects on estimates of RASU demographic parameters by Reach and overall estimates of RASU demographic parameters resulting from including versus excluding the monitoring data from the River and Basin sub-reaches zones in the development of these estimates.
+Milestone Progress Reporting Date
+11-2022
+Milestone Progress Status
+Not started
+Milestone Progress Description
+
+MILESTONE: D08.05.01
+Milestone ID
+D08.05.01
+Milestone Name
+Develop initial statistical model for assessing potential consequences of reducing the scope or frequency of monitoring in some sub-reaches
+Milestone Description
+Develop initial statistical model for assessing potential consequences of reducing the scope or frequency of monitoring in some sub-reaches on the accuracy and precision of estimates of RASU and BONY population sizes and survivorship rates
+Milestone Progress Reporting Date
+11-2022
+Milestone Progress Status
+Not started
+Milestone Progress Description
+
+IMPLEMENTATION STEP: D08.01.01
+Step Code
+D08.01.01
+Step Name
+Review methods and results from previous year
+Step Summary
+Implementation Step D08.01.01 reviews the accomplishments and lessons learned in the previous year’s efforts under Objectives D08.01, D08.02, D08.03, D08.04, D08.05, and D08.06 and applicable cumulative lessons learned under Projects C64 and F05. The step minimally involves the following eleven activities: (1) Review list of sub-reaches for separate monitoring as needed; (2) review list of projects from which to glean data; (3) review selection of monitoring sites for direct data collection; (4) review habitat and weather monitoring methods as needed; (5) review methods for estimating RASU, BONY demographic parameters; (6) review methods for assessing habitat effects on abundances, distributions, and survival; (7) review methods for assessing effects of habitat and weather conditions and stocking variables on post-larval RASU, BONY contact probabilities; (8) review methods for comparing contact probabilities of different combinations of monitoring methods; (9) review methods for assessing the usefulness of current distinctions among sub-reaches or the possibility of making new distinctions; (10) review methods for assessing options for reducing project monitoring costs without compromising project goals; and (11) review fish monitoring methods for direct data collection as needed.
+Step Type
+Review of methods and results
+Step Start Date
+2023-10-01
+Step End Date
+2055-09-30
+Step Dependencies
+D08.01.08
+Step Methods
+Method Code	Method Title
+	
+
+IMPLEMENTATION STEP: D08.01.02
+Step Code
+D08.01.02
+Step Name
+Develop annual work plan, including allocation of LCR MSCP resources
+Step Summary
+Implementation Step D08.01.02 uses the results of Step D08.01.01 to establish the annual work plan for Objective D08.01, including the selection of monitoring sites for direct data collection, fish and habitat monitoring methods for direct data collection, selection of other projects from which to glean data, methods for estimating RASU and BONY survival, methods for developing or refining the statistical models, and sub-reach designations. The step minimally involves the following eleven activities: (1) Update list of sub-reaches for separate monitoring as needed; (2) update list of projects from which to glean data updated as needed; (3) update selection of monitoring sites for direct data collection; (4) update habitat and weather monitoring methods as needed; (5) update methods for estimating RASU, BONY demographic parameters; (6) update methods for assessing habitat effects on abundances, distributions, and survival; (7) update methods for assessing effects of habitat and weather conditions and stocking variables on post-larval RASU, BONY contact probabilities; (8) update methods for comparing contact probabilities of different combinations of monitoring methods; (9) update methods for assessing the usefulness of current distinctions among sub-reaches or the possibility of making new distinctions; (10) update methods for assessing options for reducing project monitoring costs without compromising project goals; and (11) prepare annual work plan.
+Step Type
+Planning, including allocation of LCR MSCP resources (personnel, equipment, etc.)
+Step Start Date
+2023-10-01
+Step End Date
+2055-09-30
+Step Dependencies
+D08.01.01
+Step Methods
+
+Method Code	Method Title
+	
+
+IMPLEMENTATION STEP: D08.01.03
+Step Code
+D08.01.03
+Step Name
+Conduct annual direct data collection
+Step Summary
+Implementation Step D08.01.03 implements the annual plan for (a) remote sensing and capture efforts to monitor RASU, BONY by Reach and, if required, by sub-reach and (b) record weather conditions at the time of monitoring and those habitat characteristics of the Reaches, sub-reaches, and/or monitoring sites that are being assessed for their possible effects on contact probabilities and RASU and BONY abundance, distribution, and survival. The step minimally involves the following three activities: (1) Check and calibrate monitoring equipment; (2) conduct planned monitoring of RASU, BONY; (3) conduct planned monitoring of weather and habitat conditions.
+Step Type
+Field data collection
+Step Start Date
+2023-10-01
+Step End Date
+2055-09-30
+Step Dependencies
+D08.01.02
+Step Methods
+Method Code	Method Title
+	
+
+IMPLEMENTATION STEP: D08.01.04
+Step Code
+D08.01.04
+Step Name
+Conduct annual data gleaning
+Step Summary
+Implementation Step D08.01.04 implements the annual plan for gleaning data from investigations by other institutions that are not acting as contractors to the LCR MSCP, that can be used to assist with (a) estimating RASU and BONY demographic parameters by Reach and, if required, by sub-reach, (b) assessing the effects of monitoring methods, weather, and habitat conditions on contact probabilities, (c) assessing Reach-scale and sub-reach-scale habitat effects on RASU, BONY demographic parameters, and/or (d) assessing evidence for possible additional sub-reach designations. The step minimally involves the following four activities: (1) Acquire RASU, BONY monitoring data from other projects; (2) acquire RASU, BONY monitoring metadata from other projects; (3) acquire habitat data associated with the gleaned RASU, BONY monitoring data; and (4) acquire metadata on weather and habitat data gleaned from other investigations.
+Step Type
+Partner data acquisition (aka “data gleaning”)
+Step Start Date
+2023-10-01
+Step End Date
+2055-09-30
+Step Dependencies
+D08.01.02
+Step Methods
+Method Code	Method Title
+	
+
+IMPLEMENTATION STEP: D08.01.05
+Step Code
+D08.01.05
+Step Name
+Compile raw field data and document metadata
+Step Summary
+Implementation Step D08.01.05 compiles the raw field data from Steps D08.01.03 and D08.01.04 into the necessary data file structure and prepares a metadata file for each resulting data file. The step minimally involves the following six activities: (1) Compile fish monitoring data from direct data collection, and associated metadata; (2) compile fish monitoring data gleaned from other investigations, and associated metadata; (3) combine the fish monitoring data and metadata from direct data collection and data gleaning efforts; (4) compile habitat monitoring data from direct data collection, and associated metadata; (5) compile habitat monitoring data gleaned from other investigations, and associated metadata; and (6) combine the habitat monitoring data and metadata from direct data collection and data gleaning efforts.
+Step Type
+Data compilation and documentation of metadata
+Step Start Date
+2023-10-01
+Step End Date
+2055-09-30
+Step Dependencies
+D08.01.03; D08.01.04
+Step Methods
+Method Code	Method Title
+	
+
+IMPLEMENTATION STEP: D08.01.06
+Step Code
+D08.01.06
+Step Name
+Inspect, assure quality of, and add final data to cumulative record
+Step Summary
+Implementation Step D08.01.06 implements data review and quality assurance procedures for the integrated data compiled in Step D08.01.05, assesses possible needs for improving data review and quality assurance procedures in the next cycle of Steps D08.01.03, D08.01.04, and D08.01.05 and adds the final data to cumulative project archives. The step minimally involves the following three activities: (1) Apply data quality assurance procedures; (2) assess needs and opportunities for improving data quality; and (3) transfer final data to project archives.
+Step Type
+Data inspection and quality assurance
+Step Start Date
+2023-10-01
+Step End Date
+2055-09-30
+Step Dependencies
+D08.01.03; D08.01.04; D08.01.05
+Step Methods
+Method Code	Method Title
+	
+
+IMPLEMENTATION STEP: D08.01.07
+Step Code
+D08.01.07
+Step Name
+Estimate RASU, BONY larval and post-larval demographic parameter values and associated 95% confidence intervals by sub-reach and Reach, and document the estimation metadata
+Step Summary
+Implementation Step D08.01.07 uses the integrated, quality-assured records of remote sensing and capture data for all BONY and RASU from Step D08.01.06 to estimate (a) the abundances and spatial distributions of larval and post-larval RASU and BONY by Reach and, where applicable, by sub-reach; (b) the post-stocking survival rates of post-larval RASU and BONY by Reach and, where applicable, by sub-reach; and (c) the 95% confidence intervals for these estimates. Implementation Step D08.01.07 also produces the associated metadata documentation for these analyses. The step minimally involves the following ten activities: (1) Estimate larval RASU contact per unit effort by Reach and sub-reach; (2) estimate larval BONY contact per unit effort by Reach and sub-reach; (3) estimate post-larval RASU contact per unit effort by Reach and sub-reach; (4) estimate post-larval BONY contact per unit effort by Reach and sub-reach; (5) estimate post-larval RASU abundance by Reach and sub-reach; (6) estimate post-larval BONY abundance by Reach and sub-reach; (7) estimate post-larval RASU survival by Reach and sub-reach; (8) estimate post-larval BONY survival by Reach and sub-reach; (9) review statistical model results for ecological agreement; and (10) prepare analysis metadata files.
+Step Type
+Statistical analysis and associated output quality assurance
+Step Start Date
+2023-10-01
+Step End Date
+2055-09-30
+Step Dependencies
+D08.01.06
+Step Methods
+Method Code	Method Title
+	
+
+IMPLEMENTATION STEP: D08.01.08
+Step Code
+D08.01.08
+Step Name
+Reporting
+Step Summary
+Step D08.01.08 summarizes and documents the results of Steps D08.01.03–D08.01.07, including implications for the next cycle of Objective D08.01, and incorporates the results under Objectives D08.02, D08.03, D08.04, D08.05, and D08.06. The step minimally involves the following eight activities: (1) Prepare annual report sections on monitoring and data gleaning; (2) prepare annual report sections on field data quality assurance; (3) prepare annual report sections on estimation of RASU, BONY larval and post-larval demographic parameters; (4) incorporate annual report sections on effects of habitat characteristics and rearing/release history on post-larval RASU, BONY demographic parameters, from Objective D08.03; (5) incorporate annual report sections on effects of monitoring methods on post-larval RASU, BONY contact probabilities, from Objective D08.02; (6) prepare annual report sections on effects of monitoring site characteristics and field conditions on post-larval RASU, BONY contact probabilities, also from Objective D08.02; (7) prepare annual report sections on usefulness of sub-reach distinctions; (8) prepare annual report section on potential for cost savings through changes to the scope or frequency of monitoring in some sub-reaches; and (9) prepare annual report recommendations for next annual cycle of project.
+Step Type
+Reporting
+Step Start Date
+2023-10-01
+Step End Date
+2055-09-30
+Step Dependencies
+D08.01.03; D08.01.04; D08.01.05; D08.01.06; D08.01.07; D08.02.03; D08.03.03; D08.04.02; D08.05.02; D08.06.02
+Step Methods
+Method Code	Method Title
+	
+
+Milestones
+Milestone ID	Milestone Name
+D08.02.01	Develop initial statistical model of effectiveness of alternative monitoring method combinations for producing accurate, precise data on RASU and BONY population sizes and survivorship rates
+D08.02.02	Develop initial statistical model of the effects of monitoring site characteristics and field conditions on RASU and BONY contact frequencies
+Implementation Steps
+Step Code	Step Name
+D08.02.01	Develop or update statistical model of the combinations of monitoring methods that have the highest contact probabilities and produce the statistically most representative data for assessing RASU and BONY post-larval abundances, spatial distributions, and post-stocking post-larval survival
+D08.02.02	Develop or update statistical model of the effects of monitoring site characteristics and field conditions on the contact probabilities for different combinations of monitoring methods
+D08.02.03	Reporting
+
+IMPLEMENTATION STEP: D08.02.01
+Step Code
+D08.02.01
+Step Name
+Develop or update statistical model of the combinations of monitoring methods that have the highest contact probabilities and produce the statistically most representative data for assessing RASU and BONY post-larval abundances, spatial distributions, and post-stocking post-larval survival
+Step Summary
+Implementation Step D08.02.01 uses the cumulative data verified and compiled under Steps D08.01.03–D08.01.06 to develop or update a statistical model of the degree to which different combinations of monitoring methods, including the spatial and temporal design of contact and capture efforts, have different probabilities for contacting RASU and BONY. The contact probabilities of different combinations of monitoring methods are most easily compared when the different combinations are applied side-by-side at the same monitoring sites. When such side-by-side field trials are not feasible—e.g., when it would be too costly to apply two or more combinations of monitoring methods side-by-side—the analyses in Step D08.02.01 instead statistically take into account differences between monitoring sites and times where different monitoring methods are applied that might also affect contact probabilities, including: (a) habitat characteristics at the Reach, sub-reach, monitoring site scales (see Objective D08.03); (b) the rearing and release histories of the contacted, tagged RASU and BONY (again see Objective D08.03); and (c) RASU and BONY abundance and post-release survival and movement (see Objective D08.01). The outputs from Step D08.02.01 comprise statistical models, updated with each new year’s data. These models are evaluated for their strengths, weaknesses, stability, and agreement with ecological knowledge. The step also involves the preparation of metadata files for the analyses. The step consequently minimally involves the following seven activities: (1) Use data on side-by-side applications to develop or update statistical model for RASU; (2) use data on side-by-side applications to develop or update statistical model for BONY; (3) use data on non-side-by-side applications to develop or update statistical model for RASU; (4) use data on non-side-by-side applications to develop or update statistical model for BONY; (5) evaluate statistical model strengths, weaknesses, and stability; (6) review statistical model results for ecological agreement; and (7) prepare analysis metadata files.
+Step Type
+Modeling and associated output quality assurance (for example, occupancy modeling, demographic modeling, predictive modeling)
+Step Start Date
+2023-10-01
+Step End Date
+2055-09-30
+Step Dependencies
+D08.01.06
+Step Methods
+Method Code	Method Title
+	
+
+IMPLEMENTATION STEP: D08.02.02
+Step Code
+D08.02.02
+Step Name
+Develop or update statistical model of the effects of monitoring site habitat characteristics and field conditions on the contact probabilities for different combinations of monitoring methods
+Step Summary
+Implementation Step D08.02.02 involves a sequence of three modeling efforts. First, Step D08.02.02 combines the integrated cumulative record of fish and habitat monitoring from Step D08.02.01 with the cumulative data on weather conditions recorded during fish monitoring events under Projects C64, F05, and their antecedents. Second, Step D08.02.02 uses the resulting annually updated cumulative data to develop or update a statistical model of the effects of monitoring site habitat characteristics and field conditions on post-larval BONY and RASU contact probabilities with different monitoring methods at the monitoring site, Reach, and sub-reach scales across all years. Third, Step D08.01.10 uses the results of this statistical analysis to estimate the extent to which such interactions may have affected post-larval RASU or BONY contact probabilities in the current year. The outputs of Implementation Step D08.02.02 comprise statistical models, updated with each new year’s data. The step minimally involves the following six activities: (1) Update cumulative records; (2) develop or update statistical models; (3) evaluate statistical model strengths, weaknesses, and stability; (4) apply statistical models respectively to RASU and BONY records for current year; (5) review statistical model results for ecological agreement; and (6) prepare analysis metadata files.
+Step Type
+Modeling and associated output quality assurance (for example, occupancy modeling, demographic modeling, predictive modeling)
+Step Start Date
+2023-10-01
+Step End Date
+2055-09-30
+Step Dependencies
+D08.01.06; D08.02.01
+Step Methods
+Method Code	Method Title
+	
+
+IMPLEMENTATION STEP: D08.02.03
+Step Code
+D08.02.03
+Step Name
+Reporting
+Step Summary
+Implementation Step D08.02.03 summarizes and documents the results of Steps D08.02.01 and D08.02.02, including implications for the next cycle of Objective D08.02. The step minimally involves the following single activity: (1) prepare report describing the methods and findings of Implementation Steps D08.02.01 and D08.02.02. This report becomes a section of the annual report for the project.
+Step Type
+Reporting
+Step Start Date
+2023-10-01
+Step End Date
+2055-09-30
+Step Dependencies
+D08.02.01; D08.02.02
+Step Methods
+Method Code	Method Title
+	
+
+IMPLEMENTATION STEP: D08.03.01
+Step Code
+D08.03.01
+Step Name
+Develop or update statistical models of the effects of habitat characteristics at the monitoring site, Reach, and sub-reach scales on the abundances and spatial distributions of larval and post-larval RASU and BONY and the post-stocking survival rates of post-larval RASU and BONY
+Step Summary
+Implementation Step D08.03.01 achieves three goals: (a) It combines the cumulative results of RASU, BONY, and habitat monitoring under Project D08 with the cumulative results of RASU, BONY, and habitat monitoring under Projects C64 and F05; (b) uses the updated cumulative record statistically to assess the effects of habitat characteristics at the monitoring site, Reach, and sub-reach scales on RASU and BONY demographic parameters across all years; and (c) uses the same cumulative data statistically to assess the effects of habitat characteristics at the monitoring site, Reach, and sub-reach scales on RASU and BONY demographic parameters during the current year. The outputs comprise statistical models, updated with each new year’s data. These models are evaluated for their strengths, weaknesses, stability, and agreement with ecological knowledge. The step minimally involves the following six activities: (1) Update cumulative record of RASU, BONY, and habitat monitoring; (2) develop or update statistical models; (3) evaluate statistical model strengths, weaknesses, and stability; (4) apply statistical model to record for current year; (5) review statistical model results for ecological agreement; and (6) prepare analysis metadata files.
+Reach-scale/sub-reach and site-scale habitat conditions that may affect RASU or BONY abundance, survival, and contact probabilities include the following: (1) water quality, including temperature (surface and bottom), turbidity, pH, salinity (or conductivity), and dissolved oxygen; (2) weather conditions during fish monitoring, including wind or waves, cloud cover, and rain incidence; (3) water depth and movement during fish monitoring, including flow velocity, eddies, etc.; (4) the types present and abundances (e.g., spatial extent) of structural features such as submerged woody debris, reefs, and rock cavities; emergent aquatic vegetation species composition, spatial extent, density, ranges of heights and depths, etc.; (5) the species and abundances of potential aquatic and avian predators present, and the presence of features that provide perches or cover for these predators; and (6) characteristics of location morphology, including (a) mesohabitat type (e.g., riverine pool, eddy, cove or embayment, or other shoreline, lacustrine, backwater, or other off-channel habitat), (b) dominant substrate type (e.g., silt, sand, or gravel), (c) bathymetry, and (d) the number and relative openness versus narrowness of off-channel connections to the main channel.
+Step Type
+Modeling and associated output quality assurance (for example, occupancy modeling, demographic modeling, predictive modeling)
+Step Start Date
+2023-10-01
+Step End Date
+2055-09-30
+Step Dependencies
+D08.01.06
+Step Methods
+Method Code	Method Title
+	
+
+IMPLEMENTATION STEP: D08.03.02
+Step Code
+D08.03.02
+Step Name
+Develop or update statistical model of the effects of rearing and release histories on the abundances and spatial distributions of larval and post-larval RASU and BONY and the post-stocking survival rates of post-larval RASU and BONY
+Step Summary
+Implementation Step D08.03.02 achieves two goals: (a) It combines the cumulative results of RASU and BONY monitoring under Project D08, the cumulative results of RASU and BONY monitoring under Projects C64 and F05, and the record of rearing and release histories under all three projects; and (b) uses the updated cumulative record statistically to assess the effects of specific aspects of rearing and release conditions on the abundances and spatial distributions of larval and post-larval RASU and BONY and the post-stocking survival rates of post-larval RASU and BONY across all years. The outputs comprise statistical models, updated with each new year’s data. These models are evaluated for their strengths, weaknesses, stability, and agreement with ecological knowledge. The step minimally involves the following six activities: (1) Update cumulative records of RASU and BONY monitoring and rearing and release histories; (2) develop or update statistical models; (3) evaluate statistical model strengths, weaknesses, and stability; (4) apply statistical model to record for current year; (5) review statistical model results for ecological agreement; and (6) prepare analysis metadata files.
+Step Type
+Modeling and associated output quality assurance (for example, occupancy modeling, demographic modeling, predictive modeling)
+Step Start Date
+2023-10-01
+Step End Date
+2055-09-30
+Step Dependencies
+D08.01.06; D08.03.01
+Step Methods
+Method Code	Method Title
+	
+
+IMPLEMENTATION STEP: D08.03.03
+Step Code
+D08.03.03
+Step Name
+Reporting
+Step Summary
+Implementation Step D08.03.03 summarizes and documents the results of Steps D08.03.01 and D08.03.02, including implications for the next cycle of Objective D08.03. The step minimally involves the following single activity: (1) prepare report describing the methods and findings of Implementation Steps D08.03.01 and D08.03.02. This report becomes a section of the annual report for the project.
+Step Type
+Reporting
+Step Start Date
+2023-10-01
+Step End Date
+2055-09-30
+Step Dependencies
+D08.03.01; D08.03.02
+Step Methods
+Method Code	Method Title
+	
+
+
+IMPLEMENTATION STEP: D08.04.01
+Step Code
+D08.04.01
+Step Name
+Develop or update statistical model for assessing the usefulness of distinctions among sub-reaches for purposes of planning monitoring efforts and assessing RASU post-larval abundances, spatial distributions, and post-stocking post-larval survival
+Step Summary
+Step D08.04.01 uses the cumulative contact data compiled under Step D08.01.06 to determine if additional sub-reaches exist within any Reach, between which RASU show little population exchange, suggesting a need to monitor and assess RASU abundance separately by these additional sub-reaches. Additionally, or alternatively, Step D08.04.01 uses the same cumulative contact data to assess the utility of continuing to distinguish the four currently recognized sub-reaches in Reach 2 or continuing to sample them with similar intensities. The step minimally involves the following five activities: (1) Analyze contact data for movement histories; (2) further evaluate possible low- or no-passage zones; (3) compare the demographic statistics for RASU that would result from ignoring differences between, e.g., the River and Liberty sub-reaches (zones) or the Basin and Katherine sub-reaches (zones); (4) confirm results; and (5) prepare analysis metadata files.
+Step Type
+Modeling and associated output quality assurance (for example, occupancy modeling, demographic modeling, predictive modeling)
+Step Start Date
+2023-10-01
+Step End Date
+2055-09-30
+Step Dependencies
+D08.01.06
+Step Methods
+Method Code	Method Title
+	
+
+IMPLEMENTATION STEP: D08.04.02
+Step Code
+D08.04.02
+Step Name
+Reporting
+Step Summary
+Implementation Step D08.04.02 summarizes and documents the results of Step D08.04.01, including implications for the next cycle of Objective D08.04. The step minimally involves the following single activity: (1) prepare report describing the methods and findings of Implementation Steps D08.04.01. This report becomes a section of the annual report for the project.
+Step Type
+Reporting
+Step Start Date
+2023-10-01
+Step End Date
+2055-09-30
+Step Dependencies
+D08.04.01
+Step Methods
+Method Code	Method Title
+	
+
+IMPLEMENTATION STEP: D08.05.01
+Step Code
+D08.05.01
+Step Name
+Develop or update statistical model for assessing potential consequences of reducing the scope or frequency of monitoring in some sub-reaches on the accuracy and precision of estimates of RASU and BONY population sizes and survivorship rates
+Step Summary
+Step D08.05.01 reanalyzes the data and results obtained under Step D08.01.07 to assess whether monitoring costs could be reduced through changes to the monitoring frequency or mix of monitoring methods deployed by reach or sub-reach without compromising the long-term accuracy and error bar widths of estimates of population sizes by reach. The analysis involves censoring the monitoring data by filtering out, for example, the data for some sub-reaches from every other year, or by filtering out the trammel netting data from these sub-reaches while retaining the remote sensing data. The results represent monitoring scenarios in which monitoring had not taken place in the selected sub-reaches in some years, or in which only remote sensing and not also trammel netting had been carried out in some years but not others. Differences in resulting apparent accuracy and precision in demographic estimates are compared to evidence for differences in the monitoring costs that would have been incurred if the selected monitoring activities had in fact not taken place, to provide guidance to the LCR MSCP on whether monitoring costs could be reduced in future years through changes to the monitoring frequency or mix of monitoring methods deployed by reach or sub-reach without compromising the long-term accuracy and error bar widths of estimates of population sizes by reach. The step minimally involves the following ten activities: (1) Estimate larval RASU contact per unit effort and monitoring costs by Reach and sub-reach under each scenario for reduced monitoring effort; (2) estimate larval BONY contact per unit effort and monitoring costs by Reach and sub-reach under each scenario for reduced monitoring effort; (3) estimate post-larval RASU contact per unit effort and monitoring costs by Reach and sub-reach under each scenario for reduced monitoring effort; (4) estimate post-larval BONY contact per unit effort and monitoring costs by Reach and sub-reach under each scenario for reduced monitoring effort; (5) estimate post-larval RASU abundance and monitoring costs by Reach and sub-reach under each scenario for reduced monitoring effort; (6) estimate post-larval BONY abundance and monitoring costs by Reach and sub-reach under each scenario for reduced monitoring effort; (7) estimate post-larval RASU survival and monitoring costs by Reach and sub-reach under each scenario for reduced monitoring effort; (8) estimate post-larval BONY survival and monitoring costs by Reach and sub-reach under each scenario for reduced monitoring effort; (9) compare accuracy and precision versus costs for each scenario; and (10) prepare analysis metadata files.
+Step Type
+Statistical analysis and associated output quality assurance
+Step Start Date
+2023-10-01
+Step End Date
+2055-09-30
+Step Dependencies
+D08.01.07
+Step Methods
+Method Code	Method Title
+	
+
+IMPLEMENTATION STEP: D08.05.02
+Step Code
+D08.05.02
+Step Name
+Reporting
+Step Summary
+Implementation Step D08.05.02 summarizes and documents the results of Step D08.05.01, including implications for the next cycle of Objective D08.05. The step minimally involves the following single activity: (1) prepare report describing the methods and findings of Implementation Steps D08.05.01. This report becomes a section of the annual report for the project.
+Step Type
+Reporting
+Step Start Date
+2023-10-01
+Step End Date
+2055-09-30
+Step Dependencies
+D08.05.01
+Step Methods
+Method Code	Method Title
+	
+
+IMPLEMENTATION STEP: D08.06.01
+Step Code
+D08.06.01
+Step Name
+Statistically compare cumulative records of survivorship and reproduction among BONY stocked into the LCR main stem and waters directly connected to the main stem versus stocked into water bodies isolated from the main stem
+Step Summary
+Step D08.06.01 uses the cumulative contact data compiled under Step D08.01.06 to undertake a statistical comparison of cumulative records of survivorship and reproduction among BONY stocked into the LCR main stem and waters directly connected to the main stem (e.g., connected backwaters) versus stocked into water bodies isolated from the main stem. The investigation will calculate the difference in survivorship rate between the two settings, and the total numbers of BONY stocked that survived for more than a year after release and the frequency of evidence of reproduction in the two settings.
+Step Type
+Statistical analysis and associated output quality assurance
+Step Start Date
+2023-10-01
+Step End Date
+2055-09-30
+Step Dependencies
+D08.01.06
+Step Methods
+Method Code	Method Title
+	
+
+IMPLEMENTATION STEP: D08.06.02
+Step Code
+D08.06.02
+Step Name
+Reporting
+Step Summary
+Implementation Step D08.06.02 summarizes and documents the results of Step D08.06.01, including implications for the next cycle of Objective D08.06. The step minimally involves the following single activity: (1) prepare report describing the methods and findings of Implementation Steps D08.06.01. This report becomes a section of the annual report for the project.
+Step Type
+Reporting
+Step Start Date
+2023-10-01
+Step End Date
+2055-09-30
+Step Dependencies
+D08.06.01
+Step Methods
+Method Code	Method Title
+	
+
+LITERATURE CITED
+Albrecht, B., H.E. Mohn, R. Kegerries, M. C. McKinstry, R. Rogers, T. Francis, B. Hines, J. Stolberg, D. Ryden, D. Elverud, B. Schleicher, K. Creighton, B. Healy, and B. Senger. 2017. Use of inflow areas in two Colorado River Basin reservoirs by the endangered razorback sucker (Xyrauchen texanus). Western North American Naturalist 77:500–514.
+Albrecht, B., R. Kegerries, R. Rogers, E. Gilbert, W.H. Brandenburg, A.L. Barkalow, S.P. Platania, M. McKinstry, B. Healy, J. Stolberg, E.O. Smith, C. Nelson, and H. Mohn. 2016. Razorback Sucker Xyrauchen texanus Research and Monitoring in the Colorado River Inflow Area of Lake Mead and the Lower Grand Canyon, Arizona and Nevada, 2015. Presentation, Colorado River Aquatic Biologists (CRAB) Meeting, January 2016, Laughlin, Nevada. https://www.lcrmscp.gov/crab/crab.html.
+Albrecht, B., Z. Shattuck, R.J. Rogers, and R. Kegerries. 2014. Razorback Sucker (Xyrauchen texanus) Studies on Lake Mead, Nevada and Arizona 2013-2014 Annual Report. Report from BIO-WEST, Inc., to the Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Bullard, M., C. Hueth, and E.L. Best. 2019. Native Fish Monitoring in Reach 3 of the Lower Colorado River, 2016 – 2017 Annual Report. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Bullard, M., and E.L. Best. 2022. Native Fish Monitoring in Reach 3 of the lower Colorado River, 2018 Annual Report. Report submitted by the Bureau of Reclamation, Technical Service Center, Fisheries and Wildlife Group, Denver, Colorado, to the Bureau of Reclamation, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Burgad, A.A., J.J. Rennert, B.R. Kesner, C.A. Pacey, and P.C. Marsh. 2019. Demographics and Monitoring of Repatriated Razorback Suckers in Lake Mohave, 2018 Annual Report. Report by Marsh & Associates, LLC, for the Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Ehlo, C.A., B.R. Kesner, and P.C. Marsh. 2016. Comparative Survival of Repatriated Razorback Suckers in Lower Colorado River Reach 3, 2015 Annual Report. Report by Marsh & Associates, LLC, for the Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Haas, T.F., B.R. Kesner, and P.C. Marsh. 2020. Population Status and Distribution of Razorback Suckers and Bonytail Downstream from Palo Verde Diversion Dam, 2019 Interim Report. Report by Marsh & Associates, LLC, for the Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Humphrey, K.G., B.R. Kesner, and P.C. Marsh. 2014. Distribution and Post-Stocking Survival of Bonytail in Lake Havasu, 2014 Annual Report. Report by Marsh & Associates, LLC, for the Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Humphrey, K.G., B.R. Kesner, and P.C. Marsh. 2016. Distribution and Post-Stocking Survival of Bonytail in Lake Havasu, 2013-2016. Report by Marsh & Associates, LLC, for the Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Kegerries, R., B. Albrecht, E.I. Gilbert, W.H. Brandenburg, A L. Barkalow, H. Mohn, R. Rogers, M. McKinstry, B. Healy, J. Stolberg, E. O. Smith, and M. Edwards. 2016. Razorback Sucker Xyrauchen texanus Research and Monitoring in the Colorado River Inflow Area of Lake Mead and the Lower Grand Canyon, Arizona and Nevada. Bureau of Reclamation Upper Colorado Region and the Lower Colorado River Multi-Species Conservation Program, Salt Lake City, Utah and Boulder City, Nevada.
+Kegerries, R., B. Albrecht, E.I. Gilbert, W.H. Brandenburg, A.L. Barkalow, H. Mohn, R. Rogers, M. McKinstry, B. Healy, J. Stolberg, E.O. Smith, and M. Edwards. 2017. Razorback Sucker Xyrauchen texanus Research and Monitoring in the Colorado River Inflow Area of Lake Mead and the Lower Grand Canyon, Arizona and Nevada, 2016. Presentation, Colorado River Aquatic Biologists (CRAB) Meeting, January 2017, Laughlin, Nevada. https://www.lcrmscp.gov/crab/crab.html
+Kelley, J.R., B.R. Kesner, and P.C. Marsh. 2021. Population Status and Distribution of Razorback Suckers and Bonytail Downstream from Palo Verde Diversion Dam, 2020 Annual Report. Report from Marsh & Associates, LLC, to the Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Kelley, J.R., B.R. Kesner, and P.C. Marsh. 2022. Population Status and Distribution of Razorback Suckers and Bonytail Downstream from Palo Verde Diversion Dam, 2016–2021. Report submitted by Marsh & Associates, LLC, Tempe, Arizona, to the Bureau of Reclamation, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Kesner, B.R., C.A. Ehlo, J.B. Wisenall, and P.C. Marsh. 2017. Comparative Survival of Repatriated Razorback Suckers in Lower Colorado River Reach 3, 2014-2016. Report by Marsh & Associates, LLC, for the Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Kesner, B.R., J.B. Wisenall, and P.C. Marsh. 2016. Adaptive Management of an Imperiled Catostomid in Lake Mohave, Lower Colorado River, USA. Pages 119–133 in M.N. Rashed, editor. Lake Sciences and Climate Change. InTech, Rijeka, Croatia.
+Kesner, B.R., P.M. Beyhan, C.A. Pacey, and P.C. Marsh. 2022. Demographics and Monitoring of Repatriated Razorback Suckers in Lake Mohave, 2021 Annual Report. Report submitted by Marsh & Associates, LLC, Tempe, Arizona, to the Bureau of Reclamation, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Leavitt, J.B., B.R. Kesner, C.A. Pacey, and P.C. Marsh. 2018. Demographics and Monitoring of Repatriated Razorback Suckers in Lake Mohave, 2017 Annual Report. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Lower Colorado River Multi-Species Conservation Program (LCR MSCP). 2006. Lower Colorado River Multi-Species Conservation Program Final Implementation Report, Fiscal Year 2007 Work Plan and Budget, Fiscal Year 2005 Accomplishment Report. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Lower Colorado River Multi-Species Conservation Program (LCR MSCP). 2007. Lower Colorado River Multi-Species Conservation Program Final Implementation Report, Fiscal Year 2008 Work Plan and Budget, Fiscal Year 2006 Accomplishment Report. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Lower Colorado River Multi-Species Conservation Program (LCR MSCP). 2008. Lower Colorado River Multi-Species Conservation Program Final Implementation Report, Fiscal Year 2009 Work Plan and Budget, Fiscal Year 2007 Accomplishment Report. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Lower Colorado River Multi-Species Conservation Program (LCR MSCP). 2009. Lower Colorado River Multi-Species Conservation Program Final Implementation Report, Fiscal Year 2010 Work Plan and Budget, Fiscal Year 2008 Accomplishment Report. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Lower Colorado River Multi-Species Conservation Program (LCR MSCP). 2010. Lower Colorado River Multi-Species Conservation Program Final Implementation Report, Fiscal Year 2011 Work Plan and Budget, Fiscal Year 2009 Accomplishment Report. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Lower Colorado River Multi-Species Conservation Program (LCR MSCP). 2011. Lower Colorado River Multi-Species Conservation Program Final Implementation Report, Fiscal Year 2012 Work Plan and Budget, Fiscal Year 2010 Accomplishment Report. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Lower Colorado River Multi-Species Conservation Program (LCR MSCP). 2012. Lower Colorado River Multi-Species Conservation Program Final Implementation Report, Fiscal Year 2013 Work Plan and Budget, Fiscal Year 2011 Accomplishment Report. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Lower Colorado River Multi-Species Conservation Program (LCR MSCP). 2013. Lower Colorado River Multi-Species Conservation Program Final Implementation Report, Fiscal Year 2014 Work Plan and Budget, Fiscal Year 2012 Accomplishment Report. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Lower Colorado River Multi-Species Conservation Program (LCR MSCP). 2014. Lower Colorado River Multi-Species Conservation Program Final Implementation Report, Fiscal Year 2015 Work Plan and Budget, Fiscal Year 2013 Accomplishment Report. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Lower Colorado River Multi-Species Conservation Program (LCR MSCP). 2015a. Native Fish Augmentation Plan, 2015–2020. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Lower Colorado River Multi-Species Conservation Program (LCR MSCP). 2015b. Lower Colorado River Multi-Species Conservation Program Final Implementation Report, Fiscal Year 2016 Work Plan and Budget, Fiscal Year 2014 Accomplishment Report. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Lower Colorado River Multi-Species Conservation Program (LCR MSCP). 2016a. Species Accounts for the Lower Colorado River Multi-Species Conservation Program. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Lower Colorado River Multi-Species Conservation Program (LCR MSCP). 2016b. Lower Colorado River Multi-Species Conservation Program Final Implementation Report, Fiscal Year 2017 Work Plan and Budget, Fiscal Year 2015 Accomplishment Report. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Lower Colorado River Multi-Species Conservation Program (LCR MSCP). 2017. Lower Colorado River Multi-Species Conservation Program Final Implementation Report, Fiscal Year 2018 Work Plan and Budget, Fiscal Year 2016 Accomplishment Report. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Lower Colorado River Multi-Species Conservation Program (LCR MSCP). 2018. Lower Colorado River Multi-Species Conservation Program Final Implementation Report, Fiscal Year 2019 Work Plan and Budget, Fiscal Year 2017 Accomplishment Report. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Lower Colorado River Multi-Species Conservation Program (LCR MSCP). 2019. Lower Colorado River Multi-Species Conservation Program Final Implementation Report, Fiscal Year 2020 Work Plan and Budget, Fiscal Year 2018 Accomplishment Report. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Lower Colorado River Multi-Species Conservation Program (LCR MSCP). 2020. Lower Colorado River Multi-Species Conservation Program Final Implementation Report, Fiscal Year 2021 Work Plan and Budget, Fiscal Year 2019 Accomplishment Report. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Lower Colorado River Multi-Species Conservation Program (LCR MSCP). 2021a. Native Fish Augmentation Plan, 2021–2025. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Lower Colorado River Multi-Species Conservation Program (LCR MSCP). 2021b. Lower Colorado River Multi-Species Conservation Program Final Implementation Report, Fiscal Year 2022 Work Plan and Budget, Fiscal Year 2020 Accomplishment Report. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River, Multi-Species Conservation Program, Boulder City, Nevada.
+Lower Colorado River Multi-Species Conservation Program (LCR MSCP). 2022. Lower Colorado River Multi-Species Conservation Program Final Implementation Report, Fiscal Year 2023 Work Plan and Budget, Fiscal Year 2021 Accomplishment Report. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Lower Colorado River Multi-Species Conservation Program (LCR MSCP) Fisheries Group. 2016. BOR-LCR-MSCP Lake Mohave Razorback Sucker Roundup March 2016 Summary. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Lower Colorado River Multi-Species Conservation Program (LCR MSCP) Fisheries Group. 2016. BOR-LCR-MSCP Lake Mohave Razorback Sucker Roundup Summary December 2016. Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Marsh & Associates. 2016. Marsh & Associates Lake Mohave Razorback Sucker Roundup Summary March 2016-Carp Cove. Marsh & Associates, Tempe, Arizona.
+Marsh & Associates. 2016. Marsh & Associates Lake Mohave Razorback Sucker Roundup Summary March 2016. Marsh & Associates, Tempe, Arizona.
+Marsh, P.C., T.E. Dowling, B.R. Kesner, T.F. Turner, and W.L. Minckley. 2015. Conservation to stem imminent extinction: The fight to save razorback sucker Xyrauchen texanus in Lake Mohave and its implications for species recovery. Copeia 103:141–156.
+Miller, B.J., B.R. Kesner, C.A. Pacey, and P.C. Marsh. 2020. Demographics and Monitoring of Repatriated Razorback Suckers in Lake Mohave, 2015–2019. Report by Marsh & Associates, LLC, for the Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Miller, B.J., B.R. Kesner, C.A. Pacey, and P.C. Marsh. 2021. Demographics and Monitoring of Repatriated Razorback Suckers in Lake Mohave, 2020 Annual Report. Report by Marsh & Associates, LLC, for the Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Minckley, W.L. and P.C. Marsh. 2009. Inland Fishes of the Greater Southwest. University of Arizona Press, Tucson, Arizona.
+Minckley, W.L., P.C. Marsh, J.E. Deacon, T.E. Dowling, P.W. Hedrick, W.J. Matthews, and G. Mueller. 2003. A conservation plan for native fishes of the Lower Colorado River. BioScience 53:219–234.
+Mohn, H., B. Albrecht, and R.J. Rogers. 2017. Razorback Sucker (Xyrauchen texanus) Studies on Lake Mead, Nevada and Arizona 2015–2016. Report from BIO-WEST, Inc., to the Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Mohn, H., B. Albrecht, R.J. Rogers, and R. Kegerries. 2017. Razorback Sucker (Xyrauchen texanus) Studies on Lake Mead, Nevada and Arizona, 2014–2015 Annual Report. Report from BIO-WEST, Inc., to the Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Mueller, G.A., and A. Mueller. 2005. Predatory fish removal and native fish recovery in the Colorado River mainstem: What have we learned? Fisheries 30:10–19.
+Nevada Department of Wildlife & National Park Service. 2016. NDOW-NPS Lake Mohave Razorback Sucker Roundup Summary December 2016. Nevada Department of Wildlife & National Park Service.
+Nevada Department of Wildlife & National Park Service. 2016. NDOW-NPS Lake Mohave Razorback Sucker Roundup Summary March 2016.
+Pacey, C.A. and P.C. Marsh. 2008. Evaluation of Past Bonytail Stocking Final Report 2008. Report by Marsh & Associates, LLC, for the Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Rogers, R.J., B. Albrecht, and H.E. Mohn. 2019. Razorback Sucker Studies on Lake Mead, Nevada and Arizona, 2016–2017 Annual Report. Report from BIO-WEST, Inc., to the Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Rogers, R.J., B. Albrecht, and R. Kegerries. 2019. Razorback Sucker Studies on Lake Mead, Nevada and Arizona, 2018–2019 Annual Report. Report from BIO-WEST, Inc., to the Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Rogers, R.J., B. Albrecht, and R. Kegerries. 2021. Razorback Sucker Studies on Lake Mead, Nevada and Arizona, 2019–2020. Report from BIO-WEST, Inc., to the Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Rogers, R.J., B. Albrecht, H.E. Mohn, and R. Kegerries. 2019. Razorback Sucker (Xyrauchen texanus) Studies on Lake Mead, Nevada and Arizona, 2017–2018 Annual Report. Report from BIO-WEST, Inc., to the Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Rogers, R.J., B. Albrecht, E. Loomis, and J. Handtke. 2021. Razorback Sucker Studies on Lake Mead, Nevada and Arizona, 2020-2021 Annual Report. Report from BIO/WEST, Inc., to the Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Schooley, J.D. and P.C. Marsh. 2007. Stocking of endangered razorback suckers in the Lower Colorado River Basin over three decades: 1974–2004. North American Journal of Fisheries Management 27:43–51.
+Stolberg, J. 2016. 2015 Lake Mohave Update, Remote Scanning Study Draft Summary, Bonytail and Razorback Sonic Telemetry. Presentation, Colorado River Aquatic Biologists (CRAB) Meeting, January 2016, Laughlin, Nevada. https://www.lcrmscp.gov/crab/crab.html
+U.S. Fish and Wildlife Service. 2016. USFWS Lake Mohave Razorback Sucker Roundup Summary March 2016. U.S. Fish and Wildlife Service, Arizona Fish & Wildlife Conservation Office-Parker, Parker, Arizona.
+Wisenall, J.B., B.R. Kesner, C.A. Pacey, and P.C. Marsh. 2016. Use of remote PIT scanners to monitor razorback sucker in Lake Mohave. Presentation, Colorado River Aquatic Biologists (CRAB) Meeting, January 2016, Laughlin, Nevada. https://www.lcrmscp.gov/crab/crab.html
+Wisenall, J.B., B.R. Kesner, C.A. Pacey, and P.C. Marsh. 2018. Demographics and Monitoring of Repatriated Razorback Suckers in Lake Mohave, 2015 Annual Report. Report by Marsh & Associates, LLC, for the Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
+Wisenall, J.B., B.R. Kesner, C.A. Pacey, and P.C. Marsh. 2019. Demographics and Monitoring of Repatriated Razorback Suckers in Lake Mohave, 2016 Annual Report. Report by Marsh & Associates, LLC, for the Bureau of Reclamation, Lower Colorado Region, Lower Colorado River Multi-Species Conservation Program, Boulder City, Nevada.
